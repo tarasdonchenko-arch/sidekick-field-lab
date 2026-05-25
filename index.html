@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sidekick Field States Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100dvh;overflow:hidden;font-family:'Geist',-apple-system,BlinkMacSystemFont,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{background:#f0f0f0;color:#111}
+
+/* ── Layout ── */
+#app{position:relative;width:calc(100% - 304px);height:100%;display:flex;align-items:center;justify-content:center}
+
+/* ── Field Bar ── */
+#field-container{display:flex;align-items:center;justify-content:center}
+#field-bar{
+  position:relative;display:flex;align-items:stretch;
+  height:44px;width:320px;
+  background:#fff;border-radius:9999px;
+  box-shadow:0 1px 3px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.04);
+  transition:width 0.4s cubic-bezier(0.2,0.8,0,1),box-shadow 0.3s ease;
+  will-change:width;overflow:hidden;
+}
+#field-bar:hover{box-shadow:0 1px 3px rgba(0,0,0,0.1),0 4px 16px rgba(0,0,0,0.06)}
+[data-state="idle"] #field-bar{cursor:pointer}
+
+/* ── Icon Area (holds orb glow + face) ── */
+#field-icon{
+  position:relative;width:44px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  overflow:visible;z-index:2;
+}
+
+/* ── Orb (glow blobs) ── */
+#orb{
+  position:absolute;left:50%;top:50%;
+  transform-origin:center center;
+  pointer-events:none;
+}
+.blob{position:absolute;border-radius:50%;will-change:transform}
+
+/* ── Face ── */
+#face{
+  position:relative;z-index:5;width:20px;height:20px;
+  display:flex;align-items:center;justify-content:center;
+  pointer-events:none;
+}
+#face-svg{width:20px;height:20px;color:#1a5c2e;display:block}
+.face-vid{
+  width:64px;height:64px;object-fit:contain;
+  margin-top:2px;
+  display:none;
+}
+
+/* ── Input Area ── */
+#field-input-wrap{
+  position:relative;flex:1;min-width:0;display:flex;align-items:stretch;
+}
+#field-input{
+  flex:1;min-width:0;background:transparent;border:none;outline:none;
+  padding:0 8px 0 0;font-size:15px;font-family:inherit;font-weight:400;
+  color:#111;
+}
+#field-input::placeholder{color:#868686}
+[data-state="idle"] #field-input{cursor:pointer}
+[data-state="thinking"] #field-input{cursor:default}
+
+/* ── Tool Groups ── */
+.tool-group{
+  display:flex;align-items:center;gap:1px;padding:0 2px;
+  transition:opacity 0.3s ease-out,filter 0.3s ease-out;
+  will-change:opacity,filter;
+}
+.tool-group.hidden{opacity:0;filter:blur(2px);pointer-events:none;max-width:0;padding:0;overflow:hidden}
+.tool-group.visible{opacity:1;filter:none;pointer-events:auto;max-width:200px;padding:0 2px}
+.tool-group{max-width:0;padding:0;overflow:hidden;opacity:0;filter:blur(2px);pointer-events:none;
+  transition:opacity 0.3s ease-out,filter 0.3s ease-out,max-width 0.35s cubic-bezier(0.2,0.8,0,1),padding 0.35s cubic-bezier(0.2,0.8,0,1);
+}
+
+/* ── Buttons ── */
+.tool-btn{
+  display:flex;align-items:center;justify-content:center;
+  width:28px;height:28px;border:none;border-radius:50%;
+  background:none;color:#868686;cursor:pointer;flex-shrink:0;
+  transition:color 0.15s ease,background 0.15s ease;
+}
+.tool-btn:hover{color:#555;background:rgba(0,0,0,0.04)}
+.tool-btn svg{display:block}
+
+#btn-send{
+  width:28px;height:28px;border:none;border-radius:50%;
+  background:#7C3AED;color:white;cursor:pointer;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  transition:transform 0.15s ease,background 0.15s ease;
+}
+#btn-send:hover{background:#6D28D9;transform:scale(1.05)}
+#btn-send:active{transform:scale(0.95)}
+#btn-send svg{display:block}
+
+#btn-stop{
+  width:28px;height:28px;border:none;border-radius:50%;
+  background:#555;color:white;cursor:pointer;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  transition:transform 0.15s ease,background 0.15s ease;
+}
+#btn-stop:hover{background:#444;transform:scale(1.05)}
+#btn-stop:active{transform:scale(0.95)}
+
+/* ── Divider ── */
+#field-divider{
+  width:1px;align-self:stretch;margin:8px 0;background:#e5e5e5;flex-shrink:0;
+  transition:opacity 0.3s ease;
+}
+
+/* ── Sidebar Button ── */
+#btn-sidebar{
+  display:flex;align-items:center;justify-content:center;
+  width:42px;height:100%;border:none;background:none;
+  color:#868686;cursor:pointer;flex-shrink:0;border-radius:0 9999px 9999px 0;
+  transition:color 0.15s ease;
+}
+#btn-sidebar:hover{color:#555}
+
+/* ── View Switcher (main canvas) ── */
+#view-bar{
+  position:absolute;bottom:32px;left:50%;transform:translateX(-50%);
+  display:flex;gap:1px;padding:3px;
+  background:rgba(255,255,255,0.64);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-radius:10px;border:1px solid rgba(0,0,0,0.05);z-index:10;
+}
+.view-btn{
+  padding:6px 20px;border:none;border-radius:7px;
+  background:transparent;color:rgba(0,0,0,0.32);font-size:12px;font-weight:500;
+  font-family:inherit;cursor:pointer;text-align:center;
+  transition:color 0.15s ease,background 0.15s ease;
+}
+.view-btn:hover{color:rgba(0,0,0,0.55);background:rgba(0,0,0,0.04)}
+.view-btn.active{background:rgba(0,0,0,0.88);color:#fff}
+
+/* ── Preview Container (main canvas) ── */
+#preview-container{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  pointer-events:none;
+}
+#preview{
+  position:relative;overflow:visible;
+}
+#preview .blob{position:absolute;border-radius:50%}
+#preview-face{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  z-index:5;pointer-events:none;
+}
+.preview-vid{
+  width:200%;height:200%;object-fit:contain;
+}
+
+/* ── State Bar (in panel) ── */
+#state-bar{
+  display:flex;gap:1px;padding:3px;
+  background:rgba(0,0,0,0.04);border-radius:10px;
+}
+.state-btn{
+  flex:1;min-width:0;padding:7px 0;border:none;border-radius:7px;
+  background:transparent;color:rgba(0,0,0,0.32);font-size:11px;font-weight:500;
+  font-family:inherit;cursor:pointer;text-align:center;white-space:nowrap;
+  transition:color 0.15s ease,background 0.15s ease;
+}
+.state-btn:hover{color:rgba(0,0,0,0.55);background:rgba(0,0,0,0.04)}
+.state-btn.active{background:rgba(0,0,0,0.88);color:#fff}
+
+/* ── Panel ── */
+#panel{
+  position:fixed;top:12px;right:12px;bottom:12px;width:280px;
+  background:rgba(255,255,255,0.72);backdrop-filter:blur(32px);-webkit-backdrop-filter:blur(32px);
+  border-radius:16px;border:1px solid rgba(0,0,0,0.06);
+  box-shadow:0 8px 40px rgba(0,0,0,0.04),0 2px 8px rgba(0,0,0,0.02);
+  overflow-y:auto;overflow-x:hidden;z-index:100;font-size:12px;
+  scrollbar-width:none;
+}
+#panel::-webkit-scrollbar{display:none}
+
+.p-head{padding:20px 20px 14px}
+.p-head h1{font-size:14px;font-weight:500;margin:0}
+.p-head p{font-size:11px;color:rgba(0,0,0,0.28);margin-top:3px}
+
+.p-section{padding:14px 20px;border-top:1px solid rgba(0,0,0,0.05)}
+.p-label{font-size:9px;font-weight:600;text-transform:uppercase;color:rgba(0,0,0,0.22);margin-bottom:10px}
+
+.p-row{display:flex;align-items:center;gap:10px;margin-bottom:7px}
+.p-row:last-child{margin-bottom:0}
+.p-row label{font-size:11px;color:rgba(0,0,0,0.4);width:68px;flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+input[type=range]{
+  -webkit-appearance:none;appearance:none;flex:1;height:1px;
+  border-radius:1px;background:rgba(0,0,0,0.12);outline:none;cursor:pointer;
+}
+input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none;width:12px;height:12px;border-radius:50%;
+  background:#111;border:none;cursor:pointer;
+  transition:transform 0.15s ease;box-shadow:0 1px 4px rgba(0,0,0,0.12);
+}
+input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
+
+.p-val{width:34px;text-align:right;font-size:10px;font-variant-numeric:tabular-nums;color:rgba(0,0,0,0.2);flex-shrink:0}
+
+.p-color{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.p-color:last-child{margin-bottom:0}
+.p-color label{font-size:11px;color:rgba(0,0,0,0.4);width:74px;flex-shrink:0}
+.p-color input[type=color]{width:28px;height:18px;border:1px solid rgba(0,0,0,0.08);border-radius:4px;padding:1px;cursor:pointer;background:none}
+.p-color input[type=color]::-webkit-color-swatch-wrapper{padding:1px}
+.p-color input[type=color]::-webkit-color-swatch{border:none;border-radius:2px}
+.p-color .p-hex{font-size:9px;color:rgba(0,0,0,0.18);font-variant-numeric:tabular-nums}
+
+.p-check{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.p-check input[type=checkbox]{width:13px;height:13px;accent-color:#111;cursor:pointer}
+.p-check label{font-size:11px;color:rgba(0,0,0,0.4);cursor:pointer}
+
+.p-row select{
+  flex:1;height:26px;padding:0 8px;
+  border:1px solid rgba(0,0,0,0.07);border-radius:6px;
+  background:rgba(0,0,0,0.02);color:rgba(0,0,0,0.7);
+  font-size:11px;font-family:inherit;outline:none;
+}
+
+.p-btn{
+  width:100%;height:28px;border:1px solid rgba(0,0,0,0.07);border-radius:7px;
+  background:rgba(0,0,0,0.02);color:rgba(0,0,0,0.6);
+  font-size:11px;font-weight:500;font-family:inherit;cursor:pointer;
+  transition:background 0.15s ease,transform 0.1s ease;
+}
+.p-btn:hover{background:rgba(0,0,0,0.05)}
+.p-btn:active{transform:scale(.98)}
+
+/* ── State Tabs in Panel ── */
+#state-tabs{
+  display:flex;gap:1px;padding:2px;margin-bottom:12px;
+  background:rgba(0,0,0,0.04);border-radius:8px;
+}
+.state-tab{
+  flex:1;padding:5px 0;border:none;border-radius:6px;
+  background:transparent;color:rgba(0,0,0,0.35);font-size:10px;font-weight:500;
+  font-family:inherit;cursor:pointer;text-align:center;
+  transition:color 0.15s ease,background 0.15s ease;
+}
+.state-tab:hover{color:rgba(0,0,0,0.55)}
+.state-tab.active{background:#fff;color:#111;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+
+/* ── Color Presets ── */
+.color-presets{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}
+.color-preset{
+  width:38px;height:22px;border-radius:5px;
+  border:1px solid rgba(0,0,0,0.06);cursor:pointer;position:relative;overflow:hidden;
+  transition:border-color 0.15s ease,transform 0.1s ease;
+}
+.color-preset:hover{border-color:rgba(0,0,0,0.2);transform:scale(1.06)}
+.color-preset:active{transform:scale(.95)}
+.color-preset .cp-a,.color-preset .cp-b,.color-preset .cp-c{position:absolute;height:100%}
+.color-preset .cp-a{left:0;width:33.3%}
+.color-preset .cp-b{left:33.3%;width:33.3%}
+.color-preset .cp-c{left:66.6%;width:33.4%}
+
+/* ── Saved ── */
+.saved-item{display:flex;align-items:center;gap:4px;margin-bottom:5px}
+.saved-item button:first-child{
+  flex:1;height:26px;border:1px solid rgba(0,0,0,0.06);border-radius:6px;
+  background:rgba(0,0,0,0.02);color:rgba(0,0,0,0.6);
+  font-size:11px;font-family:inherit;text-align:left;padding:0 10px;cursor:pointer;
+  transition:background 0.15s ease;
+}
+.saved-item button:first-child:hover{background:rgba(0,0,0,0.05)}
+.saved-item .del{
+  width:20px;height:20px;border:none;border-radius:4px;
+  background:none;color:rgba(0,0,0,0.12);font-size:12px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;transition:color 0.15s ease;
+}
+.saved-item .del:hover{color:rgba(0,0,0,0.45)}
+.p-empty{font-size:10px;color:rgba(0,0,0,0.18);padding:2px 0}
+</style>
+</head>
+<body>
+
+<div id="app">
+  <!-- View switcher -->
+  <div id="view-bar">
+    <button class="view-btn active" data-view="field">Field</button>
+    <button class="view-btn" data-view="preview">Preview</button>
+  </div>
+
+  <!-- Preview (orb close-up) -->
+  <div id="preview-container" style="display:none">
+    <div id="preview">
+      <div class="blob" id="pb0"></div>
+      <div class="blob" id="pb1"></div>
+      <div class="blob" id="pb2"></div>
+      <div id="preview-face">
+        <video class="preview-vid" id="pv-idle" src="face-idle.webm" muted playsinline loop preload="auto" autoplay></video>
+        <video class="preview-vid" id="pv-active" src="face-active.webm" muted playsinline loop preload="auto" style="display:none"></video>
+        <video class="preview-vid" id="pv-thinking" src="face-thinking.webm" muted playsinline loop preload="auto" style="display:none"></video>
+      </div>
+    </div>
+  </div>
+
+  <div id="field-container" data-state="idle">
+    <div id="field-bar">
+      <!-- Icon: glow orb + face -->
+      <div id="field-icon">
+        <div id="orb">
+          <div class="blob" id="b0"></div>
+          <div class="blob" id="b1"></div>
+          <div class="blob" id="b2"></div>
+        </div>
+        <div id="face">
+          <svg id="face-svg" viewBox="0 0 24 24" fill="none" style="display:none">
+            <path d="M13.87 17.45C14.49 17.06 15.31 17.24 15.71 17.86C16.1 18.48 15.92 19.31 15.3 19.71C13.77 20.68 11.12 20.86 8.73 19.8C8.05 19.5 7.75 18.71 8.05 18.03C8.35 17.36 9.14 17.06 9.82 17.36C11.55 18.13 13.23 17.86 13.87 17.45Z" fill="currentColor"/>
+            <path d="M6.39 4.01C7.49 4.14 8.28 5.14 8.15 6.24C8.03 7.2 8.01 7.32 8.01 9.26C8.01 10.37 7.11 11.26 6 11.26C4.9 11.26 4 10.37 4 9.26C4 7.19 4.03 6.92 4.17 5.77C4.3 4.67 5.29 3.88 6.39 4.01Z" fill="currentColor"/>
+            <path d="M17.79 4.01C18.89 3.88 19.88 4.67 20.01 5.77C20.14 6.92 20.18 7.19 20.18 9.26C20.18 10.37 19.28 11.26 18.18 11.26C17.07 11.26 16.17 10.37 16.17 9.26C16.17 7.32 16.14 7.2 16.03 6.24C15.9 5.14 16.69 4.14 17.79 4.01Z" fill="currentColor"/>
+          </svg>
+          <video class="face-vid" id="face-vid-idle" src="face-idle.webm" muted playsinline loop preload="auto" autoplay style="display:block"></video>
+          <video class="face-vid" id="face-vid-active" src="face-active.webm" muted playsinline loop preload="auto" style="display:none"></video>
+          <video class="face-vid" id="face-vid-thinking" src="face-thinking.webm" muted playsinline loop preload="auto" style="display:none"></video>
+        </div>
+      </div>
+
+      <!-- Input -->
+      <div id="field-input-wrap">
+        <input id="field-input" type="text" placeholder="Ask anything" readonly spellcheck="false" autocomplete="off" />
+      </div>
+
+      <!-- Tools: attach + voice/send (focused & typing) -->
+      <div id="tools-default" class="tool-group">
+        <button class="tool-btn" id="btn-attach" aria-label="Attach">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><line x1="9" y1="3.25" x2="9" y2="14.75" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/><line x1="3.25" y1="9" x2="14.75" y2="9" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/></svg>
+        </button>
+        <span id="voice-icon">
+          <button class="tool-btn" id="btn-voice" aria-label="Voice">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 7V9.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/><path d="M6.4 3V13" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/><path d="M9.85 5V11.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/><path d="M13 7V9.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/></svg>
+          </button>
+        </span>
+        <span id="send-icon" style="display:none">
+          <button id="btn-send" aria-label="Send">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 12V5" stroke="white" stroke-width="1.5" stroke-linecap="round"/><path d="M4.5 7.5L8 4L11.5 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </span>
+      </div>
+
+      <!-- Tools: stop (thinking) -->
+      <div id="tools-thinking" class="tool-group">
+        <button id="btn-stop" aria-label="Stop">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="5" y="5" width="6" height="6" rx="1" fill="white"/></svg>
+        </button>
+      </div>
+
+      <!-- Divider + Sidebar -->
+      <div id="field-divider"></div>
+      <button id="btn-sidebar" aria-label="Sidebar">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1.75" y="2.75" width="14.5" height="12.5" rx="2" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" fill="none"/><line x1="13.25" y1="5.75" x2="13.25" y2="12.25" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/></svg>
+      </button>
+    </div>
+  </div>
+
+</div>
+
+<!-- ── Panel ── -->
+<div id="panel">
+  <div class="p-head">
+    <h1>Field States Lab</h1>
+    <p>Per-state motion & glow controls</p>
+  </div>
+
+  <!-- Per-State Controls -->
+  <div class="p-section">
+    <div class="p-label">State Controls</div>
+    <div id="state-tabs">
+      <button class="state-tab active" data-edit="idle">Idle</button>
+      <button class="state-tab" data-edit="focused">Focus</button>
+      <button class="state-tab" data-edit="typing">Type</button>
+      <button class="state-tab" data-edit="thinking">Think</button>
+    </div>
+    <div id="state-controls">
+      <div class="p-row"><label>Orb Speed</label><input type="range" data-skey="orbSpeed" min="0" max="15" step="0.1"><span class="p-val"></span></div>
+      <div class="p-row"><label>Orbit Radius</label><input type="range" data-skey="orbRadius" min="0" max="0.8" step="0.01"><span class="p-val"></span></div>
+      <div class="p-row"><label>Glow</label><input type="range" data-skey="glowOpacity" min="0" max="1" step="0.01"><span class="p-val"></span></div>
+      <div class="p-row"><label>Glow Blur</label><input type="range" data-skey="glowBlur" min="5" max="80" step="1"><span class="p-val"></span></div>
+      <div class="p-row"><label>Glow Scale</label><input type="range" data-skey="glowScale" min="0.2" max="1.5" step="0.01"><span class="p-val"></span></div>
+      <div class="p-row"><label>Face Rate</label><input type="range" data-skey="faceRate" min="0.1" max="3" step="0.05"><span class="p-val"></span></div>
+      <div class="p-row"><label>Lerp Speed</label><input type="range" data-skey="lerpSpeed" min="0.5" max="20" step="0.1"><span class="p-val"></span></div>
+    </div>
+  </div>
+
+  <!-- Colors -->
+  <div class="p-section">
+    <div class="p-label">Colors</div>
+    <div class="color-presets" id="color-presets"></div>
+    <div class="p-color"><label>Glow A</label><input type="color" data-gkey="c1"><span class="p-hex"></span></div>
+    <div class="p-color"><label>Glow B</label><input type="color" data-gkey="c2"><span class="p-hex"></span></div>
+    <div class="p-color"><label>Glow C</label><input type="color" data-gkey="c3"><span class="p-hex"></span></div>
+    <div class="p-color"><label>Background</label><input type="color" data-gkey="bgColor"><span class="p-hex"></span></div>
+    <div class="p-color"><label>Face Color</label><input type="color" data-gkey="faceColor"><span class="p-hex"></span></div>
+  </div>
+
+  <!-- Global -->
+  <div class="p-section">
+    <div class="p-label">Global</div>
+    <div class="p-row"><label>Orb Size</label><input type="range" data-gkey="orbSize" min="40" max="300" step="2"><span class="p-val"></span></div>
+    <div class="p-row"><label>Field Scale</label><input type="range" data-gkey="fieldOrbScale" min="0.1" max="1.5" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Face Size</label><input type="range" data-gkey="faceSize" min="10" max="40" step="1"><span class="p-val"></span></div>
+    <div class="p-row"><label>Think Time</label><input type="range" data-gkey="thinkDuration" min="1" max="15" step="0.5"><span class="p-val"></span></div>
+    <div class="p-row"><label>Face Blend</label><select data-gkey="faceBlend">
+      <option>normal</option><option>multiply</option><option>screen</option><option>overlay</option>
+      <option>darken</option><option>lighten</option><option>color-dodge</option><option>soft-light</option>
+    </select></div>
+    <div class="p-check"><input type="checkbox" id="ui-use-video" checked><label for="ui-use-video">Animated Face (video)</label></div>
+  </div>
+
+  <!-- Orbits -->
+  <div class="p-section">
+    <div class="p-label">Orbits</div>
+    <div class="p-row" style="margin-bottom:2px"><label style="color:rgba(0,0,0,0.25);font-size:9px">Orb A</label></div>
+    <div class="p-row"><label>Tilt X</label><input type="range" data-gkey="tilt1" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Tilt Y</label><input type="range" data-gkey="tilt2" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row" style="margin-bottom:2px"><label style="color:rgba(0,0,0,0.25);font-size:9px">Orb B</label></div>
+    <div class="p-row"><label>Tilt X</label><input type="range" data-gkey="tilt1b" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Tilt Y</label><input type="range" data-gkey="tilt2b" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row" style="margin-bottom:2px"><label style="color:rgba(0,0,0,0.25);font-size:9px">Orb C</label></div>
+    <div class="p-row"><label>Tilt X</label><input type="range" data-gkey="tilt1c" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Tilt Y</label><input type="range" data-gkey="tilt2c" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
+  </div>
+
+  <!-- State Switcher -->
+  <div class="p-section">
+    <div class="p-label">Switch State</div>
+    <div id="state-bar">
+      <button class="state-btn active" data-state="idle">Idle</button>
+      <button class="state-btn" data-state="focused">Focused</button>
+      <button class="state-btn" data-state="typing">Typing</button>
+      <button class="state-btn" data-state="thinking">Thinking</button>
+    </div>
+  </div>
+
+  <!-- Presets -->
+  <div class="p-section">
+    <div class="p-label">Presets</div>
+    <div id="saved-list"></div>
+    <div style="display:flex;gap:6px;margin-top:8px">
+      <button class="p-btn" id="btn-save" style="flex:1;background:rgba(0,0,0,0.85);color:rgba(255,255,255,0.9);border-color:transparent">Save</button>
+      <button class="p-btn" id="btn-json" style="flex:1">Copy JSON</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ============================================================
+// STATE CONFIG — per-state animation parameters
+// ============================================================
+
+const SP = {
+  idle: {
+    orbSpeed: 1.5,
+    orbRadius: 0.15,
+    glowOpacity: 0,
+    glowBlur: 40,
+    glowScale: 0.65,
+    faceRate: 1.0,
+    lerpSpeed: 5,
+  },
+  focused: {
+    orbSpeed: 4.9,
+    orbRadius: 0.19,
+    glowOpacity: 0.48,
+    glowBlur: 18,
+    glowScale: 0.57,
+    faceRate: 1.0,
+    lerpSpeed: 4.2,
+  },
+  typing: {
+    orbSpeed: 4.9,
+    orbRadius: 0.19,
+    glowOpacity: 0.48,
+    glowBlur: 18,
+    glowScale: 0.57,
+    faceRate: 1.0,
+    lerpSpeed: 4.2,
+  },
+  thinking: {
+    orbSpeed: 10.8,
+    orbRadius: 0.18,
+    glowOpacity: 0.76,
+    glowBlur: 15,
+    glowScale: 0.85,
+    faceRate: 0.6,
+    lerpSpeed: 3,
+  },
+};
+
+// ============================================================
+// GLOBAL CONFIG
+// ============================================================
+
+const G = {
+  c1: '#3888ff', c2: '#ffd500', c3: '#4bff1e',
+  bgColor: '#f0f0f0',
+  faceColor: '#1a5c2e',
+  orbSize: 92,
+  fieldOrbScale: 0.41,
+  faceSize: 23,
+  faceBlend: 'overlay',
+  thinkDuration: 5,
+  tilt1: 1.17, tilt2: 0.67,
+  tilt1b: 0.79, tilt2b: 0.79,
+  tilt1c: 1.22, tilt2c: 1.37,
+};
+
+// ============================================================
+// RUNTIME
+// ============================================================
+
+let currentState = 'idle';
+let editingState = 'idle';
+let typedText = '';
+let thinkTimer = null;
+let thinkDotsInterval = null;
+let orbPhase = 0;
+let lastT = 0;
+
+// Live interpolated values (lerped toward current state)
+const live = {
+  orbSpeed: SP.idle.orbSpeed,
+  orbRadius: SP.idle.orbRadius,
+  glowOpacity: SP.idle.glowOpacity,
+  glowBlur: SP.idle.glowBlur,
+  glowScale: SP.idle.glowScale,
+};
+
+// ============================================================
+// DOM REFS
+// ============================================================
+
+const fieldContainer = document.getElementById('field-container');
+const fieldBar = document.getElementById('field-bar');
+const fieldInput = document.getElementById('field-input');
+const toolsDefault = document.getElementById('tools-default');
+const toolsThinking = document.getElementById('tools-thinking');
+const voiceIcon = document.getElementById('voice-icon');
+const sendIcon = document.getElementById('send-icon');
+const btnSend = document.getElementById('btn-send');
+const btnStop = document.getElementById('btn-stop');
+const faceSvg = document.getElementById('face-svg');
+const faceVids = {
+  idle: document.getElementById('face-vid-idle'),
+  focused: document.getElementById('face-vid-idle'),
+  typing: document.getElementById('face-vid-idle'),
+  thinking: document.getElementById('face-vid-thinking'),
+};
+let activeFaceVid = faceVids.idle;
+const previewVids = {
+  idle: document.getElementById('pv-idle'),
+  focused: document.getElementById('pv-idle'),
+  typing: document.getElementById('pv-idle'),
+  thinking: document.getElementById('pv-thinking'),
+};
+let activePreviewVid = previewVids.idle;
+const orbEl = document.getElementById('orb');
+const fieldBlobs = [document.getElementById('b0'), document.getElementById('b1'), document.getElementById('b2')];
+const previewBlobs = [document.getElementById('pb0'), document.getElementById('pb1'), document.getElementById('pb2')];
+
+// ============================================================
+// 3D ORBIT MATH
+// ============================================================
+
+function orbit3D(t, phase, radius, tiltX, tiltY) {
+  let x = Math.cos(t + phase) * radius;
+  let y = Math.sin(t + phase) * radius;
+  let z = 0;
+  const cx = Math.cos(tiltX), sx = Math.sin(tiltX);
+  const y2 = y * cx - z * sx, z2 = y * sx + z * cx;
+  y = y2; z = z2;
+  const cy = Math.cos(tiltY), sy = Math.sin(tiltY);
+  const x2 = x * cy + z * sy, z3 = -x * sy + z * cy;
+  return { x: x2, y, z: z3 };
+}
+
+// ============================================================
+// STATE MACHINE
+// ============================================================
+
+function setState(newState) {
+  if (newState === currentState) return;
+  const prev = currentState;
+  currentState = newState;
+
+  // Clear timers
+  clearTimeout(thinkTimer);
+  clearInterval(thinkDotsInterval);
+  thinkTimer = null;
+  thinkDotsInterval = null;
+
+  // Update field container attribute
+  fieldContainer.dataset.state = newState;
+
+  // Field bar width
+  fieldBar.style.width = (newState === 'idle') ? '320px' : '480px';
+
+  // Tool visibility
+  const showDefault = (newState === 'focused' || newState === 'typing');
+  const showThink = (newState === 'thinking');
+  toolsDefault.style.maxWidth = showDefault ? '200px' : '0';
+  toolsDefault.style.padding = showDefault ? '0 2px' : '0';
+  toolsDefault.style.opacity = showDefault ? '1' : '0';
+  toolsDefault.style.filter = showDefault ? 'none' : 'blur(2px)';
+  toolsDefault.style.pointerEvents = showDefault ? 'auto' : 'none';
+
+  toolsThinking.style.maxWidth = showThink ? '200px' : '0';
+  toolsThinking.style.padding = showThink ? '0 2px' : '0';
+  toolsThinking.style.opacity = showThink ? '1' : '0';
+  toolsThinking.style.filter = showThink ? 'none' : 'blur(2px)';
+  toolsThinking.style.pointerEvents = showThink ? 'auto' : 'none';
+
+  // Input state
+  switch (newState) {
+    case 'idle':
+      fieldInput.value = '';
+      fieldInput.placeholder = 'Ask anything';
+      fieldInput.readOnly = true;
+      fieldInput.blur();
+      typedText = '';
+      break;
+    case 'focused':
+      fieldInput.readOnly = false;
+      fieldInput.placeholder = 'Ask anything';
+      if (prev === 'idle') fieldInput.value = '';
+      setTimeout(() => fieldInput.focus(), 50);
+      break;
+    case 'typing':
+      fieldInput.readOnly = false;
+      break;
+    case 'thinking':
+      typedText = fieldInput.value;
+      fieldInput.value = '';
+      fieldInput.placeholder = 'Thinking...';
+      fieldInput.readOnly = true;
+      fieldInput.blur();
+      startThinkTimer();
+      break;
+  }
+
+  updateSendVoice();
+  updateVideoState();
+  updateStateBar();
+}
+
+function startThinkTimer() {
+  let dots = 0;
+  thinkDotsInterval = setInterval(() => {
+    dots = (dots + 1) % 4;
+    fieldInput.placeholder = 'Thinking' + '.'.repeat(dots || 0) + (dots === 0 ? '...' : '');
+  }, 400);
+
+  // No auto-return — click Stop or switch state manually
+}
+
+function updateSendVoice() {
+  const hasDraft = fieldInput.value.trim().length > 0;
+  voiceIcon.style.display = hasDraft ? 'none' : '';
+  sendIcon.style.display = hasDraft ? '' : 'none';
+}
+
+function updateVideoState() {
+  const target = SP[currentState];
+  const newVid = faceVids[currentState];
+  const useVideo = document.getElementById('ui-use-video').checked;
+
+  // Switch active video element
+  if (newVid !== activeFaceVid) {
+    activeFaceVid.style.display = 'none';
+    activeFaceVid.pause();
+    activeFaceVid = newVid;
+    if (useVideo) {
+      activeFaceVid.style.display = 'block';
+      activeFaceVid.currentTime = 0;
+      activeFaceVid.play();
+    }
+  }
+
+  if (target) activeFaceVid.playbackRate = target.faceRate;
+
+  // Switch preview video
+  const newPV = previewVids[currentState];
+  if (newPV !== activePreviewVid) {
+    activePreviewVid.style.display = 'none';
+    activePreviewVid.pause();
+    activePreviewVid = newPV;
+    activePreviewVid.style.display = 'block';
+    activePreviewVid.currentTime = 0;
+    activePreviewVid.play();
+  }
+  if (target) activePreviewVid.playbackRate = target.faceRate;
+}
+
+function updateStateBar() {
+  document.querySelectorAll('#state-bar .state-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.state === currentState);
+  });
+}
+
+// ============================================================
+// FIELD INTERACTION
+// ============================================================
+
+fieldBar.addEventListener('click', (e) => {
+  if (currentState === 'idle' && !e.target.closest('#btn-sidebar')) {
+    setState('focused');
+  }
+});
+
+fieldInput.addEventListener('input', () => {
+  if (currentState === 'focused' && fieldInput.value.length > 0) {
+    setState('typing');
+  } else if (currentState === 'typing' && fieldInput.value.length === 0) {
+    setState('focused');
+  }
+  updateSendVoice();
+});
+
+fieldInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' && (currentState === 'typing' || (currentState === 'focused' && fieldInput.value.trim().length > 0))) {
+    e.preventDefault();
+    if (currentState === 'focused') setState('typing'); // briefly
+    setState('thinking');
+  }
+  if (e.key === 'Escape') {
+    setState('idle');
+  }
+});
+
+btnSend.addEventListener('click', (e) => {
+  e.stopPropagation();
+  if (currentState === 'typing' || currentState === 'focused') {
+    setState('thinking');
+  }
+});
+
+btnStop.addEventListener('click', (e) => {
+  e.stopPropagation();
+  setState('idle');
+});
+
+// Click outside to unfocus
+document.addEventListener('mousedown', (e) => {
+  if (currentState === 'focused' || currentState === 'typing') {
+    if (!fieldBar.contains(e.target) && !document.getElementById('panel').contains(e.target)) {
+      setState('idle');
+    }
+  }
+});
+
+// State bar manual switching
+document.querySelectorAll('#state-bar .state-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const s = btn.dataset.state;
+    if (s === 'typing') {
+      // Put some demo text
+      fieldInput.readOnly = false;
+      fieldInput.value = 'change the description to be shorter';
+      fieldInput.placeholder = 'Ask anything';
+    }
+    setState(s);
+    if (s === 'typing') {
+      updateSendVoice();
+    }
+  });
+});
+
+// ============================================================
+// ANIMATION LOOP
+// ============================================================
+
+function renderBlobs(blobEls, containerSize, t, opacity, isField) {
+  const phases = [0, 2.094, 4.189];
+  const tilts = [
+    [G.tilt1, G.tilt2],
+    [G.tilt1b, G.tilt2b],
+    [G.tilt1c, G.tilt2c],
+  ];
+  const colors = [G.c1, G.c2, G.c3];
+
+  // Clamp glow for field: limit blur and scale so it stays within the bar
+  let effectiveBlur = live.glowBlur;
+  let effectiveScale = live.glowScale;
+  if (isField) {
+    const maxVisibleBlur = 44 / (G.fieldOrbScale * 2); // max blur that fits bar height
+    effectiveBlur = Math.min(live.glowBlur, maxVisibleBlur);
+    effectiveScale = Math.min(live.glowScale, 0.5 / G.fieldOrbScale); // keep blobs bounded
+  }
+  const blobDia = containerSize * effectiveScale;
+
+  blobEls.forEach((b, i) => {
+    const pos = orbit3D(t, phases[i], live.orbRadius, tilts[i][0], tilts[i][1]);
+    const depth = (pos.z / Math.max(live.orbRadius, 0.01)) * 0.5 + 0.5;
+    const scale = 0.85 + depth * 0.3;
+    const cx = (containerSize / 2) + pos.x * containerSize - (blobDia * scale) / 2;
+    const cy = (containerSize / 2) + pos.y * containerSize - (blobDia * scale) / 2;
+
+    b.style.width = blobDia + 'px';
+    b.style.height = blobDia + 'px';
+    b.style.background = colors[i];
+    b.style.filter = `blur(${effectiveBlur}px)`;
+    b.style.opacity = opacity;
+    b.style.transform = `translate(${cx}px,${cy}px) scale(${scale})`;
+  });
+}
+
+function frame(ts) {
+  requestAnimationFrame(frame);
+  const dt = Math.min((ts - lastT) / 1000, 0.05);
+  lastT = ts;
+
+  // Lerp live values toward current state
+  const target = SP[currentState];
+  const spd = target.lerpSpeed;
+  const f = Math.min(spd * dt, 1);
+  live.orbSpeed += (target.orbSpeed - live.orbSpeed) * f;
+  live.orbRadius += (target.orbRadius - live.orbRadius) * f;
+  live.glowOpacity += (target.glowOpacity - live.glowOpacity) * f;
+  live.glowBlur += (target.glowBlur - live.glowBlur) * f;
+  live.glowScale += (target.glowScale - live.glowScale) * f;
+
+  // Accumulate phase
+  orbPhase += live.orbSpeed * dt;
+  const t = orbPhase;
+
+  // Apply orb layout
+  const sz = G.orbSize;
+  orbEl.style.width = sz + 'px';
+  orbEl.style.height = sz + 'px';
+  orbEl.style.transform = `translate(-50%,-50%) scale(${G.fieldOrbScale})`;
+
+  // Render field blobs (clamped to fit bar)
+  renderBlobs(fieldBlobs, sz, t, live.glowOpacity, true);
+
+  // Render preview blobs (unclamped, at natural orb size)
+  if (currentView === 'preview') {
+    const preview = document.getElementById('preview');
+    preview.style.width = sz + 'px';
+    preview.style.height = sz + 'px';
+    renderBlobs(previewBlobs, sz, t, live.glowOpacity, false);
+
+    document.getElementById('preview-face').style.mixBlendMode = G.faceBlend;
+  }
+
+  // Face
+  const face = document.getElementById('face');
+  face.style.width = G.faceSize + 'px';
+  face.style.height = G.faceSize + 'px';
+  faceSvg.style.width = G.faceSize + 'px';
+  faceSvg.style.height = G.faceSize + 'px';
+  faceSvg.style.color = G.faceColor;
+  const vidPx = (G.faceSize * 3.2) + 'px';
+  Object.values(faceVids).forEach(v => { v.style.width = vidPx; v.style.height = vidPx; });
+  face.style.mixBlendMode = G.faceBlend;
+
+  // Background
+  document.body.style.background = G.bgColor;
+}
+
+requestAnimationFrame(frame);
+
+// ============================================================
+// VIEW TOGGLE (Field / Preview)
+// ============================================================
+
+let currentView = 'field';
+document.querySelectorAll('.view-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentView = btn.dataset.view;
+    document.getElementById('field-container').style.display = currentView === 'field' ? '' : 'none';
+    document.getElementById('preview-container').style.display = currentView === 'preview' ? '' : 'none';
+  });
+});
+
+// ============================================================
+// VIDEO TOGGLE
+// ============================================================
+
+document.getElementById('ui-use-video').addEventListener('change', (e) => {
+  const on = e.target.checked;
+  faceSvg.style.display = on ? 'none' : 'block';
+  // Hide all videos first
+  Object.values(faceVids).forEach(v => { v.style.display = 'none'; v.pause(); });
+  if (on) {
+    activeFaceVid.style.display = 'block';
+    activeFaceVid.currentTime = 0;
+    activeFaceVid.play();
+  }
+});
+
+// ============================================================
+// PANEL WIRING — State Controls
+// ============================================================
+
+const stateKeys = ['orbSpeed','orbRadius','glowOpacity','glowBlur','glowScale','faceRate','lerpSpeed'];
+
+function syncStateControls() {
+  const params = SP[editingState];
+  document.querySelectorAll('[data-skey]').forEach(el => {
+    const key = el.dataset.skey;
+    el.value = params[key];
+    const step = parseFloat(el.step);
+    el.nextElementSibling.textContent = Number(params[key]).toFixed(step >= 1 ? 0 : 2);
+  });
+}
+
+document.querySelectorAll('[data-skey]').forEach(el => {
+  el.addEventListener('input', () => {
+    SP[editingState][el.dataset.skey] = parseFloat(el.value);
+    const step = parseFloat(el.step);
+    el.nextElementSibling.textContent = Number(el.value).toFixed(step >= 1 ? 0 : 2);
+    // If editing current state, update video rate too
+    if (editingState === currentState) updateVideoState();
+  });
+});
+
+// State tabs
+document.querySelectorAll('.state-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.state-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    editingState = tab.dataset.edit;
+    syncStateControls();
+  });
+});
+
+// ============================================================
+// PANEL WIRING — Global Controls
+// ============================================================
+
+function syncGlobalControls() {
+  document.querySelectorAll('[data-gkey]').forEach(el => {
+    const key = el.dataset.gkey;
+    if (el.type === 'range') {
+      el.value = G[key];
+      const step = parseFloat(el.step);
+      el.nextElementSibling.textContent = Number(G[key]).toFixed(step >= 1 ? 0 : 2);
+    } else if (el.type === 'color') {
+      el.value = G[key];
+      el.nextElementSibling.textContent = G[key].slice(1);
+    } else if (el.tagName === 'SELECT') {
+      el.value = G[key];
+    }
+  });
+}
+
+document.querySelectorAll('input[type=range][data-gkey]').forEach(el => {
+  el.addEventListener('input', () => {
+    G[el.dataset.gkey] = parseFloat(el.value);
+    const step = parseFloat(el.step);
+    el.nextElementSibling.textContent = Number(el.value).toFixed(step >= 1 ? 0 : 2);
+  });
+});
+
+document.querySelectorAll('input[type=color][data-gkey]').forEach(el => {
+  el.addEventListener('input', () => {
+    G[el.dataset.gkey] = el.value;
+    el.nextElementSibling.textContent = el.value.slice(1);
+  });
+});
+
+document.querySelectorAll('select[data-gkey]').forEach(el => {
+  el.addEventListener('change', () => { G[el.dataset.gkey] = el.value; });
+});
+
+// ============================================================
+// COLOR PRESETS
+// ============================================================
+
+const colorPresets = [
+  {name:'Sidekick',c1:'#3888ff',c2:'#ffd500',c3:'#4bff1e'},
+  {name:'Sidekick Alt',c1:'#1673FF',c2:'#FF6A00',c3:'#FF221E'},
+  {name:'Ocean',c1:'#0ea5e9',c2:'#06b6d4',c3:'#8b5cf6'},
+  {name:'Mint',c1:'#61ff9b',c2:'#5797ff',c3:'#c8ff5c'},
+  {name:'Sunset',c1:'#fb923c',c2:'#f43f5e',c3:'#a855f7'},
+  {name:'Aurora',c1:'#34d399',c2:'#22d3ee',c3:'#818cf8'},
+  {name:'Rose',c1:'#fb7185',c2:'#c084fc',c3:'#fda4af'},
+  {name:'Neon',c1:'#22ff22',c2:'#ff22ff',c3:'#22ffff'},
+  {name:'Warm',c1:'#f97316',c2:'#eab308',c3:'#ef4444'},
+  {name:'Ice',c1:'#93c5fd',c2:'#c4b5fd',c3:'#a5f3fc'},
+];
+
+const presetsEl = document.getElementById('color-presets');
+colorPresets.forEach(p => {
+  const btn = document.createElement('div');
+  btn.className = 'color-preset';
+  btn.title = p.name;
+  btn.innerHTML = `<div class="cp-a" style="background:${p.c1}"></div><div class="cp-b" style="background:${p.c2}"></div><div class="cp-c" style="background:${p.c3}"></div>`;
+  btn.onclick = () => { G.c1 = p.c1; G.c2 = p.c2; G.c3 = p.c3; syncGlobalControls(); };
+  presetsEl.appendChild(btn);
+});
+
+// ============================================================
+// SAVE / LOAD
+// ============================================================
+
+const SAVE_KEY = 'sidekick-field-lab-v1';
+function loadSaved() { try { return JSON.parse(localStorage.getItem(SAVE_KEY)) || {} } catch(e) { return {} } }
+function storeSaved(o) { localStorage.setItem(SAVE_KEY, JSON.stringify(o)) }
+
+function getFullConfig() {
+  return { G: {...G}, SP: JSON.parse(JSON.stringify(SP)) };
+}
+
+function applyFullConfig(cfg) {
+  if (cfg.G) Object.keys(cfg.G).forEach(k => { if (k in G) G[k] = cfg.G[k]; });
+  if (cfg.SP) {
+    ['idle','focused','typing','thinking'].forEach(s => {
+      if (cfg.SP[s]) Object.keys(cfg.SP[s]).forEach(k => { if (k in SP[s]) SP[s][k] = cfg.SP[s][k]; });
+    });
+  }
+  syncGlobalControls();
+  syncStateControls();
+}
+
+function renderSaved() {
+  const list = document.getElementById('saved-list');
+  list.innerHTML = '';
+  const saved = loadSaved();
+  const names = Object.keys(saved);
+  if (!names.length) { list.innerHTML = '<div class="p-empty">No saved presets</div>'; return; }
+  names.forEach(name => {
+    const row = document.createElement('div'); row.className = 'saved-item';
+    const btn = document.createElement('button'); btn.textContent = name;
+    btn.onclick = () => { applyFullConfig(saved[name]); };
+    const del = document.createElement('button'); del.className = 'del'; del.innerHTML = '&times;';
+    del.onclick = () => { const s = loadSaved(); delete s[name]; storeSaved(s); renderSaved(); };
+    row.appendChild(btn); row.appendChild(del); list.appendChild(row);
+  });
+}
+
+document.getElementById('btn-save').onclick = () => {
+  const name = prompt('Preset name:');
+  if (!name || !name.trim()) return;
+  const saved = loadSaved();
+  saved[name.trim()] = getFullConfig();
+  storeSaved(saved);
+  renderSaved();
+};
+
+document.getElementById('btn-json').onclick = () => {
+  navigator.clipboard.writeText(JSON.stringify(getFullConfig(), null, 2));
+  const b = document.getElementById('btn-json');
+  b.textContent = 'Copied!';
+  setTimeout(() => b.textContent = 'Copy JSON', 1500);
+};
+
+// ============================================================
+// INIT
+// ============================================================
+
+syncGlobalControls();
+syncStateControls();
+renderSaved();
+
+// Set initial tool group state
+toolsDefault.style.maxWidth = '0';
+toolsDefault.style.opacity = '0';
+toolsDefault.style.filter = 'blur(2px)';
+toolsDefault.style.pointerEvents = 'none';
+toolsThinking.style.maxWidth = '0';
+toolsThinking.style.opacity = '0';
+toolsThinking.style.filter = 'blur(2px)';
+toolsThinking.style.pointerEvents = 'none';
+
+</script>
+</body>
+</html>
