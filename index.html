@@ -454,16 +454,16 @@ const SP = {
     tilt1: 1.17, tilt2: 0.67, tilt1b: 0.79, tilt2b: 0.79, tilt1c: 1.22, tilt2c: 1.37,
   },
   focused: {
-    orbSpeed: 4.9, orbRadius: 0.19, glowOpacity: 0.61, glowBlur: 26, glowScale: 0.56,
+    orbSpeed: 4.9, orbRadius: 0.19, glowOpacity: 0.89, glowBlur: 26, glowScale: 0.56,
     faceRate: 1.0, lerpSpeed: 4.2,
-    orbSize: 80, fieldOrbScale: 0.30, faceSize: 23, faceBlend: 'overlay',
+    orbSize: 102, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'overlay',
     c1: '#3888ff', c2: '#ffd500', c3: '#4bff1e',
     tilt1: 1.17, tilt2: 0.67, tilt1b: 0.79, tilt2b: 0.79, tilt1c: 1.22, tilt2c: 1.37,
   },
   typing: {
-    orbSpeed: 4.9, orbRadius: 0.19, glowOpacity: 0.61, glowBlur: 26, glowScale: 0.56,
+    orbSpeed: 4.9, orbRadius: 0.19, glowOpacity: 0.89, glowBlur: 26, glowScale: 0.56,
     faceRate: 1.0, lerpSpeed: 4.2,
-    orbSize: 80, fieldOrbScale: 0.30, faceSize: 23, faceBlend: 'overlay',
+    orbSize: 102, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'overlay',
     c1: '#3888ff', c2: '#ffd500', c3: '#4bff1e',
     tilt1: 1.17, tilt2: 0.67, tilt1b: 0.79, tilt2b: 0.79, tilt1c: 1.22, tilt2c: 1.37,
   },
@@ -499,13 +499,30 @@ let orbPhase = 0;
 let lastT = 0;
 
 // Live interpolated values (lerped toward current state)
-const live = {
-  orbSpeed: SP.idle.orbSpeed,
-  orbRadius: SP.idle.orbRadius,
-  glowOpacity: SP.idle.glowOpacity,
-  glowBlur: SP.idle.glowBlur,
-  glowScale: SP.idle.glowScale,
-};
+// Numeric keys to lerp
+const LERP_KEYS = ['orbSpeed','orbRadius','glowOpacity','glowBlur','glowScale',
+  'orbSize','fieldOrbScale','faceSize',
+  'tilt1','tilt2','tilt1b','tilt2b','tilt1c','tilt2c'];
+
+// Color keys to lerp in RGB
+const COLOR_KEYS = ['c1','c2','c3'];
+
+const live = {};
+LERP_KEYS.forEach(k => live[k] = SP.idle[k]);
+COLOR_KEYS.forEach(k => live[k] = SP.idle[k]);
+live.faceBlend = SP.idle.faceBlend;
+
+function hexToRgb(h) {
+  const v = parseInt(h.slice(1), 16);
+  return [(v >> 16) & 255, (v >> 8) & 255, v & 255];
+}
+function rgbToHex(r, g, b) {
+  return '#' + ((1 << 24) + (Math.round(r) << 16) + (Math.round(g) << 8) + Math.round(b)).toString(16).slice(1);
+}
+function lerpColor(from, to, f) {
+  const a = hexToRgb(from), b = hexToRgb(to);
+  return rgbToHex(a[0] + (b[0]-a[0])*f, a[1] + (b[1]-a[1])*f, a[2] + (b[2]-a[2])*f);
+}
 
 // ============================================================
 // DOM REFS
@@ -738,19 +755,18 @@ document.addEventListener('mousedown', (e) => {
 
 function renderBlobs(blobEls, containerSize, t, opacity, isField) {
   const phases = [0, 2.094, 4.189];
-  const st = SP[currentState];
   const tilts = [
-    [st.tilt1, st.tilt2],
-    [st.tilt1b, st.tilt2b],
-    [st.tilt1c, st.tilt2c],
+    [live.tilt1, live.tilt2],
+    [live.tilt1b, live.tilt2b],
+    [live.tilt1c, live.tilt2c],
   ];
-  const colors = [st.c1, st.c2, st.c3];
+  const colors = [live.c1, live.c2, live.c3];
 
   // Clamp glow for field: limit blur and scale so it stays within the bar
   let effectiveBlur = live.glowBlur;
   let effectiveScale = live.glowScale;
   if (isField) {
-    const fos = SP[currentState].fieldOrbScale;
+    const fos = live.fieldOrbScale;
     const maxVisibleBlur = 44 / (fos * 2); // max blur that fits bar height
     effectiveBlur = Math.min(live.glowBlur, maxVisibleBlur);
     effectiveScale = Math.min(live.glowScale, 0.5 / fos); // keep blobs bounded
@@ -778,26 +794,23 @@ function frame(ts) {
   const dt = Math.min((ts - lastT) / 1000, 0.05);
   lastT = ts;
 
-  // Lerp live values toward current state
+  // Lerp ALL live values toward current state
   const target = SP[currentState];
   const spd = target.lerpSpeed;
   const f = Math.min(spd * dt, 1);
-  live.orbSpeed += (target.orbSpeed - live.orbSpeed) * f;
-  live.orbRadius += (target.orbRadius - live.orbRadius) * f;
-  live.glowOpacity += (target.glowOpacity - live.glowOpacity) * f;
-  live.glowBlur += (target.glowBlur - live.glowBlur) * f;
-  live.glowScale += (target.glowScale - live.glowScale) * f;
+  LERP_KEYS.forEach(k => { live[k] += (target[k] - live[k]) * f; });
+  COLOR_KEYS.forEach(k => { live[k] = lerpColor(live[k], target[k], f); });
+  live.faceBlend = target.faceBlend;
 
   // Accumulate phase
   orbPhase += live.orbSpeed * dt;
   const t = orbPhase;
 
-  // Apply orb layout (per-state)
-  const st = SP[currentState];
-  const sz = st.orbSize;
+  // Apply orb layout (lerped)
+  const sz = live.orbSize;
   orbEl.style.width = sz + 'px';
   orbEl.style.height = sz + 'px';
-  orbEl.style.transform = `translate(-50%,-50%) scale(${st.fieldOrbScale})`;
+  orbEl.style.transform = `translate(-50%,-50%) scale(${live.fieldOrbScale})`;
 
   // Render field blobs (clamped to fit bar)
   renderBlobs(fieldBlobs, sz, t, live.glowOpacity, true);
@@ -809,19 +822,20 @@ function frame(ts) {
     preview.style.height = sz + 'px';
     renderBlobs(previewBlobs, sz, t, live.glowOpacity, false);
 
-    document.getElementById('preview-face').style.mixBlendMode = st.faceBlend;
+    document.getElementById('preview-face').style.mixBlendMode = live.faceBlend;
   }
 
-  // Face (per-state)
+  // Face (lerped)
   const face = document.getElementById('face');
-  face.style.width = st.faceSize + 'px';
-  face.style.height = st.faceSize + 'px';
-  faceSvg.style.width = st.faceSize + 'px';
-  faceSvg.style.height = st.faceSize + 'px';
+  const fs = live.faceSize;
+  face.style.width = fs + 'px';
+  face.style.height = fs + 'px';
+  faceSvg.style.width = fs + 'px';
+  faceSvg.style.height = fs + 'px';
   faceSvg.style.color = G.faceColor;
-  const vidPx = (st.faceSize * 3.2) + 'px';
+  const vidPx = (fs * 3.2) + 'px';
   Object.values(faceVids).forEach(v => { v.style.width = vidPx; v.style.height = vidPx; });
-  face.style.mixBlendMode = st.faceBlend;
+  face.style.mixBlendMode = live.faceBlend;
 
   // Background
   document.body.style.background = G.bgColor;
