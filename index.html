@@ -393,52 +393,40 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
 
   <!-- Colors -->
   <div class="p-section">
-    <div class="p-label">Colors</div>
+    <div class="p-label">Colors (per state)</div>
     <div class="color-presets" id="color-presets"></div>
-    <div class="p-color"><label>Glow A</label><input type="color" data-gkey="c1"><span class="p-hex"></span></div>
-    <div class="p-color"><label>Glow B</label><input type="color" data-gkey="c2"><span class="p-hex"></span></div>
-    <div class="p-color"><label>Glow C</label><input type="color" data-gkey="c3"><span class="p-hex"></span></div>
+    <div class="p-color"><label>Glow A</label><input type="color" data-skey="c1"><span class="p-hex"></span></div>
+    <div class="p-color"><label>Glow B</label><input type="color" data-skey="c2"><span class="p-hex"></span></div>
+    <div class="p-color"><label>Glow C</label><input type="color" data-skey="c3"><span class="p-hex"></span></div>
     <div class="p-color"><label>Background</label><input type="color" data-gkey="bgColor"><span class="p-hex"></span></div>
     <div class="p-color"><label>Face Color</label><input type="color" data-gkey="faceColor"><span class="p-hex"></span></div>
   </div>
 
-  <!-- Global -->
+  <!-- Display (per state) -->
   <div class="p-section">
-    <div class="p-label">Global</div>
-    <div class="p-row"><label>Orb Size</label><input type="range" data-gkey="orbSize" min="40" max="300" step="2"><span class="p-val"></span></div>
-    <div class="p-row"><label>Field Scale</label><input type="range" data-gkey="fieldOrbScale" min="0.1" max="1.5" step="0.01"><span class="p-val"></span></div>
-    <div class="p-row"><label>Face Size</label><input type="range" data-gkey="faceSize" min="10" max="40" step="1"><span class="p-val"></span></div>
-    <div class="p-row"><label>Think Time</label><input type="range" data-gkey="thinkDuration" min="1" max="15" step="0.5"><span class="p-val"></span></div>
-    <div class="p-row"><label>Face Blend</label><select data-gkey="faceBlend">
+    <div class="p-label">Display (per state)</div>
+    <div class="p-row"><label>Orb Size</label><input type="range" data-skey="orbSize" min="40" max="300" step="2"><span class="p-val"></span></div>
+    <div class="p-row"><label>Field Scale</label><input type="range" data-skey="fieldOrbScale" min="0.1" max="1.5" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Face Size</label><input type="range" data-skey="faceSize" min="10" max="40" step="1"><span class="p-val"></span></div>
+    <div class="p-row"><label>Face Blend</label><select data-skey="faceBlend">
       <option>normal</option><option>multiply</option><option>screen</option><option>overlay</option>
       <option>darken</option><option>lighten</option><option>color-dodge</option><option>soft-light</option>
     </select></div>
     <div class="p-check"><input type="checkbox" id="ui-use-video" checked><label for="ui-use-video">Animated Face (video)</label></div>
   </div>
 
-  <!-- Orbits -->
+  <!-- Orbits (per state) -->
   <div class="p-section">
-    <div class="p-label">Orbits</div>
+    <div class="p-label">Orbits (per state)</div>
     <div class="p-row" style="margin-bottom:2px"><label style="color:rgba(0,0,0,0.25);font-size:9px">Orb A</label></div>
-    <div class="p-row"><label>Tilt X</label><input type="range" data-gkey="tilt1" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
-    <div class="p-row"><label>Tilt Y</label><input type="range" data-gkey="tilt2" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Tilt X</label><input type="range" data-skey="tilt1" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Tilt Y</label><input type="range" data-skey="tilt2" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
     <div class="p-row" style="margin-bottom:2px"><label style="color:rgba(0,0,0,0.25);font-size:9px">Orb B</label></div>
-    <div class="p-row"><label>Tilt X</label><input type="range" data-gkey="tilt1b" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
-    <div class="p-row"><label>Tilt Y</label><input type="range" data-gkey="tilt2b" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Tilt X</label><input type="range" data-skey="tilt1b" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Tilt Y</label><input type="range" data-skey="tilt2b" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
     <div class="p-row" style="margin-bottom:2px"><label style="color:rgba(0,0,0,0.25);font-size:9px">Orb C</label></div>
-    <div class="p-row"><label>Tilt X</label><input type="range" data-gkey="tilt1c" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
-    <div class="p-row"><label>Tilt Y</label><input type="range" data-gkey="tilt2c" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
-  </div>
-
-  <!-- State Switcher -->
-  <div class="p-section">
-    <div class="p-label">Switch State</div>
-    <div id="state-bar">
-      <button class="state-btn active" data-state="idle">Idle</button>
-      <button class="state-btn" data-state="focused">Focused</button>
-      <button class="state-btn" data-state="typing">Typing</button>
-      <button class="state-btn" data-state="thinking">Thinking</button>
-    </div>
+    <div class="p-row"><label>Tilt X</label><input type="range" data-skey="tilt1c" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Tilt Y</label><input type="range" data-skey="tilt2c" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
   </div>
 
   <!-- Presets -->
@@ -459,40 +447,32 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
 
 const SP = {
   idle: {
-    orbSpeed: 1.5,
-    orbRadius: 0.15,
-    glowOpacity: 0,
-    glowBlur: 40,
-    glowScale: 0.65,
-    faceRate: 1.0,
-    lerpSpeed: 5,
+    orbSpeed: 1.5, orbRadius: 0.15, glowOpacity: 0, glowBlur: 40, glowScale: 0.65,
+    faceRate: 1.0, lerpSpeed: 5,
+    orbSize: 80, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'overlay',
+    c1: '#3888ff', c2: '#ffd500', c3: '#4bff1e',
+    tilt1: 1.17, tilt2: 0.67, tilt1b: 0.79, tilt2b: 0.79, tilt1c: 1.22, tilt2c: 1.37,
   },
   focused: {
-    orbSpeed: 4.9,
-    orbRadius: 0.19,
-    glowOpacity: 0.48,
-    glowBlur: 18,
-    glowScale: 0.57,
-    faceRate: 1.0,
-    lerpSpeed: 4.2,
+    orbSpeed: 4.9, orbRadius: 0.19, glowOpacity: 0.61, glowBlur: 26, glowScale: 0.56,
+    faceRate: 1.0, lerpSpeed: 4.2,
+    orbSize: 80, fieldOrbScale: 0.30, faceSize: 23, faceBlend: 'overlay',
+    c1: '#3888ff', c2: '#ffd500', c3: '#4bff1e',
+    tilt1: 1.17, tilt2: 0.67, tilt1b: 0.79, tilt2b: 0.79, tilt1c: 1.22, tilt2c: 1.37,
   },
   typing: {
-    orbSpeed: 4.9,
-    orbRadius: 0.19,
-    glowOpacity: 0.48,
-    glowBlur: 18,
-    glowScale: 0.57,
-    faceRate: 1.0,
-    lerpSpeed: 4.2,
+    orbSpeed: 4.9, orbRadius: 0.19, glowOpacity: 0.61, glowBlur: 26, glowScale: 0.56,
+    faceRate: 1.0, lerpSpeed: 4.2,
+    orbSize: 80, fieldOrbScale: 0.30, faceSize: 23, faceBlend: 'overlay',
+    c1: '#3888ff', c2: '#ffd500', c3: '#4bff1e',
+    tilt1: 1.17, tilt2: 0.67, tilt1b: 0.79, tilt2b: 0.79, tilt1c: 1.22, tilt2c: 1.37,
   },
   thinking: {
-    orbSpeed: 10.8,
-    orbRadius: 0.18,
-    glowOpacity: 0.76,
-    glowBlur: 15,
-    glowScale: 0.85,
-    faceRate: 0.6,
-    lerpSpeed: 3,
+    orbSpeed: 12.3, orbRadius: 0.15, glowOpacity: 1.0, glowBlur: 23, glowScale: 0.71,
+    faceRate: 0.6, lerpSpeed: 3,
+    orbSize: 80, fieldOrbScale: 0.30, faceSize: 23, faceBlend: 'overlay',
+    c1: '#8198ff', c2: '#5aff57', c3: '#5cfce4',
+    tilt1: 1.07, tilt2: 0.45, tilt1b: 1.13, tilt2b: 0.58, tilt1c: 2.78, tilt2c: 1.74,
   },
 };
 
@@ -501,17 +481,9 @@ const SP = {
 // ============================================================
 
 const G = {
-  c1: '#3888ff', c2: '#ffd500', c3: '#4bff1e',
   bgColor: '#f0f0f0',
   faceColor: '#1a5c2e',
-  orbSize: 92,
-  fieldOrbScale: 0.41,
-  faceSize: 23,
-  faceBlend: 'overlay',
   thinkDuration: 5,
-  tilt1: 1.17, tilt2: 0.67,
-  tilt1b: 0.79, tilt2b: 0.79,
-  tilt1c: 1.22, tilt2c: 1.37,
 };
 
 // ============================================================
@@ -701,9 +673,11 @@ function updateVideoState() {
 }
 
 function updateStateBar() {
-  document.querySelectorAll('#state-bar .state-btn').forEach(b => {
-    b.classList.toggle('active', b.dataset.state === currentState);
+  document.querySelectorAll('.state-tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.edit === currentState);
   });
+  editingState = currentState;
+  syncStateControls();
 }
 
 // ============================================================
@@ -757,22 +731,6 @@ document.addEventListener('mousedown', (e) => {
   }
 });
 
-// State bar manual switching
-document.querySelectorAll('#state-bar .state-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const s = btn.dataset.state;
-    if (s === 'typing') {
-      // Put some demo text
-      fieldInput.readOnly = false;
-      fieldInput.value = 'change the description to be shorter';
-      fieldInput.placeholder = 'Ask anything';
-    }
-    setState(s);
-    if (s === 'typing') {
-      updateSendVoice();
-    }
-  });
-});
 
 // ============================================================
 // ANIMATION LOOP
@@ -780,20 +738,22 @@ document.querySelectorAll('#state-bar .state-btn').forEach(btn => {
 
 function renderBlobs(blobEls, containerSize, t, opacity, isField) {
   const phases = [0, 2.094, 4.189];
+  const st = SP[currentState];
   const tilts = [
-    [G.tilt1, G.tilt2],
-    [G.tilt1b, G.tilt2b],
-    [G.tilt1c, G.tilt2c],
+    [st.tilt1, st.tilt2],
+    [st.tilt1b, st.tilt2b],
+    [st.tilt1c, st.tilt2c],
   ];
-  const colors = [G.c1, G.c2, G.c3];
+  const colors = [st.c1, st.c2, st.c3];
 
   // Clamp glow for field: limit blur and scale so it stays within the bar
   let effectiveBlur = live.glowBlur;
   let effectiveScale = live.glowScale;
   if (isField) {
-    const maxVisibleBlur = 44 / (G.fieldOrbScale * 2); // max blur that fits bar height
+    const fos = SP[currentState].fieldOrbScale;
+    const maxVisibleBlur = 44 / (fos * 2); // max blur that fits bar height
     effectiveBlur = Math.min(live.glowBlur, maxVisibleBlur);
-    effectiveScale = Math.min(live.glowScale, 0.5 / G.fieldOrbScale); // keep blobs bounded
+    effectiveScale = Math.min(live.glowScale, 0.5 / fos); // keep blobs bounded
   }
   const blobDia = containerSize * effectiveScale;
 
@@ -832,11 +792,12 @@ function frame(ts) {
   orbPhase += live.orbSpeed * dt;
   const t = orbPhase;
 
-  // Apply orb layout
-  const sz = G.orbSize;
+  // Apply orb layout (per-state)
+  const st = SP[currentState];
+  const sz = st.orbSize;
   orbEl.style.width = sz + 'px';
   orbEl.style.height = sz + 'px';
-  orbEl.style.transform = `translate(-50%,-50%) scale(${G.fieldOrbScale})`;
+  orbEl.style.transform = `translate(-50%,-50%) scale(${st.fieldOrbScale})`;
 
   // Render field blobs (clamped to fit bar)
   renderBlobs(fieldBlobs, sz, t, live.glowOpacity, true);
@@ -848,19 +809,19 @@ function frame(ts) {
     preview.style.height = sz + 'px';
     renderBlobs(previewBlobs, sz, t, live.glowOpacity, false);
 
-    document.getElementById('preview-face').style.mixBlendMode = G.faceBlend;
+    document.getElementById('preview-face').style.mixBlendMode = st.faceBlend;
   }
 
-  // Face
+  // Face (per-state)
   const face = document.getElementById('face');
-  face.style.width = G.faceSize + 'px';
-  face.style.height = G.faceSize + 'px';
-  faceSvg.style.width = G.faceSize + 'px';
-  faceSvg.style.height = G.faceSize + 'px';
+  face.style.width = st.faceSize + 'px';
+  face.style.height = st.faceSize + 'px';
+  faceSvg.style.width = st.faceSize + 'px';
+  faceSvg.style.height = st.faceSize + 'px';
   faceSvg.style.color = G.faceColor;
-  const vidPx = (G.faceSize * 3.2) + 'px';
+  const vidPx = (st.faceSize * 3.2) + 'px';
   Object.values(faceVids).forEach(v => { v.style.width = vidPx; v.style.height = vidPx; });
-  face.style.mixBlendMode = G.faceBlend;
+  face.style.mixBlendMode = st.faceBlend;
 
   // Background
   document.body.style.background = G.bgColor;
@@ -907,31 +868,60 @@ const stateKeys = ['orbSpeed','orbRadius','glowOpacity','glowBlur','glowScale','
 
 function syncStateControls() {
   const params = SP[editingState];
-  document.querySelectorAll('[data-skey]').forEach(el => {
+  document.querySelectorAll('input[type=range][data-skey]').forEach(el => {
     const key = el.dataset.skey;
     el.value = params[key];
     const step = parseFloat(el.step);
     el.nextElementSibling.textContent = Number(params[key]).toFixed(step >= 1 ? 0 : 2);
   });
+  document.querySelectorAll('input[type=color][data-skey]').forEach(el => {
+    const key = el.dataset.skey;
+    el.value = params[key];
+    el.nextElementSibling.textContent = params[key].slice(1);
+  });
+  document.querySelectorAll('select[data-skey]').forEach(el => {
+    el.value = params[el.dataset.skey];
+  });
 }
 
-document.querySelectorAll('[data-skey]').forEach(el => {
+document.querySelectorAll('input[type=range][data-skey]').forEach(el => {
   el.addEventListener('input', () => {
     SP[editingState][el.dataset.skey] = parseFloat(el.value);
     const step = parseFloat(el.step);
     el.nextElementSibling.textContent = Number(el.value).toFixed(step >= 1 ? 0 : 2);
-    // If editing current state, update video rate too
     if (editingState === currentState) updateVideoState();
   });
 });
 
-// State tabs
+document.querySelectorAll('input[type=color][data-skey]').forEach(el => {
+  el.addEventListener('input', () => {
+    SP[editingState][el.dataset.skey] = el.value;
+    el.nextElementSibling.textContent = el.value.slice(1);
+  });
+});
+
+document.querySelectorAll('select[data-skey]').forEach(el => {
+  el.addEventListener('change', () => {
+    SP[editingState][el.dataset.skey] = el.value;
+  });
+});
+
+// State tabs — also switches the active field state
 document.querySelectorAll('.state-tab').forEach(tab => {
   tab.addEventListener('click', () => {
     document.querySelectorAll('.state-tab').forEach(t => t.classList.remove('active'));
     tab.classList.add('active');
     editingState = tab.dataset.edit;
     syncStateControls();
+    // Also switch field state
+    const s = tab.dataset.edit;
+    if (s === 'typing') {
+      fieldInput.readOnly = false;
+      fieldInput.value = 'change the description to be shorter';
+      fieldInput.placeholder = 'Ask anything';
+    }
+    setState(s);
+    if (s === 'typing') updateSendVoice();
   });
 });
 
@@ -997,7 +987,7 @@ colorPresets.forEach(p => {
   btn.className = 'color-preset';
   btn.title = p.name;
   btn.innerHTML = `<div class="cp-a" style="background:${p.c1}"></div><div class="cp-b" style="background:${p.c2}"></div><div class="cp-c" style="background:${p.c3}"></div>`;
-  btn.onclick = () => { G.c1 = p.c1; G.c2 = p.c2; G.c3 = p.c3; syncGlobalControls(); };
+  btn.onclick = () => { SP[editingState].c1 = p.c1; SP[editingState].c2 = p.c2; SP[editingState].c3 = p.c3; syncStateControls(); };
   presetsEl.appendChild(btn);
 });
 
