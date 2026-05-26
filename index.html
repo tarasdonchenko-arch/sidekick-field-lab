@@ -683,7 +683,7 @@ function updateVideoState() {
     activePreviewVid.pause();
     activePreviewVid = newPV;
     activePreviewVid.style.display = 'block';
-    activePreviewVid.currentTime = 0;
+    activePreviewVid.currentTime = (currentState === 'thinking') ? 0.6 : 0;
     activePreviewVid.play();
   }
   if (target) activePreviewVid.playbackRate = target.faceRate;
@@ -869,7 +869,8 @@ document.getElementById('ui-use-video').addEventListener('change', (e) => {
   Object.values(faceVids).forEach(v => { v.style.display = 'none'; v.pause(); });
   if (on) {
     activeFaceVid.style.display = 'block';
-    activeFaceVid.currentTime = 0;
+    // Skip face frames in thinking video - jump to spinner start
+    activeFaceVid.currentTime = (currentState === 'thinking') ? 0.6 : 0;
     activeFaceVid.play();
   }
 });
