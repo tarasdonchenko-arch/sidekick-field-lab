@@ -79,6 +79,7 @@ body{background:#f0f0f0;color:#111}
 .tool-group.visible{opacity:1;filter:none;pointer-events:auto;max-width:200px;padding:0 2px}
 .tool-group{max-width:0;padding:0;overflow:hidden;opacity:0;filter:blur(2px);pointer-events:none;
   transition:opacity 0.3s ease-out,filter 0.3s ease-out,max-width 0.35s cubic-bezier(0.2,0.8,0,1),padding 0.35s cubic-bezier(0.2,0.8,0,1);
+  margin-right:2px;
 }
 
 /* ── Buttons ── */
@@ -92,7 +93,7 @@ body{background:#f0f0f0;color:#111}
 .tool-btn svg{display:block}
 
 #btn-send{
-  width:28px;height:28px;border:none;border-radius:50%;
+  width:32px;height:32px;border:none;border-radius:50%;
   background:none;color:white;cursor:pointer;flex-shrink:0;
   display:flex;align-items:center;justify-content:center;
   transition:transform 0.15s ease;
@@ -102,12 +103,12 @@ body{background:#f0f0f0;color:#111}
 #btn-send svg{display:block}
 
 #btn-stop{
-  width:28px;height:28px;border:none;border-radius:50%;
-  background:#555;color:white;cursor:pointer;flex-shrink:0;
+  width:32px;height:32px;border:none;border-radius:50%;
+  background:none;cursor:pointer;flex-shrink:0;
   display:flex;align-items:center;justify-content:center;
-  transition:transform 0.15s ease,background 0.15s ease;
+  transition:transform 0.15s ease;
 }
-#btn-stop:hover{background:#444;transform:scale(1.05)}
+#btn-stop:hover{transform:scale(1.05)}
 #btn-stop:active{transform:scale(0.95)}
 
 /* ── Divider ── */
@@ -346,7 +347,7 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
       <!-- Tools: stop (thinking) -->
       <div id="tools-thinking" class="tool-group">
         <button id="btn-stop" aria-label="Stop">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="5" y="5" width="6" height="6" rx="1" fill="white"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="#333"/><rect x="9" y="9" width="6" height="6" rx="1.5" fill="white"/></svg>
         </button>
       </div>
 
@@ -466,7 +467,7 @@ const SP = {
   thinking: {
     orbSpeed: 12.3, orbRadius: 0.15, glowOpacity: 1.0, glowBlur: 23, glowScale: 0.71,
     faceRate: 0.6, lerpSpeed: 3,
-    orbSize: 80, fieldOrbScale: 0.30, faceSize: 23, faceBlend: 'overlay',
+    orbSize: 80, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'overlay',
     c1: '#8198ff', c2: '#5aff57', c3: '#5cfce4',
     tilt1: 1.07, tilt2: 0.45, tilt1b: 1.13, tilt2b: 0.58, tilt1c: 2.78, tilt2c: 1.74,
   },
