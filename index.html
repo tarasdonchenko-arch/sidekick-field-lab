@@ -16,6 +16,7 @@ body{background:#f0f0f0;color:#111}
 #app{position:relative;width:calc(100% - 304px);height:100%;display:flex;align-items:center;justify-content:center}
 
 /* ── Field Bar ── */
+#canvas-content{transition:transform 0.3s cubic-bezier(0.2,0.8,0,1)}
 #field-container{display:flex;align-items:center;justify-content:center}
 #field-bar{
   position:relative;display:flex;align-items:stretch;
@@ -127,12 +128,32 @@ body{background:#f0f0f0;color:#111}
 #btn-sidebar:hover{color:#555}
 
 /* ── View Switcher (main canvas) ── */
-#view-bar{
+/* ── Canvas Controls (bottom bar) ── */
+#canvas-controls{
   position:absolute;bottom:32px;left:50%;transform:translateX(-50%);
-  display:flex;gap:1px;padding:3px;
-  background:rgba(255,255,255,0.64);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-  border-radius:10px;border:1px solid rgba(0,0,0,0.05);z-index:10;
+  display:flex;align-items:center;gap:12px;z-index:10;
 }
+#view-bar{
+  display:flex;gap:1px;padding:3px;height:34px;
+  background:rgba(255,255,255,0.64);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-radius:10px;border:1px solid rgba(0,0,0,0.05);
+}
+#zoom-bar{
+  display:flex;align-items:center;gap:6px;padding:3px 12px;
+  background:rgba(255,255,255,0.64);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-radius:10px;border:1px solid rgba(0,0,0,0.05);
+  height:34px;
+}
+#zoom-bar label{font-size:12px;color:rgba(0,0,0,0.32);font-weight:500;font-family:inherit;white-space:nowrap}
+#zoom-bar input[type=range]{width:80px}
+.zoom-reset{
+  font-size:11px;font-weight:600;font-family:inherit;
+  color:rgba(0,0,0,0.3);background:rgba(0,0,0,0.05);
+  border:none;border-radius:5px;padding:2px 8px;cursor:pointer;
+  transition:color 0.15s ease,background 0.15s ease;white-space:nowrap;
+}
+.zoom-reset:hover{color:rgba(0,0,0,0.6);background:rgba(0,0,0,0.08)}
+.zoom-reset.is-default{color:rgba(0,0,0,0.15);background:transparent;pointer-events:none}
 .view-btn{
   padding:6px 20px;border:none;border-radius:7px;
   background:transparent;color:rgba(0,0,0,0.32);font-size:12px;font-weight:500;
@@ -144,7 +165,7 @@ body{background:#f0f0f0;color:#111}
 
 /* ── Preview Container (main canvas) ── */
 #preview-container{
-  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  display:flex;align-items:center;justify-content:center;
   pointer-events:none;
 }
 #preview{
@@ -156,7 +177,7 @@ body{background:#f0f0f0;color:#111}
   z-index:5;pointer-events:none;
 }
 .preview-vid{
-  width:200%;height:200%;object-fit:contain;
+  object-fit:contain;
 }
 
 /* ── State Bar (in panel) ── */
@@ -293,12 +314,20 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
 </svg>
 
 <div id="app">
-  <!-- View switcher -->
-  <div id="view-bar">
-    <button class="view-btn active" data-view="field">Field</button>
-    <button class="view-btn" data-view="preview">Preview</button>
+  <!-- Canvas controls -->
+  <div id="canvas-controls">
+    <div id="view-bar">
+      <button class="view-btn active" data-view="field">Field</button>
+      <button class="view-btn" data-view="preview">Preview</button>
+    </div>
+    <div id="zoom-bar">
+      <label>Zoom</label>
+      <input type="range" id="canvas-zoom" min="0.5" max="4" step="0.1" value="1">
+      <button id="zoom-reset" class="zoom-reset">1x</button>
+    </div>
   </div>
 
+  <div id="canvas-content">
   <!-- Preview (orb close-up) -->
   <div id="preview-container" style="display:none">
     <div id="preview">
@@ -367,6 +396,7 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
     </div>
   </div>
 
+  </div><!-- /canvas-content -->
 </div>
 
 <!-- ── Panel ── -->
@@ -455,7 +485,7 @@ const SP = {
   idle: {
     orbSpeed: 1.5, orbRadius: 0.15, glowOpacity: 0, glowBlur: 40, glowScale: 0.65,
     faceRate: 1.0, lerpSpeed: 5,
-    orbSize: 80, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'overlay', faceVideoColor: '#0000FC',
+    orbSize: 80, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'normal', faceVideoColor: '#0000FC',
     c1: '#3888ff', c2: '#ffd500', c3: '#4bff1e',
     tilt1: 1.17, tilt2: 0.67, tilt1b: 0.79, tilt2b: 0.79, tilt1c: 1.22, tilt2c: 1.37,
   },
@@ -825,6 +855,11 @@ function frame(ts) {
     renderBlobs(previewBlobs, sz, t, live.glowOpacity, false);
 
     document.getElementById('preview-face').style.mixBlendMode = live.faceBlend;
+    // Size and tint the preview face video
+    const pvPx = (sz * 0.8) + 'px';
+    previewVid.style.width = pvPx;
+    previewVid.style.height = pvPx;
+    previewVid.style.filter = 'url(#face-tint)';
   }
 
   // Face (lerped)
@@ -848,6 +883,29 @@ function frame(ts) {
 }
 
 requestAnimationFrame(frame);
+
+// ============================================================
+// CANVAS ZOOM
+// ============================================================
+
+const canvasContent = document.getElementById('canvas-content');
+const canvasZoomInput = document.getElementById('canvas-zoom');
+const zoomResetBtn = document.getElementById('zoom-reset');
+
+function updateZoom(z) {
+  canvasContent.style.transform = `scale(${z})`;
+  canvasZoomInput.value = z;
+  zoomResetBtn.textContent = z === 1 ? '1x' : z.toFixed(1) + 'x';
+  zoomResetBtn.classList.toggle('is-default', z === 1);
+}
+
+canvasZoomInput.addEventListener('input', () => {
+  updateZoom(parseFloat(canvasZoomInput.value));
+});
+
+zoomResetBtn.addEventListener('click', () => {
+  updateZoom(1);
+});
 
 // ============================================================
 // VIEW TOGGLE (Field / Preview)
