@@ -163,21 +163,18 @@ body{background:#f0f0f0;color:#111}
 .view-btn:hover{color:rgba(0,0,0,0.55);background:rgba(0,0,0,0.04)}
 .view-btn.active{background:rgba(0,0,0,0.88);color:#fff}
 
-/* ── Preview Container (main canvas) ── */
-#preview-container{
-  display:flex;align-items:center;justify-content:center;
-  pointer-events:none;
+/* ── Preview Mode — hide bar chrome, show only orb+face ── */
+body.preview-mode #field-bar{
+  background:transparent !important;
+  box-shadow:none !important;
+  overflow:visible;
+  width:44px !important;
 }
-#preview{
-  position:relative;overflow:visible;
-}
-#preview .blob{position:absolute;border-radius:50%}
-#preview-face{
-  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-  z-index:5;pointer-events:none;
-}
-.preview-vid{
-  object-fit:contain;
+body.preview-mode #field-input-wrap,
+body.preview-mode .tool-group,
+body.preview-mode #field-divider,
+body.preview-mode #btn-sidebar{
+  display:none !important;
 }
 
 /* ── State Bar (in panel) ── */
@@ -328,18 +325,6 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
   </div>
 
   <div id="canvas-content">
-  <!-- Preview (orb close-up) -->
-  <div id="preview-container" style="display:none">
-    <div id="preview">
-      <div class="blob" id="pb0"></div>
-      <div class="blob" id="pb1"></div>
-      <div class="blob" id="pb2"></div>
-      <div id="preview-face">
-        <video class="preview-vid" id="pv-vid" src="face-black.webm" muted playsinline preload="auto" autoplay></video>
-      </div>
-    </div>
-  </div>
-
   <div id="field-container" data-state="idle">
     <div id="field-bar">
       <!-- Icon: glow orb + face -->
@@ -575,7 +560,6 @@ const btnSend = document.getElementById('btn-send');
 const btnStop = document.getElementById('btn-stop');
 const faceSvg = document.getElementById('face-svg');
 const faceVid = document.getElementById('face-vid');
-const previewVid = document.getElementById('pv-vid');
 const orbEl = document.getElementById('orb');
 
 // Video segment ranges per state [start, end] in seconds
@@ -599,13 +583,11 @@ function loopSegments() {
   const seg = VIDEO_SEGMENTS[currentState];
   if (seg) {
     enforceSegment(faceVid, seg);
-    enforceSegment(previewVid, seg);
   }
   requestAnimationFrame(loopSegments);
 }
 requestAnimationFrame(loopSegments);
 const fieldBlobs = [document.getElementById('b0'), document.getElementById('b1'), document.getElementById('b2')];
-const previewBlobs = [document.getElementById('pb0'), document.getElementById('pb1'), document.getElementById('pb2')];
 
 // ============================================================
 // 3D ORBIT MATH
@@ -715,10 +697,6 @@ function updateVideoState() {
   faceVid.currentTime = seg[0];
   faceVid.playbackRate = target.faceRate;
   faceVid.play();
-
-  previewVid.currentTime = seg[0];
-  previewVid.playbackRate = target.faceRate;
-  previewVid.play();
 }
 
 function updateStateBar() {
@@ -847,20 +825,6 @@ function frame(ts) {
   // Render field blobs (clamped to fit bar)
   renderBlobs(fieldBlobs, sz, t, live.glowOpacity, true);
 
-  // Render preview blobs (unclamped, at natural orb size)
-  if (currentView === 'preview') {
-    const preview = document.getElementById('preview');
-    preview.style.width = sz + 'px';
-    preview.style.height = sz + 'px';
-    renderBlobs(previewBlobs, sz, t, live.glowOpacity, false);
-
-    document.getElementById('preview-face').style.mixBlendMode = live.faceBlend;
-    // Size and tint the preview face video
-    const pvPx = (sz * 0.8) + 'px';
-    previewVid.style.width = pvPx;
-    previewVid.style.height = pvPx;
-    previewVid.style.filter = 'url(#face-tint)';
-  }
 
   // Face (lerped)
   const face = document.getElementById('face');
@@ -875,7 +839,6 @@ function frame(ts) {
   // Apply face tint color via SVG filter
   document.getElementById('face-tint-color').setAttribute('flood-color', live.faceVideoColor);
   faceVid.style.filter = 'url(#face-tint)';
-  previewVid.style.filter = 'url(#face-tint)';
   face.style.mixBlendMode = live.faceBlend;
 
   // Background
@@ -917,8 +880,7 @@ document.querySelectorAll('.view-btn').forEach(btn => {
     document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     currentView = btn.dataset.view;
-    document.getElementById('field-container').style.display = currentView === 'field' ? '' : 'none';
-    document.getElementById('preview-container').style.display = currentView === 'preview' ? '' : 'none';
+    document.body.classList.toggle('preview-mode', currentView === 'preview');
   });
 });
 
@@ -930,13 +892,10 @@ document.getElementById('ui-use-video').addEventListener('change', (e) => {
   const on = e.target.checked;
   faceSvg.style.display = on ? 'none' : 'block';
   faceVid.style.display = on ? 'block' : 'none';
-  previewVid.style.display = on ? 'block' : 'none';
   if (on) {
     const seg = VIDEO_SEGMENTS[currentState];
     faceVid.currentTime = seg[0];
     faceVid.play();
-    previewVid.currentTime = seg[0];
-    previewVid.play();
   }
 });
 
