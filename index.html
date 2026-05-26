@@ -297,9 +297,7 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
       <div class="blob" id="pb1"></div>
       <div class="blob" id="pb2"></div>
       <div id="preview-face">
-        <video class="preview-vid" id="pv-idle" src="face-idle.webm" muted playsinline loop preload="auto" autoplay></video>
-        <video class="preview-vid" id="pv-active" src="face-active.webm" muted playsinline loop preload="auto" style="display:none"></video>
-        <video class="preview-vid" id="pv-thinking" src="face-thinking.webm" muted playsinline loop preload="auto" style="display:none"></video>
+        <video class="preview-vid" id="pv-vid" src="face-black.webm" muted playsinline preload="auto" autoplay></video>
       </div>
     </div>
   </div>
@@ -319,9 +317,7 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
             <path d="M6.39 4.01C7.49 4.14 8.28 5.14 8.15 6.24C8.03 7.2 8.01 7.32 8.01 9.26C8.01 10.37 7.11 11.26 6 11.26C4.9 11.26 4 10.37 4 9.26C4 7.19 4.03 6.92 4.17 5.77C4.3 4.67 5.29 3.88 6.39 4.01Z" fill="currentColor"/>
             <path d="M17.79 4.01C18.89 3.88 19.88 4.67 20.01 5.77C20.14 6.92 20.18 7.19 20.18 9.26C20.18 10.37 19.28 11.26 18.18 11.26C17.07 11.26 16.17 10.37 16.17 9.26C16.17 7.32 16.14 7.2 16.03 6.24C15.9 5.14 16.69 4.14 17.79 4.01Z" fill="currentColor"/>
           </svg>
-          <video class="face-vid" id="face-vid-idle" src="face-idle.webm" muted playsinline loop preload="auto" autoplay style="display:block"></video>
-          <video class="face-vid" id="face-vid-active" src="face-active.webm" muted playsinline loop preload="auto" style="display:none"></video>
-          <video class="face-vid" id="face-vid-thinking" src="face-thinking.webm" muted playsinline loop preload="auto" style="display:none"></video>
+          <video class="face-vid" id="face-vid" src="face-black.webm" muted playsinline preload="auto" autoplay style="display:block"></video>
         </div>
       </div>
 
@@ -538,21 +534,36 @@ const sendIcon = document.getElementById('send-icon');
 const btnSend = document.getElementById('btn-send');
 const btnStop = document.getElementById('btn-stop');
 const faceSvg = document.getElementById('face-svg');
-const faceVids = {
-  idle: document.getElementById('face-vid-idle'),
-  focused: document.getElementById('face-vid-idle'),
-  typing: document.getElementById('face-vid-idle'),
-  thinking: document.getElementById('face-vid-thinking'),
-};
-let activeFaceVid = faceVids.idle;
-const previewVids = {
-  idle: document.getElementById('pv-idle'),
-  focused: document.getElementById('pv-idle'),
-  typing: document.getElementById('pv-idle'),
-  thinking: document.getElementById('pv-thinking'),
-};
-let activePreviewVid = previewVids.idle;
+const faceVid = document.getElementById('face-vid');
+const previewVid = document.getElementById('pv-vid');
 const orbEl = document.getElementById('orb');
+
+// Video segment ranges per state [start, end] in seconds
+const VIDEO_SEGMENTS = {
+  idle:     [0, 3.5],
+  focused:  [0, 3.5],
+  typing:   [0, 3.5],
+  thinking: [5.6, 10],
+};
+
+// Segment looper — keeps video within range
+function enforceSegment(vid, seg) {
+  if (vid.currentTime >= seg[1] || vid.currentTime < seg[0]) {
+    vid.currentTime = seg[0];
+    if (vid.paused) vid.play();
+  }
+}
+
+// Run segment enforcement on each animation frame
+function loopSegments() {
+  const seg = VIDEO_SEGMENTS[currentState];
+  if (seg) {
+    enforceSegment(faceVid, seg);
+    enforceSegment(previewVid, seg);
+  }
+  requestAnimationFrame(loopSegments);
+}
+requestAnimationFrame(loopSegments);
 const fieldBlobs = [document.getElementById('b0'), document.getElementById('b1'), document.getElementById('b2')];
 const previewBlobs = [document.getElementById('pb0'), document.getElementById('pb1'), document.getElementById('pb2')];
 
@@ -659,34 +670,15 @@ function updateSendVoice() {
 
 function updateVideoState() {
   const target = SP[currentState];
-  const newVid = faceVids[currentState];
-  const useVideo = document.getElementById('ui-use-video').checked;
+  const seg = VIDEO_SEGMENTS[currentState];
 
-  // Switch active video element
-  if (newVid !== activeFaceVid) {
-    activeFaceVid.style.display = 'none';
-    activeFaceVid.pause();
-    activeFaceVid = newVid;
-    if (useVideo) {
-      activeFaceVid.style.display = 'block';
-      activeFaceVid.currentTime = 0;
-      activeFaceVid.play();
-    }
-  }
+  faceVid.currentTime = seg[0];
+  faceVid.playbackRate = target.faceRate;
+  faceVid.play();
 
-  if (target) activeFaceVid.playbackRate = target.faceRate;
-
-  // Switch preview video
-  const newPV = previewVids[currentState];
-  if (newPV !== activePreviewVid) {
-    activePreviewVid.style.display = 'none';
-    activePreviewVid.pause();
-    activePreviewVid = newPV;
-    activePreviewVid.style.display = 'block';
-    activePreviewVid.currentTime = (currentState === 'thinking') ? 0.6 : 0;
-    activePreviewVid.play();
-  }
-  if (target) activePreviewVid.playbackRate = target.faceRate;
+  previewVid.currentTime = seg[0];
+  previewVid.playbackRate = target.faceRate;
+  previewVid.play();
 }
 
 function updateStateBar() {
@@ -834,7 +826,7 @@ function frame(ts) {
   faceSvg.style.height = fs + 'px';
   faceSvg.style.color = G.faceColor;
   const vidPx = (fs * 3.2) + 'px';
-  Object.values(faceVids).forEach(v => { v.style.width = vidPx; v.style.height = vidPx; });
+  faceVid.style.width = vidPx; faceVid.style.height = vidPx;
   face.style.mixBlendMode = live.faceBlend;
 
   // Background
@@ -865,13 +857,14 @@ document.querySelectorAll('.view-btn').forEach(btn => {
 document.getElementById('ui-use-video').addEventListener('change', (e) => {
   const on = e.target.checked;
   faceSvg.style.display = on ? 'none' : 'block';
-  // Hide all videos first
-  Object.values(faceVids).forEach(v => { v.style.display = 'none'; v.pause(); });
+  faceVid.style.display = on ? 'block' : 'none';
+  previewVid.style.display = on ? 'block' : 'none';
   if (on) {
-    activeFaceVid.style.display = 'block';
-    // Skip face frames in thinking video - jump to spinner start
-    activeFaceVid.currentTime = (currentState === 'thinking') ? 0.6 : 0;
-    activeFaceVid.play();
+    const seg = VIDEO_SEGMENTS[currentState];
+    faceVid.currentTime = seg[0];
+    faceVid.play();
+    previewVid.currentTime = seg[0];
+    previewVid.play();
   }
 });
 
