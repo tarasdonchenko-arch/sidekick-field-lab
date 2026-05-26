@@ -284,6 +284,14 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
 </head>
 <body>
 
+<!-- SVG filter for tinting face video -->
+<svg width="0" height="0" style="position:absolute">
+  <filter id="face-tint">
+    <feFlood id="face-tint-color" flood-color="#000000" result="color"/>
+    <feComposite in="color" in2="SourceAlpha" operator="in"/>
+  </filter>
+</svg>
+
 <div id="app">
   <!-- View switcher -->
   <div id="view-bar">
@@ -395,6 +403,7 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
     <div class="p-color"><label>Glow A</label><input type="color" data-skey="c1"><span class="p-hex"></span></div>
     <div class="p-color"><label>Glow B</label><input type="color" data-skey="c2"><span class="p-hex"></span></div>
     <div class="p-color"><label>Glow C</label><input type="color" data-skey="c3"><span class="p-hex"></span></div>
+    <div class="p-color"><label>Face Tint</label><input type="color" data-skey="faceVideoColor"><span class="p-hex"></span></div>
     <div class="p-color"><label>Background</label><input type="color" data-gkey="bgColor"><span class="p-hex"></span></div>
     <div class="p-color"><label>Face Color</label><input type="color" data-gkey="faceColor"><span class="p-hex"></span></div>
   </div>
@@ -446,28 +455,28 @@ const SP = {
   idle: {
     orbSpeed: 1.5, orbRadius: 0.15, glowOpacity: 0, glowBlur: 40, glowScale: 0.65,
     faceRate: 1.0, lerpSpeed: 5,
-    orbSize: 80, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'overlay',
+    orbSize: 80, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'overlay', faceVideoColor: '#0000FC',
     c1: '#3888ff', c2: '#ffd500', c3: '#4bff1e',
     tilt1: 1.17, tilt2: 0.67, tilt1b: 0.79, tilt2b: 0.79, tilt1c: 1.22, tilt2c: 1.37,
   },
   focused: {
     orbSpeed: 4.9, orbRadius: 0.19, glowOpacity: 0.89, glowBlur: 26, glowScale: 0.56,
     faceRate: 1.0, lerpSpeed: 4.2,
-    orbSize: 102, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'overlay',
+    orbSize: 102, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'overlay', faceVideoColor: '#000000',
     c1: '#3888ff', c2: '#ffd500', c3: '#4bff1e',
     tilt1: 1.17, tilt2: 0.67, tilt1b: 0.79, tilt2b: 0.79, tilt1c: 1.22, tilt2c: 1.37,
   },
   typing: {
     orbSpeed: 4.9, orbRadius: 0.19, glowOpacity: 0.89, glowBlur: 26, glowScale: 0.56,
     faceRate: 1.0, lerpSpeed: 4.2,
-    orbSize: 102, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'overlay',
+    orbSize: 102, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'overlay', faceVideoColor: '#000000',
     c1: '#3888ff', c2: '#ffd500', c3: '#4bff1e',
     tilt1: 1.17, tilt2: 0.67, tilt1b: 0.79, tilt2b: 0.79, tilt1c: 1.22, tilt2c: 1.37,
   },
   thinking: {
     orbSpeed: 12.3, orbRadius: 0.15, glowOpacity: 1.0, glowBlur: 23, glowScale: 0.71,
     faceRate: 0.6, lerpSpeed: 3,
-    orbSize: 80, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'overlay',
+    orbSize: 80, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'overlay', faceVideoColor: '#000000',
     c1: '#8198ff', c2: '#5aff57', c3: '#5cfce4',
     tilt1: 1.07, tilt2: 0.45, tilt1b: 1.13, tilt2b: 0.58, tilt1c: 2.78, tilt2c: 1.74,
   },
@@ -502,7 +511,7 @@ const LERP_KEYS = ['orbSpeed','orbRadius','glowOpacity','glowBlur','glowScale',
   'tilt1','tilt2','tilt1b','tilt2b','tilt1c','tilt2c'];
 
 // Color keys to lerp in RGB
-const COLOR_KEYS = ['c1','c2','c3'];
+const COLOR_KEYS = ['c1','c2','c3','faceVideoColor'];
 
 const live = {};
 LERP_KEYS.forEach(k => live[k] = SP.idle[k]);
@@ -828,6 +837,10 @@ function frame(ts) {
   faceSvg.style.color = G.faceColor;
   const vidPx = (fs * 3.2) + 'px';
   faceVid.style.width = vidPx; faceVid.style.height = vidPx;
+  // Apply face tint color via SVG filter
+  document.getElementById('face-tint-color').setAttribute('flood-color', live.faceVideoColor);
+  faceVid.style.filter = 'url(#face-tint)';
+  previewVid.style.filter = 'url(#face-tint)';
   face.style.mixBlendMode = live.faceBlend;
 
   // Background
