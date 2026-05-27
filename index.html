@@ -546,22 +546,19 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
     <div class="p-row"><label>Tilt Y</label><input type="range" data-skey="tilt2c" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
   </div>
 
-  <!-- Streak Tuning (temporary) -->
-  <div class="p-section" id="streak-tuning">
-    <div class="p-label">Streak Animation</div>
-    <div class="p-check"><input type="checkbox" id="st-enabled"><label for="st-enabled">Enable Streak</label></div>
-    <div class="p-row"><label>Lap Time</label><input type="range" id="st-lap" min="0.5" max="4" step="0.1" value="1.4"><span class="p-val">1.4</span></div>
-    <div class="p-row"><label>Pause</label><input type="range" id="st-pause" min="0" max="2" step="0.1" value="0.8"><span class="p-val">0.8</span></div>
-    <div class="p-row"><label>Length %</label><input type="range" id="st-len" min="0.02" max="0.4" step="0.01" value="0.28"><span class="p-val">0.28</span></div>
-    <div class="p-row"><label>Stroke W</label><input type="range" id="st-width" min="0.5" max="5" step="0.1" value="2"><span class="p-val">2.0</span></div>
-    <div class="p-row"><label>Blur</label><input type="range" id="st-blur" min="0" max="5" step="0.1" value="2.1"><span class="p-val">2.1</span></div>
-    <div class="p-row"><label>Fade In %</label><input type="range" id="st-fadein" min="0.01" max="0.5" step="0.01" value="0.15"><span class="p-val">0.15</span></div>
-    <div class="p-row"><label>Fade Out %</label><input type="range" id="st-fadeout" min="0.05" max="0.6" step="0.01" value="0.30"><span class="p-val">0.30</span></div>
-    <div class="p-row"><label>Ease Power</label><input type="range" id="st-ease" min="1" max="5" step="0.1" value="1"><span class="p-val">1.0</span></div>
-    <div class="p-row"><label>Start Offset</label><input type="range" id="st-offset" min="0" max="1" step="0.01" value="0.50"><span class="p-val">0.50</span></div>
-    <div class="p-color"><label>Streak A</label><input type="color" id="st-c1" value="#6dfea3"><span class="p-hex">6dfea3</span></div>
-    <div class="p-color"><label>Streak B</label><input type="color" id="st-c2" value="#6cff8a"><span class="p-hex">6cff8a</span></div>
-    <div class="p-color"><label>Streak C</label><input type="color" id="st-c3" value="#e0f700"><span class="p-hex">e0f700</span></div>
+  <!-- Shimmer Glow Tuning -->
+  <div class="p-section" id="shimmer-tuning">
+    <div class="p-label">Shimmer Glow</div>
+    <div class="p-row"><label>Speed</label><input type="range" id="sg-speed" min="0.1" max="1.5" step="0.05" value="1.25"><span class="p-val">1.25</span></div>
+    <div class="p-row"><label>Min Opacity</label><input type="range" id="sg-min-op" min="0" max="0.8" step="0.05" value="0.45"><span class="p-val">0.45</span></div>
+    <div class="p-row"><label>Max Opacity</label><input type="range" id="sg-max-op" min="0.3" max="1" step="0.05" value="1.00"><span class="p-val">1.00</span></div>
+    <div class="p-row"><label>Spot Size</label><input type="range" id="sg-spot-size" min="60" max="300" step="10" value="260"><span class="p-val">260</span></div>
+    <div class="p-row"><label>Field Size</label><input type="range" id="sg-field-size" min="60" max="350" step="10" value="120"><span class="p-val">120</span></div>
+    <div class="p-row"><label>Stroke Blur</label><input type="range" id="sg-stroke-blur" min="2" max="20" step="1" value="17"><span class="p-val">17</span></div>
+    <div class="p-row"><label>Field Blur</label><input type="range" id="sg-field-blur" min="4" max="40" step="1" value="34"><span class="p-val">34</span></div>
+    <div class="p-row"><label>Field Opacity</label><input type="range" id="sg-field-op" min="0.05" max="0.8" step="0.05" value="0.40"><span class="p-val">0.40</span></div>
+    <div class="p-row"><label>Stroke Width</label><input type="range" id="sg-stroke-w" min="1" max="4" step="0.5" value="1"><span class="p-val">1.0</span></div>
+    <div class="p-color"><label>Color</label><input type="color" id="sg-color" value="#7D5AFF"><span class="p-hex">7D5AFF</span></div>
   </div>
 
   <!-- Presets -->
@@ -872,18 +869,47 @@ function _initGlowSpots() {
   _glowSpots = [{ speed: 0.45 }];
 }
 
+function _sgVal(id) { return parseFloat(document.getElementById(id).value); }
+
 function _updateGlowSpots(ts) {
   if (currentState !== 'thinking') { _glowRaf = null; return; }
   var fw = fieldBar.offsetWidth, fh = fieldBar.offsetHeight;
-  var t = (ts / 1000) * _glowSpots[0].speed;
-  var wave = (Math.sin(t) + 1) / 2; // 0 to 1, sweeps left to right
-  var opacity = 0.3 + Math.pow(Math.sin(t * 1.1), 2) * 0.7;
+  var speed = _sgVal('sg-speed');
+  var minOp = _sgVal('sg-min-op');
+  var maxOp = _sgVal('sg-max-op');
+  var spotSize = _sgVal('sg-spot-size');
+  var fieldSize = _sgVal('sg-field-size');
+  var strokeBlur = _sgVal('sg-stroke-blur');
+  var fieldBlur = _sgVal('sg-field-blur');
+  var fieldOp = _sgVal('sg-field-op');
+  var strokeW = _sgVal('sg-stroke-w');
+  var color = document.getElementById('sg-color').value;
+  var r = parseInt(color.slice(1,3),16), g = parseInt(color.slice(3,5),16), b = parseInt(color.slice(5,7),16);
+
+  var t = (ts / 1000) * speed;
+  var wave = (Math.sin(t) + 1) / 2;
+  var opacity = minOp + Math.pow(Math.sin(t * 1.1), 2) * (maxOp - minOp);
   var x = wave * fw;
   var y = fh / 2;
+
   var ss = document.getElementById('gss0');
-  var sf = document.getElementById('gsf0');
+  ss.style.width = spotSize + 'px'; ss.style.height = spotSize + 'px';
+  ss.style.background = 'radial-gradient(circle,rgb('+r+','+g+','+b+') 0%,rgba('+r+','+g+','+b+',0.5) 30%,transparent 65%)';
+  ss.style.filter = 'blur('+strokeBlur+'px)';
   ss.style.left = x + 'px'; ss.style.top = y + 'px'; ss.style.opacity = opacity;
+
+  var sf = document.getElementById('gsf0');
+  sf.style.width = fieldSize + 'px'; sf.style.height = fieldSize + 'px';
+  sf.style.background = 'radial-gradient(circle,rgba('+r+','+g+','+b+','+fieldOp+') 0%,rgba('+r+','+g+','+b+','+(fieldOp*0.4)+') 35%,transparent 65%)';
+  sf.style.filter = 'blur('+fieldBlur+'px)';
   sf.style.left = x + 'px'; sf.style.top = y + 'px'; sf.style.opacity = opacity;
+
+  // Update stroke width
+  document.getElementById('think-stroke-glow').style.padding = strokeW + 'px';
+  fieldBar.style.boxShadow = currentState === 'thinking'
+    ? '0 1px 3px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.04),inset 0 0 0 '+strokeW+'px rgba('+r+','+g+','+b+',0.12)'
+    : '';
+
   _glowRaf = requestAnimationFrame(_updateGlowSpots);
 }
 
@@ -1385,19 +1411,15 @@ renderSaved();
 updateZoom(2.2);
 
 // Streak tuning sliders — update value labels
-document.querySelectorAll('#streak-tuning input[type=range]').forEach(el => {
+// Shimmer glow tuning
+document.querySelectorAll('#shimmer-tuning input[type=range]').forEach(el => {
   el.addEventListener('input', () => {
     const step = parseFloat(el.step);
     el.nextElementSibling.textContent = Number(el.value).toFixed(step >= 1 ? 0 : step >= 0.1 ? 1 : 2);
   });
 });
-// Streak color pickers
-['st-c1','st-c2','st-c3'].forEach((id, i) => {
-  const el = document.getElementById(id);
-  el.addEventListener('input', () => {
-    streakColors[i] = el.value;
-    el.nextElementSibling.textContent = el.value.slice(1);
-  });
+document.getElementById('sg-color').addEventListener('input', (e) => {
+  e.target.nextElementSibling.textContent = e.target.value.slice(1);
 });
 
 // Set initial tool group state
