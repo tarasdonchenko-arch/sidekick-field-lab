@@ -28,6 +28,40 @@ body{background:#f0f0f0;color:#111}
 }
 #field-bar:hover{box-shadow:0 1px 3px rgba(0,0,0,0.1),0 4px 16px rgba(0,0,0,0.06)}
 [data-state="idle"] #field-bar{cursor:pointer}
+[data-state="thinking"] #field-bar{box-shadow:0 1px 3px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.04),inset 0 0 0 1px rgba(125,90,255,0.12)}
+
+/* ── Thinking stroke highlight (masked to 1px border) ── */
+#think-stroke-glow{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  pointer-events:none;z-index:2;
+  border-radius:9999px;
+  padding:1px;
+  -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite:xor;
+  mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  mask-composite:exclude;
+  opacity:0;transition:opacity 0.5s ease;
+  overflow:hidden;
+}
+[data-state="thinking"] #think-stroke-glow{opacity:1}
+.glow-spot-stroke{
+  position:absolute;width:80px;height:80px;border-radius:50%;
+  background:radial-gradient(circle,#7D5AFF 0%,rgba(125,90,255,0.5) 40%,transparent 70%);
+  filter:blur(6px);transform:translate(-50%,-50%);
+}
+
+/* ── Thinking inner field glow ── */
+#think-field-glow{
+  position:absolute;inset:0;pointer-events:none;z-index:0;
+  border-radius:9999px;overflow:hidden;
+  opacity:0;transition:opacity 0.5s ease;
+}
+[data-state="thinking"] #think-field-glow{opacity:1}
+.glow-spot-field{
+  position:absolute;width:120px;height:120px;border-radius:50%;
+  background:radial-gradient(circle,rgba(125,90,255,0.35) 0%,rgba(180,100,255,0.15) 40%,transparent 70%);
+  filter:blur(14px);transform:translate(-50%,-50%);
+}
 
 /* ── Thinking border streak (SVG) ── */
 #border-streak{
@@ -365,6 +399,10 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
 
   <div id="canvas-content">
   <div id="field-container" data-state="idle">
+    <!-- Thinking stroke highlight (masked to border) -->
+    <div id="think-stroke-glow">
+      <div class="glow-spot-stroke" id="gss0"></div>
+    </div>
     <!-- Thinking border streak -->
     <div id="border-streak">
       <svg id="streak-svg" xmlns="http://www.w3.org/2000/svg">
@@ -383,6 +421,10 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
       </div>
     </div>
     <div id="field-bar">
+      <!-- Thinking inner field glow -->
+      <div id="think-field-glow">
+        <div class="glow-spot-field" id="gsf0"></div>
+      </div>
       <!-- Icon: face -->
       <div id="field-icon">
         <div id="face">
@@ -983,6 +1025,32 @@ function frame(ts) {
   document.getElementById('face-tint-color').setAttribute('flood-color', live.faceVideoColor);
   faceVid.style.filter = 'url(#face-tint)';
   face.style.mixBlendMode = live.faceBlend;
+
+  // Thinking glow — animate spots along perimeter
+  var strokeGlowEl = document.getElementById('think-stroke-glow');
+  if (currentState === 'thinking') {
+    const fw = fieldBar.offsetWidth, fh = fieldBar.offsetHeight;
+    strokeGlowEl.style.width = (fw + 2) + 'px';
+    strokeGlowEl.style.height = (fh + 2) + 'px';
+    const r = fh / 2;
+    const straight = fw - fh;
+    const curve = Math.PI * r;
+    const total = 2 * straight + 2 * curve;
+    const tParam = ((ts / 4000) % 1);
+    var d = tParam * total, gx, gy;
+    if (d < straight) { gx = r + d; gy = 0; }
+    else { d -= straight;
+      if (d < curve) { var a = -Math.PI/2 + (d/curve)*Math.PI; gx = fw - r + Math.cos(a)*r; gy = r + Math.sin(a)*r; }
+      else { d -= curve;
+        if (d < straight) { gx = fw - r - d; gy = fh; }
+        else { d -= straight; var a = Math.PI/2 + (d/curve)*Math.PI; gx = r + Math.cos(a)*r; gy = r + Math.sin(a)*r; }
+      }
+    }
+    document.getElementById('gss0').style.left = gx + 'px';
+    document.getElementById('gss0').style.top = gy + 'px';
+    document.getElementById('gsf0').style.left = gx + 'px';
+    document.getElementById('gsf0').style.top = gy + 'px';
+  }
 
   // Border streak — size SVG to bar
   const streakSvg = document.getElementById('streak-svg');
