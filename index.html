@@ -85,6 +85,29 @@ body{background:#f0f0f0;color:#111}
 [data-state="idle"] #field-input{cursor:pointer}
 [data-state="thinking"] #field-input{cursor:default}
 
+/* ── Thinking overlay (shimmer tool calls) ── */
+#think-overlay{
+  position:absolute;inset:0;display:none;align-items:center;
+  padding:0 8px 0 0;pointer-events:none;overflow:hidden;
+}
+[data-state="thinking"] #think-overlay{display:flex}
+[data-state="thinking"] #field-input::placeholder{color:transparent}
+#think-toolcall{
+  font-size:15px;font-family:inherit;font-weight:400;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  min-width:0;flex:1;
+  background:linear-gradient(90deg,#868686 0%,#868686 40%,#c0c0c0 50%,#868686 60%,#868686 100%);
+  background-size:200% 100%;
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:shimmer 2.4s ease-in-out infinite;
+  transition:opacity 0.4s ease,filter 0.4s ease,transform 0.4s ease;
+}
+@keyframes shimmer{0%{background-position:100% 0}100%{background-position:-100% 0}}
+#think-toolcall.slide-out{opacity:0;filter:blur(4px);transform:translateY(-12px)}
+#think-toolcall.slide-in{opacity:0;filter:blur(4px);transform:translateY(12px)}
+#think-toolcall.visible{opacity:1;filter:blur(0);transform:translateY(0)}
+
 /* ── Tool Groups ── */
 .tool-group{
   display:flex;align-items:center;gap:1px;padding:0 2px;
@@ -375,6 +398,7 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
       <!-- Input -->
       <div id="field-input-wrap">
         <input id="field-input" type="text" placeholder="Ask anything" readonly spellcheck="false" autocomplete="off" />
+        <div id="think-overlay"><span id="think-toolcall"></span></div>
       </div>
 
       <!-- Tools: attach + voice/send (focused & typing) -->
@@ -697,6 +721,7 @@ function setState(newState) {
   clearTimeout(idleBlinkTimer);
   clearTimeout(thinkTimer);
   clearInterval(thinkDotsInterval);
+  if (_tcInterval) { clearTimeout(_tcInterval); _tcInterval = null; }
   thinkTimer = null;
   thinkDotsInterval = null;
   streakPhase = 'none';
@@ -746,7 +771,7 @@ function setState(newState) {
     case 'thinking':
       typedText = fieldInput.value;
       fieldInput.value = '';
-      fieldInput.placeholder = 'Thinking...';
+      fieldInput.placeholder = '';
       fieldInput.readOnly = true;
       fieldInput.blur();
       startThinkTimer();
@@ -761,14 +786,45 @@ function setState(newState) {
   updateStateBar();
 }
 
-function startThinkTimer() {
-  let dots = 0;
-  thinkDotsInterval = setInterval(() => {
-    dots = (dots + 1) % 4;
-    fieldInput.placeholder = 'Thinking' + '.'.repeat(dots || 0) + (dots === 0 ? '...' : '');
-  }, 400);
+// Tool call cycling for thinking state
+var _tcalls = [
+  'Searching knowledge base...','Reading product catalog...','Analyzing store data...',
+  'Checking inventory...','Querying order history...','Fetching recommendations...',
+  'Processing request...','Reviewing policies...','Looking up details...','Generating response...',
+];
+var _tcIdx = 0;
+var _tcInterval = null;
 
-  // No auto-return — click Stop or switch state manually
+function _scheduleNextToolCall(el) {
+  var delay = 1800 + Math.random() * 3200; // 1.8s - 5s random
+  _tcInterval = setTimeout(function() {
+    if (currentState !== 'thinking') return;
+    // Slide current out (up + blur)
+    el.className = 'slide-out';
+    var swapDelay = 350 + Math.random() * 200;
+    setTimeout(function() {
+      if (currentState !== 'thinking') return;
+      _tcIdx = (_tcIdx + 1) % _tcalls.length;
+      el.textContent = _tcalls[_tcIdx];
+      // Position below with no transition
+      el.style.transition = 'none';
+      el.className = 'slide-in';
+      void el.offsetHeight;
+      // Restore transition and animate to center
+      el.style.transition = '';
+      el.className = 'visible';
+      // Schedule next
+      _scheduleNextToolCall(el);
+    }, swapDelay);
+  }, delay);
+}
+
+function startThinkTimer() {
+  var el = document.getElementById('think-toolcall');
+  _tcIdx = Math.floor(Math.random() * _tcalls.length);
+  el.textContent = _tcalls[_tcIdx];
+  el.className = 'visible';
+  _scheduleNextToolCall(el);
 }
 
 function updateSendVoice() {
