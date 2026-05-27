@@ -44,6 +44,13 @@ body{background:#f0f0f0;color:#111}
   overflow:visible;z-index:2;
 }
 
+/* ── Orb anchor (outside bar to avoid overflow:hidden clipping) ── */
+#orb-anchor{
+  position:absolute;left:22px;top:50%;
+  transform:translate(-50%,-50%);
+  pointer-events:none;z-index:1;
+  overflow:visible;
+}
 /* ── Orb (glow blobs) ── */
 #orb{
   position:absolute;left:50%;top:50%;
@@ -328,7 +335,7 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
     </div>
     <div id="zoom-bar">
       <label>Zoom</label>
-      <input type="range" id="canvas-zoom" min="0.5" max="4" step="0.1" value="1">
+      <input type="range" id="canvas-zoom" min="0.5" max="4" step="0.1" value="2.2">
       <button id="zoom-reset" class="zoom-reset">1x</button>
     </div>
   </div>
@@ -344,14 +351,17 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
         <rect id="streak-rect" x="1" y="1" rx="22" ry="22" fill="none" stroke="#7ac8e0" stroke-width="2" stroke-linecap="round" filter="url(#streak-blur)"/>
       </svg>
     </div>
+    <!-- Orb glow (outside bar to avoid overflow:hidden clipping) -->
+    <div id="orb-anchor">
+      <div id="orb">
+        <div class="blob" id="b0"></div>
+        <div class="blob" id="b1"></div>
+        <div class="blob" id="b2"></div>
+      </div>
+    </div>
     <div id="field-bar">
-      <!-- Icon: glow orb + face -->
+      <!-- Icon: face -->
       <div id="field-icon">
-        <div id="orb">
-          <div class="blob" id="b0"></div>
-          <div class="blob" id="b1"></div>
-          <div class="blob" id="b2"></div>
-        </div>
         <div id="face">
           <svg id="face-svg" viewBox="0 0 24 24" fill="none" style="display:none">
             <path d="M13.87 17.45C14.49 17.06 15.31 17.24 15.71 17.86C16.1 18.48 15.92 19.31 15.3 19.71C13.77 20.68 11.12 20.86 8.73 19.8C8.05 19.5 7.75 18.71 8.05 18.03C8.35 17.36 9.14 17.06 9.82 17.36C11.55 18.13 13.23 17.86 13.87 17.45Z" fill="currentColor"/>
@@ -504,25 +514,25 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
 
 const SP = {
   idle: {
-    orbSpeed: 1.5, orbRadius: 0.15, glowOpacity: 0, glowBlur: 40, glowScale: 0.65,
-    faceRate: 1.0, lerpSpeed: 5,
-    orbSize: 80, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'normal', faceVideoColor: '#0000FC',
-    c1: '#3888ff', c2: '#ffd500', c3: '#4bff1e',
-    tilt1: 1.17, tilt2: 0.67, tilt1b: 0.79, tilt2b: 0.79, tilt1c: 1.22, tilt2c: 1.37,
+    orbSpeed: 1.5, orbRadius: 0.17, glowOpacity: 0.83, glowBlur: 18, glowScale: 0.98,
+    faceRate: 0.55, lerpSpeed: 5,
+    orbSize: 80, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'normal', faceVideoColor: '#56675c',
+    c1: '#e7ccff', c2: '#c2dfff', c3: '#b3ffc2',
+    tilt1: 0.00, tilt2: 0.00, tilt1b: 0.00, tilt2b: 0.00, tilt1c: 0.00, tilt2c: 0.00,
   },
   focused: {
-    orbSpeed: 4.9, orbRadius: 0.19, glowOpacity: 0.89, glowBlur: 26, glowScale: 0.56,
+    orbSpeed: 4.9, orbRadius: 0.07, glowOpacity: 1.00, glowBlur: 22, glowScale: 0.61,
     faceRate: 1.0, lerpSpeed: 4.2,
-    orbSize: 102, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'overlay', faceVideoColor: '#000000',
-    c1: '#3888ff', c2: '#ffd500', c3: '#4bff1e',
-    tilt1: 1.17, tilt2: 0.67, tilt1b: 0.79, tilt2b: 0.79, tilt1c: 1.22, tilt2c: 1.37,
+    orbSize: 96, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'overlay', faceVideoColor: '#2f5b2f',
+    c1: '#5cfffc', c2: '#8bff61', c3: '#f0ff1f',
+    tilt1: 0.00, tilt2: 0.00, tilt1b: 0.00, tilt2b: 0.00, tilt1c: 0.00, tilt2c: 0.00,
   },
   typing: {
-    orbSpeed: 4.9, orbRadius: 0.19, glowOpacity: 0.89, glowBlur: 26, glowScale: 0.56,
+    orbSpeed: 4.9, orbRadius: 0.07, glowOpacity: 1.00, glowBlur: 22, glowScale: 0.61,
     faceRate: 1.0, lerpSpeed: 4.2,
-    orbSize: 102, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'overlay', faceVideoColor: '#000000',
-    c1: '#3888ff', c2: '#ffd500', c3: '#4bff1e',
-    tilt1: 1.17, tilt2: 0.67, tilt1b: 0.79, tilt2b: 0.79, tilt1c: 1.22, tilt2c: 1.37,
+    orbSize: 96, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'overlay', faceVideoColor: '#2f5b2f',
+    c1: '#5cfffc', c2: '#8bff61', c3: '#f0ff1f',
+    tilt1: 0.00, tilt2: 0.00, tilt1b: 0.00, tilt2b: 0.00, tilt1c: 0.00, tilt2c: 0.00,
   },
   thinking: {
     orbSpeed: 12.3, orbRadius: 0.15, glowOpacity: 1.0, glowBlur: 23, glowScale: 0.71,
@@ -1197,6 +1207,7 @@ document.getElementById('btn-json').onclick = () => {
 syncGlobalControls();
 syncStateControls();
 renderSaved();
+updateZoom(2.2);
 
 // Streak tuning sliders — update value labels
 document.querySelectorAll('#streak-tuning input[type=range]').forEach(el => {
