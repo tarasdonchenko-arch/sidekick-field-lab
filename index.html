@@ -514,9 +514,9 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
 
 const SP = {
   idle: {
-    orbSpeed: 1.5, orbRadius: 0.17, glowOpacity: 0.83, glowBlur: 18, glowScale: 0.98,
+    orbSpeed: 1.5, orbRadius: 0.17, glowOpacity: 0.43, glowBlur: 18, glowScale: 0.98,
     faceRate: 0.55, lerpSpeed: 5,
-    orbSize: 80, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'normal', faceVideoColor: '#56675c',
+    orbSize: 80, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'normal', faceVideoColor: '#718484',
     c1: '#e7ccff', c2: '#c2dfff', c3: '#b3ffc2',
     tilt1: 0.00, tilt2: 0.00, tilt1b: 0.00, tilt2b: 0.00, tilt1c: 0.00, tilt2c: 0.00,
   },
@@ -615,16 +615,45 @@ const orbEl = document.getElementById('orb');
 // Video segment ranges per state [start, end] in seconds
 const VIDEO_SEGMENTS = {
   idle:     [0, 3.5],
-  focused:  [0, 3.5],
-  typing:   [0, 3.5],
+  focused:  [0.4, 3.5],
+  typing:   [0.4, 3.5],
   thinking: [5.6, 10],
 };
 
 // Segment looper — keeps video within range
+// Idle blink config: short blink then pause
+const IDLE_BLINK = { blinkStart: 0, blinkEnd: 0.35, pauseMin: 2.0, pauseMax: 3.5 };
+let idleBlinkTimer = null;
+
+function startIdleBlink() {
+  clearTimeout(idleBlinkTimer);
+  faceVid.currentTime = IDLE_BLINK.blinkStart;
+  faceVid.play();
+}
+
+function scheduleIdleBlink() {
+  const pause = IDLE_BLINK.pauseMin + Math.random() * (IDLE_BLINK.pauseMax - IDLE_BLINK.pauseMin);
+  idleBlinkTimer = setTimeout(() => {
+    if (currentState === 'idle') {
+      startIdleBlink();
+    }
+  }, pause * 1000);
+}
+
 function enforceSegment(vid, seg) {
+  if (currentState === 'idle') {
+    // Idle: pause after blink, schedule next
+    if (vid.currentTime >= IDLE_BLINK.blinkEnd) {
+      vid.pause();
+      vid.currentTime = IDLE_BLINK.blinkStart;
+      scheduleIdleBlink();
+    }
+    return;
+  }
+  // Non-idle: always ensure video is playing and within segment
+  if (vid.paused) vid.play();
   if (vid.currentTime >= seg[1] || vid.currentTime < seg[0]) {
     vid.currentTime = seg[0];
-    if (vid.paused) vid.play();
   }
 }
 
@@ -665,6 +694,7 @@ function setState(newState) {
   currentState = newState;
 
   // Clear timers
+  clearTimeout(idleBlinkTimer);
   clearTimeout(thinkTimer);
   clearInterval(thinkDotsInterval);
   thinkTimer = null;
@@ -700,6 +730,9 @@ function setState(newState) {
       fieldInput.readOnly = true;
       fieldInput.blur();
       typedText = '';
+      // Start idle blink cycle
+      clearTimeout(idleBlinkTimer);
+      startIdleBlink();
       break;
     case 'focused':
       fieldInput.readOnly = false;
