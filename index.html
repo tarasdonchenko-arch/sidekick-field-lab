@@ -40,7 +40,7 @@ body{background:#f0f0f0;color:#111}
   -webkit-mask-composite:xor;
   mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
   mask-composite:exclude;
-  opacity:0;transition:opacity 0.5s ease;
+  opacity:0;transition:opacity 0.15s ease;
   overflow:hidden;
 }
 [data-state="thinking"] #think-stroke-glow{opacity:1}
@@ -55,7 +55,7 @@ body{background:#f0f0f0;color:#111}
 #think-field-glow{
   position:absolute;inset:0;pointer-events:none;z-index:0;
   border-radius:9999px;overflow:hidden;
-  opacity:0;transition:opacity 0.5s ease;
+  opacity:0;transition:opacity 0.15s ease;
 }
 [data-state="thinking"] #think-field-glow{opacity:1}
 .glow-spot-field{
@@ -924,6 +924,7 @@ function _stopGlowSpots() {
   var sf = document.getElementById('gsf0');
   if (ss) ss.style.opacity = '0';
   if (sf) sf.style.opacity = '0';
+  fieldBar.style.boxShadow = '';
 }
 
 function startThinkTimer() {
