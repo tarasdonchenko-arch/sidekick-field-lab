@@ -136,7 +136,7 @@ body{background:#f0f0f0;color:#111}
   background-size:200% 100%;
   -webkit-background-clip:text;background-clip:text;
   -webkit-text-fill-color:transparent;
-  animation:shimmer 2.4s ease-in-out infinite;
+  animation:shimmer 2.4s linear infinite;
   transition:opacity 0.4s ease,filter 0.4s ease,transform 0.4s ease;
 }
 @keyframes shimmer{0%{background-position:100% 0}100%{background-position:-100% 0}}
@@ -579,10 +579,10 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
 
 const SP = {
   idle: {
-    orbSpeed: 1.5, orbRadius: 0.17, glowOpacity: 0.43, glowBlur: 18, glowScale: 0.98,
+    orbSpeed: 1.5, orbRadius: 0.17, glowOpacity: 0.75, glowBlur: 18, glowScale: 0.98,
     faceRate: 0.55, lerpSpeed: 5,
-    orbSize: 80, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'normal', faceVideoColor: '#718484',
-    c1: '#e7ccff', c2: '#c2dfff', c3: '#b3ffc2',
+    orbSize: 80, fieldOrbScale: 0.30, faceSize: 20, faceBlend: 'normal', faceVideoColor: '#5a4776',
+    c1: '#f9ccff', c2: '#c2c4ff', c3: '#dbfffe',
     tilt1: 0.00, tilt2: 0.00, tilt1b: 0.00, tilt2b: 0.00, tilt1c: 0.00, tilt2c: 0.00,
   },
   focused: {
