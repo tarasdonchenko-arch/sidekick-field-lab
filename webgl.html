@@ -708,8 +708,12 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
       face = texture2D(uVideo, faceUV);
     }
 
-    // Tint face with uFaceColor (mix between original and tinted)
-    vec3 faceTinted = mix(face.rgb, uFaceColor * dot(face.rgb, vec3(0.299, 0.587, 0.114)), uFaceColorMix);
+    // Tint face — the face features are dark shapes, so we replace their color
+    // directly with uFaceColor, preserving luminance for shading
+    float faceLuma = dot(face.rgb, vec3(0.299, 0.587, 0.114));
+    // Invert: dark features → high tint strength, bright areas → no tint
+    float tintStrength = 1.0 - smoothstep(0.0, 0.5, faceLuma);
+    vec3 faceTinted = mix(face.rgb, uFaceColor * (1.0 - faceLuma * 0.5), uFaceColorMix * tintStrength);
     float faceA = face.a * uFaceOpacity;
 
     // --- Compositing ---
@@ -764,29 +768,29 @@ const SP = {
     tiltCx: 2.10, tiltCy: 1.50,
   },
   focused: {
-    orbSpeed: 1.5, orbRadius: 0.17, faceRate: 0.55, lerpSpeed: 5,
+    orbSpeed: 4.0, orbRadius: 0.17, faceRate: 0.55, lerpSpeed: 5,
     orbSize: 290, fieldOrbScale: 0.23,
-    c1: '#6e6bff', c2: '#5f5cff', c3: '#6647ff',
+    c1: '#21c058', c2: '#2bf75e', c3: '#a1a324',
     blobSize: 0.22, blobSoft: 0.15, blobOpacity: 1.0,
     maskEdge: 0.29, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
-    faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
+    faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#446f4a', faceColorMix: 1.0,
     tiltAx: 2.00, tiltAy: 0.67,
     tiltBx: 2.40, tiltBy: 0.40,
     tiltCx: 2.10, tiltCy: 1.50,
   },
   typing: {
-    orbSpeed: 1.5, orbRadius: 0.17, faceRate: 0.55, lerpSpeed: 5,
+    orbSpeed: 4.0, orbRadius: 0.17, faceRate: 0.55, lerpSpeed: 5,
     orbSize: 290, fieldOrbScale: 0.23,
-    c1: '#6e6bff', c2: '#5f5cff', c3: '#6647ff',
+    c1: '#21c058', c2: '#2bf75e', c3: '#a1a324',
     blobSize: 0.22, blobSoft: 0.15, blobOpacity: 1.0,
     maskEdge: 0.29, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
-    faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
+    faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#446f4a', faceColorMix: 1.0,
     tiltAx: 2.00, tiltAy: 0.67,
     tiltBx: 2.40, tiltBy: 0.40,
     tiltCx: 2.10, tiltCy: 1.50,
   },
   thinking: {
-    orbSpeed: 1.5, orbRadius: 0.17, faceRate: 0.55, lerpSpeed: 5,
+    orbSpeed: 6.2, orbRadius: 0.17, faceRate: 1.0, lerpSpeed: 5,
     orbSize: 290, fieldOrbScale: 0.23,
     c1: '#6e6bff', c2: '#5f5cff', c3: '#6647ff',
     blobSize: 0.22, blobSoft: 0.15, blobOpacity: 1.0,
@@ -1270,6 +1274,8 @@ function frame(ts) {
   LERP_KEYS.forEach(k => { live[k] += (target[k] - live[k]) * f; });
   COLOR_KEYS.forEach(k => { live[k] = lerpColor(live[k], target[k], f); });
   live.faceBlendMode = target.faceBlendMode;
+  // Snap orbSpeed instantly — lerping it causes ugly spin-up overshoot
+  live.orbSpeed = target.orbSpeed;
 
   // Accumulate phase
   orbPhase += live.orbSpeed * dt;
