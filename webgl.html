@@ -29,7 +29,12 @@ body{background:#f0f0f0;color:#111}
 #field-bar:hover{box-shadow:0 1px 3px rgba(0,0,0,0.1),0 4px 16px rgba(0,0,0,0.06)}
 [data-state="idle"] #field-bar{cursor:pointer}
 [data-state="thinking"] #field-bar{
-  box-shadow:0 1px 3px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.04),0 0 0 1.5px rgba(110,107,255,0.35);
+  box-shadow:
+    0 1px 3px rgba(0,0,0,0.08),
+    0 4px 12px rgba(0,0,0,0.04),
+    0 10px 42px 0 rgba(125,90,255,0.22),
+    0 8px 58px -6px rgba(255,122,232,0.14),
+    0 0 0 1.5px rgba(110,107,255,0.35);
 }
 
 /* -- Thinking stroke highlight (masked to 1px border) -- */
@@ -556,7 +561,13 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
     <div class="p-row"><label>Field Blur</label><input type="range" id="sg-field-blur" min="4" max="40" step="1" value="34"><span class="p-val">34</span></div>
     <div class="p-row"><label>Field Opacity</label><input type="range" id="sg-field-op" min="0.05" max="0.8" step="0.05" value="0.05"><span class="p-val">0.05</span></div>
     <div class="p-row"><label>Stroke Width</label><input type="range" id="sg-stroke-w" min="1" max="4" step="0.5" value="1"><span class="p-val">1.0</span></div>
+    <div class="p-row"><label>Aura Op</label><input type="range" id="sg-aura-op" min="0" max="0.7" step="0.01" value="0.22"><span class="p-val">0.22</span></div>
+    <div class="p-row"><label>Aura Blur</label><input type="range" id="sg-aura-blur" min="0" max="90" step="1" value="42"><span class="p-val">42</span></div>
+    <div class="p-row"><label>Aura Spread</label><input type="range" id="sg-aura-spread" min="-14" max="18" step="1" value="0"><span class="p-val">0</span></div>
+    <div class="p-row"><label>Aura Y</label><input type="range" id="sg-aura-y" min="-12" max="28" step="1" value="10"><span class="p-val">10</span></div>
+    <div class="p-row"><label>Pink Op</label><input type="range" id="sg-pink-op" min="0" max="0.5" step="0.01" value="0.14"><span class="p-val">0.14</span></div>
     <div class="p-color"><label>Color</label><input type="color" id="sg-color" value="#7D5AFF"><span class="p-hex">7D5AFF</span></div>
+    <div class="p-color"><label>Pink Color</label><input type="color" id="sg-pink-color" value="#FF7AE8"><span class="p-hex">FF7AE8</span></div>
   </div>
 
   <!-- Streak Tuning -->
@@ -1134,12 +1145,20 @@ function _updateGlowSpots(ts) {
   var fieldBlur = _sgVal('sg-field-blur');
   var fieldOp = _sgVal('sg-field-op');
   var strokeW = _sgVal('sg-stroke-w');
+  var auraOp = _sgVal('sg-aura-op');
+  var auraBlur = _sgVal('sg-aura-blur');
+  var auraSpread = _sgVal('sg-aura-spread');
+  var auraY = _sgVal('sg-aura-y');
+  var pinkOp = _sgVal('sg-pink-op');
   var color = document.getElementById('sg-color').value;
   var r = parseInt(color.slice(1,3),16), g = parseInt(color.slice(3,5),16), b = parseInt(color.slice(5,7),16);
+  var pink = document.getElementById('sg-pink-color').value;
+  var pr = parseInt(pink.slice(1,3),16), pg = parseInt(pink.slice(3,5),16), pb = parseInt(pink.slice(5,7),16);
 
   var t = (ts / 1000) * speed;
   var wave = (Math.sin(t) + 1) / 2;
   var opacity = minOp + Math.pow(Math.sin(t * 1.1), 2) * (maxOp - minOp);
+  var auraPulse = 0.82 + Math.pow(Math.sin(t * 0.85), 2) * 0.18;
   var x = wave * fw;
   var y = fh / 2;
 
@@ -1157,7 +1176,14 @@ function _updateGlowSpots(ts) {
 
   document.getElementById('think-stroke-glow').style.padding = strokeW + 'px';
   fieldBar.style.boxShadow = currentState === 'thinking'
-    ? '0 1px 3px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.04),inset 0 0 0 '+strokeW+'px rgba('+r+','+g+','+b+',0.12)'
+    ? [
+        '0 1px 3px rgba(0,0,0,0.08)',
+        '0 4px 12px rgba(0,0,0,0.04)',
+        '0 '+auraY+'px '+auraBlur+'px '+auraSpread+'px rgba('+r+','+g+','+b+','+(auraOp*auraPulse)+')',
+        '0 '+(auraY*0.75)+'px '+(auraBlur*1.35)+'px '+(auraSpread-6)+'px rgba('+pr+','+pg+','+pb+','+(pinkOp*auraPulse)+')',
+        '0 0 0 '+strokeW+'px rgba('+r+','+g+','+b+',0.18)',
+        'inset 0 0 0 '+strokeW+'px rgba('+r+','+g+','+b+',0.10)'
+      ].join(',')
     : '';
 
   _glowRaf = requestAnimationFrame(_updateGlowSpots);
@@ -1675,8 +1701,10 @@ document.querySelectorAll('#shimmer-tuning input[type=range]').forEach(el => {
     el.nextElementSibling.textContent = Number(el.value).toFixed(step >= 1 ? 0 : step >= 0.1 ? 1 : 2);
   });
 });
-document.getElementById('sg-color').addEventListener('input', (e) => {
-  e.target.nextElementSibling.textContent = e.target.value.slice(1);
+document.querySelectorAll('#shimmer-tuning input[type=color]').forEach(el => {
+  el.addEventListener('input', (e) => {
+    e.target.nextElementSibling.textContent = e.target.value.slice(1);
+  });
 });
 
 // Streak tuning sliders
