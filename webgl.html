@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sidekick Field + WebGL Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100dvh;overflow:hidden;font-family:'Geist',-apple-system,BlinkMacSystemFont,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{background:#f0f0f0;color:#111}
+
+/* -- Layout -- */
+#app{position:relative;width:calc(100% - 304px);height:100%;display:flex;align-items:center;justify-content:center}
+
+/* -- Field Bar -- */
+#canvas-content{transition:transform 0.3s cubic-bezier(0.2,0.8,0,1)}
+#field-container{display:flex;align-items:center;justify-content:center;position:relative}
+#field-bar{
+  position:relative;display:flex;align-items:stretch;
+  height:44px;width:320px;
+  background:#fff;border-radius:9999px;
+  box-shadow:0 1px 3px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.04);
+  transition:width 0.4s cubic-bezier(0.2,0.8,0,1),box-shadow 0.3s ease;
+  will-change:width;overflow:hidden;
+}
+#field-bar:hover{box-shadow:0 1px 3px rgba(0,0,0,0.1),0 4px 16px rgba(0,0,0,0.06)}
+[data-state="idle"] #field-bar{cursor:pointer}
+[data-state="thinking"] #field-bar{
+  box-shadow:0 1px 3px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.04),0 0 0 1.5px rgba(110,107,255,0.35);
+}
+
+/* -- Thinking stroke highlight (masked to 1px border) -- */
+#think-stroke-glow{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  pointer-events:none;z-index:2;
+  border-radius:9999px;
+  padding:1px;
+  -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite:xor;
+  mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  mask-composite:exclude;
+  opacity:0;transition:opacity 0.15s ease;
+  overflow:hidden;
+}
+[data-state="thinking"] #think-stroke-glow{opacity:1}
+.glow-spot-stroke{
+  position:absolute;width:180px;height:180px;border-radius:50%;
+  background:radial-gradient(circle,#7D5AFF 0%,rgba(125,90,255,0.6) 30%,transparent 65%);
+  filter:blur(10px);transform:translate(-50%,-50%);
+  opacity:0;transition:opacity 1.8s ease;
+}
+
+/* -- Thinking inner field glow -- */
+#think-field-glow{
+  position:absolute;inset:0;pointer-events:none;z-index:0;
+  border-radius:9999px;overflow:hidden;
+  opacity:0;transition:opacity 0.15s ease;
+}
+[data-state="thinking"] #think-field-glow{opacity:1}
+.glow-spot-field{
+  position:absolute;width:200px;height:200px;border-radius:50%;
+  background:radial-gradient(circle,rgba(125,90,255,0.45) 0%,rgba(180,100,255,0.18) 35%,transparent 65%);
+  filter:blur(18px);transform:translate(-50%,-50%);
+  opacity:0;transition:opacity 1.8s ease;
+}
+
+/* -- Thinking border streak (SVG) -- */
+#border-streak{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  pointer-events:none;z-index:0;
+  opacity:0;
+  display:none;
+}
+#border-streak svg{display:block;overflow:visible}
+
+/* -- Icon Area (holds face placeholder) -- */
+#field-icon{
+  position:relative;width:44px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  overflow:visible;z-index:2;
+}
+
+/* -- Orb anchor (outside bar to avoid overflow:hidden clipping) -- */
+#orb-anchor{
+  position:absolute;left:22px;top:50%;
+  transform:translate(-50%,-50%);
+  pointer-events:none;z-index:1;
+  overflow:visible;
+}
+/* -- Orb (WebGL canvas) -- */
+#orb{
+  position:absolute;left:50%;top:50%;
+  transform-origin:center center;
+  pointer-events:none;
+}
+#gl-orb{display:block;}
+
+/* -- Face placeholder inside field-icon (invisible, replaced by WebGL) -- */
+#face{
+  position:relative;z-index:5;width:20px;height:20px;
+  display:flex;align-items:center;justify-content:center;
+  pointer-events:none;
+}
+
+/* -- Input Area -- */
+#field-input-wrap{
+  position:relative;flex:1;min-width:0;display:flex;align-items:stretch;
+}
+#field-input{
+  flex:1;min-width:0;background:transparent;border:none;outline:none;
+  padding:0 8px 0 0;font-size:15px;font-family:inherit;font-weight:400;
+  color:#111;
+}
+#field-input::placeholder{color:#868686}
+[data-state="idle"] #field-input{cursor:pointer}
+[data-state="thinking"] #field-input{cursor:default}
+
+/* -- Thinking overlay (shimmer tool calls) -- */
+#think-overlay{
+  position:absolute;inset:0;display:none;align-items:center;
+  padding:0 8px 0 0;pointer-events:none;overflow:hidden;
+}
+[data-state="thinking"] #think-overlay{display:flex}
+[data-state="thinking"] #field-input::placeholder{color:transparent}
+#think-toolcall{
+  font-size:15px;font-family:inherit;font-weight:400;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  min-width:0;flex:1;
+  background:linear-gradient(90deg,#868686 0%,#868686 35%,#ffffff 50%,#868686 65%,#868686 100%);
+  background-size:200% 100%;
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:shimmer 2.4s linear infinite;
+  transition:opacity 0.4s ease,filter 0.4s ease,transform 0.4s ease;
+}
+@keyframes shimmer{0%{background-position:100% 0}100%{background-position:-100% 0}}
+#think-toolcall.slide-out{opacity:0;filter:blur(4px);transform:translateY(-12px)}
+#think-toolcall.slide-in{opacity:0;filter:blur(4px);transform:translateY(12px)}
+#think-toolcall.visible{opacity:1;filter:blur(0);transform:translateY(0)}
+
+/* -- Tool Groups -- */
+.tool-group{
+  display:flex;align-items:center;gap:1px;padding:0 2px;
+  transition:opacity 0.3s ease-out,filter 0.3s ease-out;
+  will-change:opacity,filter;
+}
+.tool-group.hidden{opacity:0;filter:blur(2px);pointer-events:none;max-width:0;padding:0;overflow:hidden}
+.tool-group.visible{opacity:1;filter:none;pointer-events:auto;max-width:200px;padding:0 2px}
+.tool-group{max-width:0;padding:0;overflow:hidden;opacity:0;filter:blur(2px);pointer-events:none;
+  transition:opacity 0.3s ease-out,filter 0.3s ease-out,max-width 0.35s cubic-bezier(0.2,0.8,0,1),padding 0.35s cubic-bezier(0.2,0.8,0,1);
+  margin-right:2px;
+}
+
+/* -- Buttons -- */
+.tool-btn{
+  display:flex;align-items:center;justify-content:center;
+  width:28px;height:28px;border:none;border-radius:50%;
+  background:none;color:#868686;cursor:pointer;flex-shrink:0;
+  transition:color 0.15s ease,background 0.15s ease;
+}
+.tool-btn:hover{color:#555;background:rgba(0,0,0,0.04)}
+.tool-btn svg{display:block}
+
+#btn-send{
+  width:32px;height:32px;border:none;border-radius:50%;
+  background:none;color:white;cursor:pointer;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  transition:transform 0.15s ease;
+}
+#btn-send:hover{transform:scale(1.05)}
+#btn-send:active{transform:scale(0.95)}
+#btn-send svg{display:block}
+
+#btn-stop{
+  width:32px;height:32px;border:none;border-radius:50%;
+  background:none;cursor:pointer;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  transition:transform 0.15s ease;
+}
+#btn-stop:hover{transform:scale(1.05)}
+#btn-stop:active{transform:scale(0.95)}
+
+/* -- Divider -- */
+#field-divider{
+  width:1px;align-self:stretch;margin:8px 0;background:#e5e5e5;flex-shrink:0;
+  transition:opacity 0.3s ease;
+}
+
+/* -- Sidebar Button -- */
+#btn-sidebar{
+  display:flex;align-items:center;justify-content:center;
+  width:42px;height:100%;border:none;background:none;
+  color:#868686;cursor:pointer;flex-shrink:0;border-radius:0 9999px 9999px 0;
+  transition:color 0.15s ease;
+}
+#btn-sidebar:hover{color:#555}
+
+/* -- Canvas Controls (bottom bar) -- */
+#canvas-controls{
+  position:absolute;bottom:32px;left:50%;transform:translateX(-50%);
+  display:flex;align-items:center;gap:12px;z-index:10;
+}
+#view-bar{
+  display:flex;gap:1px;padding:3px;height:34px;
+  background:rgba(255,255,255,0.64);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-radius:10px;border:1px solid rgba(0,0,0,0.05);
+}
+#zoom-bar{
+  display:flex;align-items:center;gap:6px;padding:3px 12px;
+  background:rgba(255,255,255,0.64);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-radius:10px;border:1px solid rgba(0,0,0,0.05);
+  height:34px;
+}
+#zoom-bar label{font-size:12px;color:rgba(0,0,0,0.32);font-weight:500;font-family:inherit;white-space:nowrap}
+#zoom-bar input[type=range]{width:80px}
+.zoom-reset{
+  font-size:11px;font-weight:600;font-family:inherit;
+  color:rgba(0,0,0,0.3);background:rgba(0,0,0,0.05);
+  border:none;border-radius:5px;padding:2px 8px;cursor:pointer;
+  transition:color 0.15s ease,background 0.15s ease;white-space:nowrap;
+}
+.zoom-reset:hover{color:rgba(0,0,0,0.6);background:rgba(0,0,0,0.08)}
+.zoom-reset.is-default{color:rgba(0,0,0,0.15);background:transparent;pointer-events:none}
+.view-btn{
+  padding:6px 20px;border:none;border-radius:7px;
+  background:transparent;color:rgba(0,0,0,0.32);font-size:12px;font-weight:500;
+  font-family:inherit;cursor:pointer;text-align:center;
+  transition:color 0.15s ease,background 0.15s ease;
+}
+.view-btn:hover{color:rgba(0,0,0,0.55);background:rgba(0,0,0,0.04)}
+.view-btn.active{background:rgba(0,0,0,0.88);color:#fff}
+
+/* -- Preview Mode -- */
+body.preview-mode #field-bar{
+  background:transparent !important;
+  box-shadow:none !important;
+  overflow:visible;
+  width:44px !important;
+}
+body.preview-mode #field-input-wrap,
+body.preview-mode .tool-group,
+body.preview-mode #field-divider,
+body.preview-mode #btn-sidebar,
+body.preview-mode #border-streak{
+  display:none !important;
+}
+
+/* -- State Bar (in panel) -- */
+#state-bar{
+  display:flex;gap:1px;padding:3px;
+  background:rgba(0,0,0,0.04);border-radius:10px;
+}
+.state-btn{
+  flex:1;min-width:0;padding:7px 0;border:none;border-radius:7px;
+  background:transparent;color:rgba(0,0,0,0.32);font-size:11px;font-weight:500;
+  font-family:inherit;cursor:pointer;text-align:center;white-space:nowrap;
+  transition:color 0.15s ease,background 0.15s ease;
+}
+.state-btn:hover{color:rgba(0,0,0,0.55);background:rgba(0,0,0,0.04)}
+.state-btn.active{background:rgba(0,0,0,0.88);color:#fff}
+
+/* -- Panel -- */
+#panel{
+  position:fixed;top:12px;right:12px;bottom:12px;width:280px;
+  background:rgba(255,255,255,0.72);backdrop-filter:blur(32px);-webkit-backdrop-filter:blur(32px);
+  border-radius:16px;border:1px solid rgba(0,0,0,0.06);
+  box-shadow:0 8px 40px rgba(0,0,0,0.04),0 2px 8px rgba(0,0,0,0.02);
+  overflow-y:auto;overflow-x:hidden;z-index:100;font-size:12px;
+  scrollbar-width:none;
+}
+#panel::-webkit-scrollbar{display:none}
+
+.p-head{padding:20px 20px 14px}
+.p-head h1{font-size:14px;font-weight:500;margin:0}
+.p-head p{font-size:11px;color:rgba(0,0,0,0.28);margin-top:3px}
+
+.p-section{padding:14px 20px;border-top:1px solid rgba(0,0,0,0.05)}
+.p-label{font-size:9px;font-weight:600;text-transform:uppercase;color:rgba(0,0,0,0.22);margin-bottom:10px}
+
+.p-row{display:flex;align-items:center;gap:10px;margin-bottom:7px}
+.p-row:last-child{margin-bottom:0}
+.p-row label{font-size:11px;color:rgba(0,0,0,0.4);width:68px;flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+input[type=range]{
+  -webkit-appearance:none;appearance:none;flex:1;height:1px;
+  border-radius:1px;background:rgba(0,0,0,0.12);outline:none;cursor:pointer;
+}
+input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none;width:12px;height:12px;border-radius:50%;
+  background:#111;border:none;cursor:pointer;
+  transition:transform 0.15s ease;box-shadow:0 1px 4px rgba(0,0,0,0.12);
+}
+input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
+
+.p-val{width:34px;text-align:right;font-size:10px;font-variant-numeric:tabular-nums;color:rgba(0,0,0,0.2);flex-shrink:0}
+
+.p-color{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.p-color:last-child{margin-bottom:0}
+.p-color label{font-size:11px;color:rgba(0,0,0,0.4);width:74px;flex-shrink:0}
+.p-color input[type=color]{width:28px;height:18px;border:1px solid rgba(0,0,0,0.08);border-radius:4px;padding:1px;cursor:pointer;background:none}
+.p-color input[type=color]::-webkit-color-swatch-wrapper{padding:1px}
+.p-color input[type=color]::-webkit-color-swatch{border:none;border-radius:2px}
+.p-color .p-hex{font-size:9px;color:rgba(0,0,0,0.18);font-variant-numeric:tabular-nums}
+
+.p-check{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.p-check input[type=checkbox]{width:13px;height:13px;accent-color:#111;cursor:pointer}
+.p-check label{font-size:11px;color:rgba(0,0,0,0.4);cursor:pointer}
+
+.p-row select{
+  flex:1;height:26px;padding:0 8px;
+  border:1px solid rgba(0,0,0,0.07);border-radius:6px;
+  background:rgba(0,0,0,0.02);color:rgba(0,0,0,0.7);
+  font-size:11px;font-family:inherit;outline:none;
+}
+
+.p-btn{
+  width:100%;height:28px;border:1px solid rgba(0,0,0,0.07);border-radius:7px;
+  background:rgba(0,0,0,0.02);color:rgba(0,0,0,0.6);
+  font-size:11px;font-weight:500;font-family:inherit;cursor:pointer;
+  transition:background 0.15s ease,transform 0.1s ease;
+}
+.p-btn:hover{background:rgba(0,0,0,0.05)}
+.p-btn:active{transform:scale(.98)}
+
+/* -- State Tabs in Panel -- */
+#state-tabs{
+  display:flex;gap:1px;padding:2px;margin-bottom:12px;
+  background:rgba(0,0,0,0.04);border-radius:8px;
+}
+.state-tab{
+  flex:1;padding:5px 0;border:none;border-radius:6px;
+  background:transparent;color:rgba(0,0,0,0.35);font-size:10px;font-weight:500;
+  font-family:inherit;cursor:pointer;text-align:center;
+  transition:color 0.15s ease,background 0.15s ease;
+}
+.state-tab:hover{color:rgba(0,0,0,0.55)}
+.state-tab.active{background:#fff;color:#111;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+
+/* -- Color Presets -- */
+.color-presets{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}
+.color-preset{
+  width:38px;height:22px;border-radius:5px;
+  border:1px solid rgba(0,0,0,0.06);cursor:pointer;position:relative;overflow:hidden;
+  transition:border-color 0.15s ease,transform 0.1s ease;
+}
+.color-preset:hover{border-color:rgba(0,0,0,0.2);transform:scale(1.06)}
+.color-preset:active{transform:scale(.95)}
+.color-preset .cp-a,.color-preset .cp-b,.color-preset .cp-c{position:absolute;height:100%}
+.color-preset .cp-a{left:0;width:33.3%}
+.color-preset .cp-b{left:33.3%;width:33.3%}
+.color-preset .cp-c{left:66.6%;width:33.4%}
+
+/* -- Saved -- */
+.saved-item{display:flex;align-items:center;gap:4px;margin-bottom:5px}
+.saved-item button:first-child{
+  flex:1;height:26px;border:1px solid rgba(0,0,0,0.06);border-radius:6px;
+  background:rgba(0,0,0,0.02);color:rgba(0,0,0,0.6);
+  font-size:11px;font-family:inherit;text-align:left;padding:0 10px;cursor:pointer;
+  transition:background 0.15s ease;
+}
+.saved-item button:first-child:hover{background:rgba(0,0,0,0.05)}
+.saved-item .del{
+  width:20px;height:20px;border:none;border-radius:4px;
+  background:none;color:rgba(0,0,0,0.12);font-size:12px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;transition:color 0.15s ease;
+}
+.saved-item .del:hover{color:rgba(0,0,0,0.45)}
+.p-empty{font-size:10px;color:rgba(0,0,0,0.18);padding:2px 0}
+</style>
+</head>
+<body>
+
+<div id="app">
+  <!-- Canvas controls -->
+  <div id="canvas-controls">
+    <div id="view-bar">
+      <button class="view-btn active" data-view="field">Field</button>
+      <button class="view-btn" data-view="preview">Preview</button>
+    </div>
+    <div id="zoom-bar">
+      <label>Zoom</label>
+      <input type="range" id="canvas-zoom" min="0.5" max="4" step="0.1" value="2.2">
+      <button id="zoom-reset" class="zoom-reset">1x</button>
+    </div>
+  </div>
+
+  <div id="canvas-content">
+  <div id="field-container" data-state="idle">
+    <!-- Thinking stroke highlight (masked to border) -->
+    <div id="think-stroke-glow">
+      <div class="glow-spot-stroke" id="gss0"></div>
+    </div>
+    <!-- Thinking border streak -->
+    <div id="border-streak">
+      <svg id="streak-svg" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="streak-blur"><feGaussianBlur stdDeviation="1.7"/></filter>
+        </defs>
+        <rect id="streak-rect" x="1" y="1" rx="22" ry="22" fill="none" stroke="#7ac8e0" stroke-width="2" stroke-linecap="round" filter="url(#streak-blur)"/>
+      </svg>
+    </div>
+    <!-- Orb glow (WebGL canvas replaces CSS blobs) -->
+    <div id="orb-anchor">
+      <div id="orb">
+        <canvas id="gl-orb"></canvas>
+      </div>
+    </div>
+    <div id="field-bar">
+      <!-- Thinking inner field glow -->
+      <div id="think-field-glow">
+        <div class="glow-spot-field" id="gsf0"></div>
+      </div>
+      <!-- Icon: face placeholder (face rendered in WebGL) -->
+      <div id="field-icon">
+        <div id="face"></div>
+      </div>
+
+      <!-- Input -->
+      <div id="field-input-wrap">
+        <input id="field-input" type="text" placeholder="Ask anything" readonly spellcheck="false" autocomplete="off" />
+        <div id="think-overlay"><span id="think-toolcall"></span></div>
+      </div>
+
+      <!-- Tools: attach + voice/send (focused & typing) -->
+      <div id="tools-default" class="tool-group">
+        <button class="tool-btn" id="btn-attach" aria-label="Attach">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><line x1="9" y1="3.25" x2="9" y2="14.75" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/><line x1="3.25" y1="9" x2="14.75" y2="9" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/></svg>
+        </button>
+        <span id="voice-icon">
+          <button class="tool-btn" id="btn-voice" aria-label="Voice">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 7V9.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/><path d="M6.4 3V13" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/><path d="M9.85 5V11.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/><path d="M13 7V9.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/></svg>
+          </button>
+        </span>
+        <span id="send-icon" style="display:none">
+          <button id="btn-send" aria-label="Send">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="#672FF4"/><path d="M8.63 11.1L12 7.5M12 7.5L15.38 11.1M12 7.5V16.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </span>
+      </div>
+
+      <!-- Tools: stop (thinking) -->
+      <div id="tools-thinking" class="tool-group">
+        <button id="btn-stop" aria-label="Stop">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="#e8e8e8"/><rect x="10.5" y="10.5" width="7" height="7" rx="1.8" fill="#555"/></svg>
+        </button>
+      </div>
+
+      <!-- Divider + Sidebar -->
+      <div id="field-divider"></div>
+      <button id="btn-sidebar" aria-label="Sidebar">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1.75" y="2.75" width="14.5" height="12.5" rx="2" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" fill="none"/><line x1="13.25" y1="5.75" x2="13.25" y2="12.25" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/></svg>
+      </button>
+    </div>
+  </div>
+
+  </div><!-- /canvas-content -->
+</div>
+
+<!-- -- Panel -- -->
+<div id="panel">
+  <div class="p-head">
+    <h1>Field + WebGL Lab</h1>
+    <p>Per-state motion &amp; WebGL orb controls</p>
+  </div>
+
+  <!-- Per-State Controls -->
+  <div class="p-section">
+    <div class="p-label">State Controls</div>
+    <div id="state-tabs">
+      <button class="state-tab active" data-edit="idle">Idle</button>
+      <button class="state-tab" data-edit="focused">Focus</button>
+      <button class="state-tab" data-edit="typing">Type</button>
+      <button class="state-tab" data-edit="thinking">Think</button>
+    </div>
+    <div id="state-controls">
+      <div class="p-row"><label>Orb Speed</label><input type="range" data-skey="orbSpeed" min="0" max="15" step="0.1"><span class="p-val"></span></div>
+      <div class="p-row"><label>Orbit Radius</label><input type="range" data-skey="orbRadius" min="0" max="0.8" step="0.01"><span class="p-val"></span></div>
+      <div class="p-row"><label>Face Rate</label><input type="range" data-skey="faceRate" min="0.1" max="3" step="0.05"><span class="p-val"></span></div>
+      <div class="p-row"><label>Lerp Speed</label><input type="range" data-skey="lerpSpeed" min="0.5" max="20" step="0.1"><span class="p-val"></span></div>
+    </div>
+  </div>
+
+  <!-- WebGL Shader Controls -->
+  <div class="p-section">
+    <div class="p-label">WebGL Orb Shader</div>
+    <div class="p-color"><label>Blob A</label><input type="color" data-skey="c1"><span class="p-hex"></span></div>
+    <div class="p-color"><label>Blob B</label><input type="color" data-skey="c2"><span class="p-hex"></span></div>
+    <div class="p-color"><label>Blob C</label><input type="color" data-skey="c3"><span class="p-hex"></span></div>
+    <div class="color-presets" id="color-presets"></div>
+    <div class="p-row"><label>Blob Size</label><input type="range" data-skey="blobSize" min="0.05" max="0.6" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Softness</label><input type="range" data-skey="blobSoft" min="0.01" max="0.5" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Blob Opacity</label><input type="range" data-skey="blobOpacity" min="0" max="1" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Mask Edge</label><input type="range" data-skey="maskEdge" min="0.15" max="0.55" step="0.005"><span class="p-val"></span></div>
+    <div class="p-row"><label>Mask Soft</label><input type="range" data-skey="maskSoft" min="0.01" max="0.2" step="0.005"><span class="p-val"></span></div>
+    <div class="p-row"><label>Inner Glow</label><input type="range" data-skey="innerGlow" min="0" max="1" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Noise</label><input type="range" data-skey="noiseAmt" min="0" max="0.1" step="0.002"><span class="p-val"></span></div>
+  </div>
+
+  <!-- Face Compositing -->
+  <div class="p-section">
+    <div class="p-label">Face Compositing</div>
+    <div class="p-row"><label>Face Scale</label><input type="range" data-skey="faceScale" min="0.2" max="2.0" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Face Opacity</label><input type="range" data-skey="faceOpacity" min="0" max="1" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Offset Y</label><input type="range" data-skey="faceOffsetY" min="-0.2" max="0.2" step="0.005"><span class="p-val"></span></div>
+    <div class="p-row"><label>Blend</label><select data-skey="faceBlendMode">
+      <option value="0" selected>Normal</option>
+      <option value="1">Screen</option>
+      <option value="2">Overlay</option>
+      <option value="3">Multiply</option>
+      <option value="4">Soft Light</option>
+    </select></div>
+    <div class="p-color"><label>Face Color</label><input type="color" data-skey="faceColor"><span class="p-hex"></span></div>
+    <div class="p-row"><label>Color Mix</label><input type="range" data-skey="faceColorMix" min="0" max="1" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Video</label><select id="ui-video">
+      <option value="face-black.webm" selected>face-black</option>
+      <option value="face-idle.webm">face-idle</option>
+      <option value="face-thinking.webm">face-thinking</option>
+      <option value="face-active.webm">face-active</option>
+    </select></div>
+  </div>
+
+  <!-- Display (per state) -->
+  <div class="p-section">
+    <div class="p-label">Display (per state)</div>
+    <div class="p-row"><label>Orb Size</label><input type="range" data-skey="orbSize" min="40" max="300" step="2"><span class="p-val"></span></div>
+    <div class="p-row"><label>Field Scale</label><input type="range" data-skey="fieldOrbScale" min="0.1" max="1.5" step="0.01"><span class="p-val"></span></div>
+    <div class="p-color"><label>Background</label><input type="color" data-gkey="bgColor"><span class="p-hex"></span></div>
+  </div>
+
+  <!-- Orbits (per state) -->
+  <div class="p-section">
+    <div class="p-label">Orbits (per state)</div>
+    <div class="p-row" style="margin-bottom:2px"><label style="color:rgba(0,0,0,0.25);font-size:9px">Blob A</label></div>
+    <div class="p-row"><label>Tilt X</label><input type="range" data-skey="tiltAx" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Tilt Y</label><input type="range" data-skey="tiltAy" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row" style="margin-bottom:2px"><label style="color:rgba(0,0,0,0.25);font-size:9px">Blob B</label></div>
+    <div class="p-row"><label>Tilt X</label><input type="range" data-skey="tiltBx" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Tilt Y</label><input type="range" data-skey="tiltBy" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row" style="margin-bottom:2px"><label style="color:rgba(0,0,0,0.25);font-size:9px">Blob C</label></div>
+    <div class="p-row"><label>Tilt X</label><input type="range" data-skey="tiltCx" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Tilt Y</label><input type="range" data-skey="tiltCy" min="0" max="3.14" step="0.01"><span class="p-val"></span></div>
+  </div>
+
+  <!-- Shimmer Glow Tuning -->
+  <div class="p-section" id="shimmer-tuning">
+    <div class="p-label">Shimmer Glow</div>
+    <div class="p-row"><label>Speed</label><input type="range" id="sg-speed" min="0.1" max="1.5" step="0.05" value="1.25"><span class="p-val">1.25</span></div>
+    <div class="p-row"><label>Min Opacity</label><input type="range" id="sg-min-op" min="0" max="0.8" step="0.05" value="0.45"><span class="p-val">0.45</span></div>
+    <div class="p-row"><label>Max Opacity</label><input type="range" id="sg-max-op" min="0.3" max="1" step="0.05" value="1.00"><span class="p-val">1.00</span></div>
+    <div class="p-row"><label>Spot Size</label><input type="range" id="sg-spot-size" min="60" max="300" step="10" value="260"><span class="p-val">260</span></div>
+    <div class="p-row"><label>Field Size</label><input type="range" id="sg-field-size" min="60" max="350" step="10" value="120"><span class="p-val">120</span></div>
+    <div class="p-row"><label>Stroke Blur</label><input type="range" id="sg-stroke-blur" min="2" max="20" step="1" value="17"><span class="p-val">17</span></div>
+    <div class="p-row"><label>Field Blur</label><input type="range" id="sg-field-blur" min="4" max="40" step="1" value="34"><span class="p-val">34</span></div>
+    <div class="p-row"><label>Field Opacity</label><input type="range" id="sg-field-op" min="0.05" max="0.8" step="0.05" value="0.05"><span class="p-val">0.05</span></div>
+    <div class="p-row"><label>Stroke Width</label><input type="range" id="sg-stroke-w" min="1" max="4" step="0.5" value="1"><span class="p-val">1.0</span></div>
+    <div class="p-color"><label>Color</label><input type="color" id="sg-color" value="#7D5AFF"><span class="p-hex">7D5AFF</span></div>
+  </div>
+
+  <!-- Streak Tuning -->
+  <div class="p-section" id="streak-tuning">
+    <div class="p-label">Border Streak</div>
+    <div class="p-check"><input type="checkbox" id="st-enabled" checked><label for="st-enabled">Enabled</label></div>
+    <div class="p-row"><label>Lap Time</label><input type="range" id="st-lap" min="0.5" max="6" step="0.1" value="2.0"><span class="p-val">2.0</span></div>
+    <div class="p-row"><label>Pause</label><input type="range" id="st-pause" min="0" max="3" step="0.1" value="0.5"><span class="p-val">0.5</span></div>
+    <div class="p-row"><label>Length</label><input type="range" id="st-len" min="0.02" max="0.5" step="0.01" value="0.15"><span class="p-val">0.15</span></div>
+    <div class="p-row"><label>Width</label><input type="range" id="st-width" min="0.5" max="6" step="0.5" value="2"><span class="p-val">2.0</span></div>
+    <div class="p-row"><label>Blur</label><input type="range" id="st-blur" min="0" max="6" step="0.1" value="1.7"><span class="p-val">1.7</span></div>
+    <div class="p-row"><label>Fade In</label><input type="range" id="st-fadein" min="0" max="1" step="0.05" value="0.15"><span class="p-val">0.15</span></div>
+    <div class="p-row"><label>Fade Out</label><input type="range" id="st-fadeout" min="0" max="1" step="0.05" value="0.15"><span class="p-val">0.15</span></div>
+    <div class="p-row"><label>Ease</label><input type="range" id="st-ease" min="1" max="4" step="0.1" value="2.0"><span class="p-val">2.0</span></div>
+    <div class="p-row"><label>Offset</label><input type="range" id="st-offset" min="0" max="1" step="0.01" value="0.0"><span class="p-val">0.00</span></div>
+  </div>
+
+  <!-- Presets -->
+  <div class="p-section">
+    <div class="p-label">Presets</div>
+    <div id="saved-list"></div>
+    <div style="display:flex;gap:6px;margin-top:8px">
+      <button class="p-btn" id="btn-save" style="flex:1;background:rgba(0,0,0,0.85);color:rgba(255,255,255,0.9);border-color:transparent">Save</button>
+      <button class="p-btn" id="btn-json" style="flex:1">Copy JSON</button>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SHADERS ==================== -->
+
+<!-- Vertex shader -- fullscreen quad, flip Y for video -->
+<script id="vs-quad" type="x-shader/x-vertex">
+  attribute vec2 aPos;
+  varying vec2 vUV;
+  void main() {
+    vUV = vec2(aPos.x * 0.5 + 0.5, 1.0 - (aPos.y * 0.5 + 0.5));
+    gl_Position = vec4(aPos, 0.0, 1.0);
+  }
+</script>
+
+<!-- Orb shader -- clean blobs + face, no dark artifacts -->
+<script id="fs-orb" type="x-shader/x-fragment">
+  precision mediump float;
+  varying vec2 vUV;
+  uniform sampler2D uVideo;
+  uniform float uTime;
+
+  // Blob colors
+  uniform vec3 uBlobA, uBlobB, uBlobC;
+
+  // Orbit params
+  uniform float uOrbSpeed, uOrbRadius, uBlobSize, uBlobSoft, uBlobOpacity;
+  uniform vec2 uTiltA, uTiltB, uTiltC;
+
+  // Face compositing
+  uniform float uFaceScale, uFaceOpacity, uFaceOffsetY;
+  uniform vec3 uFaceColor;
+  uniform float uFaceColorMix;
+  uniform int uBlendMode;
+
+  // Mask & atmosphere
+  uniform float uMaskEdge, uMaskSoft, uInnerGlow, uNoiseAmt;
+
+  // --- Hash noise ---
+  float hash(vec2 p) {
+    vec3 p3 = fract(vec3(p.xyx) * 0.1031);
+    p3 += dot(p3, p3.yzx + 33.33);
+    return fract((p3.x + p3.y) * p3.z);
+  }
+
+  // --- Soft blob ---
+  float blob(vec2 uv, vec2 center, float size, float soft) {
+    float d = length(uv - center);
+    return smoothstep(size + soft, size - soft * 0.5, d);
+  }
+
+  // --- 3D orbit ---
+  vec3 orbit3D(float t, float phase, float tiltX, float tiltY) {
+    float x = cos(t + phase) * uOrbRadius;
+    float y = sin(t + phase) * uOrbRadius;
+    float z = 0.0;
+    float cx = cos(tiltX), sx = sin(tiltX);
+    float y2 = y * cx - z * sx;
+    float z2 = y * sx + z * cx;
+    y = y2; z = z2;
+    float cy = cos(tiltY), sy = sin(tiltY);
+    float x2 = x * cy + z * sy;
+    float z3 = -x * sy + z * cy;
+    return vec3(x2 + 0.5, y + 0.5, z3);
+  }
+
+  // --- Blend modes ---
+  vec3 blendScreen(vec3 base, vec3 top) {
+    return 1.0 - (1.0 - base) * (1.0 - top);
+  }
+  vec3 blendOverlay(vec3 base, vec3 top) {
+    return mix(
+      2.0 * base * top,
+      1.0 - 2.0 * (1.0 - base) * (1.0 - top),
+      step(0.5, base)
+    );
+  }
+  vec3 blendMultiply(vec3 base, vec3 top) { return base * top; }
+  vec3 blendSoftLight(vec3 base, vec3 top) {
+    return mix(
+      2.0 * base * top + base * base * (1.0 - 2.0 * top),
+      sqrt(base) * (2.0 * top - 1.0) + 2.0 * base * (1.0 - top),
+      step(0.5, top)
+    );
+  }
+
+  void main() {
+    vec2 uv = vUV;
+    float t = uTime * uOrbSpeed;
+    float distFromCenter = length(uv - 0.5);
+
+    // --- Circular mask (alpha only, no color darkening) ---
+    float mask = 1.0 - smoothstep(uMaskEdge - uMaskSoft, uMaskEdge, distFromCenter);
+
+    // Early out -- outside the orb circle, fully transparent
+    if (mask <= 0.0) {
+      gl_FragColor = vec4(0.0);
+      return;
+    }
+
+    // --- 3 orb blobs ---
+    vec3 pos0 = orbit3D(t, 0.0,   uTiltA.x, uTiltA.y);
+    vec3 pos1 = orbit3D(t, 2.094, uTiltB.x, uTiltB.y);
+    vec3 pos2 = orbit3D(t, 4.189, uTiltC.x, uTiltC.y);
+
+    // Depth for z-based size scaling
+    float depth0 = (pos0.z / max(uOrbRadius, 0.01)) * 0.5 + 0.5;
+    float depth1 = (pos1.z / max(uOrbRadius, 0.01)) * 0.5 + 0.5;
+    float depth2 = (pos2.z / max(uOrbRadius, 0.01)) * 0.5 + 0.5;
+
+    float b0 = blob(uv, pos0.xy, uBlobSize * (0.8 + depth0 * 0.4), uBlobSoft);
+    float b1 = blob(uv, pos1.xy, uBlobSize * (0.8 + depth1 * 0.4), uBlobSoft);
+    float b2 = blob(uv, pos2.xy, uBlobSize * (0.8 + depth2 * 0.4), uBlobSoft);
+
+    // Additive color
+    vec3 orbColor = uBlobA * b0 + uBlobB * b1 + uBlobC * b2;
+    float orbAlpha = clamp(b0 + b1 + b2, 0.0, 1.0) * uBlobOpacity;
+
+    // --- Face video ---
+    vec2 faceCenter = vec2(0.5, 0.5 + uFaceOffsetY);
+    vec2 faceUV = (uv - faceCenter) / uFaceScale + 0.5;
+    vec4 face = vec4(0.0);
+    if (faceUV.x >= 0.0 && faceUV.x <= 1.0 && faceUV.y >= 0.0 && faceUV.y <= 1.0) {
+      face = texture2D(uVideo, faceUV);
+    }
+
+    // Tint face with uFaceColor (mix between original and tinted)
+    vec3 faceTinted = mix(face.rgb, uFaceColor * dot(face.rgb, vec3(0.299, 0.587, 0.114)), uFaceColorMix);
+    float faceA = face.a * uFaceOpacity;
+
+    // --- Compositing ---
+    vec3 color = orbColor;
+
+    if (uBlendMode == 0) {
+      color = mix(color, faceTinted, faceA);
+    } else if (uBlendMode == 1) {
+      color = mix(color, blendScreen(color, face.rgb), faceA);
+    } else if (uBlendMode == 2) {
+      color = mix(color, blendOverlay(color, face.rgb), faceA);
+    } else if (uBlendMode == 3) {
+      color = mix(color, blendMultiply(color, face.rgb), faceA);
+    } else {
+      color = mix(color, blendSoftLight(color, face.rgb), faceA);
+    }
+
+    // --- Inner glow ---
+    float glowRing = smoothstep(0.15, uMaskEdge - 0.02, distFromCenter)
+                   * smoothstep(uMaskEdge, uMaskEdge - 0.1, distFromCenter);
+    vec3 avgColor = (uBlobA + uBlobB + uBlobC) / 3.0;
+    color += avgColor * glowRing * uInnerGlow;
+
+    // --- Film grain ---
+    float noise = (hash(uv * 800.0 + uTime * 100.0) - 0.5) * uNoiseAmt;
+    color += noise;
+
+    // --- Final alpha ---
+    float alpha = max(orbAlpha, faceA) * mask;
+
+    // Premultiplied alpha output
+    vec3 final_c = clamp(color, 0.0, 1.0) * alpha;
+    gl_FragColor = vec4(final_c, alpha);
+  }
+</script>
+
+<script>
+// ============================================================
+// STATE CONFIG -- per-state animation parameters
+// ============================================================
+
+const SP = {
+  idle: {
+    orbSpeed: 1.5, orbRadius: 0.17, faceRate: 0.55, lerpSpeed: 5,
+    orbSize: 290, fieldOrbScale: 0.23,
+    c1: '#6e6bff', c2: '#5f5cff', c3: '#6647ff',
+    blobSize: 0.22, blobSoft: 0.15, blobOpacity: 1.0,
+    maskEdge: 0.29, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
+    faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
+    tiltAx: 2.00, tiltAy: 0.67,
+    tiltBx: 2.40, tiltBy: 0.40,
+    tiltCx: 2.10, tiltCy: 1.50,
+  },
+  focused: {
+    orbSpeed: 1.5, orbRadius: 0.17, faceRate: 0.55, lerpSpeed: 5,
+    orbSize: 290, fieldOrbScale: 0.23,
+    c1: '#6e6bff', c2: '#5f5cff', c3: '#6647ff',
+    blobSize: 0.22, blobSoft: 0.15, blobOpacity: 1.0,
+    maskEdge: 0.29, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
+    faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
+    tiltAx: 2.00, tiltAy: 0.67,
+    tiltBx: 2.40, tiltBy: 0.40,
+    tiltCx: 2.10, tiltCy: 1.50,
+  },
+  typing: {
+    orbSpeed: 1.5, orbRadius: 0.17, faceRate: 0.55, lerpSpeed: 5,
+    orbSize: 290, fieldOrbScale: 0.23,
+    c1: '#6e6bff', c2: '#5f5cff', c3: '#6647ff',
+    blobSize: 0.22, blobSoft: 0.15, blobOpacity: 1.0,
+    maskEdge: 0.29, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
+    faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
+    tiltAx: 2.00, tiltAy: 0.67,
+    tiltBx: 2.40, tiltBy: 0.40,
+    tiltCx: 2.10, tiltCy: 1.50,
+  },
+  thinking: {
+    orbSpeed: 1.5, orbRadius: 0.17, faceRate: 0.55, lerpSpeed: 5,
+    orbSize: 290, fieldOrbScale: 0.23,
+    c1: '#6e6bff', c2: '#5f5cff', c3: '#6647ff',
+    blobSize: 0.22, blobSoft: 0.15, blobOpacity: 1.0,
+    maskEdge: 0.29, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
+    faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
+    tiltAx: 2.00, tiltAy: 0.67,
+    tiltBx: 2.40, tiltBy: 0.40,
+    tiltCx: 2.10, tiltCy: 1.50,
+  },
+};
+
+// ============================================================
+// GLOBAL CONFIG
+// ============================================================
+
+const G = {
+  bgColor: '#f0f0f0',
+  thinkDuration: 5,
+};
+
+// ============================================================
+// RUNTIME
+// ============================================================
+
+let currentState = 'idle';
+let editingState = 'idle';
+let typedText = '';
+let thinkTimer = null;
+let thinkDotsInterval = null;
+let orbPhase = 0;
+let lastT = 0;
+let streakPhase = 'none';
+let streakStartTime = 0;
+let streakCycle = 0;
+const streakColors = ['#6e6bff', '#5f5cff', '#a27aff'];
+
+// Live interpolated values (lerped toward current state)
+const LERP_KEYS = ['orbSpeed','orbRadius',
+  'orbSize','fieldOrbScale',
+  'blobSize','blobSoft','blobOpacity',
+  'maskEdge','maskSoft','innerGlow','noiseAmt',
+  'faceScale','faceOpacity','faceOffsetY','faceColorMix',
+  'tiltAx','tiltAy','tiltBx','tiltBy','tiltCx','tiltCy'];
+
+const COLOR_KEYS = ['c1','c2','c3','faceColor'];
+
+const live = {};
+LERP_KEYS.forEach(k => live[k] = SP.idle[k]);
+COLOR_KEYS.forEach(k => live[k] = SP.idle[k]);
+live.faceBlendMode = SP.idle.faceBlendMode;
+
+function hexToRgb(h) {
+  const v = parseInt(h.slice(1), 16);
+  return [(v >> 16) & 255, (v >> 8) & 255, v & 255];
+}
+function rgbToHex(r, g, b) {
+  return '#' + ((1 << 24) + (Math.round(r) << 16) + (Math.round(g) << 8) + Math.round(b)).toString(16).slice(1);
+}
+function lerpColor(from, to, f) {
+  const a = hexToRgb(from), b = hexToRgb(to);
+  return rgbToHex(a[0] + (b[0]-a[0])*f, a[1] + (b[1]-a[1])*f, a[2] + (b[2]-a[2])*f);
+}
+function hexToGL(hex) {
+  return [
+    parseInt(hex.slice(1,3), 16) / 255,
+    parseInt(hex.slice(3,5), 16) / 255,
+    parseInt(hex.slice(5,7), 16) / 255,
+  ];
+}
+
+// ============================================================
+// DOM REFS
+// ============================================================
+
+const fieldContainer = document.getElementById('field-container');
+const fieldBar = document.getElementById('field-bar');
+const fieldInput = document.getElementById('field-input');
+const toolsDefault = document.getElementById('tools-default');
+const toolsThinking = document.getElementById('tools-thinking');
+const voiceIcon = document.getElementById('voice-icon');
+const sendIcon = document.getElementById('send-icon');
+const btnSend = document.getElementById('btn-send');
+const btnStop = document.getElementById('btn-stop');
+const orbEl = document.getElementById('orb');
+
+// ============================================================
+// WebGL ENGINE
+// ============================================================
+
+const glCanvas = document.getElementById('gl-orb');
+const gl = glCanvas.getContext('webgl', { alpha: true, premultipliedAlpha: true });
+
+if (!gl) {
+  console.error('WebGL not supported');
+}
+
+function compileShader(type, src) {
+  const s = gl.createShader(type);
+  gl.shaderSource(s, src);
+  gl.compileShader(s);
+  if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) {
+    console.error('Shader compile:', gl.getShaderInfoLog(s));
+    gl.deleteShader(s);
+    return null;
+  }
+  return s;
+}
+
+function linkProgram(vsSrc, fsSrc) {
+  const vs = compileShader(gl.VERTEX_SHADER, vsSrc);
+  const fs = compileShader(gl.FRAGMENT_SHADER, fsSrc);
+  if (!vs || !fs) return null;
+  const p = gl.createProgram();
+  gl.attachShader(p, vs);
+  gl.attachShader(p, fs);
+  gl.linkProgram(p);
+  if (!gl.getProgramParameter(p, gl.LINK_STATUS)) {
+    console.error('Program link:', gl.getProgramInfoLog(p));
+    return null;
+  }
+  return p;
+}
+
+const vsSrc = document.getElementById('vs-quad').textContent;
+const fsSrc = document.getElementById('fs-orb').textContent;
+const prog = linkProgram(vsSrc, fsSrc);
+
+const glUniforms = {};
+function u(name) {
+  if (!(name in glUniforms)) glUniforms[name] = gl.getUniformLocation(prog, name);
+  return glUniforms[name];
+}
+
+const quadBuf = gl.createBuffer();
+gl.bindBuffer(gl.ARRAY_BUFFER, quadBuf);
+gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+
+// Video (programmatic, not a DOM element)
+const video = document.createElement('video');
+video.src = 'face-black.webm';
+video.loop = true;
+video.muted = true;
+video.playsInline = true;
+video.crossOrigin = 'anonymous';
+video.play();
+
+const videoTex = gl.createTexture();
+gl.bindTexture(gl.TEXTURE_2D, videoTex);
+gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, new Uint8Array([0,0,0,0]));
+
+let videoReady = false;
+video.addEventListener('playing', () => { videoReady = true; });
+
+// Video segment ranges per state
+const VIDEO_SEGMENTS = {
+  idle:     [0, 3.5],
+  focused:  [0.4, 3.5],
+  typing:   [0.4, 3.5],
+  thinking: [5.6, 10],
+};
+
+// Idle blink config
+const IDLE_BLINK = { blinkStart: 0, blinkEnd: 0.35, pauseMin: 2.0, pauseMax: 3.5 };
+let idleBlinkTimer = null;
+
+function startIdleBlink() {
+  clearTimeout(idleBlinkTimer);
+  video.currentTime = IDLE_BLINK.blinkStart;
+  video.play();
+}
+
+function scheduleIdleBlink() {
+  const pause = IDLE_BLINK.pauseMin + Math.random() * (IDLE_BLINK.pauseMax - IDLE_BLINK.pauseMin);
+  idleBlinkTimer = setTimeout(() => {
+    if (currentState === 'idle') {
+      startIdleBlink();
+    }
+  }, pause * 1000);
+}
+
+function enforceSegment(vid, seg) {
+  if (currentState === 'idle') {
+    if (vid.currentTime >= IDLE_BLINK.blinkEnd) {
+      vid.pause();
+      vid.currentTime = IDLE_BLINK.blinkStart;
+      scheduleIdleBlink();
+    }
+    return;
+  }
+  if (vid.paused) vid.play();
+  if (vid.currentTime >= seg[1] || vid.currentTime < seg[0]) {
+    vid.currentTime = seg[0];
+  }
+}
+
+function loopSegments() {
+  const seg = VIDEO_SEGMENTS[currentState];
+  if (seg) {
+    enforceSegment(video, seg);
+  }
+  requestAnimationFrame(loopSegments);
+}
+requestAnimationFrame(loopSegments);
+
+let lastGLSize = 0;
+function resizeGLCanvas(sz) {
+  if (sz === lastGLSize) return;
+  lastGLSize = sz;
+  const dpr = window.devicePixelRatio || 1;
+  glCanvas.width = sz * dpr;
+  glCanvas.height = sz * dpr;
+  glCanvas.style.width = sz + 'px';
+  glCanvas.style.height = sz + 'px';
+  gl.viewport(0, 0, glCanvas.width, glCanvas.height);
+}
+
+// ============================================================
+// STATE MACHINE
+// ============================================================
+
+function setState(newState) {
+  if (newState === currentState) return;
+  const prev = currentState;
+  currentState = newState;
+
+  clearTimeout(idleBlinkTimer);
+  clearTimeout(thinkTimer);
+  clearInterval(thinkDotsInterval);
+  if (_tcInterval) { clearTimeout(_tcInterval); _tcInterval = null; }
+  _stopGlowSpots();
+  thinkTimer = null;
+  thinkDotsInterval = null;
+  streakPhase = 'none';
+
+  fieldContainer.dataset.state = newState;
+
+  fieldBar.style.width = (newState === 'idle') ? '320px' : '480px';
+
+  const showDefault = (newState === 'focused' || newState === 'typing');
+  const showThink = (newState === 'thinking');
+  toolsDefault.style.maxWidth = showDefault ? '200px' : '0';
+  toolsDefault.style.padding = showDefault ? '0 2px' : '0';
+  toolsDefault.style.opacity = showDefault ? '1' : '0';
+  toolsDefault.style.filter = showDefault ? 'none' : 'blur(2px)';
+  toolsDefault.style.pointerEvents = showDefault ? 'auto' : 'none';
+
+  toolsThinking.style.maxWidth = showThink ? '200px' : '0';
+  toolsThinking.style.padding = showThink ? '0 2px' : '0';
+  toolsThinking.style.opacity = showThink ? '1' : '0';
+  toolsThinking.style.filter = showThink ? 'none' : 'blur(2px)';
+  toolsThinking.style.pointerEvents = showThink ? 'auto' : 'none';
+
+  switch (newState) {
+    case 'idle':
+      fieldInput.value = '';
+      fieldInput.placeholder = 'Ask anything';
+      fieldInput.readOnly = true;
+      fieldInput.blur();
+      typedText = '';
+      clearTimeout(idleBlinkTimer);
+      startIdleBlink();
+      break;
+    case 'focused':
+      fieldInput.readOnly = false;
+      fieldInput.placeholder = 'Ask anything';
+      if (prev === 'idle') fieldInput.value = '';
+      setTimeout(() => fieldInput.focus(), 50);
+      break;
+    case 'typing':
+      fieldInput.readOnly = false;
+      break;
+    case 'thinking':
+      typedText = fieldInput.value;
+      fieldInput.value = '';
+      fieldInput.placeholder = '';
+      fieldInput.readOnly = true;
+      fieldInput.blur();
+      startThinkTimer();
+      streakPhase = 'running';
+      streakStartTime = performance.now();
+      break;
+  }
+
+  updateSendVoice();
+  updateVideoState();
+  updateStateBar();
+}
+
+// Tool call cycling for thinking state
+var _tcalls = [
+  'Searching knowledge base...','Reading product catalog...','Analyzing store data...',
+  'Checking inventory...','Querying order history...','Fetching recommendations...',
+  'Processing request...','Reviewing policies...','Looking up details...','Generating response...',
+];
+var _tcIdx = 0;
+var _tcInterval = null;
+
+function _scheduleNextToolCall(el) {
+  var delay = 1800 + Math.random() * 3200;
+  _tcInterval = setTimeout(function() {
+    if (currentState !== 'thinking') return;
+    el.className = 'slide-out';
+    var swapDelay = 350 + Math.random() * 200;
+    setTimeout(function() {
+      if (currentState !== 'thinking') return;
+      _tcIdx = (_tcIdx + 1) % _tcalls.length;
+      el.textContent = _tcalls[_tcIdx];
+      el.style.transition = 'none';
+      el.className = 'slide-in';
+      void el.offsetHeight;
+      el.style.transition = '';
+      el.className = 'visible';
+      _scheduleNextToolCall(el);
+    }, swapDelay);
+  }, delay);
+}
+
+// Shimmer glow system
+var _glowRaf = null;
+var _glowSpots = [];
+
+function _initGlowSpots() {
+  _glowSpots = [{ speed: 0.45 }];
+}
+
+function _sgVal(id) { return parseFloat(document.getElementById(id).value); }
+
+function _updateGlowSpots(ts) {
+  if (currentState !== 'thinking') { _glowRaf = null; return; }
+  var fw = fieldBar.offsetWidth, fh = fieldBar.offsetHeight;
+  var speed = _sgVal('sg-speed');
+  var minOp = _sgVal('sg-min-op');
+  var maxOp = _sgVal('sg-max-op');
+  var spotSize = _sgVal('sg-spot-size');
+  var fieldSize = _sgVal('sg-field-size');
+  var strokeBlur = _sgVal('sg-stroke-blur');
+  var fieldBlur = _sgVal('sg-field-blur');
+  var fieldOp = _sgVal('sg-field-op');
+  var strokeW = _sgVal('sg-stroke-w');
+  var color = document.getElementById('sg-color').value;
+  var r = parseInt(color.slice(1,3),16), g = parseInt(color.slice(3,5),16), b = parseInt(color.slice(5,7),16);
+
+  var t = (ts / 1000) * speed;
+  var wave = (Math.sin(t) + 1) / 2;
+  var opacity = minOp + Math.pow(Math.sin(t * 1.1), 2) * (maxOp - minOp);
+  var x = wave * fw;
+  var y = fh / 2;
+
+  var ss = document.getElementById('gss0');
+  ss.style.width = spotSize + 'px'; ss.style.height = spotSize + 'px';
+  ss.style.background = 'radial-gradient(circle,rgb('+r+','+g+','+b+') 0%,rgba('+r+','+g+','+b+',0.5) 30%,transparent 65%)';
+  ss.style.filter = 'blur('+strokeBlur+'px)';
+  ss.style.left = x + 'px'; ss.style.top = y + 'px'; ss.style.opacity = opacity;
+
+  var sf = document.getElementById('gsf0');
+  sf.style.width = fieldSize + 'px'; sf.style.height = fieldSize + 'px';
+  sf.style.background = 'radial-gradient(circle,rgba('+r+','+g+','+b+','+fieldOp+') 0%,rgba('+r+','+g+','+b+','+(fieldOp*0.4)+') 35%,transparent 65%)';
+  sf.style.filter = 'blur('+fieldBlur+'px)';
+  sf.style.left = x + 'px'; sf.style.top = y + 'px'; sf.style.opacity = opacity;
+
+  document.getElementById('think-stroke-glow').style.padding = strokeW + 'px';
+  fieldBar.style.boxShadow = currentState === 'thinking'
+    ? '0 1px 3px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.04),inset 0 0 0 '+strokeW+'px rgba('+r+','+g+','+b+',0.12)'
+    : '';
+
+  _glowRaf = requestAnimationFrame(_updateGlowSpots);
+}
+
+function _startGlowSpots() {
+  _initGlowSpots();
+  _glowRaf = requestAnimationFrame(_updateGlowSpots);
+}
+
+function _stopGlowSpots() {
+  if (_glowRaf) { cancelAnimationFrame(_glowRaf); _glowRaf = null; }
+  var ss = document.getElementById('gss0');
+  var sf = document.getElementById('gsf0');
+  if (ss) ss.style.opacity = '0';
+  if (sf) sf.style.opacity = '0';
+  fieldBar.style.boxShadow = '';
+}
+
+function startThinkTimer() {
+  var el = document.getElementById('think-toolcall');
+  _tcIdx = Math.floor(Math.random() * _tcalls.length);
+  el.textContent = _tcalls[_tcIdx];
+  el.className = 'visible';
+  _scheduleNextToolCall(el);
+  _startGlowSpots();
+}
+
+function updateSendVoice() {
+  const hasDraft = fieldInput.value.trim().length > 0;
+  voiceIcon.style.display = hasDraft ? 'none' : '';
+  sendIcon.style.display = hasDraft ? '' : 'none';
+}
+
+function updateVideoState() {
+  const target = SP[currentState];
+  const seg = VIDEO_SEGMENTS[currentState];
+  video.currentTime = seg[0];
+  video.playbackRate = target.faceRate;
+  video.play();
+}
+
+function updateStateBar() {
+  document.querySelectorAll('.state-tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.edit === currentState);
+  });
+  editingState = currentState;
+  syncStateControls();
+}
+
+// ============================================================
+// FIELD INTERACTION
+// ============================================================
+
+fieldBar.addEventListener('click', (e) => {
+  if (currentState === 'idle' && !e.target.closest('#btn-sidebar')) {
+    setState('focused');
+  }
+});
+
+fieldInput.addEventListener('input', () => {
+  if (currentState === 'focused' && fieldInput.value.length > 0) {
+    setState('typing');
+  } else if (currentState === 'typing' && fieldInput.value.length === 0) {
+    setState('focused');
+  }
+  updateSendVoice();
+});
+
+fieldInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' && (currentState === 'typing' || (currentState === 'focused' && fieldInput.value.trim().length > 0))) {
+    e.preventDefault();
+    if (currentState === 'focused') setState('typing');
+    setState('thinking');
+  }
+  if (e.key === 'Escape') {
+    setState('idle');
+  }
+});
+
+btnSend.addEventListener('click', (e) => {
+  e.stopPropagation();
+  if (currentState === 'typing' || currentState === 'focused') {
+    setState('thinking');
+  }
+});
+
+btnStop.addEventListener('click', (e) => {
+  e.stopPropagation();
+  setState('idle');
+});
+
+document.addEventListener('mousedown', (e) => {
+  if (currentState === 'focused' || currentState === 'typing') {
+    if (!fieldBar.contains(e.target) && !document.getElementById('panel').contains(e.target)) {
+      setState('idle');
+    }
+  }
+});
+
+// ============================================================
+// ANIMATION LOOP (combined field + WebGL)
+// ============================================================
+
+function frame(ts) {
+  requestAnimationFrame(frame);
+  const dt = Math.min((ts - lastT) / 1000, 0.05);
+  lastT = ts;
+
+  // Lerp ALL live values toward current state
+  const target = SP[currentState];
+  const spd = target.lerpSpeed;
+  const f = Math.min(spd * dt, 1);
+  LERP_KEYS.forEach(k => { live[k] += (target[k] - live[k]) * f; });
+  COLOR_KEYS.forEach(k => { live[k] = lerpColor(live[k], target[k], f); });
+  live.faceBlendMode = target.faceBlendMode;
+
+  // Accumulate phase
+  orbPhase += live.orbSpeed * dt;
+
+  // Apply orb layout — canvas renders at full orbSize, CSS scales for field placement
+  const sz = live.orbSize;
+  const fos = live.fieldOrbScale;
+  orbEl.style.width = sz + 'px';
+  orbEl.style.height = sz + 'px';
+  orbEl.style.transform = `translate(-50%,-50%) scale(${fos})`;
+  // Render the WebGL canvas at full orbSize resolution (not scaled-down)
+  // so the face is crisp even though #orb is CSS-scaled
+  resizeGLCanvas(Math.round(sz));
+
+  // ---- WebGL Render ----
+  if (gl) {
+    if (videoReady && video.readyState >= video.HAVE_CURRENT_DATA) {
+      gl.bindTexture(gl.TEXTURE_2D, videoTex);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, video);
+    }
+
+    // Clear to transparent
+    gl.clearColor(0, 0, 0, 0);
+    gl.clear(gl.COLOR_BUFFER_BIT);
+
+    // Premultiplied alpha blending
+    gl.enable(gl.BLEND);
+    gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
+
+    gl.useProgram(prog);
+
+    const aPos = gl.getAttribLocation(prog, 'aPos');
+    gl.bindBuffer(gl.ARRAY_BUFFER, quadBuf);
+    gl.enableVertexAttribArray(aPos);
+    gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
+
+    gl.activeTexture(gl.TEXTURE0);
+    gl.bindTexture(gl.TEXTURE_2D, videoTex);
+    gl.uniform1i(u('uVideo'), 0);
+
+    gl.uniform1f(u('uTime'), ts / 1000);
+
+    // Pass lerped colors
+    const cA = hexToGL(live.c1);
+    const cB = hexToGL(live.c2);
+    const cC = hexToGL(live.c3);
+    gl.uniform3fv(u('uBlobA'), cA);
+    gl.uniform3fv(u('uBlobB'), cB);
+    gl.uniform3fv(u('uBlobC'), cC);
+
+    gl.uniform1f(u('uOrbSpeed'), live.orbSpeed);
+    gl.uniform1f(u('uOrbRadius'), live.orbRadius);
+    gl.uniform1f(u('uBlobSize'), live.blobSize);
+    gl.uniform1f(u('uBlobSoft'), live.blobSoft);
+    gl.uniform1f(u('uBlobOpacity'), live.blobOpacity);
+    gl.uniform2f(u('uTiltA'), live.tiltAx, live.tiltAy);
+    gl.uniform2f(u('uTiltB'), live.tiltBx, live.tiltBy);
+    gl.uniform2f(u('uTiltC'), live.tiltCx, live.tiltCy);
+
+    gl.uniform1f(u('uFaceScale'), live.faceScale);
+    gl.uniform1f(u('uFaceOpacity'), live.faceOpacity);
+    gl.uniform1f(u('uFaceOffsetY'), live.faceOffsetY);
+    gl.uniform1i(u('uBlendMode'), live.faceBlendMode);
+    const fc = hexToRgb(live.faceColor);
+    gl.uniform3f(u('uFaceColor'), fc[0]/255, fc[1]/255, fc[2]/255);
+    gl.uniform1f(u('uFaceColorMix'), live.faceColorMix);
+
+    gl.uniform1f(u('uMaskEdge'), live.maskEdge);
+    gl.uniform1f(u('uMaskSoft'), live.maskSoft);
+    gl.uniform1f(u('uInnerGlow'), live.innerGlow);
+    gl.uniform1f(u('uNoiseAmt'), live.noiseAmt);
+
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+  }
+
+  // Thinking glow -- size stroke glow to bar
+  document.getElementById('think-stroke-glow').style.width = (fieldBar.offsetWidth + 2) + 'px';
+  document.getElementById('think-stroke-glow').style.height = (fieldBar.offsetHeight + 2) + 'px';
+
+  // Border streak -- size SVG to bar
+  const streakSvg = document.getElementById('streak-svg');
+  const streakEl = document.getElementById('border-streak');
+  const bw = fieldBar.offsetWidth + 4, bh = fieldBar.offsetHeight + 4;
+  streakSvg.setAttribute('width', bw);
+  streakSvg.setAttribute('height', bh);
+  const straight = 2 * ((bw - 2) - (bh - 2));
+  const curves = Math.PI * (bh - 2);
+  const perimeter = straight + curves;
+
+  const sRect = document.getElementById('streak-rect');
+  sRect.setAttribute('width', bw - 2);
+  sRect.setAttribute('height', bh - 2);
+
+  const stLap = parseFloat(document.getElementById('st-lap').value);
+  const stPause = parseFloat(document.getElementById('st-pause').value);
+  const stLen = parseFloat(document.getElementById('st-len').value);
+  const stWidth = parseFloat(document.getElementById('st-width').value);
+  const stBlur = parseFloat(document.getElementById('st-blur').value);
+  const stFadeIn = parseFloat(document.getElementById('st-fadein').value);
+  const stFadeOut = parseFloat(document.getElementById('st-fadeout').value);
+  const stEase = parseFloat(document.getElementById('st-ease').value);
+  const stOffset = parseFloat(document.getElementById('st-offset').value);
+
+  sRect.style.strokeWidth = stWidth;
+  document.querySelector('#streak-blur feGaussianBlur').setAttribute('stdDeviation', stBlur);
+
+  const startOffset = perimeter * stOffset;
+
+  const streakEnabled = document.getElementById('st-enabled').checked;
+  if (streakPhase === 'running' && streakEnabled) {
+    const elapsed = (ts - streakStartTime) / 1000;
+    const t01 = (elapsed % stLap) / stLap;
+
+    const eased = t01 < 0.5
+      ? Math.pow(2, stEase - 1) * Math.pow(t01, stEase)
+      : 1 - Math.pow(-2 * t01 + 2, stEase) / 2;
+    const headPos = startOffset + eased * perimeter;
+    const streakLen = perimeter * stLen;
+
+    sRect.style.strokeDasharray = `${streakLen} ${perimeter - streakLen}`;
+    sRect.style.strokeDashoffset = -headPos;
+
+    const colorT = (elapsed * 0.4) % streakColors.length;
+    const ci = Math.floor(colorT);
+    const cf = colorT - ci;
+    const cFrom = hexToRgb(streakColors[ci % streakColors.length]);
+    const cTo = hexToRgb(streakColors[(ci + 1) % streakColors.length]);
+    const r = Math.round(cFrom[0] + (cTo[0] - cFrom[0]) * cf);
+    const g = Math.round(cFrom[1] + (cTo[1] - cFrom[1]) * cf);
+    const b = Math.round(cFrom[2] + (cTo[2] - cFrom[2]) * cf);
+    sRect.style.stroke = `rgb(${r},${g},${b})`;
+
+    streakEl.style.opacity = '1';
+  } else {
+    streakEl.style.opacity = '0';
+  }
+
+  // Background
+  document.body.style.background = G.bgColor;
+}
+
+requestAnimationFrame(frame);
+
+// ============================================================
+// CANVAS ZOOM
+// ============================================================
+
+const canvasContent = document.getElementById('canvas-content');
+const canvasZoomInput = document.getElementById('canvas-zoom');
+const zoomResetBtn = document.getElementById('zoom-reset');
+
+function updateZoom(z) {
+  canvasContent.style.transform = `scale(${z})`;
+  canvasZoomInput.value = z;
+  zoomResetBtn.textContent = z === 1 ? '1x' : z.toFixed(1) + 'x';
+  zoomResetBtn.classList.toggle('is-default', z === 1);
+}
+
+canvasZoomInput.addEventListener('input', () => {
+  updateZoom(parseFloat(canvasZoomInput.value));
+});
+
+zoomResetBtn.addEventListener('click', () => {
+  updateZoom(1);
+});
+
+// ============================================================
+// VIEW TOGGLE (Field / Preview)
+// ============================================================
+
+let currentView = 'field';
+document.querySelectorAll('.view-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentView = btn.dataset.view;
+    document.body.classList.toggle('preview-mode', currentView === 'preview');
+  });
+});
+
+// ============================================================
+// VIDEO SOURCE SELECTOR
+// ============================================================
+
+document.getElementById('ui-video').addEventListener('change', e => {
+  videoReady = false;
+  video.src = e.target.value;
+  video.play();
+});
+
+// ============================================================
+// PANEL WIRING -- State Controls
+// ============================================================
+
+function syncStateControls() {
+  const params = SP[editingState];
+  document.querySelectorAll('input[type=range][data-skey]').forEach(el => {
+    const key = el.dataset.skey;
+    if (key in params) {
+      el.value = params[key];
+      const step = parseFloat(el.step);
+      el.nextElementSibling.textContent = Number(params[key]).toFixed(step >= 1 ? 0 : 2);
+    }
+  });
+  document.querySelectorAll('input[type=color][data-skey]').forEach(el => {
+    const key = el.dataset.skey;
+    if (key in params) {
+      el.value = params[key];
+      el.nextElementSibling.textContent = params[key].slice(1);
+    }
+  });
+  document.querySelectorAll('select[data-skey]').forEach(el => {
+    const key = el.dataset.skey;
+    if (key in params) {
+      el.value = params[key];
+    }
+  });
+}
+
+document.querySelectorAll('input[type=range][data-skey]').forEach(el => {
+  el.addEventListener('input', () => {
+    SP[editingState][el.dataset.skey] = parseFloat(el.value);
+    const step = parseFloat(el.step);
+    el.nextElementSibling.textContent = Number(el.value).toFixed(step >= 1 ? 0 : 2);
+    if (editingState === currentState) updateVideoState();
+  });
+});
+
+document.querySelectorAll('input[type=color][data-skey]').forEach(el => {
+  el.addEventListener('input', () => {
+    SP[editingState][el.dataset.skey] = el.value;
+    el.nextElementSibling.textContent = el.value.slice(1);
+  });
+});
+
+document.querySelectorAll('select[data-skey]').forEach(el => {
+  el.addEventListener('change', () => {
+    const key = el.dataset.skey;
+    const val = el.value;
+    SP[editingState][key] = (key === 'faceBlendMode') ? parseInt(val) : val;
+  });
+});
+
+// State tabs -- also switches the active field state
+document.querySelectorAll('.state-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.state-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    editingState = tab.dataset.edit;
+    syncStateControls();
+    const s = tab.dataset.edit;
+    if (s === 'typing') {
+      fieldInput.readOnly = false;
+      fieldInput.value = 'change the description to be shorter';
+      fieldInput.placeholder = 'Ask anything';
+    }
+    setState(s);
+    if (s === 'typing') updateSendVoice();
+  });
+});
+
+// ============================================================
+// PANEL WIRING -- Global Controls
+// ============================================================
+
+function syncGlobalControls() {
+  document.querySelectorAll('[data-gkey]').forEach(el => {
+    const key = el.dataset.gkey;
+    if (el.type === 'range') {
+      el.value = G[key];
+      const step = parseFloat(el.step);
+      el.nextElementSibling.textContent = Number(G[key]).toFixed(step >= 1 ? 0 : 2);
+    } else if (el.type === 'color') {
+      el.value = G[key];
+      el.nextElementSibling.textContent = G[key].slice(1);
+    } else if (el.tagName === 'SELECT') {
+      el.value = G[key];
+    }
+  });
+}
+
+document.querySelectorAll('input[type=range][data-gkey]').forEach(el => {
+  el.addEventListener('input', () => {
+    G[el.dataset.gkey] = parseFloat(el.value);
+    const step = parseFloat(el.step);
+    el.nextElementSibling.textContent = Number(el.value).toFixed(step >= 1 ? 0 : 2);
+  });
+});
+
+document.querySelectorAll('input[type=color][data-gkey]').forEach(el => {
+  el.addEventListener('input', () => {
+    G[el.dataset.gkey] = el.value;
+    el.nextElementSibling.textContent = el.value.slice(1);
+  });
+});
+
+document.querySelectorAll('select[data-gkey]').forEach(el => {
+  el.addEventListener('change', () => { G[el.dataset.gkey] = el.value; });
+});
+
+// ============================================================
+// COLOR PRESETS
+// ============================================================
+
+const colorPresets = [
+  {name:'Sidekick Purple',c1:'#6e6bff',c2:'#5f5cff',c3:'#6647ff'},
+  {name:'Sidekick',c1:'#3888ff',c2:'#ffd500',c3:'#4bff1e'},
+  {name:'Sidekick Alt',c1:'#1673FF',c2:'#FF6A00',c3:'#FF221E'},
+  {name:'Ocean',c1:'#0ea5e9',c2:'#06b6d4',c3:'#8b5cf6'},
+  {name:'Mint',c1:'#61ff9b',c2:'#5797ff',c3:'#c8ff5c'},
+  {name:'Sunset',c1:'#fb923c',c2:'#f43f5e',c3:'#a855f7'},
+  {name:'Aurora',c1:'#34d399',c2:'#22d3ee',c3:'#818cf8'},
+  {name:'Rose',c1:'#fb7185',c2:'#c084fc',c3:'#fda4af'},
+  {name:'Neon',c1:'#22ff22',c2:'#ff22ff',c3:'#22ffff'},
+  {name:'Warm',c1:'#f97316',c2:'#eab308',c3:'#ef4444'},
+  {name:'Ice',c1:'#93c5fd',c2:'#c4b5fd',c3:'#a5f3fc'},
+];
+
+const presetsEl = document.getElementById('color-presets');
+colorPresets.forEach(p => {
+  const btn = document.createElement('div');
+  btn.className = 'color-preset';
+  btn.title = p.name;
+  btn.innerHTML = `<div class="cp-a" style="background:${p.c1}"></div><div class="cp-b" style="background:${p.c2}"></div><div class="cp-c" style="background:${p.c3}"></div>`;
+  btn.onclick = () => { SP[editingState].c1 = p.c1; SP[editingState].c2 = p.c2; SP[editingState].c3 = p.c3; syncStateControls(); };
+  presetsEl.appendChild(btn);
+});
+
+// ============================================================
+// SAVE / LOAD
+// ============================================================
+
+const SAVE_KEY = 'sidekick-field-webgl-lab-v1';
+function loadSaved() { try { return JSON.parse(localStorage.getItem(SAVE_KEY)) || {} } catch(e) { return {} } }
+function storeSaved(o) { localStorage.setItem(SAVE_KEY, JSON.stringify(o)) }
+
+function getFullConfig() {
+  return { G: {...G}, SP: JSON.parse(JSON.stringify(SP)) };
+}
+
+function applyFullConfig(cfg) {
+  if (cfg.G) Object.keys(cfg.G).forEach(k => { if (k in G) G[k] = cfg.G[k]; });
+  if (cfg.SP) {
+    ['idle','focused','typing','thinking'].forEach(s => {
+      if (cfg.SP[s]) Object.keys(cfg.SP[s]).forEach(k => { if (k in SP[s]) SP[s][k] = cfg.SP[s][k]; });
+    });
+  }
+  syncGlobalControls();
+  syncStateControls();
+}
+
+function renderSaved() {
+  const list = document.getElementById('saved-list');
+  list.innerHTML = '';
+  const saved = loadSaved();
+  const names = Object.keys(saved);
+  if (!names.length) { list.innerHTML = '<div class="p-empty">No saved presets</div>'; return; }
+  names.forEach(name => {
+    const row = document.createElement('div'); row.className = 'saved-item';
+    const btn = document.createElement('button'); btn.textContent = name;
+    btn.onclick = () => { applyFullConfig(saved[name]); };
+    const del = document.createElement('button'); del.className = 'del'; del.innerHTML = '&times;';
+    del.onclick = () => { const s = loadSaved(); delete s[name]; storeSaved(s); renderSaved(); };
+    row.appendChild(btn); row.appendChild(del); list.appendChild(row);
+  });
+}
+
+document.getElementById('btn-save').onclick = () => {
+  const name = prompt('Preset name:');
+  if (!name || !name.trim()) return;
+  const saved = loadSaved();
+  saved[name.trim()] = getFullConfig();
+  storeSaved(saved);
+  renderSaved();
+};
+
+document.getElementById('btn-json').onclick = () => {
+  navigator.clipboard.writeText(JSON.stringify(getFullConfig(), null, 2));
+  const b = document.getElementById('btn-json');
+  b.textContent = 'Copied!';
+  setTimeout(() => b.textContent = 'Copy JSON', 1500);
+};
+
+// ============================================================
+// INIT
+// ============================================================
+
+syncGlobalControls();
+syncStateControls();
+renderSaved();
+updateZoom(2.2);
+
+// Shimmer glow tuning
+document.querySelectorAll('#shimmer-tuning input[type=range]').forEach(el => {
+  el.addEventListener('input', () => {
+    const step = parseFloat(el.step);
+    el.nextElementSibling.textContent = Number(el.value).toFixed(step >= 1 ? 0 : step >= 0.1 ? 1 : 2);
+  });
+});
+document.getElementById('sg-color').addEventListener('input', (e) => {
+  e.target.nextElementSibling.textContent = e.target.value.slice(1);
+});
+
+// Streak tuning sliders
+document.querySelectorAll('#streak-tuning input[type=range]').forEach(el => {
+  el.addEventListener('input', () => {
+    const step = parseFloat(el.step);
+    el.nextElementSibling.textContent = Number(el.value).toFixed(step >= 1 ? 0 : step >= 0.1 ? 1 : 2);
+  });
+});
+
+// Set initial tool group state
+toolsDefault.style.maxWidth = '0';
+toolsDefault.style.opacity = '0';
+toolsDefault.style.filter = 'blur(2px)';
+toolsDefault.style.pointerEvents = 'none';
+toolsThinking.style.maxWidth = '0';
+toolsThinking.style.opacity = '0';
+toolsThinking.style.filter = 'blur(2px)';
+toolsThinking.style.pointerEvents = 'none';
+
+</script>
+</body>
+</html>
