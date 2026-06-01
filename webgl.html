@@ -495,6 +495,16 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
     <div class="p-color"><label>Blob B</label><input type="color" data-skey="c2"><span class="p-hex"></span></div>
     <div class="p-color"><label>Blob C</label><input type="color" data-skey="c3"><span class="p-hex"></span></div>
     <div class="color-presets" id="color-presets"></div>
+    <div class="p-row"><label>Blob Mix</label><select data-skey="blobMixMode">
+      <option value="0" selected>Fluid</option>
+      <option value="1">Soft Add</option>
+      <option value="2">Screen</option>
+      <option value="3">Additive</option>
+      <option value="4">Dominant</option>
+    </select></div>
+    <div class="p-row"><label>Hue Hold</label><input type="range" data-skey="blobHueHold" min="0" max="1" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Overlap</label><input type="range" data-skey="overlapBoost" min="0" max="0.8" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Fill</label><input type="range" data-skey="fieldFill" min="0" max="0.8" step="0.01"><span class="p-val"></span></div>
     <div class="p-row"><label>Blob Size</label><input type="range" data-skey="blobSize" min="0.05" max="0.6" step="0.01"><span class="p-val"></span></div>
     <div class="p-row"><label>Softness</label><input type="range" data-skey="blobSoft" min="0.01" max="0.5" step="0.01"><span class="p-val"></span></div>
     <div class="p-row"><label>Blob Opacity</label><input type="range" data-skey="blobOpacity" min="0" max="1" step="0.01"><span class="p-val"></span></div>
@@ -620,6 +630,8 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
 
   // Orbit params
   uniform float uOrbSpeed, uOrbRadius, uBlobSize, uBlobSoft, uBlobOpacity;
+  uniform float uBlobHueHold, uOverlapBoost, uFieldFill;
+  uniform int uBlobMixMode;
   uniform vec2 uTiltA, uTiltB, uTiltC;
 
   // Face compositing
@@ -641,7 +653,9 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
   // --- Soft blob ---
   float blob(vec2 uv, vec2 center, float size, float soft) {
     float d = length(uv - center);
-    return smoothstep(size + soft, size - soft * 0.5, d);
+    float inner = max(size - soft * 0.5, 0.0);
+    float outer = size + soft;
+    return 1.0 - smoothstep(inner, outer, d);
   }
 
   // --- 3D orbit ---
@@ -678,6 +692,13 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
       step(0.5, top)
     );
   }
+  vec3 pickBlobMix(int mode, vec3 fluidColor, vec3 softAddColor, vec3 screenColor, vec3 additiveColor, vec3 dominantMix) {
+    if (mode == 1) return softAddColor;
+    if (mode == 2) return screenColor;
+    if (mode == 3) return additiveColor;
+    if (mode == 4) return dominantMix;
+    return fluidColor;
+  }
 
   void main() {
     vec2 uv = vUV;
@@ -707,9 +728,36 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
     float b1 = blob(uv, pos1.xy, uBlobSize * (0.8 + depth1 * 0.4), uBlobSoft);
     float b2 = blob(uv, pos2.xy, uBlobSize * (0.8 + depth2 * 0.4), uBlobSoft);
 
-    // Additive color
-    vec3 orbColor = uBlobA * b0 + uBlobB * b1 + uBlobC * b2;
-    float orbAlpha = clamp(b0 + b1 + b2, 0.0, 1.0) * uBlobOpacity;
+    // Blob interaction.
+    // Fluid is the default: normalize the color contribution before applying
+    // alpha, so intersections stay chromatic instead of clamping to white.
+    float totalBlob = b0 + b1 + b2;
+    float huePower = mix(1.0, 4.0, uBlobHueHold);
+    float w0 = pow(max(b0, 0.0), huePower);
+    float w1 = pow(max(b1, 0.0), huePower);
+    float w2 = pow(max(b2, 0.0), huePower);
+    float weightTotal = max(w0 + w1 + w2, 0.0001);
+    float coverage = 1.0 - (1.0 - b0) * (1.0 - b1) * (1.0 - b2);
+    float overlap = smoothstep(0.85, 2.1, totalBlob);
+
+    vec3 weightedColor = (uBlobA * w0 + uBlobB * w1 + uBlobC * w2) / weightTotal;
+    vec3 avgColor = (uBlobA + uBlobB + uBlobC) / 3.0;
+    vec3 additiveColor = uBlobA * b0 + uBlobB * b1 + uBlobC * b2;
+    vec3 screenColor = 1.0 - (1.0 - uBlobA * b0) * (1.0 - uBlobB * b1) * (1.0 - uBlobC * b2);
+    vec3 softAddColor = 1.0 - exp(-additiveColor * (1.0 + uOverlapBoost));
+    vec3 dominantColor = uBlobA;
+    if (b1 >= b0 && b1 >= b2) dominantColor = uBlobB;
+    if (b2 >= b0 && b2 >= b1) dominantColor = uBlobC;
+
+    vec3 fluidColor = weightedColor * (0.96 + coverage * 0.08 + overlap * uOverlapBoost);
+    vec3 dominantMix = mix(weightedColor, dominantColor, 0.68) * (0.96 + coverage * 0.08 + overlap * uOverlapBoost);
+
+    vec3 orbColor = pickBlobMix(uBlobMixMode, fluidColor, softAddColor, screenColor, additiveColor, dominantMix);
+    float coreFill = 1.0 - smoothstep(0.0, uMaskEdge, distFromCenter);
+    float fieldPresence = clamp(uFieldFill * (0.62 + coreFill * 0.38), 0.0, 1.0);
+    vec3 fieldColor = mix(avgColor, weightedColor, clamp(totalBlob * 0.9, 0.0, 1.0));
+    orbColor = mix(fieldColor, orbColor, clamp(coverage * 1.2, 0.0, 1.0));
+    float orbAlpha = max(coverage * uBlobOpacity, fieldPresence);
 
     // --- Face video ---
     vec2 faceCenter = vec2(0.5, 0.5 + uFaceOffsetY);
@@ -743,10 +791,11 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
     }
 
     // --- Inner glow ---
-    float glowRing = smoothstep(0.15, uMaskEdge - 0.02, distFromCenter)
-                   * smoothstep(uMaskEdge, uMaskEdge - 0.1, distFromCenter);
-    vec3 avgColor = (uBlobA + uBlobB + uBlobC) / 3.0;
-    color += avgColor * glowRing * uInnerGlow;
+    float glowInner = smoothstep(0.15, max(uMaskEdge - 0.02, 0.151), distFromCenter);
+    float glowOuter = 1.0 - smoothstep(max(uMaskEdge - 0.1, 0.0), uMaskEdge, distFromCenter);
+    float glowRing = glowInner * glowOuter;
+    color = mix(color, avgColor, glowRing * uInnerGlow * 0.26);
+    color += avgColor * glowRing * uInnerGlow * 0.08;
 
     // --- Film grain ---
     float noise = (hash(uv * 800.0 + uTime * 100.0) - 0.5) * uNoiseAmt;
@@ -768,10 +817,11 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
 
 const SP = {
   idle: {
-    orbSpeed: 1.5, orbRadius: 0.17, faceRate: 0.55, lerpSpeed: 5,
+    orbSpeed: 1.1, orbRadius: 0.22, faceRate: 1.0, lerpSpeed: 5,
     orbSize: 290, fieldOrbScale: 0.23,
-    c1: '#6e6bff', c2: '#5f5cff', c3: '#6647ff',
-    blobSize: 0.22, blobSoft: 0.15, blobOpacity: 1.0,
+    c1: '#d35cff', c2: '#6f5cff', c3: '#6647ff',
+    blobMixMode: 3, blobHueHold: 0.10, overlapBoost: 0.0, fieldFill: 0.28,
+    blobSize: 0.17, blobSoft: 0.24, blobOpacity: 0.37,
     maskEdge: 0.29, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
     faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
     tiltAx: 2.00, tiltAy: 0.67,
@@ -779,23 +829,25 @@ const SP = {
     tiltCx: 2.10, tiltCy: 1.50,
   },
   focused: {
-    orbSpeed: 4.0, orbRadius: 0.17, faceRate: 0.55, lerpSpeed: 5,
+    orbSpeed: 3.3, orbRadius: 0.22, faceRate: 1.0, lerpSpeed: 5,
     orbSize: 290, fieldOrbScale: 0.23,
-    c1: '#21c058', c2: '#2bf75e', c3: '#a1a324',
-    blobSize: 0.22, blobSoft: 0.15, blobOpacity: 1.0,
+    c1: '#5c61ff', c2: '#5c67ff', c3: '#8847ff',
+    blobMixMode: 3, blobHueHold: 0.10, overlapBoost: 0.0, fieldFill: 0.28,
+    blobSize: 0.17, blobSoft: 0.24, blobOpacity: 0.66,
     maskEdge: 0.29, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
-    faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#446f4a', faceColorMix: 1.0,
+    faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
     tiltAx: 2.00, tiltAy: 0.67,
     tiltBx: 2.40, tiltBy: 0.40,
     tiltCx: 2.10, tiltCy: 1.50,
   },
   typing: {
-    orbSpeed: 4.0, orbRadius: 0.17, faceRate: 0.55, lerpSpeed: 5,
+    orbSpeed: 3.3, orbRadius: 0.22, faceRate: 1.0, lerpSpeed: 5,
     orbSize: 290, fieldOrbScale: 0.23,
-    c1: '#21c058', c2: '#2bf75e', c3: '#a1a324',
-    blobSize: 0.22, blobSoft: 0.15, blobOpacity: 1.0,
+    c1: '#5c61ff', c2: '#5c67ff', c3: '#8847ff',
+    blobMixMode: 3, blobHueHold: 0.10, overlapBoost: 0.0, fieldFill: 0.28,
+    blobSize: 0.17, blobSoft: 0.24, blobOpacity: 0.66,
     maskEdge: 0.29, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
-    faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#446f4a', faceColorMix: 1.0,
+    faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
     tiltAx: 2.00, tiltAy: 0.67,
     tiltBx: 2.40, tiltBy: 0.40,
     tiltCx: 2.10, tiltCy: 1.50,
@@ -804,6 +856,7 @@ const SP = {
     orbSpeed: 6.2, orbRadius: 0.17, faceRate: 1.0, lerpSpeed: 5,
     orbSize: 290, fieldOrbScale: 0.23,
     c1: '#6e6bff', c2: '#5f5cff', c3: '#6647ff',
+    blobMixMode: 0, blobHueHold: 0.18, overlapBoost: 0.14, fieldFill: 0.24,
     blobSize: 0.22, blobSoft: 0.15, blobOpacity: 1.0,
     maskEdge: 0.29, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
     faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
@@ -841,7 +894,7 @@ const streakColors = ['#6e6bff', '#5f5cff', '#a27aff'];
 // Live interpolated values (lerped toward current state)
 const LERP_KEYS = ['orbSpeed','orbRadius',
   'orbSize','fieldOrbScale',
-  'blobSize','blobSoft','blobOpacity',
+  'blobSize','blobSoft','blobOpacity','blobHueHold','overlapBoost','fieldFill',
   'maskEdge','maskSoft','innerGlow','noiseAmt',
   'faceScale','faceOpacity','faceOffsetY','faceColorMix',
   'tiltAx','tiltAy','tiltBx','tiltBy','tiltCx','tiltCy'];
@@ -852,19 +905,61 @@ const live = {};
 LERP_KEYS.forEach(k => live[k] = SP.idle[k]);
 COLOR_KEYS.forEach(k => live[k] = SP.idle[k]);
 live.faceBlendMode = SP.idle.faceBlendMode;
+live.blobMixMode = SP.idle.blobMixMode;
 
 function hexToRgb(h) {
   const v = parseInt(h.slice(1), 16);
   return [(v >> 16) & 255, (v >> 8) & 255, v & 255];
 }
 function rgbToHex(r, g, b) {
-  return '#' + ((1 << 24) + (Math.round(r) << 16) + (Math.round(g) << 8) + Math.round(b)).toString(16).slice(1);
+  const clampByte = v => Math.max(0, Math.min(255, Math.round(Number.isFinite(v) ? v : 0)));
+  return '#' + ((1 << 24) + (clampByte(r) << 16) + (clampByte(g) << 8) + clampByte(b)).toString(16).slice(1);
+}
+function rgbToHsl(r, g, b) {
+  r /= 255; g /= 255; b /= 255;
+  const max = Math.max(r, g, b), min = Math.min(r, g, b);
+  let h = 0, s = 0;
+  const l = (max + min) / 2;
+  const d = max - min;
+  if (d !== 0) {
+    s = d / (1 - Math.abs(2 * l - 1));
+    if (max === r) h = 60 * (((g - b) / d) % 6);
+    else if (max === g) h = 60 * ((b - r) / d + 2);
+    else h = 60 * ((r - g) / d + 4);
+  }
+  return [(h + 360) % 360, s, l];
+}
+function hslToRgb(h, s, l) {
+  const c = (1 - Math.abs(2 * l - 1)) * s;
+  const x = c * (1 - Math.abs((h / 60) % 2 - 1));
+  const m = l - c / 2;
+  let r = 0, g = 0, b = 0;
+  if (h < 60) { r = c; g = x; }
+  else if (h < 120) { r = x; g = c; }
+  else if (h < 180) { g = c; b = x; }
+  else if (h < 240) { g = x; b = c; }
+  else if (h < 300) { r = x; b = c; }
+  else { r = c; b = x; }
+  return [(r + m) * 255, (g + m) * 255, (b + m) * 255];
 }
 function lerpColor(from, to, f) {
   const a = hexToRgb(from), b = hexToRgb(to);
-  return rgbToHex(a[0] + (b[0]-a[0])*f, a[1] + (b[1]-a[1])*f, a[2] + (b[2]-a[2])*f);
+  const ah = rgbToHsl(a[0], a[1], a[2]);
+  const bh = rgbToHsl(b[0], b[1], b[2]);
+  let dh = bh[0] - ah[0];
+  const preferCoolPath = ah[0] > 180 && bh[0] < 160 && dh < 0;
+  if (!preferCoolPath) {
+    if (dh > 180) dh -= 360;
+    if (dh < -180) dh += 360;
+  }
+  const h = (ah[0] + dh * f + 360) % 360;
+  const s = ah[1] + (bh[1] - ah[1]) * f;
+  const l = ah[2] + (bh[2] - ah[2]) * f;
+  const rgb = hslToRgb(h, s, l);
+  return rgbToHex(rgb[0], rgb[1], rgb[2]);
 }
 function hexToGL(hex) {
+  if (!/^#[0-9a-fA-F]{6}$/.test(hex)) return [0, 0, 0];
   return [
     parseInt(hex.slice(1,3), 16) / 255,
     parseInt(hex.slice(3,5), 16) / 255,
@@ -927,7 +1022,7 @@ function linkProgram(vsSrc, fsSrc) {
 
 const vsSrc = document.getElementById('vs-quad').textContent;
 const fsSrc = document.getElementById('fs-orb').textContent;
-const prog = linkProgram(vsSrc, fsSrc);
+const prog = gl ? linkProgram(vsSrc, fsSrc) : null;
 
 const glUniforms = {};
 function u(name) {
@@ -935,9 +1030,11 @@ function u(name) {
   return glUniforms[name];
 }
 
-const quadBuf = gl.createBuffer();
-gl.bindBuffer(gl.ARRAY_BUFFER, quadBuf);
-gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+const quadBuf = gl ? gl.createBuffer() : null;
+if (gl) {
+  gl.bindBuffer(gl.ARRAY_BUFFER, quadBuf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+}
 
 // Video (programmatic, not a DOM element)
 const video = document.createElement('video');
@@ -948,13 +1045,15 @@ video.playsInline = true;
 video.crossOrigin = 'anonymous';
 video.play();
 
-const videoTex = gl.createTexture();
-gl.bindTexture(gl.TEXTURE_2D, videoTex);
-gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
-gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
-gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
-gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
-gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, new Uint8Array([0,0,0,0]));
+const videoTex = gl ? gl.createTexture() : null;
+if (gl) {
+  gl.bindTexture(gl.TEXTURE_2D, videoTex);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+  gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, new Uint8Array([0,0,0,0]));
+}
 
 let videoReady = false;
 video.addEventListener('playing', () => { videoReady = true; });
@@ -1019,7 +1118,7 @@ function resizeGLCanvas(sz) {
   glCanvas.height = sz * dpr;
   glCanvas.style.width = sz + 'px';
   glCanvas.style.height = sz + 'px';
-  gl.viewport(0, 0, glCanvas.width, glCanvas.height);
+  if (gl) gl.viewport(0, 0, glCanvas.width, glCanvas.height);
 }
 
 // ============================================================
@@ -1297,9 +1396,11 @@ function frame(ts) {
   const target = SP[currentState];
   const spd = target.lerpSpeed;
   const f = Math.min(spd * dt, 1);
+
   LERP_KEYS.forEach(k => { live[k] += (target[k] - live[k]) * f; });
   COLOR_KEYS.forEach(k => { live[k] = lerpColor(live[k], target[k], f); });
   live.faceBlendMode = target.faceBlendMode;
+  live.blobMixMode = target.blobMixMode;
   // Snap orbSpeed instantly — lerping it causes ugly spin-up overshoot
   live.orbSpeed = target.orbSpeed;
 
@@ -1317,7 +1418,7 @@ function frame(ts) {
   resizeGLCanvas(Math.round(sz));
 
   // ---- WebGL Render ----
-  if (gl) {
+  if (gl && prog) {
     if (videoReady && video.readyState >= video.HAVE_CURRENT_DATA) {
       gl.bindTexture(gl.TEXTURE_2D, videoTex);
       gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, video);
@@ -1357,6 +1458,10 @@ function frame(ts) {
     gl.uniform1f(u('uBlobSize'), live.blobSize);
     gl.uniform1f(u('uBlobSoft'), live.blobSoft);
     gl.uniform1f(u('uBlobOpacity'), live.blobOpacity);
+    gl.uniform1f(u('uBlobHueHold'), live.blobHueHold);
+    gl.uniform1f(u('uOverlapBoost'), live.overlapBoost);
+    gl.uniform1f(u('uFieldFill'), live.fieldFill);
+    gl.uniform1i(u('uBlobMixMode'), live.blobMixMode);
     gl.uniform2f(u('uTiltA'), live.tiltAx, live.tiltAy);
     gl.uniform2f(u('uTiltB'), live.tiltBx, live.tiltBy);
     gl.uniform2f(u('uTiltC'), live.tiltCx, live.tiltCy);
@@ -1541,7 +1646,7 @@ document.querySelectorAll('select[data-skey]').forEach(el => {
   el.addEventListener('change', () => {
     const key = el.dataset.skey;
     const val = el.value;
-    SP[editingState][key] = (key === 'faceBlendMode') ? parseInt(val) : val;
+    SP[editingState][key] = (key === 'faceBlendMode' || key === 'blobMixMode') ? parseInt(val) : val;
   });
 });
 
