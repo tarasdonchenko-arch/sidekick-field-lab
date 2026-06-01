@@ -1106,7 +1106,7 @@ const LIGHT_STATE_PRESETS = {
     orbSize: 290, fieldOrbScale: 0.23,
     c1: '#d35cff', c2: '#6f5cff', c3: '#6647ff',
     blobMixMode: 3, blobHueHold: 0.10, overlapBoost: 0.0, fieldFill: 0.28,
-    blobSize: 0.17, blobSoft: 0.24, blobOpacity: 0.37,
+    blobSize: 0.17, blobSoft: 0.24, blobOpacity: 0.27,
     maskEdge: 0.29, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
     particleStyle: 0, particleCount: 890, particleTint: '#f2f7ff', particleOpacity: 0.83, particleGlow: 0.16, particleBlend: 0,
     particleScale: 1.8, particlePointSize: 4.25, particleSpread: 2.1, particleSpeed: 0.45, particleDrift: 3.55,
@@ -1169,28 +1169,36 @@ const THEME_PRESETS = {
 };
 
 Object.assign(THEME_PRESETS.dark.idle, {
-  c1: '#9b5cff', c2: '#5c67ff', c3: '#35d4ff',
-  blobOpacity: 0.48, fieldFill: 0.20, innerGlow: 0.82,
-  particleTint: '#dfe8ff', particleOpacity: 0.68, particleGlow: 0.34,
-  faceColor: '#d9ddff', faceColorMix: 0.72,
+  orbSpeed: 1.1, orbRadius: 0.15, faceRate: 1.0, lerpSpeed: 5,
+  c1: '#562c9b', c2: '#20297e', c3: '#115264',
+  blobMixMode: 3, blobHueHold: 0.10, overlapBoost: 0.0, fieldFill: 0.20,
+  blobSize: 0.17, blobSoft: 0.24, blobOpacity: 0.63,
+  maskEdge: 0.33, maskSoft: 0.20, innerGlow: 0.82, noiseAmt: 0.0,
+  particleStyle: 0, particleCount: 890, particleTint: '#dfe8ff', particleOpacity: 0.21, particleGlow: 0.34, particleBlend: 0,
+  particleScale: 1.8, particlePointSize: 4.25, particleSpread: 2.1, particleSpeed: 0.45, particleDrift: 3.55,
+  faceScale: 0.92, faceOpacity: 0.80, faceOffsetY: 0.0,
+  faceBlendMode: 0, faceColor: '#000000', faceColorMix: 0.72,
 });
 Object.assign(THEME_PRESETS.dark.focused, {
-  c1: '#7f63ff', c2: '#3f83ff', c3: '#2ed8ff',
-  blobOpacity: 0.70, fieldFill: 0.22, innerGlow: 0.88,
+  orbSpeed: 3.3, orbRadius: 0.22, faceRate: 1.0, lerpSpeed: 5,
+  c1: '#2f226d', c2: '#103375', c3: '#0f6375',
+  blobMixMode: 3, blobHueHold: 0.10, overlapBoost: 0.0, fieldFill: 0.22,
+  blobSize: 0.26, blobSoft: 0.24, blobOpacity: 1.0,
+  maskEdge: 0.29, maskSoft: 0.20, innerGlow: 0.88, noiseAmt: 0.0,
   particleTint: '#dfe8ff', particleOpacity: 0.52, particleGlow: 1.15,
-  faceColor: '#e6e9ff', faceColorMix: 0.78,
+  faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0,
+  faceBlendMode: 0, faceColor: '#111217', faceColorMix: 0.78,
 });
-Object.assign(THEME_PRESETS.dark.typing, {
-  c1: '#7f63ff', c2: '#3f83ff', c3: '#2ed8ff',
-  blobOpacity: 0.70, fieldFill: 0.22, innerGlow: 0.88,
-  particleTint: '#dfe8ff', particleOpacity: 0.52, particleGlow: 1.15,
-  faceColor: '#e6e9ff', faceColorMix: 0.78,
-});
+Object.assign(THEME_PRESETS.dark.typing, cloneConfig(THEME_PRESETS.dark.focused));
 Object.assign(THEME_PRESETS.dark.thinking, {
-  c1: '#b15cff', c2: '#5f6cff', c3: '#32d6ff',
-  blobOpacity: 0.76, fieldFill: 0.24, innerGlow: 0.95,
+  orbSpeed: 4.7, orbRadius: 0.22, faceRate: 1.0, lerpSpeed: 5,
+  c1: '#902191', c2: '#4c1eb8', c3: '#341d86',
+  blobMixMode: 3, blobHueHold: 0.10, overlapBoost: 0.0, fieldFill: 0.24,
+  blobSize: 0.23, blobSoft: 0.24, blobOpacity: 0.76,
+  maskEdge: 0.31, maskSoft: 0.20, innerGlow: 0.95, noiseAmt: 0.0,
   particleTint: '#e5edff', particleOpacity: 0.88, particleGlow: 1.2,
-  faceColor: '#edf0ff', faceColorMix: 0.82,
+  faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0,
+  faceBlendMode: 0, faceColor: '#111217', faceColorMix: 0.82,
 });
 
 let currentTheme = 'light';
