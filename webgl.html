@@ -11,9 +11,11 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;height:100dvh;overflow:hidden;font-family:'Geist',-apple-system,BlinkMacSystemFont,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 body{background:#f0f0f0;color:#111}
+body[data-theme="dark"]{background:#101116;color:#f6f7fb}
 
 /* -- Layout -- */
 #app{position:relative;width:calc(100% - 304px);height:100%;display:flex;align-items:center;justify-content:center}
+body[data-theme="dark"] #app{background:#101116}
 
 /* -- Field Bar -- */
 #canvas-content{transition:transform 0.3s cubic-bezier(0.2,0.8,0,1)}
@@ -35,6 +37,28 @@ body{background:#f0f0f0;color:#111}
     0 10px 42px 0 rgba(125,90,255,0.22),
     0 8px 58px -6px rgba(255,122,232,0.14),
     0 0 0 1.5px rgba(110,107,255,0.35);
+}
+body[data-theme="dark"] #field-bar{
+  background:#181a21;
+  box-shadow:
+    0 1px 3px rgba(0,0,0,0.45),
+    0 14px 36px rgba(0,0,0,0.28),
+    inset 0 0 0 1px rgba(255,255,255,0.07);
+}
+body[data-theme="dark"] #field-bar:hover{
+  box-shadow:
+    0 1px 3px rgba(0,0,0,0.5),
+    0 18px 44px rgba(0,0,0,0.34),
+    inset 0 0 0 1px rgba(255,255,255,0.10);
+}
+body[data-theme="dark"] [data-state="thinking"] #field-bar{
+  box-shadow:
+    0 1px 3px rgba(0,0,0,0.5),
+    0 18px 44px rgba(0,0,0,0.34),
+    0 10px 42px 0 rgba(125,90,255,0.30),
+    0 8px 58px -6px rgba(74,196,255,0.18),
+    inset 0 0 0 1px rgba(255,255,255,0.08),
+    0 0 0 1.5px rgba(129,118,255,0.40);
 }
 
 /* -- Thinking stroke highlight (masked to 1px border) -- */
@@ -120,6 +144,8 @@ body{background:#f0f0f0;color:#111}
   color:#111;
 }
 #field-input::placeholder{color:#868686}
+body[data-theme="dark"] #field-input{color:#f5f6fb}
+body[data-theme="dark"] #field-input::placeholder{color:#8d92a2}
 [data-state="idle"] #field-input{cursor:pointer}
 [data-state="thinking"] #field-input{cursor:default}
 
@@ -168,6 +194,8 @@ body{background:#f0f0f0;color:#111}
 }
 .tool-btn:hover{color:#555;background:rgba(0,0,0,0.04)}
 .tool-btn svg{display:block}
+body[data-theme="dark"] .tool-btn{color:#a5aaba}
+body[data-theme="dark"] .tool-btn:hover{color:#f5f6fb;background:rgba(255,255,255,0.08)}
 
 #btn-send{
   width:32px;height:32px;border:none;border-radius:50%;
@@ -187,12 +215,15 @@ body{background:#f0f0f0;color:#111}
 }
 #btn-stop:hover{transform:scale(1.05)}
 #btn-stop:active{transform:scale(0.95)}
+body[data-theme="dark"] #btn-stop circle{fill:#2a2d38}
+body[data-theme="dark"] #btn-stop rect{fill:#d8dbe5}
 
 /* -- Divider -- */
 #field-divider{
   width:1px;align-self:stretch;margin:8px 0;background:#e5e5e5;flex-shrink:0;
   transition:opacity 0.3s ease;
 }
+body[data-theme="dark"] #field-divider{background:rgba(255,255,255,0.12)}
 
 /* -- Sidebar Button -- */
 #btn-sidebar{
@@ -202,6 +233,8 @@ body{background:#f0f0f0;color:#111}
   transition:color 0.15s ease;
 }
 #btn-sidebar:hover{color:#555}
+body[data-theme="dark"] #btn-sidebar{color:#a5aaba}
+body[data-theme="dark"] #btn-sidebar:hover{color:#f5f6fb}
 
 /* -- Canvas Controls (bottom bar) -- */
 #canvas-controls{
@@ -331,18 +364,20 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
 .p-btn:active{transform:scale(.98)}
 
 /* -- State Tabs in Panel -- */
-#state-tabs{
-  display:flex;gap:1px;padding:2px;margin-bottom:12px;
+#state-tabs,#theme-tabs{
+  display:flex;gap:1px;padding:2px;
   background:rgba(0,0,0,0.04);border-radius:8px;
 }
-.state-tab{
+#state-tabs{margin-bottom:12px}
+#theme-tabs{margin-bottom:12px}
+.state-tab,.theme-tab{
   flex:1;padding:5px 0;border:none;border-radius:6px;
   background:transparent;color:rgba(0,0,0,0.35);font-size:10px;font-weight:500;
   font-family:inherit;cursor:pointer;text-align:center;
   transition:color 0.15s ease,background 0.15s ease;
 }
-.state-tab:hover{color:rgba(0,0,0,0.55)}
-.state-tab.active{background:#fff;color:#111;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+.state-tab:hover,.theme-tab:hover{color:rgba(0,0,0,0.55)}
+.state-tab.active,.theme-tab.active{background:#fff;color:#111;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
 
 /* -- Color Presets -- */
 .color-presets{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}
@@ -471,6 +506,16 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
     <p>Per-state motion &amp; WebGL orb controls</p>
   </div>
 
+  <!-- Theme Controls -->
+  <div class="p-section">
+    <div class="p-label">Theme</div>
+    <div id="theme-tabs">
+      <button class="theme-tab active" data-theme="light">Light</button>
+      <button class="theme-tab" data-theme="dark">Dark</button>
+    </div>
+    <div class="p-color"><label>Background</label><input type="color" data-gkey="bgColor"><span class="p-hex"></span></div>
+  </div>
+
   <!-- Per-State Controls -->
   <div class="p-section">
     <div class="p-label">State Controls</div>
@@ -571,7 +616,6 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
     <div class="p-label">Display (per state)</div>
     <div class="p-row"><label>Orb Size</label><input type="range" data-skey="orbSize" min="40" max="300" step="2"><span class="p-val"></span></div>
     <div class="p-row"><label>Field Scale</label><input type="range" data-skey="fieldOrbScale" min="0.1" max="1.5" step="0.01"><span class="p-val"></span></div>
-    <div class="p-color"><label>Background</label><input type="color" data-gkey="bgColor"><span class="p-hex"></span></div>
   </div>
 
   <!-- Orbits (per state) -->
@@ -1056,7 +1100,7 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
 // STATE CONFIG -- per-state animation parameters
 // ============================================================
 
-const SP = {
+const LIGHT_STATE_PRESETS = {
   idle: {
     orbSpeed: 1.1, orbRadius: 0.22, faceRate: 1.0, lerpSpeed: 5,
     orbSize: 290, fieldOrbScale: 0.23,
@@ -1115,14 +1159,69 @@ const SP = {
   },
 };
 
+function cloneConfig(obj) {
+  return JSON.parse(JSON.stringify(obj));
+}
+
+const THEME_PRESETS = {
+  light: cloneConfig(LIGHT_STATE_PRESETS),
+  dark: cloneConfig(LIGHT_STATE_PRESETS),
+};
+
+Object.assign(THEME_PRESETS.dark.idle, {
+  c1: '#9b5cff', c2: '#5c67ff', c3: '#35d4ff',
+  blobOpacity: 0.48, fieldFill: 0.20, innerGlow: 0.82,
+  particleTint: '#dfe8ff', particleOpacity: 0.68, particleGlow: 0.34,
+  faceColor: '#d9ddff', faceColorMix: 0.72,
+});
+Object.assign(THEME_PRESETS.dark.focused, {
+  c1: '#7f63ff', c2: '#3f83ff', c3: '#2ed8ff',
+  blobOpacity: 0.70, fieldFill: 0.22, innerGlow: 0.88,
+  particleTint: '#dfe8ff', particleOpacity: 0.52, particleGlow: 1.15,
+  faceColor: '#e6e9ff', faceColorMix: 0.78,
+});
+Object.assign(THEME_PRESETS.dark.typing, {
+  c1: '#7f63ff', c2: '#3f83ff', c3: '#2ed8ff',
+  blobOpacity: 0.70, fieldFill: 0.22, innerGlow: 0.88,
+  particleTint: '#dfe8ff', particleOpacity: 0.52, particleGlow: 1.15,
+  faceColor: '#e6e9ff', faceColorMix: 0.78,
+});
+Object.assign(THEME_PRESETS.dark.thinking, {
+  c1: '#b15cff', c2: '#5f6cff', c3: '#32d6ff',
+  blobOpacity: 0.76, fieldFill: 0.24, innerGlow: 0.95,
+  particleTint: '#e5edff', particleOpacity: 0.88, particleGlow: 1.2,
+  faceColor: '#edf0ff', faceColorMix: 0.82,
+});
+
+let currentTheme = 'light';
+let SP = THEME_PRESETS[currentTheme];
+
 // ============================================================
 // GLOBAL CONFIG
 // ============================================================
 
+const THEME_GLOBALS = {
+  light: { bgColor: '#f0f0f0' },
+  dark: { bgColor: '#101116' },
+};
+
 const G = {
-  bgColor: '#f0f0f0',
   thinkDuration: 5,
 };
+
+function getGlobalValue(key) {
+  const themed = THEME_GLOBALS[currentTheme];
+  return themed && key in themed ? themed[key] : G[key];
+}
+
+function setGlobalValue(key, value) {
+  const themed = THEME_GLOBALS[currentTheme];
+  if (themed && key in themed) {
+    themed[key] = value;
+  } else {
+    G[key] = value;
+  }
+}
 
 // ============================================================
 // RUNTIME
@@ -1912,7 +2011,7 @@ function frame(ts) {
   }
 
   // Background
-  document.body.style.background = G.bgColor;
+  document.body.style.background = getGlobalValue('bgColor');
 }
 
 requestAnimationFrame(frame);
@@ -1952,6 +2051,32 @@ document.querySelectorAll('.view-btn').forEach(btn => {
     currentView = btn.dataset.view;
     document.body.classList.toggle('preview-mode', currentView === 'preview');
   });
+});
+
+// ============================================================
+// THEME TOGGLE (Light / Dark preset banks)
+// ============================================================
+
+function refreshThemeMode() {
+  SP = THEME_PRESETS[currentTheme];
+  document.body.dataset.theme = currentTheme;
+  document.body.style.background = getGlobalValue('bgColor');
+  document.querySelectorAll('.theme-tab').forEach(tab => {
+    tab.classList.toggle('active', tab.dataset.theme === currentTheme);
+  });
+}
+
+function setTheme(theme) {
+  if (!THEME_PRESETS[theme]) return;
+  currentTheme = theme;
+  refreshThemeMode();
+  syncGlobalControls();
+  syncStateControls();
+  updateVideoState();
+}
+
+document.querySelectorAll('.theme-tab').forEach(tab => {
+  tab.addEventListener('click', () => setTheme(tab.dataset.theme));
 });
 
 // ============================================================
@@ -2042,22 +2167,23 @@ document.querySelectorAll('.state-tab').forEach(tab => {
 function syncGlobalControls() {
   document.querySelectorAll('[data-gkey]').forEach(el => {
     const key = el.dataset.gkey;
+    const value = getGlobalValue(key);
     if (el.type === 'range') {
-      el.value = G[key];
+      el.value = value;
       const step = parseFloat(el.step);
-      el.nextElementSibling.textContent = Number(G[key]).toFixed(step >= 1 ? 0 : 2);
+      el.nextElementSibling.textContent = Number(value).toFixed(step >= 1 ? 0 : 2);
     } else if (el.type === 'color') {
-      el.value = G[key];
-      el.nextElementSibling.textContent = G[key].slice(1);
+      el.value = value;
+      el.nextElementSibling.textContent = value.slice(1);
     } else if (el.tagName === 'SELECT') {
-      el.value = G[key];
+      el.value = value;
     }
   });
 }
 
 document.querySelectorAll('input[type=range][data-gkey]').forEach(el => {
   el.addEventListener('input', () => {
-    G[el.dataset.gkey] = parseFloat(el.value);
+    setGlobalValue(el.dataset.gkey, parseFloat(el.value));
     const step = parseFloat(el.step);
     el.nextElementSibling.textContent = Number(el.value).toFixed(step >= 1 ? 0 : 2);
   });
@@ -2065,13 +2191,13 @@ document.querySelectorAll('input[type=range][data-gkey]').forEach(el => {
 
 document.querySelectorAll('input[type=color][data-gkey]').forEach(el => {
   el.addEventListener('input', () => {
-    G[el.dataset.gkey] = el.value;
+    setGlobalValue(el.dataset.gkey, el.value);
     el.nextElementSibling.textContent = el.value.slice(1);
   });
 });
 
 document.querySelectorAll('select[data-gkey]').forEach(el => {
-  el.addEventListener('change', () => { G[el.dataset.gkey] = el.value; });
+  el.addEventListener('change', () => { setGlobalValue(el.dataset.gkey, el.value); });
 });
 
 // ============================================================
@@ -2110,19 +2236,59 @@ const SAVE_KEY = 'sidekick-field-webgl-lab-v1';
 function loadSaved() { try { return JSON.parse(localStorage.getItem(SAVE_KEY)) || {} } catch(e) { return {} } }
 function storeSaved(o) { localStorage.setItem(SAVE_KEY, JSON.stringify(o)) }
 
+function applyStatePresetBank(dest, source) {
+  ['idle','focused','typing','thinking'].forEach(s => {
+    if (!source[s]) return;
+    Object.keys(source[s]).forEach(k => {
+      if (k in dest[s]) dest[s][k] = source[s][k];
+    });
+  });
+}
+
+function applyThemePresetBank(source) {
+  ['light','dark'].forEach(theme => {
+    if (source[theme]) applyStatePresetBank(THEME_PRESETS[theme], source[theme]);
+  });
+}
+
+function applyThemeGlobals(source) {
+  ['light','dark'].forEach(theme => {
+    if (!source[theme]) return;
+    Object.keys(source[theme]).forEach(k => {
+      if (k in THEME_GLOBALS[theme]) THEME_GLOBALS[theme][k] = source[theme][k];
+    });
+  });
+}
+
 function getFullConfig() {
-  return { G: {...G}, SP: JSON.parse(JSON.stringify(SP)) };
+  return {
+    currentTheme,
+    G: {...G},
+    themeGlobals: cloneConfig(THEME_GLOBALS),
+    themePresets: cloneConfig(THEME_PRESETS),
+  };
 }
 
 function applyFullConfig(cfg) {
-  if (cfg.G) Object.keys(cfg.G).forEach(k => { if (k in G) G[k] = cfg.G[k]; });
-  if (cfg.SP) {
-    ['idle','focused','typing','thinking'].forEach(s => {
-      if (cfg.SP[s]) Object.keys(cfg.SP[s]).forEach(k => { if (k in SP[s]) SP[s][k] = cfg.SP[s][k]; });
+  if (cfg.currentTheme && THEME_PRESETS[cfg.currentTheme]) currentTheme = cfg.currentTheme;
+  SP = THEME_PRESETS[currentTheme];
+  if (cfg.G) {
+    Object.keys(cfg.G).forEach(k => {
+      if (k in G) G[k] = cfg.G[k];
+      else if (k in THEME_GLOBALS[currentTheme]) THEME_GLOBALS[currentTheme][k] = cfg.G[k];
     });
   }
+  if (cfg.themeGlobals) applyThemeGlobals(cfg.themeGlobals);
+  if (cfg.themePresets) applyThemePresetBank(cfg.themePresets);
+  else if (cfg.themes) applyThemePresetBank(cfg.themes);
+  else if (cfg.SP) {
+    if (cfg.SP.light || cfg.SP.dark) applyThemePresetBank(cfg.SP);
+    else applyStatePresetBank(THEME_PRESETS[currentTheme], cfg.SP);
+  }
+  refreshThemeMode();
   syncGlobalControls();
   syncStateControls();
+  updateVideoState();
 }
 
 function renderSaved() {
@@ -2161,8 +2327,7 @@ document.getElementById('btn-json').onclick = () => {
 // INIT
 // ============================================================
 
-syncGlobalControls();
-syncStateControls();
+setTheme(currentTheme);
 renderSaved();
 updateZoom(2.2);
 
