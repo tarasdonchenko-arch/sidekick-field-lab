@@ -537,6 +537,35 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
     </select></div>
   </div>
 
+  <!-- Particles -->
+  <div class="p-section">
+    <div class="p-label">Particles</div>
+    <div class="p-row"><label>Style</label><select data-skey="particleStyle">
+      <option value="0" selected>Halo</option>
+      <option value="1">Fireflies</option>
+      <option value="2">Aurora</option>
+      <option value="3">Crystal</option>
+      <option value="4">Pixie</option>
+    </select></div>
+    <div class="p-row"><label>Count</label><input type="range" data-skey="particleCount" min="0" max="3000" step="10"><span class="p-val"></span></div>
+    <div class="p-color"><label>Tint</label><input type="color" data-skey="particleTint"><span class="p-hex"></span></div>
+    <div class="p-row"><label>Opacity</label><input type="range" data-skey="particleOpacity" min="0" max="1" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Glow</label><input type="range" data-skey="particleGlow" min="0" max="2" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Scale</label><input type="range" data-skey="particleScale" min="0.2" max="5" step="0.05"><span class="p-val"></span></div>
+    <div class="p-row"><label>Point Size</label><input type="range" data-skey="particlePointSize" min="0.1" max="5" step="0.05"><span class="p-val"></span></div>
+    <div class="p-row"><label>Spread</label><input type="range" data-skey="particleSpread" min="0.2" max="3" step="0.05"><span class="p-val"></span></div>
+    <div class="p-row"><label>Speed</label><input type="range" data-skey="particleSpeed" min="0" max="3" step="0.05"><span class="p-val"></span></div>
+    <div class="p-row"><label>Drift</label><input type="range" data-skey="particleDrift" min="0" max="5" step="0.05"><span class="p-val"></span></div>
+    <div class="p-row"><label>Blend</label><select data-skey="particleBlend">
+      <option value="0" selected>Additive</option>
+      <option value="1">Screen</option>
+      <option value="2">Behind Orbs</option>
+      <option value="3">In Front</option>
+      <option value="4">Overlay</option>
+      <option value="5">Multiply</option>
+    </select></div>
+  </div>
+
   <!-- Display (per state) -->
   <div class="p-section">
     <div class="p-label">Display (per state)</div>
@@ -623,13 +652,14 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
   precision mediump float;
   varying vec2 vUV;
   uniform sampler2D uVideo;
+  uniform sampler2D uParticles;
   uniform float uTime;
 
   // Blob colors
   uniform vec3 uBlobA, uBlobB, uBlobC;
 
   // Orbit params
-  uniform float uOrbSpeed, uOrbRadius, uBlobSize, uBlobSoft, uBlobOpacity;
+  uniform float uOrbRadius, uBlobSize, uBlobSoft, uBlobOpacity;
   uniform float uBlobHueHold, uOverlapBoost, uFieldFill;
   uniform int uBlobMixMode;
   uniform vec2 uTiltA, uTiltB, uTiltC;
@@ -642,6 +672,8 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
 
   // Mask & atmosphere
   uniform float uMaskEdge, uMaskSoft, uInnerGlow, uNoiseAmt;
+  uniform float uParticleOpacity;
+  uniform int uParticleBlend;
 
   // --- Hash noise ---
   float hash(vec2 p) {
@@ -699,10 +731,19 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
     if (mode == 4) return dominantMix;
     return fluidColor;
   }
+  vec3 blendParticles(int mode, vec3 base, vec3 particles, float orbAlpha) {
+    float pBright = max(max(particles.r, particles.g), particles.b);
+    if (mode == 1) return blendScreen(base, particles);
+    if (mode == 2) return mix(particles, base, orbAlpha);
+    if (mode == 3) return mix(base, particles, clamp(pBright, 0.0, 1.0));
+    if (mode == 4) return blendOverlay(max(base, vec3(0.001)), particles);
+    if (mode == 5) return blendMultiply(base + vec3(0.5), particles + vec3(0.5));
+    return base + particles;
+  }
 
   void main() {
     vec2 uv = vUV;
-    float t = uTime * uOrbSpeed;
+    float t = uTime;
     float distFromCenter = length(uv - 0.5);
 
     // --- Circular mask (alpha only, no color darkening) ---
@@ -758,6 +799,9 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
     vec3 fieldColor = mix(avgColor, weightedColor, clamp(totalBlob * 0.9, 0.0, 1.0));
     orbColor = mix(fieldColor, orbColor, clamp(coverage * 1.2, 0.0, 1.0));
     float orbAlpha = max(coverage * uBlobOpacity, fieldPresence);
+    vec3 particles = texture2D(uParticles, vec2(uv.x, 1.0 - uv.y)).rgb * uParticleOpacity;
+    float particleA = max(max(particles.r, particles.g), particles.b);
+    orbColor = blendParticles(uParticleBlend, orbColor, particles, orbAlpha);
 
     // --- Face video ---
     vec2 faceCenter = vec2(0.5, 0.5 + uFaceOffsetY);
@@ -802,11 +846,208 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
     color += noise;
 
     // --- Final alpha ---
-    float alpha = max(orbAlpha, faceA) * mask;
+    float alpha = max(max(orbAlpha, faceA), particleA) * mask;
 
     // Premultiplied alpha output
     vec3 final_c = clamp(color, 0.0, 1.0) * alpha;
     gl_FragColor = vec4(final_c, alpha);
+  }
+</script>
+
+<!-- Particle glow pass -->
+<script id="vs-particle-glow" type="x-shader/x-vertex">
+  attribute vec2 aPos;
+  varying vec2 vUV;
+  void main() {
+    vUV = aPos;
+    gl_Position = vec4(aPos, 0.0, 1.0);
+  }
+</script>
+
+<script id="fs-particle-glow" type="x-shader/x-fragment">
+  precision mediump float;
+  varying vec2 vUV;
+  uniform float uTime;
+  uniform vec3 uParticleTint;
+  uniform float uParticleGlow;
+  float colorSaturation(vec3 c) {
+    float hi = max(max(c.r, c.g), c.b);
+    float lo = min(min(c.r, c.g), c.b);
+    return hi - lo;
+  }
+  void main() {
+    float r = length(vUV);
+    float core = exp(-r * r * 100.0) * 0.40;
+    float mid = exp(-r * r * 18.0) * 0.05;
+    float sat = colorSaturation(uParticleTint);
+    float tintMix = clamp(sat * 1.35, 0.0, 1.0);
+    float glow = (core * mix(1.0, 0.14, tintMix) + mid) * uParticleGlow;
+    glow *= 0.94 + 0.06 * sin(uTime * 0.8);
+    vec3 tint = mix(vec3(0.92, 0.94, 1.0), uParticleTint, tintMix);
+    gl_FragColor = vec4(tint * glow, glow);
+  }
+</script>
+
+<!-- Particle point pass -->
+<script id="vs-particles" type="x-shader/x-vertex">
+  precision highp float;
+  attribute float aId;
+  varying vec3 vColor;
+  varying float vAlpha;
+  varying float vBlur;
+  varying float vStyle;
+  varying float vSparkle;
+  uniform float uTime;
+  uniform vec2 uViewportSize;
+  uniform float uPitch, uYaw, uRoll;
+  uniform vec3 uParticleTint;
+  uniform float uParticleStyle;
+  uniform float uParticleScale;
+  uniform float uParticlePointSize;
+  uniform float uParticleSpread;
+  float hash1(float n) { return fract(sin(n * 12.9898) * 43758.5453); }
+  vec3 hash3(float n) {
+    return fract(sin(vec3(n, n + 1.0, n + 2.0) * 12.9898) *
+                 vec3(43758.5453, 22578.1459, 19642.3490));
+  }
+  vec3 unitVec(float u, float v) {
+    float theta = u * 6.28318530718;
+    float z = 2.0 * v - 1.0;
+    float r = sqrt(max(0.0, 1.0 - z * z));
+    return vec3(r * cos(theta), r * sin(theta), z);
+  }
+  vec3 rodrigues(vec3 v, vec3 ax, float angle) {
+    float c = cos(angle), s = sin(angle);
+    return v * c + cross(ax, v) * s + ax * dot(ax, v) * (1.0 - c);
+  }
+  vec3 headRotate(vec3 v, float pitch, float yaw, float roll) {
+    float cp = cos(pitch), sp = sin(pitch);
+    vec3 v1 = vec3(v.x, cp * v.y - sp * v.z, sp * v.y + cp * v.z);
+    float cy = cos(yaw), sy = sin(yaw);
+    vec3 v2 = vec3(cy * v1.x + sy * v1.z, v1.y, -sy * v1.x + cy * v1.z);
+    float cr = cos(roll), sr = sin(roll);
+    return vec3(cr * v2.x - sr * v2.y, sr * v2.x + cr * v2.y, v2.z);
+  }
+  float colorSaturation(vec3 c) {
+    float hi = max(max(c.r, c.g), c.b);
+    float lo = min(min(c.r, c.g), c.b);
+    return hi - lo;
+  }
+  void main() {
+    float id = aId;
+    vec3 r1 = hash3(id * 0.137 + 3.71);
+    vec3 r2 = hash3(id * 0.731 + 17.13);
+    vec3 r3 = hash3(id * 1.923 + 91.57);
+    float style = clamp(floor(uParticleStyle + 0.5), 0.0, 4.0);
+    vec3 base = unitVec(r1.x, r1.y);
+    vec3 ax = unitVec(r2.x, r2.y);
+    float dir = mix(-1.0, 1.0, step(0.5, r3.x));
+    float phase = r3.y * 6.2831853;
+    float radius = mix(0.10, 0.42, pow(r1.z, 1.4)) * uParticleSpread;
+    radius *= 1.0 + 0.05 * sin(uTime * 0.6 + id * 0.37);
+    float speed = mix(0.035, 0.52, r2.z);
+    vec3 p = rodrigues(base, ax, uTime * speed * dir + phase) * radius;
+    float sizeBase = 0.90;
+    float sizeBlur = 18.4;
+    float alphaNear = 0.80;
+    float alphaFar = 0.10;
+    float sparkle = 0.0;
+    float sat = colorSaturation(uParticleTint);
+    if (style > 0.5 && style < 1.5) {
+      float fAngle = uTime * mix(0.12, 0.38, r2.z) * dir + phase;
+      vec3 driftAx = normalize(mix(ax, vec3(0.0, 1.0, 0.0), 0.24));
+      vec3 fDir = rodrigues(base, driftAx, fAngle);
+      float bob = sin(uTime * 0.64 + id * 0.21) * 0.018;
+      p = normalize(fDir + unitVec(r2.x, r3.z) * bob) * mix(0.18, 0.43, pow(r1.z, 1.25));
+      sparkle = pow(0.5 + 0.5 * sin(uTime * 2.8 + id * 1.91), 5.0);
+      sizeBase = 1.30 + sparkle * 2.20;
+      sizeBlur = 10.0;
+      alphaNear = 0.42 + sparkle * 0.82;
+      alphaFar = 0.08 + sparkle * 0.22;
+    } else if (style > 1.5 && style < 2.5) {
+      float aAngle = uTime * mix(0.10, 0.28, r2.z) * dir + phase;
+      float wave = sin(base.y * 9.0 + aAngle * 2.0 + uTime * 0.9);
+      vec3 aDir = rodrigues(base, vec3(0.0, 1.0, 0.0), wave * 0.18);
+      aDir = rodrigues(aDir, ax, aAngle * 0.34);
+      p = normalize(aDir) * mix(0.16, 0.44, pow(r1.z, 1.15));
+      sparkle = 0.5 + 0.5 * sin(aAngle * 3.0 - uTime * 1.4);
+      sizeBase = 1.10; sizeBlur = 22.0; alphaNear = 0.38; alphaFar = 0.16;
+    } else if (style > 2.5 && style < 3.5) {
+      float snap = floor(r1.x * 12.0) / 12.0;
+      vec3 cBase = normalize(mix(base, unitVec(snap, r1.y), 0.55));
+      float cRadius = mix(0.16, 0.46, pow(r2.z, 1.8));
+      p = rodrigues(cBase, ax, uTime * mix(0.025, 0.22, r3.x) * dir + phase) * cRadius;
+      sparkle = pow(0.5 + 0.5 * sin(uTime * 2.2 + id * 2.6), 9.0);
+      sizeBase = 0.65 + sparkle * 1.80;
+      sizeBlur = 14.0; alphaNear = 0.76 + sparkle * 0.50; alphaFar = 0.12;
+    } else if (style > 3.5 && style < 4.5) {
+      float latTwist = base.y * 5.2 + uTime * mix(0.18, 0.34, r2.z) * dir;
+      vec3 pDir = rodrigues(base, vec3(0.0, 1.0, 0.0), latTwist);
+      pDir = rodrigues(pDir, ax, sin(uTime * 0.55 + id) * 0.16);
+      float pRadius = mix(0.12, 0.43, pow(r1.z, 1.55)) + 0.012 * sin(uTime * 0.72 + id);
+      p = normalize(pDir) * pRadius;
+      sparkle = pow(0.5 + 0.5 * sin(uTime * 1.65 + id * 1.31), 4.0);
+      sizeBase = 0.75 + sparkle * 2.60;
+      sizeBlur = 16.0; alphaNear = 0.68 + sparkle * 0.62; alphaFar = 0.12 + sparkle * 0.12;
+    }
+    p = headRotate(p, uPitch, uYaw, uRoll);
+    float camZ = 1.0;
+    float focal = 1.5;
+    float depth = max(camZ - p.z, 0.05);
+    float ndcX = (p.x * focal / depth) * uParticleScale;
+    float ndcY = (p.y * focal / depth) * uParticleScale;
+    float defocus = clamp(abs(p.z) * 2.9 - 0.14, 0.0, 1.0);
+    float scale = uViewportSize.y / 900.0;
+    float sizeSeed = hash1(id * 0.419 + 8.17);
+    float sizeJitter = mix(0.50, 2.28, pow(sizeSeed, 2.05));
+    float sz = (sizeBase + defocus * sizeBlur) * scale * (0.7 / depth) * sizeJitter * uParticlePointSize;
+    float tMix = clamp(sat * 4.0, 0.0, 1.0);
+    vec3 activeColor = mix(vec3(1.0), uParticleTint, tMix);
+    float brightness = mix(0.58, 1.22, 1.0 - defocus) + sparkle * 0.36;
+    vec3 col = min(activeColor * brightness, vec3(1.0));
+    float frontW = smoothstep(-0.05, 0.32, p.z);
+    col = mix(col, uParticleTint, clamp(frontW * sat * 1.05, 0.0, 0.75));
+    float alpha = mix(alphaNear, alphaFar, defocus);
+    alpha *= mix(1.14, 0.62, clamp(sizeJitter / 2.28, 0.0, 1.0));
+    alpha *= mix(1.0, 0.70, smoothstep(0.0, 1.0, -p.z / 0.4));
+    gl_Position = vec4(ndcX, ndcY, 0.5, 1.0);
+    gl_PointSize = clamp(sz, 1.0, 180.0);
+    vColor = col;
+    vAlpha = alpha;
+    vBlur = defocus;
+    vStyle = style;
+    vSparkle = sparkle;
+  }
+</script>
+
+<script id="fs-particles" type="x-shader/x-fragment">
+  precision highp float;
+  varying vec3 vColor;
+  varying float vAlpha;
+  varying float vBlur;
+  varying float vStyle;
+  varying float vSparkle;
+  void main() {
+    vec2 c = gl_PointCoord - 0.5;
+    float d = length(c) * 2.0;
+    if (d > 1.0) discard;
+    float sharp = mix(5.5, 1.3, vBlur);
+    float mask = exp(-d * d * sharp * 3.0);
+    mask += (1.0 - vBlur) * exp(-d * d * 24.0) * 0.9;
+    if (vStyle > 2.5 && vStyle < 3.5) {
+      float ang = atan(c.y, c.x);
+      float rays = pow(abs(cos(ang * 4.0)), 18.0) * smoothstep(1.0, 0.10, d);
+      mask += rays * (0.18 + vSparkle * 0.62);
+    } else if (vStyle > 3.5 && vStyle < 4.5) {
+      float ang = atan(c.y, c.x);
+      float rays = pow(abs(cos(ang * 5.0)), 10.0) * smoothstep(0.95, 0.05, d);
+      mask += rays * (0.12 + vSparkle * 0.42);
+      mask += exp(-d * d * 42.0) * vSparkle * 0.85;
+    } else if (vStyle > 0.5 && vStyle < 1.5) {
+      mask += exp(-d * d * 18.0) * vSparkle * 0.75;
+    }
+    float a = mask * vAlpha;
+    gl_FragColor = vec4(vColor * a, a);
   }
 </script>
 
@@ -823,6 +1064,8 @@ const SP = {
     blobMixMode: 3, blobHueHold: 0.10, overlapBoost: 0.0, fieldFill: 0.28,
     blobSize: 0.17, blobSoft: 0.24, blobOpacity: 0.37,
     maskEdge: 0.29, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
+    particleStyle: 0, particleCount: 890, particleTint: '#f2f7ff', particleOpacity: 0.83, particleGlow: 0.16, particleBlend: 0,
+    particleScale: 1.8, particlePointSize: 4.25, particleSpread: 2.1, particleSpeed: 0.45, particleDrift: 3.55,
     faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
     tiltAx: 2.00, tiltAy: 0.67,
     tiltBx: 2.40, tiltBy: 0.40,
@@ -835,6 +1078,8 @@ const SP = {
     blobMixMode: 3, blobHueHold: 0.10, overlapBoost: 0.0, fieldFill: 0.28,
     blobSize: 0.17, blobSoft: 0.24, blobOpacity: 0.66,
     maskEdge: 0.29, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
+    particleStyle: 0, particleCount: 680, particleTint: '#f2f7ff', particleOpacity: 0.43, particleGlow: 1.0, particleBlend: 0,
+    particleScale: 1.0, particlePointSize: 4.20, particleSpread: 1.65, particleSpeed: 2.20, particleDrift: 1.0,
     faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
     tiltAx: 2.00, tiltAy: 0.67,
     tiltBx: 2.40, tiltBy: 0.40,
@@ -847,6 +1092,8 @@ const SP = {
     blobMixMode: 3, blobHueHold: 0.10, overlapBoost: 0.0, fieldFill: 0.28,
     blobSize: 0.17, blobSoft: 0.24, blobOpacity: 0.66,
     maskEdge: 0.29, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
+    particleStyle: 0, particleCount: 680, particleTint: '#f2f7ff', particleOpacity: 0.43, particleGlow: 1.0, particleBlend: 0,
+    particleScale: 1.0, particlePointSize: 4.20, particleSpread: 1.65, particleSpeed: 2.20, particleDrift: 1.0,
     faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
     tiltAx: 2.00, tiltAy: 0.67,
     tiltBx: 2.40, tiltBy: 0.40,
@@ -859,6 +1106,8 @@ const SP = {
     blobMixMode: 3, blobHueHold: 0.10, overlapBoost: 0.0, fieldFill: 0.28,
     blobSize: 0.17, blobSoft: 0.24, blobOpacity: 0.66,
     maskEdge: 0.31, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
+    particleStyle: 0, particleCount: 1380, particleTint: '#f2f7ff', particleOpacity: 0.80, particleGlow: 1.0, particleBlend: 0,
+    particleScale: 1.0, particlePointSize: 1.0, particleSpread: 1.0, particleSpeed: 1.0, particleDrift: 1.0,
     faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
     tiltAx: 2.00, tiltAy: 0.67,
     tiltBx: 2.40, tiltBy: 0.40,
@@ -885,6 +1134,8 @@ let typedText = '';
 let thinkTimer = null;
 let thinkDotsInterval = null;
 let orbPhase = 0;
+let particlePhase = 0;
+let particleDriftPhase = 0;
 let lastT = 0;
 let streakPhase = 'none';
 let streakStartTime = 0;
@@ -896,16 +1147,19 @@ const LERP_KEYS = ['orbSpeed','orbRadius',
   'orbSize','fieldOrbScale',
   'blobSize','blobSoft','blobOpacity','blobHueHold','overlapBoost','fieldFill',
   'maskEdge','maskSoft','innerGlow','noiseAmt',
+  'particleCount','particleOpacity','particleGlow','particleScale','particlePointSize','particleSpread','particleSpeed','particleDrift',
   'faceScale','faceOpacity','faceOffsetY','faceColorMix',
   'tiltAx','tiltAy','tiltBx','tiltBy','tiltCx','tiltCy'];
 
-const COLOR_KEYS = ['c1','c2','c3','faceColor'];
+const COLOR_KEYS = ['c1','c2','c3','faceColor','particleTint'];
 
 const live = {};
 LERP_KEYS.forEach(k => live[k] = SP.idle[k]);
 COLOR_KEYS.forEach(k => live[k] = SP.idle[k]);
 live.faceBlendMode = SP.idle.faceBlendMode;
 live.blobMixMode = SP.idle.blobMixMode;
+live.particleStyle = SP.idle.particleStyle;
+live.particleBlend = SP.idle.particleBlend;
 
 function hexToRgb(h) {
   const v = parseInt(h.slice(1), 16);
@@ -1023,17 +1277,71 @@ function linkProgram(vsSrc, fsSrc) {
 const vsSrc = document.getElementById('vs-quad').textContent;
 const fsSrc = document.getElementById('fs-orb').textContent;
 const prog = gl ? linkProgram(vsSrc, fsSrc) : null;
+const particleGlowProg = gl ? linkProgram(
+  document.getElementById('vs-particle-glow').textContent,
+  document.getElementById('fs-particle-glow').textContent
+) : null;
+const particleProg = gl ? linkProgram(
+  document.getElementById('vs-particles').textContent,
+  document.getElementById('fs-particles').textContent
+) : null;
 
 const glUniforms = {};
 function u(name) {
   if (!(name in glUniforms)) glUniforms[name] = gl.getUniformLocation(prog, name);
   return glUniforms[name];
 }
+const particleGlowUniforms = {};
+function gu(name) {
+  if (!(name in particleGlowUniforms)) particleGlowUniforms[name] = gl.getUniformLocation(particleGlowProg, name);
+  return particleGlowUniforms[name];
+}
+const particleUniforms = {};
+function pu(name) {
+  if (!(name in particleUniforms)) particleUniforms[name] = gl.getUniformLocation(particleProg, name);
+  return particleUniforms[name];
+}
 
 const quadBuf = gl ? gl.createBuffer() : null;
 if (gl) {
   gl.bindBuffer(gl.ARRAY_BUFFER, quadBuf);
   gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+}
+const MAX_PARTICLES = 3000;
+const particleIdBuf = gl ? gl.createBuffer() : null;
+if (gl) {
+  const ids = new Float32Array(MAX_PARTICLES);
+  for (let i = 0; i < MAX_PARTICLES; i++) ids[i] = i;
+  gl.bindBuffer(gl.ARRAY_BUFFER, particleIdBuf);
+  gl.bufferData(gl.ARRAY_BUFFER, ids, gl.STATIC_DRAW);
+}
+let particleTex = null;
+let particleFbo = gl ? gl.createFramebuffer() : null;
+let particleFboW = 0;
+let particleFboH = 0;
+function ensureParticleFbo(w, h) {
+  if (!gl || (particleFboW === w && particleFboH === h && particleTex)) return;
+  if (particleTex) gl.deleteTexture(particleTex);
+  particleTex = gl.createTexture();
+  gl.bindTexture(gl.TEXTURE_2D, particleTex);
+  gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, w, h, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+  gl.bindFramebuffer(gl.FRAMEBUFFER, particleFbo);
+  gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, particleTex, 0);
+  gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+  particleFboW = w;
+  particleFboH = h;
+}
+function particleDrift(phase) {
+  const d = live.particleDrift;
+  return {
+    pitch: Math.sin(phase * 0.31 + 0.4) * 1.8 * d * Math.PI / 180,
+    yaw: Math.sin(phase * 0.27 + 1.1) * 2.2 * d * Math.PI / 180,
+    roll: Math.sin(phase * 0.23 + 2.0) * 0.8 * d * Math.PI / 180,
+  };
 }
 
 // Video (programmatic, not a DOM element)
@@ -1119,6 +1427,7 @@ function resizeGLCanvas(sz) {
   glCanvas.style.width = sz + 'px';
   glCanvas.style.height = sz + 'px';
   if (gl) gl.viewport(0, 0, glCanvas.width, glCanvas.height);
+  ensureParticleFbo(glCanvas.width, glCanvas.height);
 }
 
 // ============================================================
@@ -1401,11 +1710,13 @@ function frame(ts) {
   COLOR_KEYS.forEach(k => { live[k] = lerpColor(live[k], target[k], f); });
   live.faceBlendMode = target.faceBlendMode;
   live.blobMixMode = target.blobMixMode;
-  // Snap orbSpeed instantly — lerping it causes ugly spin-up overshoot
-  live.orbSpeed = target.orbSpeed;
+  live.particleStyle = target.particleStyle;
+  live.particleBlend = target.particleBlend;
 
-  // Accumulate phase
+  // Accumulate phases so speed changes preserve position and ease smoothly.
   orbPhase += live.orbSpeed * dt;
+  particlePhase += live.particleSpeed * dt;
+  particleDriftPhase += Math.max(live.particleDrift, 0.0) * dt;
 
   // Apply orb layout — canvas renders at full orbSize, CSS scales for field placement
   const sz = live.orbSize;
@@ -1424,7 +1735,58 @@ function frame(ts) {
       gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, video);
     }
 
+    const time = ts / 1000;
+    const hasParticles = particleGlowProg && particleProg && particleTex && (live.particleCount > 0 || live.particleGlow > 0);
+    if (hasParticles) {
+      const tint = hexToGL(live.particleTint);
+      gl.bindFramebuffer(gl.FRAMEBUFFER, particleFbo);
+      gl.viewport(0, 0, glCanvas.width, glCanvas.height);
+      gl.clearColor(0, 0, 0, 0);
+      gl.clear(gl.COLOR_BUFFER_BIT);
+      gl.enable(gl.BLEND);
+      gl.blendFunc(gl.ONE, gl.ONE);
+
+      gl.useProgram(particleGlowProg);
+      const gPos = gl.getAttribLocation(particleGlowProg, 'aPos');
+      gl.bindBuffer(gl.ARRAY_BUFFER, quadBuf);
+      gl.enableVertexAttribArray(gPos);
+      gl.vertexAttribPointer(gPos, 2, gl.FLOAT, false, 0, 0);
+      gl.uniform1f(gu('uTime'), particlePhase);
+      gl.uniform3fv(gu('uParticleTint'), tint);
+      gl.uniform1f(gu('uParticleGlow'), live.particleGlow);
+      gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+
+      if (live.particleCount > 0) {
+        const drift = particleDrift(particleDriftPhase);
+        gl.useProgram(particleProg);
+        const pId = gl.getAttribLocation(particleProg, 'aId');
+        gl.bindBuffer(gl.ARRAY_BUFFER, particleIdBuf);
+        gl.enableVertexAttribArray(pId);
+        gl.vertexAttribPointer(pId, 1, gl.FLOAT, false, 0, 0);
+        gl.uniform1f(pu('uTime'), particlePhase);
+        gl.uniform2f(pu('uViewportSize'), glCanvas.width, glCanvas.height);
+        gl.uniform1f(pu('uPitch'), drift.pitch);
+        gl.uniform1f(pu('uYaw'), drift.yaw);
+        gl.uniform1f(pu('uRoll'), drift.roll);
+        gl.uniform3fv(pu('uParticleTint'), tint);
+        gl.uniform1f(pu('uParticleStyle'), live.particleStyle);
+        gl.uniform1f(pu('uParticleScale'), live.particleScale);
+        gl.uniform1f(pu('uParticlePointSize'), live.particlePointSize);
+        gl.uniform1f(pu('uParticleSpread'), live.particleSpread);
+        gl.drawArrays(gl.POINTS, 0, Math.min(MAX_PARTICLES, Math.max(0, Math.round(live.particleCount))));
+      }
+
+      gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+    } else if (particleTex) {
+      gl.bindFramebuffer(gl.FRAMEBUFFER, particleFbo);
+      gl.viewport(0, 0, glCanvas.width, glCanvas.height);
+      gl.clearColor(0, 0, 0, 0);
+      gl.clear(gl.COLOR_BUFFER_BIT);
+      gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+    }
+
     // Clear to transparent
+    gl.viewport(0, 0, glCanvas.width, glCanvas.height);
     gl.clearColor(0, 0, 0, 0);
     gl.clear(gl.COLOR_BUFFER_BIT);
 
@@ -1443,7 +1805,11 @@ function frame(ts) {
     gl.bindTexture(gl.TEXTURE_2D, videoTex);
     gl.uniform1i(u('uVideo'), 0);
 
-    gl.uniform1f(u('uTime'), ts / 1000);
+    gl.activeTexture(gl.TEXTURE1);
+    gl.bindTexture(gl.TEXTURE_2D, particleTex);
+    gl.uniform1i(u('uParticles'), 1);
+
+    gl.uniform1f(u('uTime'), orbPhase);
 
     // Pass lerped colors
     const cA = hexToGL(live.c1);
@@ -1453,7 +1819,6 @@ function frame(ts) {
     gl.uniform3fv(u('uBlobB'), cB);
     gl.uniform3fv(u('uBlobC'), cC);
 
-    gl.uniform1f(u('uOrbSpeed'), live.orbSpeed);
     gl.uniform1f(u('uOrbRadius'), live.orbRadius);
     gl.uniform1f(u('uBlobSize'), live.blobSize);
     gl.uniform1f(u('uBlobSoft'), live.blobSoft);
@@ -1478,6 +1843,8 @@ function frame(ts) {
     gl.uniform1f(u('uMaskSoft'), live.maskSoft);
     gl.uniform1f(u('uInnerGlow'), live.innerGlow);
     gl.uniform1f(u('uNoiseAmt'), live.noiseAmt);
+    gl.uniform1f(u('uParticleOpacity'), live.particleOpacity);
+    gl.uniform1i(u('uParticleBlend'), live.particleBlend);
 
     gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
   }
@@ -1646,7 +2013,7 @@ document.querySelectorAll('select[data-skey]').forEach(el => {
   el.addEventListener('change', () => {
     const key = el.dataset.skey;
     const val = el.value;
-    SP[editingState][key] = (key === 'faceBlendMode' || key === 'blobMixMode') ? parseInt(val) : val;
+    SP[editingState][key] = (key === 'faceBlendMode' || key === 'blobMixMode' || key === 'particleStyle' || key === 'particleBlend') ? parseInt(val) : val;
   });
 });
 
