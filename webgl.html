@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sidekick Field + WebGL Lab</title>
+<link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -393,13 +394,13 @@ body[data-theme="dark"] .p-check label{color:rgba(235,238,246,0.58)}
   font-size:11px;font-family:inherit;outline:none;
 }
 body[data-theme="dark"] .p-row select,
-body[data-theme="dark"] #ui-video{
+body[data-theme="dark"] .p-row select{
   border-color:rgba(255,255,255,0.12);
   background:rgba(255,255,255,0.06);
   color:#eef1f8;
 }
 body[data-theme="dark"] .p-row select option,
-body[data-theme="dark"] #ui-video option{
+body[data-theme="dark"] .p-row select option{
   background:#171923;
   color:#eef1f8;
 }
@@ -653,12 +654,14 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
     </select></div>
     <div class="p-color"><label>Face Color</label><input type="color" data-skey="faceColor"><span class="p-hex"></span></div>
     <div class="p-row"><label>Color Mix</label><input type="range" data-skey="faceColorMix" min="0" max="1" step="0.01"><span class="p-val"></span></div>
-    <div class="p-row"><label>Video</label><select id="ui-video">
-      <option value="face-black.webm" selected>face-black</option>
-      <option value="face-idle.webm">face-idle</option>
-      <option value="face-thinking.webm">face-thinking</option>
-      <option value="face-active.webm">face-active</option>
+    <div class="p-row"><label>Source</label><select data-skey="faceTimeline">
+      <option value="gif-blue" selected>blue shader</option>
+      <option value="gif-black">black shader</option>
+      <option value="gif-white">white shader</option>
     </select></div>
+    <div class="p-row"><label>Radius</label><input type="range" data-skey="faceRoundness" min="0.35" max="1.4" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Softness</label><input type="range" data-skey="faceSoftness" min="0.2" max="3" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Loader Size</label><input type="range" data-skey="faceLoaderScale" min="0.65" max="1.65" step="0.01"><span class="p-val"></span></div>
   </div>
 
   <!-- Particles -->
@@ -760,7 +763,7 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
 
 <!-- ==================== SHADERS ==================== -->
 
-<!-- Vertex shader -- fullscreen quad, flip Y for video -->
+<!-- Vertex shader -- fullscreen quad -->
 <script id="vs-quad" type="x-shader/x-vertex">
   attribute vec2 aPos;
   varying vec2 vUV;
@@ -774,7 +777,6 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
 <script id="fs-orb" type="x-shader/x-fragment">
   precision mediump float;
   varying vec2 vUV;
-  uniform sampler2D uVideo;
   uniform sampler2D uParticles;
   uniform float uTime;
 
@@ -792,6 +794,14 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
   uniform vec3 uFaceColor;
   uniform float uFaceColorMix;
   uniform int uBlendMode;
+  uniform vec4 uFaceMeta;
+  uniform vec4 uFaceLeft;
+  uniform vec4 uFaceRight;
+  uniform vec4 uFaceMouth;
+  uniform vec4 uFaceRaw0;
+  uniform vec4 uFaceRaw1;
+  uniform vec4 uFaceRaw2;
+  uniform vec4 uFaceRawRot;
 
   // Mask & atmosphere
   uniform float uMaskEdge, uMaskSoft, uInnerGlow, uNoiseAmt;
@@ -811,6 +821,53 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
     float inner = max(size - soft * 0.5, 0.0);
     float outer = size + soft;
     return 1.0 - smoothstep(inner, outer, d);
+  }
+
+  vec2 rotate2(vec2 p, float a) {
+    float c = cos(a);
+    float s = sin(a);
+    return vec2(c * p.x - s * p.y, s * p.x + c * p.y);
+  }
+
+  float sdRoundBox(vec2 p, vec2 halfSize, float radius) {
+    radius = min(radius, min(halfSize.x, halfSize.y));
+    vec2 q = abs(p) - halfSize + radius;
+    return length(max(q, 0.0)) + min(max(q.x, q.y), 0.0) - radius;
+  }
+
+  float shapeAlpha(float d, float softness) {
+    return 1.0 - smoothstep(-softness, softness, d);
+  }
+
+  float measuredBlobDistance(vec2 p, vec2 center, vec2 size, float rotation, float roundness) {
+    vec2 halfSize = max(size * 0.5, vec2(0.7));
+    float radius = min(halfSize.x, halfSize.y) * roundness;
+    return sdRoundBox(rotate2(p - center, -rotation), halfSize, radius);
+  }
+
+  float shaderFaceAlpha(vec2 faceUV) {
+    vec2 p = (faceUV - 0.5) * 180.0;
+
+    float roundness = max(uFaceMeta.x, 0.05);
+    float softness = max(uFaceMeta.y, 0.35);
+    float rawMode = uFaceMeta.z;
+    float rawCount = uFaceMeta.w;
+
+    float dLeft = 9999.0;
+    float dRight = 9999.0;
+    float dMouth = 9999.0;
+
+    if (rawMode > 0.5) {
+      if (rawCount > 0.5) dLeft = measuredBlobDistance(p, uFaceRaw0.xy, uFaceRaw0.zw, uFaceRawRot.x, roundness);
+      if (rawCount > 1.5) dMouth = measuredBlobDistance(p, uFaceRaw1.xy, uFaceRaw1.zw, uFaceRawRot.y, roundness);
+      if (rawCount > 2.5) dRight = measuredBlobDistance(p, uFaceRaw2.xy, uFaceRaw2.zw, uFaceRawRot.z, roundness);
+    } else {
+      dLeft = measuredBlobDistance(p, uFaceLeft.xy, uFaceLeft.zw, uFaceRawRot.x, roundness);
+      dRight = measuredBlobDistance(p, uFaceRight.xy, uFaceRight.zw, uFaceRawRot.z, roundness);
+      dMouth = measuredBlobDistance(p, uFaceMouth.xy, uFaceMouth.zw, uFaceRawRot.y, roundness);
+    }
+
+    return max(max(shapeAlpha(dLeft, softness), shapeAlpha(dRight, softness)), shapeAlpha(dMouth, softness));
   }
 
   // --- 3D orbit ---
@@ -926,21 +983,14 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
     float particleA = max(max(particles.r, particles.g), particles.b);
     orbColor = blendParticles(uParticleBlend, orbColor, particles, orbAlpha);
 
-    // --- Face video ---
+    // --- Shader face ---
     vec2 faceCenter = vec2(0.5, 0.5 + uFaceOffsetY);
     vec2 faceUV = (uv - faceCenter) / uFaceScale + 0.5;
-    vec4 face = vec4(0.0);
+    float faceA = 0.0;
     if (faceUV.x >= 0.0 && faceUV.x <= 1.0 && faceUV.y >= 0.0 && faceUV.y <= 1.0) {
-      face = texture2D(uVideo, faceUV);
+      faceA = shaderFaceAlpha(faceUV) * uFaceOpacity;
     }
-
-    // Tint face — the face features are dark shapes, so we replace their color
-    // directly with uFaceColor, preserving luminance for shading
-    float faceLuma = dot(face.rgb, vec3(0.299, 0.587, 0.114));
-    // Invert: dark features → high tint strength, bright areas → no tint
-    float tintStrength = 1.0 - smoothstep(0.0, 0.5, faceLuma);
-    vec3 faceTinted = mix(face.rgb, uFaceColor * (1.0 - faceLuma * 0.5), uFaceColorMix * tintStrength);
-    float faceA = face.a * uFaceOpacity;
+    vec3 faceTinted = mix(vec3(0.0), uFaceColor, uFaceColorMix);
 
     // --- Compositing ---
     vec3 color = orbColor;
@@ -948,13 +998,13 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
     if (uBlendMode == 0) {
       color = mix(color, faceTinted, faceA);
     } else if (uBlendMode == 1) {
-      color = mix(color, blendScreen(color, face.rgb), faceA);
+      color = mix(color, blendScreen(color, faceTinted), faceA);
     } else if (uBlendMode == 2) {
-      color = mix(color, blendOverlay(color, face.rgb), faceA);
+      color = mix(color, blendOverlay(color, faceTinted), faceA);
     } else if (uBlendMode == 3) {
-      color = mix(color, blendMultiply(color, face.rgb), faceA);
+      color = mix(color, blendMultiply(color, faceTinted), faceA);
     } else {
-      color = mix(color, blendSoftLight(color, face.rgb), faceA);
+      color = mix(color, blendSoftLight(color, faceTinted), faceA);
     }
 
     // --- Inner glow ---
@@ -1174,7 +1224,9 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
   }
 </script>
 
-<script>
+<script type="module">
+import { MEASURED_GIF_TIMELINES } from './source-timelines.js?v=shader-face-field-1';
+
 // ============================================================
 // STATE CONFIG -- per-state animation parameters
 // ============================================================
@@ -1190,6 +1242,7 @@ const LIGHT_STATE_PRESETS = {
     particleStyle: 0, particleCount: 890, particleTint: '#f2f7ff', particleOpacity: 0.83, particleGlow: 0.16, particleBlend: 0,
     particleScale: 1.8, particlePointSize: 4.25, particleSpread: 2.1, particleSpeed: 0.45, particleDrift: 3.55,
     faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
+    faceTimeline: 'gif-blue', faceRoundness: 1.0, faceSoftness: 0.75, faceLoaderScale: 1.0,
     tiltAx: 2.00, tiltAy: 0.67,
     tiltBx: 2.40, tiltBy: 0.40,
     tiltCx: 2.10, tiltCy: 1.50,
@@ -1204,6 +1257,7 @@ const LIGHT_STATE_PRESETS = {
     particleStyle: 0, particleCount: 1120, particleTint: '#f2f7ff', particleOpacity: 0.43, particleGlow: 1.0, particleBlend: 0,
     particleScale: 2.40, particlePointSize: 5.0, particleSpread: 1.65, particleSpeed: 1.0, particleDrift: 1.0,
     faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
+    faceTimeline: 'gif-blue', faceRoundness: 1.0, faceSoftness: 0.75, faceLoaderScale: 1.0,
     tiltAx: 2.00, tiltAy: 0.67,
     tiltBx: 2.40, tiltBy: 0.40,
     tiltCx: 2.10, tiltCy: 1.50,
@@ -1218,6 +1272,7 @@ const LIGHT_STATE_PRESETS = {
     particleStyle: 0, particleCount: 1120, particleTint: '#f2f7ff', particleOpacity: 0.43, particleGlow: 1.0, particleBlend: 0,
     particleScale: 2.40, particlePointSize: 5.0, particleSpread: 1.65, particleSpeed: 1.0, particleDrift: 1.0,
     faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
+    faceTimeline: 'gif-blue', faceRoundness: 1.0, faceSoftness: 0.75, faceLoaderScale: 1.0,
     tiltAx: 2.00, tiltAy: 0.67,
     tiltBx: 2.40, tiltBy: 0.40,
     tiltCx: 2.10, tiltCy: 1.50,
@@ -1232,6 +1287,7 @@ const LIGHT_STATE_PRESETS = {
     particleStyle: 0, particleCount: 1210, particleTint: '#f2f7ff', particleOpacity: 1.0, particleGlow: 1.0, particleBlend: 0,
     particleScale: 3.95, particlePointSize: 4.80, particleSpread: 1.65, particleSpeed: 1.60, particleDrift: 3.40,
     faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
+    faceTimeline: 'gif-blue', faceRoundness: 1.0, faceSoftness: 0.75, faceLoaderScale: 1.0,
     tiltAx: 2.00, tiltAy: 0.67,
     tiltBx: 2.40, tiltBy: 0.40,
     tiltCx: 2.10, tiltCy: 1.50,
@@ -1257,6 +1313,7 @@ Object.assign(THEME_PRESETS.dark.idle, {
   particleScale: 1.8, particlePointSize: 4.25, particleSpread: 2.1, particleSpeed: 0.45, particleDrift: 3.55,
   faceScale: 0.92, faceOpacity: 0.80, faceOffsetY: 0.0,
   faceBlendMode: 0, faceColor: '#000000', faceColorMix: 0.72,
+  faceTimeline: 'gif-black', faceRoundness: 1.0, faceSoftness: 0.75, faceLoaderScale: 1.0,
 });
 Object.assign(THEME_PRESETS.dark.focused, {
   orbSpeed: 3.3, orbRadius: 0.22, faceRate: 1.0, lerpSpeed: 5,
@@ -1267,6 +1324,7 @@ Object.assign(THEME_PRESETS.dark.focused, {
   particleTint: '#dfe8ff', particleOpacity: 0.52, particleGlow: 1.15,
   faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0,
   faceBlendMode: 0, faceColor: '#111217', faceColorMix: 0.78,
+  faceTimeline: 'gif-black', faceRoundness: 1.0, faceSoftness: 0.75, faceLoaderScale: 1.0,
 });
 Object.assign(THEME_PRESETS.dark.typing, cloneConfig(THEME_PRESETS.dark.focused));
 Object.assign(THEME_PRESETS.dark.thinking, {
@@ -1278,6 +1336,7 @@ Object.assign(THEME_PRESETS.dark.thinking, {
   particleTint: '#e5edff', particleOpacity: 0.88, particleGlow: 1.2,
   faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0,
   faceBlendMode: 0, faceColor: '#111217', faceColorMix: 0.82,
+  faceTimeline: 'gif-black', faceRoundness: 1.0, faceSoftness: 0.75, faceLoaderScale: 1.0,
 });
 
 let currentTheme = 'light';
@@ -1334,7 +1393,7 @@ const LERP_KEYS = ['orbSpeed','orbRadius',
   'blobSize','blobSoft','blobOpacity','blobHueHold','overlapBoost','fieldFill',
   'maskEdge','maskSoft','innerGlow','noiseAmt',
   'particleCount','particleOpacity','particleGlow','particleScale','particlePointSize','particleSpread','particleSpeed','particleDrift',
-  'faceScale','faceOpacity','faceOffsetY','faceColorMix',
+  'faceScale','faceOpacity','faceOffsetY','faceColorMix','faceRoundness','faceSoftness','faceLoaderScale',
   'tiltAx','tiltAy','tiltBx','tiltBy','tiltCx','tiltCy'];
 
 const COLOR_KEYS = ['c1','c2','c3','faceColor','particleTint'];
@@ -1343,6 +1402,7 @@ const live = {};
 LERP_KEYS.forEach(k => live[k] = SP.idle[k]);
 COLOR_KEYS.forEach(k => live[k] = SP.idle[k]);
 live.faceBlendMode = SP.idle.faceBlendMode;
+live.faceTimeline = SP.idle.faceTimeline;
 live.blobMixMode = SP.idle.blobMixMode;
 live.particleStyle = SP.idle.particleStyle;
 live.particleBlend = SP.idle.particleBlend;
@@ -1398,6 +1458,15 @@ function lerpColor(from, to, f) {
   const rgb = hslToRgb(h, s, l);
   return rgbToHex(rgb[0], rgb[1], rgb[2]);
 }
+function clamp(value, min, max) {
+  return Math.max(min, Math.min(max, value));
+}
+function positiveModulo(value, divisor) {
+  return ((value % divisor) + divisor) % divisor;
+}
+function finiteNumber(value, fallback = 0) {
+  return Number.isFinite(value) ? value : fallback;
+}
 function hexToGL(hex) {
   if (!/^#[0-9a-fA-F]{6}$/.test(hex)) return [0, 0, 0];
   return [
@@ -1427,7 +1496,11 @@ const orbEl = document.getElementById('orb');
 // ============================================================
 
 const glCanvas = document.getElementById('gl-orb');
-const gl = glCanvas.getContext('webgl', { alpha: true, premultipliedAlpha: true });
+const gl = glCanvas.getContext('webgl', {
+  alpha: true,
+  premultipliedAlpha: true,
+  preserveDrawingBuffer: true,
+});
 
 if (!gl) {
   console.error('WebGL not supported');
@@ -1530,78 +1603,64 @@ function particleDrift(phase) {
   };
 }
 
-// Video (programmatic, not a DOM element)
-const video = document.createElement('video');
-video.src = 'face-black.webm';
-video.loop = true;
-video.muted = true;
-video.playsInline = true;
-video.crossOrigin = 'anonymous';
-video.play();
-
-const videoTex = gl ? gl.createTexture() : null;
-if (gl) {
-  gl.bindTexture(gl.TEXTURE_2D, videoTex);
-  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
-  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
-  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
-  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
-  gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, new Uint8Array([0,0,0,0]));
-}
-
-let videoReady = false;
-video.addEventListener('playing', () => { videoReady = true; });
-
-// Video segment ranges per state
-const VIDEO_SEGMENTS = {
-  idle:     [0, 3.5],
-  focused:  [0.4, 3.5],
-  typing:   [0.4, 3.5],
-  thinking: [5.6, 10],
+const RAW_LOADER_START = 5.42;
+const RAW_LOADER_END = 8.56;
+const NEUTRAL_FACE_FRAME = {
+  leftX: -31.34, leftY: -19.32, leftWidth: 22.01, leftHeight: 35.45, leftRotation: 4.55,
+  rightX: 31.81, rightY: -19.26, rightWidth: 21.98, rightHeight: 35.49, rightRotation: -5.06,
+  mouthX: 1.36, mouthY: 34.51, mouthWidth: 39.04, mouthHeight: 16.09, mouthRotation: -0.51,
+  rawBlobs: [], rawBlobCount: 0, rawLoaderMode: false,
 };
 
-// Idle blink config
-const IDLE_BLINK = { blinkStart: 0, blinkEnd: 0.35, pauseMin: 2.0, pauseMax: 3.5 };
-let idleBlinkTimer = null;
-
-function startIdleBlink() {
-  clearTimeout(idleBlinkTimer);
-  video.currentTime = IDLE_BLINK.blinkStart;
-  video.play();
+function normalizeFaceFrame(frame = {}) {
+  const blobs = frame.blobs || frame.rawBlobs || [];
+  if (blobs.length < 3) return { ...NEUTRAL_FACE_FRAME, ...frame, rawBlobs: blobs.slice(0, 3), rawBlobCount: blobs.length };
+  const left = blobs[0], mouth = blobs[1], right = blobs[2];
+  return {
+    ...NEUTRAL_FACE_FRAME,
+    t: frame.t,
+    frame: frame.frame,
+    rawBlobs: blobs.slice(0, 3),
+    rawBlobCount: Math.min(blobs.length, 3),
+    rawLoaderMode: frame.t >= RAW_LOADER_START && frame.t <= RAW_LOADER_END,
+    leftX: left.x, leftY: left.y, leftWidth: left.width, leftHeight: left.height, leftRotation: left.rotation,
+    rightX: right.x, rightY: right.y, rightWidth: right.width, rightHeight: right.height, rightRotation: right.rotation,
+    mouthX: mouth.x, mouthY: mouth.y, mouthWidth: mouth.width, mouthHeight: mouth.height, mouthRotation: mouth.rotation,
+  };
 }
 
-function scheduleIdleBlink() {
-  const pause = IDLE_BLINK.pauseMin + Math.random() * (IDLE_BLINK.pauseMax - IDLE_BLINK.pauseMin);
-  idleBlinkTimer = setTimeout(() => {
-    if (currentState === 'idle') {
-      startIdleBlink();
-    }
-  }, pause * 1000);
-}
+const FACE_TIMELINES = Object.fromEntries(
+  Object.entries(MEASURED_GIF_TIMELINES).map(([key, timeline]) => [
+    key,
+    {
+      duration: Math.max(0.001, timeline.duration || 10),
+      frames: (timeline.frames || []).map(normalizeFaceFrame).sort((a, b) => a.t - b.t),
+    },
+  ]),
+);
 
-function enforceSegment(vid, seg) {
-  if (currentState === 'idle') {
-    if (vid.currentTime >= IDLE_BLINK.blinkEnd) {
-      vid.pause();
-      vid.currentTime = IDLE_BLINK.blinkStart;
-      scheduleIdleBlink();
-    }
-    return;
+function sampleFaceTimeline(mode, time) {
+  const timeline = FACE_TIMELINES[mode] || FACE_TIMELINES['gif-blue'];
+  const frames = timeline?.frames || [];
+  if (frames.length <= 1) return frames[0] || NEUTRAL_FACE_FRAME;
+  const localTime = positiveModulo(time, timeline.duration);
+  let low = 0, high = frames.length - 1;
+  while (low <= high) {
+    const mid = (low + high) >> 1;
+    if (frames[mid].t <= localTime) low = mid + 1;
+    else high = mid - 1;
   }
-  if (vid.paused) vid.play();
-  if (vid.currentTime >= seg[1] || vid.currentTime < seg[0]) {
-    vid.currentTime = seg[0];
-  }
+  return frames[Math.max(0, high)] || frames[0];
 }
 
-function loopSegments() {
-  const seg = VIDEO_SEGMENTS[currentState];
-  if (seg) {
-    enforceSegment(video, seg);
+function faceTimeForState(tsSeconds) {
+  if (currentState === 'thinking') {
+    return RAW_LOADER_START + positiveModulo(tsSeconds * live.faceRate, RAW_LOADER_END - RAW_LOADER_START);
   }
-  requestAnimationFrame(loopSegments);
+  return positiveModulo(tsSeconds * live.faceRate, FACE_TIMELINES[live.faceTimeline]?.duration || 10);
 }
-requestAnimationFrame(loopSegments);
+
+function setFaceStateStart() {}
 
 let lastGLSize = 0;
 function resizeGLCanvas(sz) {
@@ -1625,7 +1684,6 @@ function setState(newState) {
   const prev = currentState;
   currentState = newState;
 
-  clearTimeout(idleBlinkTimer);
   clearTimeout(thinkTimer);
   clearInterval(thinkDotsInterval);
   if (_tcInterval) { clearTimeout(_tcInterval); _tcInterval = null; }
@@ -1659,8 +1717,6 @@ function setState(newState) {
       fieldInput.readOnly = true;
       fieldInput.blur();
       typedText = '';
-      clearTimeout(idleBlinkTimer);
-      startIdleBlink();
       break;
     case 'focused':
       fieldInput.readOnly = false;
@@ -1684,7 +1740,7 @@ function setState(newState) {
   }
 
   updateSendVoice();
-  updateVideoState();
+  setFaceStateStart();
   updateStateBar();
 }
 
@@ -1812,12 +1868,8 @@ function updateSendVoice() {
   sendIcon.style.display = hasDraft ? '' : 'none';
 }
 
-function updateVideoState() {
-  const target = SP[currentState];
-  const seg = VIDEO_SEGMENTS[currentState];
-  video.currentTime = seg[0];
-  video.playbackRate = target.faceRate;
-  video.play();
+function updateFaceState() {
+  setFaceStateStart();
 }
 
 function updateStateBar() {
@@ -1895,6 +1947,7 @@ function frame(ts) {
   LERP_KEYS.forEach(k => { live[k] += (target[k] - live[k]) * f; });
   COLOR_KEYS.forEach(k => { live[k] = lerpColor(live[k], target[k], f); });
   live.faceBlendMode = target.faceBlendMode;
+  live.faceTimeline = target.faceTimeline;
   live.blobMixMode = target.blobMixMode;
   live.particleStyle = target.particleStyle;
   live.particleBlend = target.particleBlend;
@@ -1916,12 +1969,13 @@ function frame(ts) {
 
   // ---- WebGL Render ----
   if (gl && prog) {
-    if (videoReady && video.readyState >= video.HAVE_CURRENT_DATA) {
-      gl.bindTexture(gl.TEXTURE_2D, videoTex);
-      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, video);
-    }
-
     const time = ts / 1000;
+    const faceFrame = sampleFaceTimeline(live.faceTimeline, faceTimeForState(time));
+    const faceRaw = (index) => faceFrame.rawBlobs?.[index] || {};
+    const faceRawSize = (blob, fallbackWidth, fallbackHeight) => [
+      clamp(finiteNumber(blob.width, fallbackWidth) * live.faceLoaderScale, 0.5, 120),
+      clamp(finiteNumber(blob.height, fallbackHeight) * live.faceLoaderScale, 0.5, 80),
+    ];
     const hasParticles = particleGlowProg && particleProg && particleTex && (live.particleCount > 0 || live.particleGlow > 0);
     if (hasParticles) {
       const tint = hexToGL(live.particleTint);
@@ -1987,10 +2041,6 @@ function frame(ts) {
     gl.enableVertexAttribArray(aPos);
     gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
 
-    gl.activeTexture(gl.TEXTURE0);
-    gl.bindTexture(gl.TEXTURE_2D, videoTex);
-    gl.uniform1i(u('uVideo'), 0);
-
     gl.activeTexture(gl.TEXTURE1);
     gl.bindTexture(gl.TEXTURE_2D, particleTex);
     gl.uniform1i(u('uParticles'), 1);
@@ -2024,6 +2074,20 @@ function frame(ts) {
     const fc = hexToRgb(live.faceColor);
     gl.uniform3f(u('uFaceColor'), fc[0]/255, fc[1]/255, fc[2]/255);
     gl.uniform1f(u('uFaceColorMix'), live.faceColorMix);
+    gl.uniform4f(u('uFaceMeta'), live.faceRoundness, live.faceSoftness, faceFrame.rawLoaderMode ? 1 : 0, faceFrame.rawBlobCount || 0);
+    gl.uniform4f(u('uFaceLeft'), faceFrame.leftX, faceFrame.leftY, faceFrame.leftWidth, faceFrame.leftHeight);
+    gl.uniform4f(u('uFaceRight'), faceFrame.rightX, faceFrame.rightY, faceFrame.rightWidth, faceFrame.rightHeight);
+    gl.uniform4f(u('uFaceMouth'), faceFrame.mouthX, faceFrame.mouthY, faceFrame.mouthWidth, faceFrame.mouthHeight);
+    gl.uniform4f(u('uFaceRaw0'), finiteNumber(faceRaw(0).x), finiteNumber(faceRaw(0).y), ...faceRawSize(faceRaw(0), faceFrame.leftWidth, faceFrame.leftHeight));
+    gl.uniform4f(u('uFaceRaw1'), finiteNumber(faceRaw(1).x), finiteNumber(faceRaw(1).y), ...faceRawSize(faceRaw(1), faceFrame.mouthWidth, faceFrame.mouthHeight));
+    gl.uniform4f(u('uFaceRaw2'), finiteNumber(faceRaw(2).x), finiteNumber(faceRaw(2).y), ...faceRawSize(faceRaw(2), faceFrame.rightWidth, faceFrame.rightHeight));
+    gl.uniform4f(
+      u('uFaceRawRot'),
+      finiteNumber(faceRaw(0).rotation, faceFrame.leftRotation) * Math.PI / 180,
+      finiteNumber(faceRaw(1).rotation, faceFrame.mouthRotation) * Math.PI / 180,
+      finiteNumber(faceRaw(2).rotation, faceFrame.rightRotation) * Math.PI / 180,
+      0,
+    );
 
     gl.uniform1f(u('uMaskEdge'), live.maskEdge);
     gl.uniform1f(u('uMaskSoft'), live.maskSoft);
@@ -2159,21 +2223,11 @@ function setTheme(theme) {
   refreshThemeMode();
   syncGlobalControls();
   syncStateControls();
-  updateVideoState();
+  updateFaceState();
 }
 
 document.querySelectorAll('.theme-tab').forEach(tab => {
   tab.addEventListener('click', () => setTheme(tab.dataset.theme));
-});
-
-// ============================================================
-// VIDEO SOURCE SELECTOR
-// ============================================================
-
-document.getElementById('ui-video').addEventListener('change', e => {
-  videoReady = false;
-  video.src = e.target.value;
-  video.play();
 });
 
 // ============================================================
@@ -2210,7 +2264,7 @@ document.querySelectorAll('input[type=range][data-skey]').forEach(el => {
     SP[editingState][el.dataset.skey] = parseFloat(el.value);
     const step = parseFloat(el.step);
     el.nextElementSibling.textContent = Number(el.value).toFixed(step >= 1 ? 0 : 2);
-    if (editingState === currentState) updateVideoState();
+    if (editingState === currentState) updateFaceState();
   });
 });
 
@@ -2375,7 +2429,7 @@ function applyFullConfig(cfg) {
   refreshThemeMode();
   syncGlobalControls();
   syncStateControls();
-  updateVideoState();
+  updateFaceState();
 }
 
 function renderSaved() {
