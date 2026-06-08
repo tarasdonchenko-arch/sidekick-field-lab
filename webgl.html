@@ -856,26 +856,10 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
     return 1.0 - smoothstep(-aa, aa, d);
   }
 
-  vec2 bendLocal(vec2 p, vec2 halfSize, float bend) {
-    float amount = clamp(bend, -2.0, 2.0);
-    if (abs(amount) < 0.0001) return p;
-
-    if (halfSize.y >= halfSize.x) {
-      float n = clamp(p.y / max(halfSize.y, 0.001), -1.0, 1.0);
-      p.x -= amount * halfSize.x * 0.72 * n * n;
-    } else {
-      float n = clamp(p.x / max(halfSize.x, 0.001), -1.0, 1.0);
-      p.y -= amount * halfSize.y * 0.72 * n * n;
-    }
-
-    return p;
-  }
-
   float measuredBlobDistance(vec2 p, vec2 center, vec2 size, float rotation, float roundness, float bend) {
     vec2 halfSize = max(size * 0.5, vec2(0.7));
     float radius = min(halfSize.x, halfSize.y) * roundness;
-    vec2 local = bendLocal(rotate2(p - center, -rotation), halfSize, bend);
-    return sdRoundBox(local, halfSize, radius);
+    return sdRoundBox(rotate2(p - center, -rotation), halfSize, radius);
   }
 
   float shaderFaceAlpha(vec2 faceUV) {
@@ -890,16 +874,15 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
     float leftEyeBend = uFaceBends.x;
     float rightEyeBend = uFaceBends.y;
     float mouthBend = uFaceBends.z;
-    float loaderBend = uFaceBends.w;
 
     float dLeft = 9999.0;
     float dRight = 9999.0;
     float dMouth = 9999.0;
 
     if (rawMode > 0.5) {
-      if (rawCount > 0.5) dLeft = measuredBlobDistance(p, uFaceRaw0.xy, uFaceRaw0.zw, uFaceRawRot.x, roundness, loaderBend);
-      if (rawCount > 1.5) dMouth = measuredBlobDistance(p, uFaceRaw1.xy, uFaceRaw1.zw, uFaceRawRot.y, roundness, loaderBend);
-      if (rawCount > 2.5) dRight = measuredBlobDistance(p, uFaceRaw2.xy, uFaceRaw2.zw, uFaceRawRot.z, roundness, loaderBend);
+      if (rawCount > 0.5) dLeft = measuredBlobDistance(p, uFaceRaw0.xy, uFaceRaw0.zw, uFaceRawRot.x, roundness, 0.0);
+      if (rawCount > 1.5) dMouth = measuredBlobDistance(p, uFaceRaw1.xy, uFaceRaw1.zw, uFaceRawRot.y, roundness, 0.0);
+      if (rawCount > 2.5) dRight = measuredBlobDistance(p, uFaceRaw2.xy, uFaceRaw2.zw, uFaceRawRot.z, roundness, 0.0);
     } else {
       dLeft = measuredBlobDistance(p, uFaceLeft.xy, uFaceLeft.zw, uFaceRawRot.x, roundness, leftEyeBend);
       dRight = measuredBlobDistance(p, uFaceRight.xy, uFaceRight.zw, uFaceRawRot.z, roundness, rightEyeBend);
@@ -1277,7 +1260,7 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
 </script>
 
 <script type="module">
-import { MEASURED_GIF_TIMELINES } from './source-timelines.js?v=shader-face-field-1';
+import { MEASURED_GIF_TIMELINES } from './source-timelines.js?v=measured-bend-field-1';
 
 // ============================================================
 // STATE CONFIG -- per-state animation parameters
@@ -1569,7 +1552,7 @@ const glCanvas = document.getElementById('gl-orb');
 const gl = glCanvas.getContext('webgl', {
   alpha: true,
   premultipliedAlpha: true,
-  preserveDrawingBuffer: true,
+  preserveDrawingBuffer: false,
 });
 
 if (!gl) {
@@ -1720,8 +1703,13 @@ const IDLE_BLINK = { blinkStart: 0, blinkEnd: 0.35, pauseMin: 2.0, pauseMax: 3.5
 let faceStateStartMs = performance.now();
 let idleBlinkTimer = null;
 let idleBlinkStartMs = null;
+const INTERPOLATED_FRAME_MAX_SPAN = 0.045;
+const STABILIZED_FRAME_MAX_SPAN = 0.045;
+const STABILIZE_SIDE_WEIGHT = 0.16;
+const FACE_BEND_DEFAULTS = { leftEye: 0.42, rightEye: 0.42, mouth: -0.34, loader: 0.84 };
 const NEUTRAL_FACE_FRAME = {
   faceX: 0, faceY: 0, faceScale: 0, faceRotation: 0,
+  leftBend: 0, rightBend: 0, mouthBend: 0,
   leftX: -31.34, leftY: -19.32, leftWidth: 22.01, leftHeight: 35.45, leftRotation: 4.55,
   rightX: 31.81, rightY: -19.26, rightWidth: 21.98, rightHeight: 35.49, rightRotation: -5.06,
   mouthX: 1.36, mouthY: 34.51, mouthWidth: 39.04, mouthHeight: 16.09, mouthRotation: -0.51,
@@ -1734,6 +1722,9 @@ const FACE_FRAME_NUMERIC_KEYS = [
   'rightX','rightY','rightWidth','rightHeight','rightRotation',
   'mouthX','mouthY','mouthWidth','mouthHeight','mouthRotation','mouthCurve',
 ];
+const STABILIZED_FACE_FRAME_KEYS = FACE_FRAME_NUMERIC_KEYS.filter(key => key !== 'mouthCurve');
+const ROTATION_FRAME_KEYS = new Set(['faceRotation', 'leftRotation', 'rightRotation', 'mouthRotation']);
+const RAW_BLOB_KEYS = ['x','y','width','height','rotation','bend'];
 
 function normalizeFaceFrame(frame = {}) {
   const blobs = frame.blobs || frame.rawBlobs || [];
@@ -1760,10 +1751,13 @@ function normalizeFaceFrame(frame = {}) {
     faceScale: finiteNumber(frame.faceScale, 0),
     faceRotation: finiteNumber(frame.faceRotation, 0),
     leftX: left.x, leftY: left.y, leftWidth: left.width, leftHeight: left.height, leftRotation: left.rotation,
+    leftBend: finiteNumber(left.bend, 0),
     rightX: right.x, rightY: right.y, rightWidth: right.width, rightHeight: right.height, rightRotation: right.rotation,
+    rightBend: finiteNumber(right.bend, 0),
     mouthX: mouth.x, mouthY: mouth.y, mouthWidth: mouth.width, mouthHeight: mouth.height,
     mouthCurve: finiteNumber(frame.mouthCurve, 0),
     mouthRotation: mouth.rotation,
+    mouthBend: finiteNumber(mouth.bend, 0),
   };
 }
 
@@ -1802,11 +1796,32 @@ function smootherstep(f) {
   return t * t * t * (t * (t * 6 - 15) + 10);
 }
 
-function lerpAngle(a, b, f) {
+function angleDelta(a, b) {
   let delta = b - a;
   while (delta > 90) delta -= 180;
   while (delta < -90) delta += 180;
-  return a + delta * f;
+  return delta;
+}
+
+function lerpAngle(a, b, f) {
+  return a + angleDelta(a, b) * f;
+}
+
+function faceFrameValue(frame, key) {
+  return finiteNumber(frame?.[key], NEUTRAL_FACE_FRAME[key] || 0);
+}
+
+function faceFrameSpan(previous, next, duration) {
+  if (!previous || !next) return 0;
+  return next.t > previous.t
+    ? next.t - previous.t
+    : duration - previous.t + next.t;
+}
+
+function faceFrameOffset(previous, time, duration) {
+  return time >= previous.t
+    ? time - previous.t
+    : duration - previous.t + time;
 }
 
 function interpolateFaceFrames(previous, next, sourceFrame) {
@@ -1833,8 +1848,140 @@ function interpolateFaceFrames(previous, next, sourceFrame) {
   return blended;
 }
 
-function sanitizeTimelineFrames(frames = []) {
+function smoothFaceFrameValue(key, previous, current, next) {
+  const previousValue = faceFrameValue(previous, key);
+  const currentValue = faceFrameValue(current, key);
+  const nextValue = faceFrameValue(next, key);
+
+  if (ROTATION_FRAME_KEYS.has(key)) {
+    return currentValue
+      + angleDelta(currentValue, previousValue) * STABILIZE_SIDE_WEIGHT
+      + angleDelta(currentValue, nextValue) * STABILIZE_SIDE_WEIGHT;
+  }
+
+  return currentValue * (1 - STABILIZE_SIDE_WEIGHT * 2)
+    + previousValue * STABILIZE_SIDE_WEIGHT
+    + nextValue * STABILIZE_SIDE_WEIGHT;
+}
+
+function shouldStabilizeFaceFrame(previous, frame, next, duration) {
+  if (!previous || !frame || !next) return false;
+  if (previous.rawLoaderMode || frame.rawLoaderMode || next.rawLoaderMode) return false;
+
+  return faceFrameSpan(previous, frame, duration) <= STABILIZED_FRAME_MAX_SPAN
+    && faceFrameSpan(frame, next, duration) <= STABILIZED_FRAME_MAX_SPAN;
+}
+
+function stabilizeFaceFrames(frames, duration) {
+  if (frames.length < 3) return frames;
+
   return frames.map((frame, index) => {
+    const previous = frames[(index - 1 + frames.length) % frames.length];
+    const next = frames[(index + 1) % frames.length];
+    if (!shouldStabilizeFaceFrame(previous, frame, next, duration)) return frame;
+
+    const stabilized = { ...frame, stabilized: true };
+    STABILIZED_FACE_FRAME_KEYS.forEach(key => {
+      stabilized[key] = smoothFaceFrameValue(key, previous, frame, next);
+    });
+    return stabilized;
+  });
+}
+
+function rawBlobCost(a = {}, b = {}) {
+  const dx = finiteNumber(a.x) - finiteNumber(b.x);
+  const dy = finiteNumber(a.y) - finiteNumber(b.y);
+  const dw = finiteNumber(a.width) - finiteNumber(b.width);
+  const dh = finiteNumber(a.height) - finiteNumber(b.height);
+  const dr = angleDelta(finiteNumber(a.rotation), finiteNumber(b.rotation)) / 12;
+  return dx * dx + dy * dy + dw * dw * 0.18 + dh * dh * 0.18 + dr * dr;
+}
+
+function permutations(values) {
+  if (values.length <= 1) return [values];
+  const output = [];
+  for (let index = 0; index < values.length; index += 1) {
+    const rest = values.slice();
+    const head = rest.splice(index, 1)[0];
+    permutations(rest).forEach(tail => output.push([head, ...tail]));
+  }
+  return output;
+}
+
+function matchRawBlobs(previousBlobs, nextBlobs) {
+  if (previousBlobs.length !== nextBlobs.length || previousBlobs.length > 3) return nextBlobs;
+
+  let best = nextBlobs;
+  let bestCost = Infinity;
+  permutations(nextBlobs).forEach(candidate => {
+    const cost = candidate.reduce((sum, blob, index) => sum + rawBlobCost(previousBlobs[index], blob), 0);
+    if (cost < bestCost) {
+      best = candidate;
+      bestCost = cost;
+    }
+  });
+  return best;
+}
+
+function blendRawBlob(previous = {}, next = {}, mix) {
+  const blended = {
+    count: Math.round(lerp(finiteNumber(previous.count), finiteNumber(next.count), mix)),
+  };
+
+  RAW_BLOB_KEYS.forEach(key => {
+    blended[key] = key === 'rotation'
+      ? lerpAngle(finiteNumber(previous[key]), finiteNumber(next[key]), mix)
+      : lerp(finiteNumber(previous[key]), finiteNumber(next[key]), mix);
+  });
+
+  return blended;
+}
+
+function blendRawBlobs(previousFrame, nextFrame, mix) {
+  const previousBlobs = previousFrame.rawBlobs || [];
+  const nextBlobs = nextFrame.rawBlobs || [];
+  if (!previousBlobs.length || previousBlobs.length !== nextBlobs.length) return previousBlobs;
+
+  const matchedNext = matchRawBlobs(previousBlobs, nextBlobs);
+  return previousBlobs.map((blob, index) => blendRawBlob(blob, matchedNext[index], mix));
+}
+
+function blendFaceTimelineFrames(previous, next, time, duration) {
+  const span = Math.max(0.001, faceFrameSpan(previous, next, duration));
+  const mix = clamp(faceFrameOffset(previous, time, duration) / span, 0, 1);
+  const blended = {
+    ...previous,
+    t: time,
+    frame: mix < 0.5 ? previous.frame : next.frame,
+    interpolated: true,
+  };
+
+  STABILIZED_FACE_FRAME_KEYS.forEach(key => {
+    blended[key] = ROTATION_FRAME_KEYS.has(key)
+      ? lerpAngle(faceFrameValue(previous, key), faceFrameValue(next, key), mix)
+      : lerp(faceFrameValue(previous, key), faceFrameValue(next, key), mix);
+  });
+
+  if (previous.rawLoaderMode && next.rawLoaderMode) {
+    blended.rawBlobs = blendRawBlobs(previous, next, mix);
+    blended.rawBlobCount = blended.rawBlobs.length;
+  } else {
+    blended.rawBlobs = previous.rawBlobs;
+    blended.rawBlobCount = previous.rawBlobCount;
+  }
+
+  return blended;
+}
+
+function shouldInterpolateFaceTimelineFrames(previous, next, span) {
+  if (span > INTERPOLATED_FRAME_MAX_SPAN) return false;
+  if (Boolean(previous.rawLoaderMode) !== Boolean(next.rawLoaderMode)) return false;
+  if (previous.rawLoaderMode && previous.rawBlobCount !== next.rawBlobCount) return false;
+  return true;
+}
+
+function sanitizeTimelineFrames(frames = [], duration = 10) {
+  const normalizedFrames = frames.map((frame, index) => {
     const inLoader = frame.t >= RAW_LOADER_START && frame.t <= RAW_LOADER_END;
     if (inLoader && (frame.blobs || frame.rawBlobs || []).length) {
       return { ...normalizeFaceFrame(frame), rawLoaderMode: true, measuredMode: 1 };
@@ -1861,6 +2008,8 @@ function sanitizeTimelineFrames(frames = []) {
       ? interpolateFaceFrames(previousValid, nextValid, frame)
       : normalizeFaceFrame(previousValid || nextValid || frame);
   }).sort((a, b) => a.t - b.t);
+
+  return stabilizeFaceFrames(normalizedFrames, duration);
 }
 
 const FACE_TIMELINES = Object.fromEntries(
@@ -1868,7 +2017,7 @@ const FACE_TIMELINES = Object.fromEntries(
     key,
     {
       duration: Math.max(0.001, timeline.duration || 10),
-      frames: sanitizeTimelineFrames(timeline.frames || []),
+      frames: sanitizeTimelineFrames(timeline.frames || [], Math.max(0.001, timeline.duration || 10)),
     },
   ]),
 );
@@ -1884,7 +2033,14 @@ function sampleFaceTimeline(mode, time) {
     if (frames[mid].t <= localTime) low = mid + 1;
     else high = mid - 1;
   }
-  return frames[Math.max(0, high)] || frames[0];
+  const previousIndex = Math.max(0, high);
+  const previous = frames[previousIndex] || frames[frames.length - 1];
+  const next = frames[(previousIndex + 1) % frames.length] || frames[0];
+  const span = faceFrameSpan(previous, next, timeline.duration);
+
+  return shouldInterpolateFaceTimelineFrames(previous, next, span)
+    ? blendFaceTimelineFrames(previous, next, localTime, timeline.duration)
+    : previous;
 }
 
 function faceElapsedSeconds(nowMs = performance.now()) {
@@ -1932,7 +2088,9 @@ function updateVideoState() {
   const seg = VIDEO_SEGMENTS[currentState] || VIDEO_SEGMENTS.idle;
   video.playbackRate = Math.max(0.1, SP[currentState].faceRate || 1);
   if (currentState === 'idle') {
-    startIdleBlink();
+    video.pause();
+    video.currentTime = IDLE_BLINK.blinkStart;
+    scheduleIdleBlink();
     return;
   }
   video.currentTime = seg[0];
@@ -2429,8 +2587,13 @@ function frame(ts) {
       finiteNumber(faceRaw(2).rotation, faceFrame.rightRotation) * Math.PI / 180,
       0,
     );
-    gl.uniform4f(u('uFaceBends'), 0, 0, 0, 0);
-
+    gl.uniform4f(
+      u('uFaceBends'),
+      FACE_BEND_DEFAULTS.leftEye,
+      FACE_BEND_DEFAULTS.rightEye,
+      FACE_BEND_DEFAULTS.mouth,
+      FACE_BEND_DEFAULTS.loader,
+    );
     gl.uniform1f(u('uMaskEdge'), live.maskEdge);
     gl.uniform1f(u('uMaskSoft'), live.maskSoft);
     gl.uniform1f(u('uInnerGlow'), live.innerGlow);

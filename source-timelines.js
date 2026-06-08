@@ -98,6 +98,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -106,6 +107,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -114,6 +116,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -133,6 +136,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -141,6 +145,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -149,6 +154,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -168,6 +174,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -176,6 +183,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -184,6 +192,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.09,
             "rotation" : 84.840000000000003,
@@ -203,6 +212,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 615,
             "height" : 21.91,
             "rotation" : -85.329999999999998,
@@ -211,6 +221,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.34
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -219,6 +230,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 452,
             "height" : 20.829999999999998,
             "rotation" : 83,
@@ -238,6 +250,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 458,
             "height" : 20.960000000000001,
             "rotation" : -82.969999999999999,
@@ -246,6 +259,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.600000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -254,6 +268,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 231,
             "height" : 17.129999999999999,
             "rotation" : 64.859999999999999,
@@ -273,6 +288,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 147,
             "height" : 13.699999999999999,
             "rotation" : -58.700000000000003,
@@ -281,6 +297,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.059999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -289,6 +306,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 105,
             "height" : 12.16,
             "rotation" : 66.969999999999999,
@@ -308,6 +326,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 11.630000000000001,
             "rotation" : -50.479999999999997,
@@ -316,6 +335,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -324,6 +344,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 12.35,
             "rotation" : 57.789999999999999,
@@ -343,6 +364,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 102,
             "height" : 11.82,
             "rotation" : -55.890000000000001,
@@ -351,6 +373,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -359,6 +382,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 147,
             "height" : 13.52,
             "rotation" : 59.009999999999998,
@@ -378,6 +402,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 145,
             "height" : 13.67,
             "rotation" : -59.840000000000003,
@@ -386,6 +411,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.010000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -394,6 +420,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 232,
             "height" : 17.149999999999999,
             "rotation" : 66.579999999999998,
@@ -413,6 +440,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 235,
             "height" : 17.52,
             "rotation" : -68.840000000000003,
@@ -421,6 +449,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.920000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -429,6 +458,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 441,
             "height" : 20.620000000000001,
             "rotation" : 82.519999999999996,
@@ -448,6 +478,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 611,
             "height" : 22.010000000000002,
             "rotation" : -85.359999999999999,
@@ -456,6 +487,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.350000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -464,6 +496,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -483,6 +516,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -491,6 +525,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -499,6 +534,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -518,6 +554,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -526,6 +563,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -534,6 +572,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -553,6 +592,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 616,
             "height" : 22.48,
             "rotation" : -85.5,
@@ -561,6 +601,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.309999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 486,
             "height" : 16.050000000000001,
             "rotation" : -0.31,
@@ -569,6 +610,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.549999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 22.010000000000002,
             "rotation" : 84.760000000000005,
@@ -588,6 +630,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 616,
             "height" : 22.600000000000001,
             "rotation" : -85.189999999999998,
@@ -596,6 +639,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.289999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 485,
             "height" : 16.050000000000001,
             "rotation" : -0.29999999999999999,
@@ -604,6 +648,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.590000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 615,
             "height" : 22.27,
             "rotation" : 84.980000000000004,
@@ -623,6 +668,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 615,
             "height" : 22.59,
             "rotation" : -85.239999999999995,
@@ -631,6 +677,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.219999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 487,
             "height" : 15.93,
             "rotation" : -0.63,
@@ -639,6 +686,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.670000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 615,
             "height" : 22.260000000000002,
             "rotation" : 85.120000000000005,
@@ -658,6 +706,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 613,
             "height" : 22.059999999999999,
             "rotation" : -85.409999999999997,
@@ -666,6 +715,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.149999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 487,
             "height" : 15.960000000000001,
             "rotation" : -0.41999999999999998,
@@ -674,6 +724,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.689999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 617,
             "height" : 22.170000000000002,
             "rotation" : 85.269999999999996,
@@ -693,6 +744,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 611,
             "height" : 21.68,
             "rotation" : -85.269999999999996,
@@ -701,6 +753,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.050000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 486,
             "height" : 15.08,
             "rotation" : -0.23000000000000001,
@@ -709,6 +762,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.780000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 621,
             "height" : 22.43,
             "rotation" : 85.230000000000004,
@@ -728,6 +782,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 21.98,
             "rotation" : -85.370000000000005,
@@ -736,6 +791,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.920000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 485,
             "height" : 15.06,
             "rotation" : -0.14999999999999999,
@@ -744,6 +800,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.840000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 621,
             "height" : 22.25,
             "rotation" : 85.370000000000005,
@@ -763,6 +820,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 445,
             "height" : 20.219999999999999,
             "rotation" : -83.609999999999999,
@@ -771,6 +829,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.75
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 481,
             "height" : 14.039999999999999,
             "rotation" : 0.089999999999999997,
@@ -779,6 +838,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.210000000000001
           },
           {
+            "bend" : 0,
             "count" : 238,
             "height" : 17.460000000000001,
             "rotation" : 65.739999999999995,
@@ -798,6 +858,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 227,
             "height" : 17.149999999999999,
             "rotation" : -67.409999999999997,
@@ -806,6 +867,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.859999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 482,
             "height" : 15.220000000000001,
             "rotation" : 0.56999999999999995,
@@ -814,6 +876,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.439999999999998
           },
           {
+            "bend" : 0,
             "count" : 157,
             "height" : 14.58,
             "rotation" : 69.730000000000004,
@@ -833,6 +896,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 138,
             "height" : 13.66,
             "rotation" : -65.5,
@@ -841,6 +905,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.559999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 478,
             "height" : 15.210000000000001,
             "rotation" : 0.71999999999999997,
@@ -849,6 +914,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.670000000000002
           },
           {
+            "bend" : 0,
             "count" : 112,
             "height" : 12.81,
             "rotation" : 53.420000000000002,
@@ -868,6 +934,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 94,
             "height" : 10.84,
             "rotation" : -68.469999999999999,
@@ -876,6 +943,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.260000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 476,
             "height" : 15.25,
             "rotation" : 1.04,
@@ -884,6 +952,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.799999999999997
           },
           {
+            "bend" : -0,
             "count" : 113,
             "height" : 12.960000000000001,
             "rotation" : -34.850000000000001,
@@ -903,6 +972,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 88,
             "height" : 10.84,
             "rotation" : -68.430000000000007,
@@ -911,6 +981,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.050000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 470,
             "height" : 15.27,
             "rotation" : 1.99,
@@ -919,6 +990,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.710000000000001
           },
           {
+            "bend" : -0,
             "count" : 163,
             "height" : 15.859999999999999,
             "rotation" : 40.329999999999998,
@@ -938,6 +1010,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 180,
             "height" : 14.27,
             "rotation" : -71.989999999999995,
@@ -946,6 +1019,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.879999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 469,
             "height" : 15.960000000000001,
             "rotation" : 3.54,
@@ -954,6 +1028,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.109999999999999
           },
           {
+            "bend" : 0,
             "count" : 497,
             "height" : 22.23,
             "rotation" : 87.060000000000002,
@@ -973,6 +1048,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 334,
             "height" : 16.690000000000001,
             "rotation" : -78.689999999999998,
@@ -981,6 +1057,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -24.010000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 481,
             "height" : 16.59,
             "rotation" : 3.21,
@@ -989,6 +1066,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 28.370000000000001
           },
           {
+            "bend" : -0,
             "count" : 670,
             "height" : 24.210000000000001,
             "rotation" : 87.810000000000002,
@@ -1008,6 +1086,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 454,
             "height" : 18.25,
             "rotation" : -80.659999999999997,
@@ -1016,6 +1095,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -25.41
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 489,
             "height" : 16.609999999999999,
             "rotation" : 3,
@@ -1024,6 +1104,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.640000000000001
           },
           {
+            "bend" : -0,
             "count" : 667,
             "height" : 23.5,
             "rotation" : 87.530000000000001,
@@ -1043,6 +1124,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 457,
             "height" : 18.050000000000001,
             "rotation" : -79.879999999999995,
@@ -1051,6 +1133,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.579999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 495,
             "height" : 16.68,
             "rotation" : 2.8500000000000001,
@@ -1059,6 +1142,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 25.359999999999999
           },
           {
+            "bend" : -0,
             "count" : 658,
             "height" : 23.969999999999999,
             "rotation" : 86.989999999999995,
@@ -1078,6 +1162,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 456,
             "height" : 18.359999999999999,
             "rotation" : -79.640000000000001,
@@ -1086,6 +1171,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -27.48
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 498,
             "height" : 16.449999999999999,
             "rotation" : 2.7000000000000002,
@@ -1094,6 +1180,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 24.460000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 653,
             "height" : 23.600000000000001,
             "rotation" : 87.260000000000005,
@@ -1113,6 +1200,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 454,
             "height" : 18.370000000000001,
             "rotation" : -79.560000000000002,
@@ -1121,6 +1209,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.629999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 504,
             "height" : 16.57,
             "rotation" : 2.6000000000000001,
@@ -1129,6 +1218,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.27
           },
           {
+            "bend" : -0,
             "count" : 646,
             "height" : 23.82,
             "rotation" : 86.709999999999994,
@@ -1148,6 +1238,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 452,
             "height" : 18.23,
             "rotation" : -79.019999999999996,
@@ -1156,6 +1247,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29
           },
           {
+            "bend" : 0.02,
             "count" : 509,
             "height" : 16.460000000000001,
             "rotation" : 2.4900000000000002,
@@ -1164,6 +1256,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.789999999999999
           },
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 23.890000000000001,
             "rotation" : 86.700000000000003,
@@ -1183,6 +1276,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 452,
             "height" : 18.190000000000001,
             "rotation" : -79.480000000000004,
@@ -1191,6 +1285,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.280000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 507,
             "height" : 16.16,
             "rotation" : 2.5699999999999998,
@@ -1199,6 +1294,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.5
           },
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 24,
             "rotation" : 86.5,
@@ -1218,6 +1314,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 450,
             "height" : 18.02,
             "rotation" : -78.950000000000003,
@@ -1226,6 +1323,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.41
           },
           {
+            "bend" : 0.02,
             "count" : 509,
             "height" : 16.66,
             "rotation" : 2.4199999999999999,
@@ -1234,6 +1332,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.350000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 641,
             "height" : 23.629999999999999,
             "rotation" : 86.519999999999996,
@@ -1253,6 +1352,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 452,
             "height" : 18.059999999999999,
             "rotation" : -78.780000000000001,
@@ -1261,6 +1361,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.550000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 509,
             "height" : 16.57,
             "rotation" : 2.6099999999999999,
@@ -1269,6 +1370,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.239999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 642,
             "height" : 23.710000000000001,
             "rotation" : 86.420000000000002,
@@ -1288,6 +1390,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 452,
             "height" : 18.25,
             "rotation" : -78.75,
@@ -1296,6 +1399,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.640000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 509,
             "height" : 16.620000000000001,
             "rotation" : 2.3599999999999999,
@@ -1304,6 +1408,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.16
           },
           {
+            "bend" : -0.01,
             "count" : 640,
             "height" : 23.670000000000002,
             "rotation" : 86.629999999999995,
@@ -1323,6 +1428,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 452,
             "height" : 18.25,
             "rotation" : -78.75,
@@ -1331,6 +1437,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.640000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 511,
             "height" : 17.440000000000001,
             "rotation" : 2.3799999999999999,
@@ -1339,6 +1446,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.170000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 640,
             "height" : 23.620000000000001,
             "rotation" : 86.569999999999993,
@@ -1358,6 +1466,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 453,
             "height" : 18.239999999999998,
             "rotation" : -78.859999999999999,
@@ -1366,6 +1475,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.550000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 510,
             "height" : 16.59,
             "rotation" : 2.4700000000000002,
@@ -1374,6 +1484,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.25
           },
           {
+            "bend" : -0.01,
             "count" : 641,
             "height" : 23.760000000000002,
             "rotation" : 86.459999999999994,
@@ -1393,6 +1504,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 455,
             "height" : 18.239999999999998,
             "rotation" : -78.810000000000002,
@@ -1401,6 +1513,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.41
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 510,
             "height" : 16.48,
             "rotation" : 2.1499999999999999,
@@ -1409,6 +1522,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.34
           },
           {
+            "bend" : -0.01,
             "count" : 639,
             "height" : 23.719999999999999,
             "rotation" : 86.329999999999998,
@@ -1428,6 +1542,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 456,
             "height" : 18.149999999999999,
             "rotation" : -79.340000000000003,
@@ -1436,6 +1551,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.25
           },
           {
+            "bend" : 0.02,
             "count" : 507,
             "height" : 16.129999999999999,
             "rotation" : 2.75,
@@ -1444,6 +1560,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.550000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 642,
             "height" : 23.620000000000001,
             "rotation" : 86.579999999999998,
@@ -1463,6 +1580,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 456,
             "height" : 18.219999999999999,
             "rotation" : -79.180000000000007,
@@ -1471,6 +1589,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.600000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 506,
             "height" : 16.57,
             "rotation" : 2.3799999999999999,
@@ -1479,6 +1598,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.350000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 643,
             "height" : 23.68,
             "rotation" : 86.870000000000005,
@@ -1498,6 +1618,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 461,
             "height" : 18.350000000000001,
             "rotation" : -79.680000000000007,
@@ -1506,6 +1627,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.190000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 507,
             "height" : 15.91,
             "rotation" : 2.6600000000000001,
@@ -1514,6 +1636,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.739999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 646,
             "height" : 23.02,
             "rotation" : 86.829999999999998,
@@ -1533,6 +1656,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 463,
             "height" : 18.690000000000001,
             "rotation" : -79.819999999999993,
@@ -1541,6 +1665,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -27.640000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 502,
             "height" : 16.699999999999999,
             "rotation" : 2.5499999999999998,
@@ -1549,6 +1674,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 24.440000000000001
           },
           {
+            "bend" : -0,
             "count" : 652,
             "height" : 23.449999999999999,
             "rotation" : 86.459999999999994,
@@ -1568,6 +1694,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 466,
             "height" : 18.829999999999998,
             "rotation" : -80.060000000000002,
@@ -1576,6 +1703,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.920000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 502,
             "height" : 16.620000000000001,
             "rotation" : 2.6099999999999999,
@@ -1584,6 +1712,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 25.170000000000002
           },
           {
+            "bend" : -0,
             "count" : 653,
             "height" : 23.609999999999999,
             "rotation" : 86.599999999999994,
@@ -1603,6 +1732,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 470,
             "height" : 18.75,
             "rotation" : -80.590000000000003,
@@ -1611,6 +1741,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.100000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 499,
             "height" : 15.94,
             "rotation" : 2.3599999999999999,
@@ -1619,6 +1750,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.09
           },
           {
+            "bend" : -0,
             "count" : 659,
             "height" : 24.18,
             "rotation" : 86.950000000000003,
@@ -1638,6 +1770,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 487,
             "height" : 18.73,
             "rotation" : -81.560000000000002,
@@ -1646,6 +1779,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -23.82
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 491,
             "height" : 16.260000000000002,
             "rotation" : 2.6200000000000001,
@@ -1654,6 +1788,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 28.739999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 665,
             "height" : 23.539999999999999,
             "rotation" : 86.689999999999998,
@@ -1673,6 +1808,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 500,
             "height" : 18.969999999999999,
             "rotation" : -82.25,
@@ -1681,6 +1817,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22.5
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 487,
             "height" : 15.26,
             "rotation" : 2.5899999999999999,
@@ -1689,6 +1826,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 30.289999999999999
           },
           {
+            "bend" : -0,
             "count" : 499,
             "height" : 22.789999999999999,
             "rotation" : 85.560000000000002,
@@ -1708,6 +1846,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 387,
             "height" : 18.620000000000001,
             "rotation" : -80.310000000000002,
@@ -1716,6 +1855,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.609999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 487,
             "height" : 15.539999999999999,
             "rotation" : 2.1299999999999999,
@@ -1724,6 +1864,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.690000000000001
           },
           {
+            "bend" : 0,
             "count" : 249,
             "height" : 18.030000000000001,
             "rotation" : 43.780000000000001,
@@ -1743,6 +1884,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 208,
             "height" : 16.23,
             "rotation" : -65.939999999999998,
@@ -1751,6 +1893,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.359999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 490,
             "height" : 15.4,
             "rotation" : 1.53,
@@ -1759,6 +1902,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.630000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 160,
             "height" : 15.220000000000001,
             "rotation" : 43.25,
@@ -1778,6 +1922,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 138,
             "height" : 13.77,
             "rotation" : -52.780000000000001,
@@ -1786,6 +1931,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.969999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 495,
             "height" : 16.109999999999999,
             "rotation" : 0.44,
@@ -1794,6 +1940,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.479999999999997
           },
           {
+            "bend" : -0,
             "count" : 106,
             "height" : 12.81,
             "rotation" : -53.280000000000001,
@@ -1813,6 +1960,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 105,
             "height" : 12.35,
             "rotation" : -32.659999999999997,
@@ -1821,6 +1969,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.629999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 507,
             "height" : 16.260000000000002,
             "rotation" : -1.9199999999999999,
@@ -1829,6 +1978,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 28.48
           },
           {
+            "bend" : -0.01,
             "count" : 130,
             "height" : 13.529999999999999,
             "rotation" : 61.229999999999997,
@@ -1848,6 +1998,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 149,
             "height" : 14.039999999999999,
             "rotation" : -33.18,
@@ -1856,6 +2007,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.390000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 507,
             "height" : 16.699999999999999,
             "rotation" : -2.3999999999999999,
@@ -1864,6 +2016,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.760000000000002
           },
           {
+            "bend" : -0,
             "count" : 194,
             "height" : 15.33,
             "rotation" : 63.100000000000001,
@@ -1883,6 +2036,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 246,
             "height" : 17.510000000000002,
             "rotation" : -47.310000000000002,
@@ -1891,6 +2045,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.66
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 506,
             "height" : 16.690000000000001,
             "rotation" : -2.3799999999999999,
@@ -1899,6 +2054,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 25.420000000000002
           },
           {
+            "bend" : -0,
             "count" : 354,
             "height" : 18.170000000000002,
             "rotation" : 76.859999999999999,
@@ -1918,6 +2074,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 469,
             "height" : 22.800000000000001,
             "rotation" : -83.159999999999997,
@@ -1926,6 +2083,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -30.170000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 503,
             "height" : 16.57,
             "rotation" : -2.5699999999999998,
@@ -1934,6 +2092,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 24.43
           },
           {
+            "bend" : -0.01,
             "count" : 475,
             "height" : 18.789999999999999,
             "rotation" : 79.819999999999993,
@@ -1953,6 +2112,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 638,
             "height" : 23.629999999999999,
             "rotation" : -86.069999999999993,
@@ -1961,6 +2121,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -30.5
           },
           {
+            "bend" : 0.02,
             "count" : 505,
             "height" : 15.94,
             "rotation" : -3.0699999999999998,
@@ -1969,6 +2130,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.59
           },
           {
+            "bend" : -0.01,
             "count" : 465,
             "height" : 18.559999999999999,
             "rotation" : 79.480000000000004,
@@ -1988,6 +2150,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 23.640000000000001,
             "rotation" : -86.780000000000001,
@@ -1996,6 +2159,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.609999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 502,
             "height" : 16.140000000000001,
             "rotation" : -3.1299999999999999,
@@ -2004,6 +2168,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.43
           },
           {
+            "bend" : -0.01,
             "count" : 451,
             "height" : 18.25,
             "rotation" : 78.810000000000002,
@@ -2023,6 +2188,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 639,
             "height" : 23.390000000000001,
             "rotation" : -87.359999999999999,
@@ -2031,6 +2197,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.009999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 501,
             "height" : 16.5,
             "rotation" : -3.0600000000000001,
@@ -2039,6 +2206,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.07
           },
           {
+            "bend" : -0.02,
             "count" : 445,
             "height" : 18.030000000000001,
             "rotation" : 79.099999999999994,
@@ -2058,6 +2226,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 641,
             "height" : 24.48,
             "rotation" : -87.379999999999995,
@@ -2066,6 +2235,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.280000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 501,
             "height" : 16.920000000000002,
             "rotation" : -3.1899999999999999,
@@ -2074,6 +2244,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.68
           },
           {
+            "bend" : -0.01,
             "count" : 440,
             "height" : 18.109999999999999,
             "rotation" : 78.400000000000006,
@@ -2093,6 +2264,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 638,
             "height" : 23.739999999999998,
             "rotation" : -87.269999999999996,
@@ -2101,6 +2273,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.530000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 500,
             "height" : 16.620000000000001,
             "rotation" : -3.3799999999999999,
@@ -2109,6 +2282,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.329999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 323,
             "height" : 16.82,
             "rotation" : 75.409999999999997,
@@ -2128,6 +2302,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 474,
             "height" : 22.440000000000001,
             "rotation" : -86.010000000000005,
@@ -2136,6 +2311,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -33.189999999999998
           },
           {
+            "bend" : 0.02,
             "count" : 501,
             "height" : 16.379999999999999,
             "rotation" : -3.2999999999999998,
@@ -2144,6 +2320,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.149999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 162,
             "height" : 13.49,
             "rotation" : 62.539999999999999,
@@ -2163,6 +2340,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 150,
             "height" : 13.6,
             "rotation" : -8.4499999999999993,
@@ -2171,6 +2349,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -34.049999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 496,
             "height" : 16.539999999999999,
             "rotation" : -3.1400000000000001,
@@ -2179,6 +2358,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.969999999999999
           },
           {
+            "bend" : 0,
             "count" : 73,
             "height" : 8.6199999999999992,
             "rotation" : 62.93,
@@ -2198,6 +2378,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 104,
             "height" : 11.77,
             "rotation" : -10.92,
@@ -2206,6 +2387,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -34.149999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 17.030000000000001,
             "rotation" : -2.9399999999999999,
@@ -2214,6 +2396,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.879999999999999
           },
           {
+            "bend" : -0,
             "count" : 72,
             "height" : 8.6300000000000008,
             "rotation" : 62.689999999999998,
@@ -2233,6 +2416,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 104,
             "height" : 11.279999999999999,
             "rotation" : -4.4199999999999999,
@@ -2241,6 +2425,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -34.189999999999998
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 16.91,
             "rotation" : -3.3399999999999999,
@@ -2249,6 +2434,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.800000000000001
           },
           {
+            "bend" : -0,
             "count" : 104,
             "height" : 10.4,
             "rotation" : 63.579999999999998,
@@ -2268,6 +2454,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 149,
             "height" : 14.529999999999999,
             "rotation" : -11.33,
@@ -2276,6 +2463,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -34.240000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 16.98,
             "rotation" : -3.1899999999999999,
@@ -2284,6 +2472,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.77
           },
           {
+            "bend" : 0,
             "count" : 162,
             "height" : 13.08,
             "rotation" : 63.5,
@@ -2303,6 +2492,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 244,
             "height" : 18.48,
             "rotation" : -21.559999999999999,
@@ -2311,6 +2501,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -34.07
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 16.98,
             "rotation" : -3.1899999999999999,
@@ -2319,6 +2510,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.77
           },
           {
+            "bend" : -0.01,
             "count" : 309,
             "height" : 16.34,
             "rotation" : 74.969999999999999,
@@ -2338,6 +2530,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 633,
             "height" : 23.559999999999999,
             "rotation" : -87.810000000000002,
@@ -2346,6 +2539,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -33.130000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 16.91,
             "rotation" : -3.3399999999999999,
@@ -2354,6 +2548,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.800000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 430,
             "height" : 17.949999999999999,
             "rotation" : 78.040000000000006,
@@ -2373,6 +2568,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 637,
             "height" : 23.510000000000002,
             "rotation" : -87.829999999999998,
@@ -2381,6 +2577,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -33.090000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 16.91,
             "rotation" : -3.3399999999999999,
@@ -2389,6 +2586,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.800000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 431,
             "height" : 17.940000000000001,
             "rotation" : 78.140000000000001,
@@ -2408,6 +2606,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 637,
             "height" : 23.539999999999999,
             "rotation" : -88.019999999999996,
@@ -2416,6 +2615,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -33.07
           },
           {
+            "bend" : 0.02,
             "count" : 498,
             "height" : 17.030000000000001,
             "rotation" : -3.1699999999999999,
@@ -2424,6 +2624,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.84
           },
           {
+            "bend" : -0.02,
             "count" : 431,
             "height" : 17.940000000000001,
             "rotation" : 78.170000000000002,
@@ -2443,6 +2644,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 637,
             "height" : 24.149999999999999,
             "rotation" : -88.140000000000001,
@@ -2451,6 +2653,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -33.07
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 17.030000000000001,
             "rotation" : -3.0800000000000001,
@@ -2459,6 +2662,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.859999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 430,
             "height" : 17.73,
             "rotation" : 78.219999999999999,
@@ -2478,6 +2682,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 637,
             "height" : 24.02,
             "rotation" : -87.599999999999994,
@@ -2486,6 +2691,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -33.020000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 496,
             "height" : 16.699999999999999,
             "rotation" : -3.1899999999999999,
@@ -2494,6 +2700,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.93
           },
           {
+            "bend" : -0.02,
             "count" : 430,
             "height" : 17.719999999999999,
             "rotation" : 78.239999999999995,
@@ -2513,6 +2720,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 638,
             "height" : 23.640000000000001,
             "rotation" : -87.549999999999997,
@@ -2521,6 +2729,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.990000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 16.809999999999999,
             "rotation" : -3.1699999999999999,
@@ -2529,6 +2738,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.920000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 431,
             "height" : 17.73,
             "rotation" : 78.189999999999998,
@@ -2548,6 +2758,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 636,
             "height" : 23.809999999999999,
             "rotation" : -87.540000000000006,
@@ -2556,6 +2767,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.990000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 497,
             "height" : 16.219999999999999,
             "rotation" : -3.23,
@@ -2564,6 +2776,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.960000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 432,
             "height" : 18.289999999999999,
             "rotation" : 78.290000000000006,
@@ -2583,6 +2796,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 639,
             "height" : 24.219999999999999,
             "rotation" : -87.079999999999998,
@@ -2591,6 +2805,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.93
           },
           {
+            "bend" : 0.02,
             "count" : 498,
             "height" : 16.629999999999999,
             "rotation" : -3.3199999999999998,
@@ -2599,6 +2814,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.010000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 433,
             "height" : 17.719999999999999,
             "rotation" : 78.280000000000001,
@@ -2618,6 +2834,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 640,
             "height" : 24.34,
             "rotation" : -87.430000000000007,
@@ -2626,6 +2843,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.869999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 498,
             "height" : 16.379999999999999,
             "rotation" : -3.5,
@@ -2634,6 +2852,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.039999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 435,
             "height" : 18.260000000000002,
             "rotation" : 78.629999999999995,
@@ -2653,6 +2872,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 639,
             "height" : 24.27,
             "rotation" : -87.640000000000001,
@@ -2661,6 +2881,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.890000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 498,
             "height" : 16.25,
             "rotation" : -3.0600000000000001,
@@ -2669,6 +2890,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.07
           },
           {
+            "bend" : -0.02,
             "count" : 434,
             "height" : 17.719999999999999,
             "rotation" : 78.269999999999996,
@@ -2688,6 +2910,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 638,
             "height" : 23.539999999999999,
             "rotation" : -87.310000000000002,
@@ -2696,6 +2919,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.75
           },
           {
+            "bend" : 0.02,
             "count" : 500,
             "height" : 16.260000000000002,
             "rotation" : -3.25,
@@ -2704,6 +2928,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.129999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 435,
             "height" : 18.120000000000001,
             "rotation" : 78.290000000000006,
@@ -2723,6 +2948,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 640,
             "height" : 23.52,
             "rotation" : -87.420000000000002,
@@ -2731,6 +2957,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.689999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 500,
             "height" : 16.32,
             "rotation" : -3.27,
@@ -2739,6 +2966,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.170000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 436,
             "height" : 17.93,
             "rotation" : 78.230000000000004,
@@ -2758,6 +2986,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 639,
             "height" : 23.530000000000001,
             "rotation" : -87.599999999999994,
@@ -2766,6 +2995,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.600000000000001
           },
           {
+            "bend" : 0.01,
             "count" : 500,
             "height" : 16.09,
             "rotation" : -3.4900000000000002,
@@ -2774,6 +3004,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.280000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 436,
             "height" : 17.920000000000002,
             "rotation" : 78.260000000000005,
@@ -2793,6 +3024,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 641,
             "height" : 23.57,
             "rotation" : -87.400000000000006,
@@ -2801,6 +3033,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.579999999999998
           },
           {
+            "bend" : 0.02,
             "count" : 499,
             "height" : 16.600000000000001,
             "rotation" : -3.2400000000000002,
@@ -2809,6 +3042,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.34
           },
           {
+            "bend" : -0.01,
             "count" : 438,
             "height" : 18.16,
             "rotation" : 78.069999999999993,
@@ -2828,6 +3062,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 637,
             "height" : 23.300000000000001,
             "rotation" : -87.730000000000004,
@@ -2836,6 +3071,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.469999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 500,
             "height" : 16.57,
             "rotation" : -3.3999999999999999,
@@ -2844,6 +3080,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.48
           },
           {
+            "bend" : -0.02,
             "count" : 439,
             "height" : 18.100000000000001,
             "rotation" : 78.439999999999998,
@@ -2863,6 +3100,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 641,
             "height" : 24.07,
             "rotation" : -87.209999999999994,
@@ -2871,6 +3109,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.270000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 502,
             "height" : 16.899999999999999,
             "rotation" : -3.1299999999999999,
@@ -2879,6 +3118,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.699999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 441,
             "height" : 18.079999999999998,
             "rotation" : 78.480000000000004,
@@ -2898,6 +3138,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 642,
             "height" : 23.629999999999999,
             "rotation" : -87.090000000000003,
@@ -2906,6 +3147,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.170000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 500,
             "height" : 17.129999999999999,
             "rotation" : -2.9300000000000002,
@@ -2914,6 +3156,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.829999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 445,
             "height" : 18.059999999999999,
             "rotation" : 78.739999999999995,
@@ -2933,6 +3176,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 640,
             "height" : 23.550000000000001,
             "rotation" : -87.480000000000004,
@@ -2941,6 +3185,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.07
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 499,
             "height" : 16.559999999999999,
             "rotation" : -2.9900000000000002,
@@ -2949,6 +3194,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.030000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 447,
             "height" : 18.239999999999998,
             "rotation" : 78.870000000000005,
@@ -2968,6 +3214,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 641,
             "height" : 23.260000000000002,
             "rotation" : -87.079999999999998,
@@ -2976,6 +3223,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.879999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 500,
             "height" : 16.5,
             "rotation" : -3.3300000000000001,
@@ -2984,6 +3232,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.170000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 448,
             "height" : 18.059999999999999,
             "rotation" : 78.769999999999996,
@@ -3003,6 +3252,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 24.379999999999999,
             "rotation" : -87.099999999999994,
@@ -3011,6 +3261,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.710000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 501,
             "height" : 16.34,
             "rotation" : -2.9199999999999999,
@@ -3019,6 +3270,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.27
           },
           {
+            "bend" : -0.01,
             "count" : 450,
             "height" : 18.039999999999999,
             "rotation" : 79.040000000000006,
@@ -3038,6 +3290,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 644,
             "height" : 23.079999999999998,
             "rotation" : -86.849999999999994,
@@ -3046,6 +3299,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.399999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 504,
             "height" : 16.559999999999999,
             "rotation" : -3.0299999999999998,
@@ -3054,6 +3308,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.670000000000002
           },
           {
+            "bend" : -0.02,
             "count" : 453,
             "height" : 18.440000000000001,
             "rotation" : 78.859999999999999,
@@ -3073,6 +3328,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 23.510000000000002,
             "rotation" : -86.870000000000005,
@@ -3081,6 +3337,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.140000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 503,
             "height" : 16.600000000000001,
             "rotation" : -3.1000000000000001,
@@ -3089,6 +3346,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.93
           },
           {
+            "bend" : -0.01,
             "count" : 458,
             "height" : 18.77,
             "rotation" : 79.239999999999995,
@@ -3108,6 +3366,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 23.129999999999999,
             "rotation" : -86.849999999999994,
@@ -3116,6 +3375,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -30.829999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 502,
             "height" : 16.41,
             "rotation" : -3.25,
@@ -3124,6 +3384,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.25
           },
           {
+            "bend" : -0.01,
             "count" : 460,
             "height" : 18.579999999999998,
             "rotation" : 79.280000000000001,
@@ -3143,6 +3404,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 23.489999999999998,
             "rotation" : -86.659999999999997,
@@ -3151,6 +3413,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -30.579999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 503,
             "height" : 15.92,
             "rotation" : -3.1200000000000001,
@@ -3159,6 +3422,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.469999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 466,
             "height" : 18.940000000000001,
             "rotation" : 79.379999999999995,
@@ -3178,6 +3442,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 644,
             "height" : 23.34,
             "rotation" : -86.280000000000001,
@@ -3186,6 +3451,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -30.260000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 503,
             "height" : 16,
             "rotation" : -2.77,
@@ -3194,6 +3460,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.859999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 470,
             "height" : 18.550000000000001,
             "rotation" : 79.519999999999996,
@@ -3213,6 +3480,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 646,
             "height" : 23.98,
             "rotation" : -86.040000000000006,
@@ -3221,6 +3489,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.370000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 504,
             "height" : 15.859999999999999,
             "rotation" : -2.7999999999999998,
@@ -3229,6 +3498,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 24.75
           },
           {
+            "bend" : -0.01,
             "count" : 482,
             "height" : 18.940000000000001,
             "rotation" : 80.25,
@@ -3248,6 +3518,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 646,
             "height" : 23.829999999999998,
             "rotation" : -85.719999999999999,
@@ -3256,6 +3527,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.850000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 506,
             "height" : 16.670000000000002,
             "rotation" : -2.7999999999999998,
@@ -3264,6 +3536,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 25.34
           },
           {
+            "bend" : -0.01,
             "count" : 487,
             "height" : 19.460000000000001,
             "rotation" : 80.159999999999997,
@@ -3283,6 +3556,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 646,
             "height" : 23.120000000000001,
             "rotation" : -85.450000000000003,
@@ -3291,6 +3565,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.149999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 507,
             "height" : 15.9,
             "rotation" : -2.3700000000000001,
@@ -3299,6 +3574,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 25.98
           },
           {
+            "bend" : -0.01,
             "count" : 497,
             "height" : 19.43,
             "rotation" : 80.370000000000005,
@@ -3318,6 +3594,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 646,
             "height" : 23.539999999999999,
             "rotation" : -85.709999999999994,
@@ -3326,6 +3603,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -27.370000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 504,
             "height" : 16.16,
             "rotation" : -2.5699999999999998,
@@ -3334,6 +3612,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.93
           },
           {
+            "bend" : -0.01,
             "count" : 509,
             "height" : 19.960000000000001,
             "rotation" : 81.099999999999994,
@@ -3353,6 +3632,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 642,
             "height" : 23.690000000000001,
             "rotation" : -85.659999999999997,
@@ -3361,6 +3641,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.460000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 505,
             "height" : 16.77,
             "rotation" : -2.1200000000000001,
@@ -3369,6 +3650,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 27.789999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 385,
             "height" : 18.84,
             "rotation" : 78.920000000000002,
@@ -3388,6 +3670,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 243,
             "height" : 18.469999999999999,
             "rotation" : -56.390000000000001,
@@ -3396,6 +3679,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -25.5
           },
           {
+            "bend" : 0.02,
             "count" : 504,
             "height" : 15.710000000000001,
             "rotation" : -1.77,
@@ -3404,6 +3688,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 29.48
           },
           {
+            "bend" : -0.01,
             "count" : 132,
             "height" : 13.529999999999999,
             "rotation" : 61.670000000000002,
@@ -3423,6 +3708,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 152,
             "height" : 14.44,
             "rotation" : -44.420000000000002,
@@ -3431,6 +3717,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -24.809999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 499,
             "height" : 15.32,
             "rotation" : -1.7,
@@ -3439,6 +3726,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 30.260000000000002
           },
           {
+            "bend" : 0,
             "count" : 96,
             "height" : 11.27,
             "rotation" : 62.920000000000002,
@@ -3458,6 +3746,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 106,
             "height" : 11.66,
             "rotation" : -46.420000000000002,
@@ -3466,6 +3755,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -24.260000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 501,
             "height" : 15.44,
             "rotation" : -1.4299999999999999,
@@ -3474,6 +3764,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 30.690000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 95,
             "height" : 11.289999999999999,
             "rotation" : 58.710000000000001,
@@ -3493,6 +3784,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 105,
             "height" : 11.81,
             "rotation" : -54.670000000000002,
@@ -3501,6 +3793,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -23.68
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 497,
             "height" : 15.16,
             "rotation" : -1.3799999999999999,
@@ -3509,6 +3802,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.280000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 137,
             "height" : 12.710000000000001,
             "rotation" : 61.780000000000001,
@@ -3528,6 +3822,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 149,
             "height" : 14.279999999999999,
             "rotation" : -48.479999999999997,
@@ -3536,6 +3831,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -23.289999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 498,
             "height" : 15.6,
             "rotation" : -1.4199999999999999,
@@ -3544,6 +3840,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.59
           },
           {
+            "bend" : -0,
             "count" : 216,
             "height" : 16.640000000000001,
             "rotation" : 65.680000000000007,
@@ -3563,6 +3860,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 456,
             "height" : 21.239999999999998,
             "rotation" : -82.709999999999994,
@@ -3571,6 +3869,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22.120000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 495,
             "height" : 15.43,
             "rotation" : -1.03,
@@ -3579,6 +3878,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.299999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 579,
             "height" : 21.949999999999999,
             "rotation" : 83.900000000000006,
@@ -3598,6 +3898,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 624,
             "height" : 22.190000000000001,
             "rotation" : -84.810000000000002,
@@ -3606,6 +3907,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.489999999999998
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 494,
             "height" : 15.31,
             "rotation" : -1.2,
@@ -3614,6 +3916,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.560000000000002
           },
           {
+            "bend" : -0.02,
             "count" : 586,
             "height" : 21.149999999999999,
             "rotation" : 83.989999999999995,
@@ -3633,6 +3936,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 631,
             "height" : 23.09,
             "rotation" : -84.790000000000006,
@@ -3641,6 +3945,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.280000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 495,
             "height" : 15.35,
             "rotation" : -1.26,
@@ -3649,6 +3954,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.710000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 589,
             "height" : 21.530000000000001,
             "rotation" : 83.890000000000001,
@@ -3668,6 +3974,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 628,
             "height" : 22.539999999999999,
             "rotation" : -84.849999999999994,
@@ -3676,6 +3983,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.050000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 495,
             "height" : 15.359999999999999,
             "rotation" : -0.91000000000000003,
@@ -3684,6 +3992,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.880000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 591,
             "height" : 21.43,
             "rotation" : 84.140000000000001,
@@ -3703,6 +4012,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 625,
             "height" : 22.109999999999999,
             "rotation" : -85.510000000000005,
@@ -3711,6 +4021,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.890000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 494,
             "height" : 15.35,
             "rotation" : -0.92000000000000004,
@@ -3719,6 +4030,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.140000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 593,
             "height" : 21.300000000000001,
             "rotation" : 84.310000000000002,
@@ -3738,6 +4050,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 626,
             "height" : 22.699999999999999,
             "rotation" : -85.040000000000006,
@@ -3746,6 +4059,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.550000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 492,
             "height" : 16.09,
             "rotation" : -0.70999999999999996,
@@ -3754,6 +4068,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.420000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 598,
             "height" : 21.57,
             "rotation" : 84.560000000000002,
@@ -3773,6 +4088,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 623,
             "height" : 22.129999999999999,
             "rotation" : -85.069999999999993,
@@ -3781,6 +4097,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.390000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 492,
             "height" : 16.18,
             "rotation" : -0.93000000000000005,
@@ -3789,6 +4106,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.579999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 602,
             "height" : 21.460000000000001,
             "rotation" : 84.810000000000002,
@@ -3808,6 +4126,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 624,
             "height" : 22.289999999999999,
             "rotation" : -85.090000000000003,
@@ -3816,6 +4135,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.309999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 15.19,
             "rotation" : -0.66000000000000003,
@@ -3824,6 +4144,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.68
           },
           {
+            "bend" : -0.01,
             "count" : 604,
             "height" : 21.800000000000001,
             "rotation" : 84.959999999999994,
@@ -3843,6 +4164,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 624,
             "height" : 22.260000000000002,
             "rotation" : -85.219999999999999,
@@ -3851,6 +4173,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.219999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 490,
             "height" : 15.24,
             "rotation" : -0.81999999999999995,
@@ -3859,6 +4182,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.729999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 603,
             "height" : 21.98,
             "rotation" : 84.359999999999999,
@@ -3878,6 +4202,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 622,
             "height" : 22.300000000000001,
             "rotation" : -85.400000000000006,
@@ -3886,6 +4211,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.07
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 490,
             "height" : 15.199999999999999,
             "rotation" : -0.60999999999999999,
@@ -3894,6 +4220,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.789999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 604,
             "height" : 21.890000000000001,
             "rotation" : 84.359999999999999,
@@ -3913,6 +4240,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 621,
             "height" : 22.640000000000001,
             "rotation" : -84.799999999999997,
@@ -3921,6 +4249,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.960000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 491,
             "height" : 15.300000000000001,
             "rotation" : -0.73999999999999999,
@@ -3929,6 +4258,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.969999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 606,
             "height" : 22.309999999999999,
             "rotation" : 84.670000000000002,
@@ -3948,6 +4278,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 619,
             "height" : 23.010000000000002,
             "rotation" : -85.219999999999999,
@@ -3956,6 +4287,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.780000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 15.25,
             "rotation" : -0.63,
@@ -3964,6 +4296,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.030000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 606,
             "height" : 21.859999999999999,
             "rotation" : 84.569999999999993,
@@ -3983,6 +4316,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 620,
             "height" : 21.989999999999998,
             "rotation" : -85.359999999999999,
@@ -3991,6 +4325,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.789999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 488,
             "height" : 15.199999999999999,
             "rotation" : -0.53000000000000003,
@@ -3999,6 +4334,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.130000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 609,
             "height" : 22.68,
             "rotation" : 85.170000000000002,
@@ -4018,6 +4354,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 620,
             "height" : 22.219999999999999,
             "rotation" : -85.379999999999995,
@@ -4026,6 +4363,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.710000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 15.210000000000001,
             "rotation" : -0.5,
@@ -4034,6 +4372,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.240000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 606,
             "height" : 22.030000000000001,
             "rotation" : 84.670000000000002,
@@ -4053,6 +4392,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 620,
             "height" : 22.280000000000001,
             "rotation" : -85.150000000000006,
@@ -4061,6 +4401,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.66
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 15.17,
             "rotation" : -0.48999999999999999,
@@ -4069,6 +4410,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.259999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 607,
             "height" : 22.109999999999999,
             "rotation" : 84.730000000000004,
@@ -4088,6 +4430,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 620,
             "height" : 22.030000000000001,
             "rotation" : -85.140000000000001,
@@ -4096,6 +4439,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.579999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 489,
             "height" : 15.140000000000001,
             "rotation" : -0.31,
@@ -4104,6 +4448,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.369999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.07,
             "rotation" : 84.920000000000002,
@@ -4123,6 +4468,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 619,
             "height" : 22.010000000000002,
             "rotation" : -85.260000000000005,
@@ -4131,6 +4477,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.559999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 488,
             "height" : 15.119999999999999,
             "rotation" : -0.27000000000000002,
@@ -4139,6 +4486,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.399999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.32,
             "rotation" : 84.620000000000005,
@@ -4158,6 +4506,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 617,
             "height" : 22.27,
             "rotation" : -85.519999999999996,
@@ -4166,6 +4515,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.48
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 489,
             "height" : 15.25,
             "rotation" : -0.60999999999999999,
@@ -4174,6 +4524,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.390000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 611,
             "height" : 22.09,
             "rotation" : 84.840000000000003,
@@ -4193,6 +4544,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 618,
             "height" : 22.059999999999999,
             "rotation" : -85.400000000000006,
@@ -4201,6 +4553,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.420000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 489,
             "height" : 15.18,
             "rotation" : -0.44,
@@ -4209,6 +4562,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.399999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 611,
             "height" : 22.100000000000001,
             "rotation" : 84.790000000000006,
@@ -4228,6 +4582,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 617,
             "height" : 22.260000000000002,
             "rotation" : -85.230000000000004,
@@ -4236,6 +4591,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.41
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 488,
             "height" : 16.050000000000001,
             "rotation" : -0.27000000000000002,
@@ -4244,6 +4600,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.439999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 611,
             "height" : 22.02,
             "rotation" : 84.719999999999999,
@@ -4263,6 +4620,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 617,
             "height" : 22.079999999999998,
             "rotation" : -85.290000000000006,
@@ -4271,6 +4629,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.390000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 488,
             "height" : 16.039999999999999,
             "rotation" : -0.29999999999999999,
@@ -4279,6 +4638,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.469999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.899999999999999,
             "rotation" : 84.870000000000005,
@@ -4298,6 +4658,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 617,
             "height" : 22.010000000000002,
             "rotation" : -85.349999999999994,
@@ -4306,6 +4667,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.350000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 487,
             "height" : 16.030000000000001,
             "rotation" : -0.26000000000000001,
@@ -4314,6 +4676,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.490000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.989999999999998,
             "rotation" : 84.879999999999995,
@@ -4333,6 +4696,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 21.890000000000001,
             "rotation" : -85.469999999999999,
@@ -4341,6 +4705,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.359999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 488,
             "height" : 16.050000000000001,
             "rotation" : -0.45000000000000001,
@@ -4349,6 +4714,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.490000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.989999999999998,
             "rotation" : 84.900000000000006,
@@ -4368,6 +4734,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 617,
             "height" : 22.010000000000002,
             "rotation" : -85.359999999999999,
@@ -4376,6 +4743,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.350000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 487,
             "height" : 16.079999999999998,
             "rotation" : -0.46999999999999997,
@@ -4384,6 +4752,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.530000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 612,
             "height" : 22.25,
             "rotation" : 84.930000000000007,
@@ -4403,6 +4772,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -4411,6 +4781,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 487,
             "height" : 16.079999999999998,
             "rotation" : -0.46000000000000002,
@@ -4419,6 +4790,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.530000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.07,
             "rotation" : 84.909999999999997,
@@ -4438,6 +4810,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 458,
             "height" : 20.960000000000001,
             "rotation" : -82.969999999999999,
@@ -4446,6 +4819,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.600000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -4454,6 +4828,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 231,
             "height" : 17.129999999999999,
             "rotation" : 64.859999999999999,
@@ -4473,6 +4848,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 235,
             "height" : 17.550000000000001,
             "rotation" : -65.049999999999997,
@@ -4481,6 +4857,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.989999999999998
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -4489,6 +4866,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 150,
             "height" : 13.699999999999999,
             "rotation" : 58.82,
@@ -4508,6 +4886,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 147,
             "height" : 13.699999999999999,
             "rotation" : -58.700000000000003,
@@ -4516,6 +4895,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.059999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -4524,6 +4904,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 105,
             "height" : 12.16,
             "rotation" : 66.969999999999999,
@@ -4543,6 +4924,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 11.630000000000001,
             "rotation" : -50.479999999999997,
@@ -4551,6 +4933,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -4559,6 +4942,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 12.35,
             "rotation" : 57.789999999999999,
@@ -4578,6 +4962,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 102,
             "height" : 11.82,
             "rotation" : -55.890000000000001,
@@ -4586,6 +4971,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -4594,6 +4980,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 147,
             "height" : 13.52,
             "rotation" : 59.009999999999998,
@@ -4613,6 +5000,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 235,
             "height" : 17.52,
             "rotation" : -68.840000000000003,
@@ -4621,6 +5009,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.920000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -4629,6 +5018,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 441,
             "height" : 20.620000000000001,
             "rotation" : 82.519999999999996,
@@ -4648,6 +5038,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 446,
             "height" : 20.82,
             "rotation" : -83.099999999999994,
@@ -4656,6 +5047,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.620000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -4664,6 +5056,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 607,
             "height" : 22,
             "rotation" : 84.849999999999994,
@@ -4683,6 +5076,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 611,
             "height" : 22.010000000000002,
             "rotation" : -85.359999999999999,
@@ -4691,6 +5085,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.350000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -4699,6 +5094,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -4718,6 +5114,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -4726,6 +5123,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -4734,6 +5132,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -4753,6 +5152,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -4761,6 +5161,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -4769,6 +5170,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -4788,6 +5190,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 618,
             "height" : 22.43,
             "rotation" : -85.200000000000003,
@@ -4796,6 +5199,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.379999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 16.050000000000001,
             "rotation" : -0.28000000000000003,
@@ -4804,6 +5208,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.439999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 611,
             "height" : 22,
             "rotation" : 84.799999999999997,
@@ -4823,6 +5228,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 617,
             "height" : 22.27,
             "rotation" : -84.930000000000007,
@@ -4831,6 +5237,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.530000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 15.09,
             "rotation" : -0.22,
@@ -4839,6 +5246,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.380000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 613,
             "height" : 22.390000000000001,
             "rotation" : 85.069999999999993,
@@ -4858,6 +5266,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 615,
             "height" : 22.27,
             "rotation" : -85.049999999999997,
@@ -4866,6 +5275,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.620000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 15.07,
             "rotation" : -0.16,
@@ -4874,6 +5284,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.340000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 22.41,
             "rotation" : 85,
@@ -4893,6 +5304,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 614,
             "height" : 22.100000000000001,
             "rotation" : -84.799999999999997,
@@ -4901,6 +5313,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.75
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 487,
             "height" : 15.02,
             "rotation" : 0.040000000000000001,
@@ -4909,6 +5322,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.270000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 613,
             "height" : 21.93,
             "rotation" : 85.329999999999998,
@@ -4928,6 +5342,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 613,
             "height" : 22.649999999999999,
             "rotation" : -84.730000000000004,
@@ -4936,6 +5351,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.960000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 15,
             "rotation" : 0,
@@ -4944,6 +5360,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.079999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 614,
             "height" : 22.34,
             "rotation" : 85.299999999999997,
@@ -4963,6 +5380,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 609,
             "height" : 22.329999999999998,
             "rotation" : -84.129999999999995,
@@ -4971,6 +5389,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.539999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 490,
             "height" : 15.109999999999999,
             "rotation" : 0.28999999999999998,
@@ -4979,6 +5398,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.710000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 22.059999999999999,
             "rotation" : 85.400000000000006,
@@ -4998,6 +5418,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 607,
             "height" : 22.149999999999999,
             "rotation" : -83.969999999999999,
@@ -5006,6 +5427,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.98
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 494,
             "height" : 16.18,
             "rotation" : 0.71999999999999997,
@@ -5014,6 +5436,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.439999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.059999999999999,
             "rotation" : 85.409999999999997,
@@ -5033,6 +5456,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 602,
             "height" : 21.870000000000001,
             "rotation" : -83.680000000000007,
@@ -5041,6 +5465,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.52
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 495,
             "height" : 15.49,
             "rotation" : 1.3500000000000001,
@@ -5049,6 +5474,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.18
           },
           {
+            "bend" : -0.01,
             "count" : 608,
             "height" : 22.050000000000001,
             "rotation" : 85.019999999999996,
@@ -5068,6 +5494,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 593,
             "height" : 21.559999999999999,
             "rotation" : -83.560000000000002,
@@ -5076,6 +5503,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 496,
             "height" : 15.869999999999999,
             "rotation" : 1.1799999999999999,
@@ -5084,6 +5512,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.770000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 600,
             "height" : 21.73,
             "rotation" : 84.790000000000006,
@@ -5103,6 +5532,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 584,
             "height" : 21.670000000000002,
             "rotation" : -83.379999999999995,
@@ -5111,6 +5541,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22.760000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 497,
             "height" : 15.99,
             "rotation" : 2.1400000000000001,
@@ -5119,6 +5550,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.350000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 595,
             "height" : 22.09,
             "rotation" : 84.650000000000006,
@@ -5138,6 +5570,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 557,
             "height" : 22.010000000000002,
             "rotation" : -83.469999999999999,
@@ -5146,6 +5579,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -24.609999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 503,
             "height" : 16.030000000000001,
             "rotation" : 3.3599999999999999,
@@ -5154,6 +5588,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.100000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 571,
             "height" : 21.609999999999999,
             "rotation" : 82.780000000000001,
@@ -5173,6 +5608,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 540,
             "height" : 21,
             "rotation" : -83.540000000000006,
@@ -5181,6 +5617,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -25.82
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 506,
             "height" : 15.82,
             "rotation" : 4.0700000000000003,
@@ -5189,6 +5626,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 30.300000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 557,
             "height" : 21.199999999999999,
             "rotation" : 81.379999999999995,
@@ -5208,6 +5646,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 517,
             "height" : 21.539999999999999,
             "rotation" : -83.620000000000005,
@@ -5216,6 +5655,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -27.289999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 510,
             "height" : 16.07,
             "rotation" : 4.9800000000000004,
@@ -5224,6 +5664,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 29.27
           },
           {
+            "bend" : -0.01,
             "count" : 533,
             "height" : 21.199999999999999,
             "rotation" : 78.640000000000001,
@@ -5243,6 +5684,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 488,
             "height" : 20.210000000000001,
             "rotation" : -84.280000000000001,
@@ -5251,6 +5693,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.239999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 513,
             "height" : 16.25,
             "rotation" : 6.29,
@@ -5259,6 +5702,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 27.969999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 500,
             "height" : 20.710000000000001,
             "rotation" : 75.140000000000001,
@@ -5278,6 +5722,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 449,
             "height" : 20.289999999999999,
             "rotation" : -86.140000000000001,
@@ -5286,6 +5731,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.649999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 517,
             "height" : 16.57,
             "rotation" : 7.7199999999999998,
@@ -5294,6 +5740,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.219999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 449,
             "height" : 19.620000000000001,
             "rotation" : 68.829999999999998,
@@ -5313,6 +5760,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.059999999999999998,
             "count" : 327,
             "height" : 20.719999999999999,
             "rotation" : 59.270000000000003,
@@ -5321,6 +5769,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -40.369999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 518,
             "height" : 16.609999999999999,
             "rotation" : 12.68,
@@ -5329,6 +5778,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.190000000000001
           },
           {
+            "bend" : -0.11,
             "count" : 313,
             "height" : 16.300000000000001,
             "rotation" : 25.5,
@@ -5348,6 +5798,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 238,
             "height" : 16.609999999999999,
             "rotation" : 9.3200000000000003,
@@ -5356,6 +5807,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -45.840000000000003
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 518,
             "height" : 16.780000000000001,
             "rotation" : 14.859999999999999,
@@ -5364,6 +5816,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 16.48
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 300,
             "height" : 14.74,
             "rotation" : 21.82,
@@ -5383,6 +5836,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 213,
             "height" : 15.039999999999999,
             "rotation" : 4.5899999999999999,
@@ -5391,6 +5845,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -48.520000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 513,
             "height" : 16.760000000000002,
             "rotation" : 16.079999999999998,
@@ -5399,6 +5854,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 13.960000000000001
           },
           {
+            "bend" : -0.14999999999999999,
             "count" : 293,
             "height" : 14.9,
             "rotation" : 18.809999999999999,
@@ -5418,6 +5874,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.059999999999999998,
             "count" : 202,
             "height" : 13.970000000000001,
             "rotation" : 3.8500000000000001,
@@ -5426,6 +5883,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.020000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 511,
             "height" : 16.690000000000001,
             "rotation" : 16.050000000000001,
@@ -5434,6 +5892,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 12.56
           },
           {
+            "bend" : -0.17000000000000001,
             "count" : 284,
             "height" : 14.77,
             "rotation" : 16.870000000000001,
@@ -5453,6 +5912,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.070000000000000007,
             "count" : 200,
             "height" : 13.1,
             "rotation" : 3.2999999999999998,
@@ -5461,6 +5921,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.799999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 513,
             "height" : 16.890000000000001,
             "rotation" : 15.74,
@@ -5469,6 +5930,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.710000000000001
           },
           {
+            "bend" : -0.17000000000000001,
             "count" : 278,
             "height" : 14.210000000000001,
             "rotation" : 15.619999999999999,
@@ -5488,6 +5950,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.10000000000000001,
             "count" : 196,
             "height" : 12.07,
             "rotation" : 1.3400000000000001,
@@ -5496,6 +5959,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.009999999999998
           },
           {
+            "bend" : 0.02,
             "count" : 515,
             "height" : 16.899999999999999,
             "rotation" : 14.48,
@@ -5504,6 +5968,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.31
           },
           {
+            "bend" : -0.20000000000000001,
             "count" : 269,
             "height" : 13.92,
             "rotation" : 13.460000000000001,
@@ -5523,6 +5988,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.10000000000000001,
             "count" : 193,
             "height" : 12.16,
             "rotation" : -1.0600000000000001,
@@ -5531,6 +5997,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.810000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 523,
             "height" : 16.789999999999999,
             "rotation" : 13.18,
@@ -5539,6 +6006,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.48
           },
           {
+            "bend" : -0.19,
             "count" : 266,
             "height" : 13.6,
             "rotation" : 12.619999999999999,
@@ -5558,6 +6026,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 190,
             "height" : 12.42,
             "rotation" : -3.5899999999999999,
@@ -5566,6 +6035,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.369999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 536,
             "height" : 17.140000000000001,
             "rotation" : 10.529999999999999,
@@ -5574,6 +6044,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.710000000000001
           },
           {
+            "bend" : -0.20000000000000001,
             "count" : 257,
             "height" : 13.57,
             "rotation" : 11.43,
@@ -5593,6 +6064,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 202,
             "height" : 12.779999999999999,
             "rotation" : -7.1299999999999999,
@@ -5601,6 +6073,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -49.240000000000002
           },
           {
+            "bend" : 0.01,
             "count" : 554,
             "height" : 17.68,
             "rotation" : 4.9699999999999998,
@@ -5609,6 +6082,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.949999999999999
           },
           {
+            "bend" : -0.14999999999999999,
             "count" : 240,
             "height" : 13.91,
             "rotation" : 7.8700000000000001,
@@ -5628,6 +6102,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.16,
             "count" : 240,
             "height" : 13.9,
             "rotation" : -10.99,
@@ -5636,6 +6111,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -45.450000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 544,
             "height" : 17.149999999999999,
             "rotation" : -7.3099999999999996,
@@ -5644,6 +6120,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.41
           },
           {
+            "bend" : -0.14999999999999999,
             "count" : 203,
             "height" : 11.880000000000001,
             "rotation" : 3.0899999999999999,
@@ -5663,6 +6140,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.19,
             "count" : 267,
             "height" : 13.99,
             "rotation" : -15.34,
@@ -5671,6 +6149,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -42.289999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 503,
             "height" : 16.84,
             "rotation" : -16.239999999999998,
@@ -5679,6 +6158,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 10.32
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 191,
             "height" : 12,
             "rotation" : -1.6599999999999999,
@@ -5698,6 +6178,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.19,
             "count" : 271,
             "height" : 13.65,
             "rotation" : -16.050000000000001,
@@ -5706,6 +6187,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.689999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 492,
             "height" : 16.109999999999999,
             "rotation" : -17.550000000000001,
@@ -5714,6 +6196,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 10.09
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 195,
             "height" : 11.98,
             "rotation" : -3.73,
@@ -5733,6 +6216,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.20000000000000001,
             "count" : 273,
             "height" : 13.880000000000001,
             "rotation" : -16.219999999999999,
@@ -5741,6 +6225,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.299999999999997
           },
           {
+            "bend" : 0.01,
             "count" : 487,
             "height" : 16.52,
             "rotation" : -18.23,
@@ -5749,6 +6234,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 9.9600000000000009
           },
           {
+            "bend" : -0.13,
             "count" : 193,
             "height" : 12.109999999999999,
             "rotation" : -3.96,
@@ -5768,6 +6254,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.20000000000000001,
             "count" : 273,
             "height" : 13.57,
             "rotation" : -16.989999999999998,
@@ -5776,6 +6263,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.18
           },
           {
+            "bend" : 0.02,
             "count" : 493,
             "height" : 16.489999999999998,
             "rotation" : -18.379999999999999,
@@ -5784,6 +6272,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 9.9000000000000004
           },
           {
+            "bend" : -0.12,
             "count" : 194,
             "height" : 12.359999999999999,
             "rotation" : -4.3499999999999996,
@@ -5803,6 +6292,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.17999999999999999,
             "count" : 269,
             "height" : 13.710000000000001,
             "rotation" : -16.32,
@@ -5811,6 +6301,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.619999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 501,
             "height" : 16.399999999999999,
             "rotation" : -17.48,
@@ -5819,6 +6310,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 10.119999999999999
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 190,
             "height" : 12.029999999999999,
             "rotation" : -2.6800000000000002,
@@ -5838,6 +6330,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 215,
             "height" : 14.029999999999999,
             "rotation" : -5.9299999999999997,
@@ -5846,6 +6339,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -47.93
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 550,
             "height" : 17.109999999999999,
             "rotation" : -0.23999999999999999,
@@ -5854,6 +6348,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.9
           },
           {
+            "bend" : -0.13,
             "count" : 221,
             "height" : 14.67,
             "rotation" : 4.25,
@@ -5873,6 +6368,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 189,
             "height" : 12.17,
             "rotation" : -1.4199999999999999,
@@ -5881,6 +6377,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.530000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 522,
             "height" : 17,
             "rotation" : 13.949999999999999,
@@ -5889,6 +6386,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.48
           },
           {
+            "bend" : -0.17000000000000001,
             "count" : 263,
             "height" : 14.56,
             "rotation" : 12.49,
@@ -5908,6 +6406,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 194,
             "height" : 12.58,
             "rotation" : 3.3100000000000001,
@@ -5916,6 +6415,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -52.329999999999998
           },
           {
+            "bend" : 0.02,
             "count" : 502,
             "height" : 17.02,
             "rotation" : 17.98,
@@ -5924,6 +6424,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.01
           },
           {
+            "bend" : -0.17999999999999999,
             "count" : 272,
             "height" : 13.98,
             "rotation" : 15.23,
@@ -5943,6 +6444,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 198,
             "height" : 12.77,
             "rotation" : 3.9300000000000002,
@@ -5951,6 +6453,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -52.479999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 489,
             "height" : 16.140000000000001,
             "rotation" : 19.609999999999999,
@@ -5959,6 +6462,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 10.82
           },
           {
+            "bend" : -0.19,
             "count" : 275,
             "height" : 13.85,
             "rotation" : 15.51,
@@ -5978,6 +6482,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 200,
             "height" : 12.640000000000001,
             "rotation" : 4.6299999999999999,
@@ -5986,6 +6491,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -52.380000000000003
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 486,
             "height" : 16.379999999999999,
             "rotation" : 19.280000000000001,
@@ -5994,6 +6500,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 10.91
           },
           {
+            "bend" : -0.19,
             "count" : 276,
             "height" : 14.029999999999999,
             "rotation" : 14.73,
@@ -6013,6 +6520,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.10000000000000001,
             "count" : 196,
             "height" : 12.630000000000001,
             "rotation" : 3.3100000000000001,
@@ -6021,6 +6529,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.18
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 491,
             "height" : 16.48,
             "rotation" : 18.059999999999999,
@@ -6029,6 +6538,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.99
           },
           {
+            "bend" : -0.19,
             "count" : 278,
             "height" : 14.23,
             "rotation" : 14.75,
@@ -6048,6 +6558,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 195,
             "height" : 12.09,
             "rotation" : 1.3999999999999999,
@@ -6056,6 +6567,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.170000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 496,
             "height" : 17.059999999999999,
             "rotation" : 16.949999999999999,
@@ -6064,6 +6576,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 12.91
           },
           {
+            "bend" : -0.17999999999999999,
             "count" : 278,
             "height" : 14.07,
             "rotation" : 14.34,
@@ -6083,6 +6596,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 193,
             "height" : 12.029999999999999,
             "rotation" : 0.56000000000000005,
@@ -6091,6 +6605,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -48.850000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 500,
             "height" : 16.199999999999999,
             "rotation" : 15.49,
@@ -6099,6 +6614,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 14.359999999999999
           },
           {
+            "bend" : -0.17999999999999999,
             "count" : 282,
             "height" : 14.41,
             "rotation" : 13.720000000000001,
@@ -6118,6 +6634,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 194,
             "height" : 12.31,
             "rotation" : -1.8,
@@ -6126,6 +6643,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -46.659999999999997
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 509,
             "height" : 16.77,
             "rotation" : 13.92,
@@ -6134,6 +6652,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 16.629999999999999
           },
           {
+            "bend" : -0.17999999999999999,
             "count" : 286,
             "height" : 14.07,
             "rotation" : 13.470000000000001,
@@ -6153,6 +6672,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 214,
             "height" : 14.27,
             "rotation" : -2.29,
@@ -6161,6 +6681,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -42.93
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 511,
             "height" : 16.620000000000001,
             "rotation" : 10.960000000000001,
@@ -6169,6 +6690,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.609999999999999
           },
           {
+            "bend" : -0.17000000000000001,
             "count" : 290,
             "height" : 14.57,
             "rotation" : 12.44,
@@ -6188,6 +6710,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 255,
             "height" : 15.140000000000001,
             "rotation" : -1.3799999999999999,
@@ -6196,6 +6719,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -35.07
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 512,
             "height" : 16.690000000000001,
             "rotation" : 4.75,
@@ -6204,6 +6728,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 28
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 300,
             "height" : 15.33,
             "rotation" : 11.51,
@@ -6223,6 +6748,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 268,
             "height" : 15.16,
             "rotation" : -1.1499999999999999,
@@ -6231,6 +6757,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.939999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 506,
             "height" : 15.75,
             "rotation" : 3.73,
@@ -6239,6 +6766,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 29.75
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 307,
             "height" : 15.699999999999999,
             "rotation" : 12.24,
@@ -6258,6 +6786,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 279,
             "height" : 15.01,
             "rotation" : 0.14000000000000001,
@@ -6266,6 +6795,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.25
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 504,
             "height" : 15.609999999999999,
             "rotation" : 2.75,
@@ -6274,6 +6804,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 30.940000000000001
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 311,
             "height" : 15.75,
             "rotation" : 13.58,
@@ -6293,6 +6824,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 293,
             "height" : 16.02,
             "rotation" : 1.29,
@@ -6301,6 +6833,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.920000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 500,
             "height" : 15.550000000000001,
             "rotation" : 1.79,
@@ -6309,6 +6842,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.789999999999999
           },
           {
+            "bend" : -0.12,
             "count" : 321,
             "height" : 16.309999999999999,
             "rotation" : 15.529999999999999,
@@ -6328,6 +6862,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.089999999999999997,
             "count" : 305,
             "height" : 16.210000000000001,
             "rotation" : 3.46,
@@ -6336,6 +6871,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.760000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 496,
             "height" : 16,
             "rotation" : 1.3400000000000001,
@@ -6344,6 +6880,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.469999999999999
           },
           {
+            "bend" : -0.11,
             "count" : 332,
             "height" : 16.670000000000002,
             "rotation" : 17.219999999999999,
@@ -6363,6 +6900,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.070000000000000007,
             "count" : 341,
             "height" : 18.879999999999999,
             "rotation" : 10.43,
@@ -6371,6 +6909,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.77
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 494,
             "height" : 15.140000000000001,
             "rotation" : 0.33000000000000002,
@@ -6379,6 +6918,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.369999999999997
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 369,
             "height" : 18.030000000000001,
             "rotation" : 26.73,
@@ -6398,6 +6938,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.070000000000000007,
             "count" : 364,
             "height" : 19.949999999999999,
             "rotation" : 15.85,
@@ -6406,6 +6947,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -25.780000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 491,
             "height" : 16,
             "rotation" : 0.070000000000000007,
@@ -6414,6 +6956,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.729999999999997
           },
           {
+            "bend" : -0.080000000000000002,
             "count" : 398,
             "height" : 18.710000000000001,
             "rotation" : 33.189999999999998,
@@ -6433,6 +6976,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 396,
             "height" : 21.59,
             "rotation" : 25.539999999999999,
@@ -6441,6 +6985,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -24.75
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 492,
             "height" : 15.02,
             "rotation" : -0.059999999999999998,
@@ -6449,6 +6994,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.880000000000003
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 440,
             "height" : 19.350000000000001,
             "rotation" : 41.479999999999997,
@@ -6468,6 +7014,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 438,
             "height" : 21.539999999999999,
             "rotation" : 39.369999999999997,
@@ -6476,6 +7023,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -23.629999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 15.07,
             "rotation" : -0.16,
@@ -6484,6 +7032,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.130000000000003
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 488,
             "height" : 21.149999999999999,
             "rotation" : 51.549999999999997,
@@ -6503,6 +7052,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 488,
             "height" : 23.59,
             "rotation" : 58.219999999999999,
@@ -6511,6 +7061,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22.489999999999998
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 15.02,
             "rotation" : -0.070000000000000007,
@@ -6519,6 +7070,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.280000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 529,
             "height" : 21.620000000000001,
             "rotation" : 63.950000000000003,
@@ -6538,6 +7090,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 572,
             "height" : 22.829999999999998,
             "rotation" : 86.310000000000002,
@@ -6546,6 +7099,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.23
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 16.07,
             "rotation" : -0.40999999999999998,
@@ -6554,6 +7108,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.43
           },
           {
+            "bend" : -0.01,
             "count" : 600,
             "height" : 21.789999999999999,
             "rotation" : 82.540000000000006,
@@ -6573,6 +7128,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 605,
             "height" : 22.489999999999998,
             "rotation" : -87.060000000000002,
@@ -6581,6 +7137,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.550000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 489,
             "height" : 16.050000000000001,
             "rotation" : -0.42999999999999999,
@@ -6589,6 +7146,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.479999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 21.989999999999998,
             "rotation" : 84.859999999999999,
@@ -6608,6 +7166,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 614,
             "height" : 21.890000000000001,
             "rotation" : -85.459999999999994,
@@ -6616,6 +7175,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.329999999999998
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -6624,6 +7184,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 452,
             "height" : 20.829999999999998,
             "rotation" : 83,
@@ -6643,6 +7204,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 458,
             "height" : 20.960000000000001,
             "rotation" : -82.969999999999999,
@@ -6651,6 +7213,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.600000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -6659,6 +7222,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 231,
             "height" : 17.129999999999999,
             "rotation" : 64.859999999999999,
@@ -6678,6 +7242,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 235,
             "height" : 17.550000000000001,
             "rotation" : -65.049999999999997,
@@ -6686,6 +7251,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.989999999999998
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -6694,6 +7260,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 150,
             "height" : 13.699999999999999,
             "rotation" : 58.82,
@@ -6713,6 +7280,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 11.630000000000001,
             "rotation" : -50.479999999999997,
@@ -6721,6 +7289,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -6729,6 +7298,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 12.35,
             "rotation" : 57.789999999999999,
@@ -6748,6 +7318,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 102,
             "height" : 11.82,
             "rotation" : -55.890000000000001,
@@ -6756,6 +7327,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -6764,6 +7336,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 147,
             "height" : 13.52,
             "rotation" : 59.009999999999998,
@@ -6783,6 +7356,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 145,
             "height" : 13.67,
             "rotation" : -59.840000000000003,
@@ -6791,6 +7365,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.010000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -6799,6 +7374,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 232,
             "height" : 17.149999999999999,
             "rotation" : 66.579999999999998,
@@ -6818,6 +7394,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 235,
             "height" : 17.52,
             "rotation" : -68.840000000000003,
@@ -6826,6 +7403,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.920000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -6834,6 +7412,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 441,
             "height" : 20.620000000000001,
             "rotation" : 82.519999999999996,
@@ -6853,6 +7432,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 446,
             "height" : 20.82,
             "rotation" : -83.099999999999994,
@@ -6861,6 +7441,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.620000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -6869,6 +7450,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 607,
             "height" : 22,
             "rotation" : 84.849999999999994,
@@ -6888,6 +7470,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -6896,6 +7479,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -6904,6 +7488,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -6923,6 +7508,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -6931,6 +7517,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -6939,6 +7526,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -6958,6 +7546,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 615,
             "height" : 21.91,
             "rotation" : -85.329999999999998,
@@ -6966,6 +7555,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.34
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -6974,6 +7564,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 452,
             "height" : 20.829999999999998,
             "rotation" : 83,
@@ -6993,6 +7584,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 458,
             "height" : 20.960000000000001,
             "rotation" : -82.969999999999999,
@@ -7001,6 +7593,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.600000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7009,6 +7602,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 231,
             "height" : 17.129999999999999,
             "rotation" : 64.859999999999999,
@@ -7028,6 +7622,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 235,
             "height" : 17.550000000000001,
             "rotation" : -65.049999999999997,
@@ -7036,6 +7631,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.989999999999998
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7044,6 +7640,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 150,
             "height" : 13.699999999999999,
             "rotation" : 58.82,
@@ -7063,6 +7660,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 147,
             "height" : 13.699999999999999,
             "rotation" : -58.700000000000003,
@@ -7071,6 +7669,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.059999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7079,6 +7678,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 105,
             "height" : 12.16,
             "rotation" : 66.969999999999999,
@@ -7098,6 +7698,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 11.630000000000001,
             "rotation" : -50.479999999999997,
@@ -7106,6 +7707,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7114,6 +7716,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 12.35,
             "rotation" : 57.789999999999999,
@@ -7133,6 +7736,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 145,
             "height" : 13.67,
             "rotation" : -59.840000000000003,
@@ -7141,6 +7745,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.010000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7149,6 +7754,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 232,
             "height" : 17.149999999999999,
             "rotation" : 66.579999999999998,
@@ -7168,6 +7774,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 235,
             "height" : 17.52,
             "rotation" : -68.840000000000003,
@@ -7176,6 +7783,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.920000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7184,6 +7792,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 441,
             "height" : 20.620000000000001,
             "rotation" : 82.519999999999996,
@@ -7203,6 +7812,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 446,
             "height" : 20.82,
             "rotation" : -83.099999999999994,
@@ -7211,6 +7821,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.620000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7219,6 +7830,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 607,
             "height" : 22,
             "rotation" : 84.849999999999994,
@@ -7238,6 +7850,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 611,
             "height" : 22.010000000000002,
             "rotation" : -85.359999999999999,
@@ -7246,6 +7859,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.350000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7254,6 +7868,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -7273,6 +7888,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -7281,6 +7897,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7289,6 +7906,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -7308,6 +7926,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -7316,6 +7935,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7324,6 +7944,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -7343,6 +7964,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 617,
             "height" : 22.260000000000002,
             "rotation" : -85.290000000000006,
@@ -7351,6 +7973,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.390000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7359,6 +7982,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -7378,6 +8002,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 614,
             "height" : 21.789999999999999,
             "rotation" : -84.319999999999993,
@@ -7386,6 +8011,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.940000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7394,6 +8020,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -7413,6 +8040,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 613,
             "height" : 22.75,
             "rotation" : -83.719999999999999,
@@ -7421,6 +8049,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.370000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7429,6 +8058,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -7448,6 +8078,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.32,
             "rotation" : -82.980000000000004,
@@ -7456,6 +8087,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.059999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7464,6 +8096,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 22.09,
             "rotation" : 84.840000000000003,
@@ -7483,6 +8116,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 605,
             "height" : 21.969999999999999,
             "rotation" : -81.439999999999998,
@@ -7491,6 +8125,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.84
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7499,6 +8134,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.969999999999999,
             "rotation" : 84.980000000000004,
@@ -7518,6 +8154,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 599,
             "height" : 21.75,
             "rotation" : -79.75,
@@ -7526,6 +8163,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22.879999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7534,6 +8172,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 615,
             "height" : 22.09,
             "rotation" : 85.260000000000005,
@@ -7553,6 +8192,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 584,
             "height" : 21.609999999999999,
             "rotation" : -74.390000000000001,
@@ -7561,6 +8201,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -25.77
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7569,6 +8210,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 628,
             "height" : 23.09,
             "rotation" : 85.239999999999995,
@@ -7588,6 +8230,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 572,
             "height" : 20.809999999999999,
             "rotation" : -70.510000000000005,
@@ -7596,6 +8239,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -27.649999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7604,6 +8248,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 636,
             "height" : 23.129999999999999,
             "rotation" : 85.760000000000005,
@@ -7623,6 +8268,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 561,
             "height" : 20.510000000000002,
             "rotation" : -65.040000000000006,
@@ -7631,6 +8277,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.98
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7639,6 +8286,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 647,
             "height" : 23.059999999999999,
             "rotation" : 86.5,
@@ -7658,6 +8306,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 545,
             "height" : 19.530000000000001,
             "rotation" : -56.700000000000003,
@@ -7666,6 +8315,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.649999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7674,6 +8324,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 660,
             "height" : 23.579999999999998,
             "rotation" : 87.109999999999999,
@@ -7693,6 +8344,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 521,
             "height" : 19.530000000000001,
             "rotation" : -48.810000000000002,
@@ -7701,6 +8353,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -35.979999999999997
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7709,6 +8362,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 674,
             "height" : 24.219999999999999,
             "rotation" : 87.670000000000002,
@@ -7728,6 +8382,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 15.779999999999999,
             "rotation" : -37.229999999999997,
@@ -7736,6 +8391,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.460000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7744,6 +8400,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 705,
             "height" : 25.109999999999999,
             "rotation" : -89.450000000000003,
@@ -7763,6 +8420,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 397,
             "height" : 15.789999999999999,
             "rotation" : -37,
@@ -7771,6 +8429,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.520000000000003
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7779,6 +8438,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 711,
             "height" : 26.059999999999999,
             "rotation" : -87.769999999999996,
@@ -7798,6 +8458,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 397,
             "height" : 15.800000000000001,
             "rotation" : -36.920000000000002,
@@ -7806,6 +8467,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.640000000000001
           },
           {
+            "bend" : -0,
             "count" : 710,
             "height" : 26.829999999999998,
             "rotation" : -85.340000000000003,
@@ -7814,6 +8476,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -17.09
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7833,6 +8496,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 394,
             "height" : 15.83,
             "rotation" : -36.340000000000003,
@@ -7841,6 +8505,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.899999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 683,
             "height" : 26.66,
             "rotation" : -82.629999999999995,
@@ -7849,6 +8514,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -16.199999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7868,6 +8534,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 395,
             "height" : 15.859999999999999,
             "rotation" : -35.939999999999998,
@@ -7876,6 +8543,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -52.219999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 599,
             "height" : 25.890000000000001,
             "rotation" : -79.010000000000005,
@@ -7884,6 +8552,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -14.68
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7903,6 +8572,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 382,
             "height" : 15.890000000000001,
             "rotation" : -79.040000000000006,
@@ -7911,6 +8581,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.300000000000001
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 389,
             "height" : 15.67,
             "rotation" : -34.630000000000003,
@@ -7919,6 +8590,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -53.100000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7938,6 +8610,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.13,
             "count" : 620,
             "height" : 17.27,
             "rotation" : -42.159999999999997,
@@ -7946,6 +8619,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -47.710000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7965,6 +8639,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 382,
             "height" : 15.83,
             "rotation" : -32.159999999999997,
@@ -7973,6 +8648,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -54.630000000000003
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -7992,6 +8668,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14000000000000001,
             "count" : 606,
             "height" : 17.420000000000002,
             "rotation" : -21.460000000000001,
@@ -8000,6 +8677,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -58.549999999999997
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -8019,6 +8697,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 363,
             "height" : 15.59,
             "rotation" : -29.260000000000002,
@@ -8027,6 +8706,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -56.340000000000003
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -8035,6 +8715,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 290,
             "height" : 15.43,
             "rotation" : 8.1799999999999997,
@@ -8054,6 +8735,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 344,
             "height" : 15.59,
             "rotation" : -24.66,
@@ -8062,6 +8744,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -58.460000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -8070,6 +8753,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 338,
             "height" : 15.470000000000001,
             "rotation" : 39.789999999999999,
@@ -8089,6 +8773,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 332,
             "height" : 15.57,
             "rotation" : -22.329999999999998,
@@ -8097,6 +8782,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -59.619999999999997
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.02,
             "rotation" : -0.17000000000000001,
@@ -8105,6 +8791,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.469999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 359,
             "height" : 15.550000000000001,
             "rotation" : 54.07,
@@ -8124,6 +8811,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 319,
             "height" : 15.390000000000001,
             "rotation" : -19.600000000000001,
@@ -8132,6 +8820,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -60.789999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 489,
             "height" : 15.119999999999999,
             "rotation" : 0.28999999999999998,
@@ -8140,6 +8829,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.390000000000001
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 376,
             "height" : 15.539999999999999,
             "rotation" : 67.409999999999997,
@@ -8159,6 +8849,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 304,
             "height" : 15.56,
             "rotation" : -16.289999999999999,
@@ -8167,6 +8858,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -61.880000000000003
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 490,
             "height" : 15.529999999999999,
             "rotation" : 1.46,
@@ -8175,6 +8867,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.25
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 386,
             "height" : 15.68,
             "rotation" : 79.780000000000001,
@@ -8194,6 +8887,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 289,
             "height" : 15.640000000000001,
             "rotation" : -12.619999999999999,
@@ -8202,6 +8896,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -62.869999999999997
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 491,
             "height" : 15.949999999999999,
             "rotation" : 2.9100000000000001,
@@ -8210,6 +8905,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.009999999999998
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 399,
             "height" : 15.43,
             "rotation" : -88.329999999999998,
@@ -8229,6 +8925,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 494,
             "height" : 16.079999999999998,
             "rotation" : 7.7300000000000004,
@@ -8237,6 +8934,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.049999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 250,
             "height" : 15.17,
             "rotation" : -3.9300000000000002,
@@ -8245,6 +8943,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -64.290000000000006
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 415,
             "height" : 15.84,
             "rotation" : -66.760000000000005,
@@ -8264,6 +8963,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.040000000000000001,
             "count" : 493,
             "height" : 15.9,
             "rotation" : 11.210000000000001,
@@ -8272,6 +8972,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.310000000000002
           },
           {
+            "bend" : -0,
             "count" : 226,
             "height" : 15.1,
             "rotation" : 2.1299999999999999,
@@ -8280,6 +8981,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -64.409999999999997
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 419,
             "height" : 15.720000000000001,
             "rotation" : -56.420000000000002,
@@ -8299,6 +9001,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 494,
             "height" : 15.869999999999999,
             "rotation" : 15.470000000000001,
@@ -8307,6 +9010,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.149999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 244,
             "height" : 15.279999999999999,
             "rotation" : 7.79,
@@ -8315,6 +9019,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -63.740000000000002
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 426,
             "height" : 15.76,
             "rotation" : -47.060000000000002,
@@ -8334,6 +9039,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 492,
             "height" : 15.34,
             "rotation" : 20.890000000000001,
@@ -8342,6 +9048,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 29.52
           },
           {
+            "bend" : -0.02,
             "count" : 273,
             "height" : 15.67,
             "rotation" : 15.58,
@@ -8350,6 +9057,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -62.140000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 427,
             "height" : 15.890000000000001,
             "rotation" : -38.049999999999997,
@@ -8369,6 +9077,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 485,
             "height" : 15.529999999999999,
             "rotation" : 27.379999999999999,
@@ -8377,6 +9086,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 27.059999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 307,
             "height" : 15.31,
             "rotation" : 23.52,
@@ -8385,6 +9095,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -58.979999999999997
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 431,
             "height" : 15.890000000000001,
             "rotation" : -29.66,
@@ -8404,6 +9115,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.040000000000000001,
             "count" : 462,
             "height" : 15.35,
             "rotation" : 45.960000000000001,
@@ -8412,6 +9124,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 18.489999999999998
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 431,
             "height" : 16.02,
             "rotation" : -13.73,
@@ -8420,6 +9133,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 60.93
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 396,
             "height" : 15.210000000000001,
             "rotation" : 44.780000000000001,
@@ -8439,6 +9153,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.050000000000000003,
             "count" : 429,
             "height" : 14.85,
             "rotation" : 59.579999999999998,
@@ -8447,6 +9162,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 10.779999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 434,
             "height" : 16.260000000000002,
             "rotation" : -6.1699999999999999,
@@ -8455,6 +9171,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 62.369999999999997
           },
           {
+            "bend" : -0.070000000000000007,
             "count" : 452,
             "height" : 15.859999999999999,
             "rotation" : 58.450000000000003,
@@ -8474,6 +9191,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.059999999999999998,
             "count" : 379,
             "height" : 15.27,
             "rotation" : 77.189999999999998,
@@ -8482,6 +9200,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -1.23
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 432,
             "height" : 15.109999999999999,
             "rotation" : 0.33000000000000002,
@@ -8490,6 +9209,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 62.810000000000002
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 527,
             "height" : 16.579999999999998,
             "rotation" : 75.090000000000003,
@@ -8509,6 +9229,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 380,
             "height" : 15.800000000000001,
             "rotation" : -63.840000000000003,
@@ -8517,6 +9238,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.969999999999999
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 431,
             "height" : 16.140000000000001,
             "rotation" : 7.0999999999999996,
@@ -8525,6 +9247,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 62.259999999999998
           },
           {
+            "bend" : 0.13,
             "count" : 627,
             "height" : 17.719999999999999,
             "rotation" : -83.859999999999999,
@@ -8544,6 +9267,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 284,
             "height" : 15.210000000000001,
             "rotation" : -38.850000000000001,
@@ -8552,6 +9276,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.420000000000002
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 428,
             "height" : 16,
             "rotation" : 13.18,
@@ -8560,6 +9285,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 61.030000000000001
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 742,
             "height" : 18.809999999999999,
             "rotation" : -57.75,
@@ -8579,6 +9305,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.27000000000000002,
             "count" : 985,
             "height" : 23.010000000000002,
             "rotation" : 7.4699999999999998,
@@ -8587,6 +9314,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 59.789999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 255,
             "height" : 15.140000000000001,
             "rotation" : 2.9399999999999999,
@@ -8606,6 +9334,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.13,
             "count" : 634,
             "height" : 17.649999999999999,
             "rotation" : 23.960000000000001,
@@ -8614,6 +9343,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 56.68
           },
           {
+            "bend" : -0.02,
             "count" : 290,
             "height" : 14.970000000000001,
             "rotation" : 19.359999999999999,
@@ -8633,6 +9363,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.089999999999999997,
             "count" : 522,
             "height" : 17.010000000000002,
             "rotation" : 39.799999999999997,
@@ -8641,6 +9372,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 48.229999999999997
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 315,
             "height" : 15.19,
             "rotation" : 35.93,
@@ -8660,6 +9392,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.14000000000000001,
             "count" : 666,
             "height" : 17.52,
             "rotation" : 48.93,
@@ -8668,6 +9401,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 40.439999999999998
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 341,
             "height" : 15.6,
             "rotation" : 50.259999999999998,
@@ -8687,6 +9421,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.17999999999999999,
             "count" : 734,
             "height" : 18.780000000000001,
             "rotation" : 57.399999999999999,
@@ -8695,6 +9430,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 357,
             "height" : 15.44,
             "rotation" : 64.5,
@@ -8714,6 +9450,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 270,
             "height" : 15.15,
             "rotation" : 88.739999999999995,
@@ -8722,6 +9459,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -0.33000000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 346,
             "height" : 15.65,
             "rotation" : 53.490000000000002,
@@ -8730,6 +9468,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 37.380000000000003
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 389,
             "height" : 15.27,
             "rotation" : 88.890000000000001,
@@ -8749,6 +9488,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 242,
             "height" : 15.52,
             "rotation" : -82.689999999999998,
@@ -8757,6 +9497,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -8.5500000000000007
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 311,
             "height" : 15.44,
             "rotation" : 56.469999999999999,
@@ -8765,6 +9506,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.619999999999997
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 400,
             "height" : 15.85,
             "rotation" : -79.609999999999999,
@@ -8784,6 +9526,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 228,
             "height" : 15.359999999999999,
             "rotation" : -76.620000000000005,
@@ -8792,6 +9535,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -15.59
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 281,
             "height" : 15.41,
             "rotation" : 59.109999999999999,
@@ -8800,6 +9544,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.719999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 406,
             "height" : 15.74,
             "rotation" : -69.560000000000002,
@@ -8819,6 +9564,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 252,
             "height" : 15.57,
             "rotation" : -70.909999999999997,
@@ -8827,6 +9573,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.48
           },
           {
+            "bend" : 0.02,
             "count" : 256,
             "height" : 15.279999999999999,
             "rotation" : 61.32,
@@ -8835,6 +9582,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 28.710000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 415,
             "height" : 16.100000000000001,
             "rotation" : -59.07,
@@ -8854,6 +9602,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 272,
             "height" : 15.58,
             "rotation" : -66.709999999999994,
@@ -8862,6 +9611,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.5
           },
           {
+            "bend" : 0.02,
             "count" : 235,
             "height" : 15.32,
             "rotation" : 65.200000000000003,
@@ -8870,6 +9620,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 25.780000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 421,
             "height" : 15.83,
             "rotation" : -49.590000000000003,
@@ -8889,6 +9640,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 245,
             "height" : 15.539999999999999,
             "rotation" : 71.060000000000002,
@@ -8897,6 +9649,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 19.940000000000001
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 305,
             "height" : 15.6,
             "rotation" : -58.649999999999999,
@@ -8905,6 +9658,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -34.240000000000002
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 428,
             "height" : 15.84,
             "rotation" : -31.949999999999999,
@@ -8924,6 +9678,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 262,
             "height" : 15.699999999999999,
             "rotation" : 74.040000000000006,
@@ -8932,6 +9687,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 17.239999999999998
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 319,
             "height" : 15.48,
             "rotation" : -55.399999999999999,
@@ -8940,6 +9696,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -37.189999999999998
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 430,
             "height" : 15.890000000000001,
             "rotation" : -23.59,
@@ -8959,6 +9716,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 276,
             "height" : 15.56,
             "rotation" : 75.870000000000005,
@@ -8967,6 +9725,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 14.619999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 330,
             "height" : 15.56,
             "rotation" : -52.229999999999997,
@@ -8975,6 +9734,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -39.759999999999998
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 432,
             "height" : 15.85,
             "rotation" : -15.84,
@@ -8994,6 +9754,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 288,
             "height" : 15.94,
             "rotation" : 78.049999999999997,
@@ -9002,6 +9763,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 12.07
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 341,
             "height" : 15.74,
             "rotation" : -49.700000000000003,
@@ -9010,6 +9772,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.890000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 434,
             "height" : 16.16,
             "rotation" : -8.3300000000000001,
@@ -9029,6 +9792,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 303,
             "height" : 15.81,
             "rotation" : 80.370000000000005,
@@ -9037,6 +9801,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 9.7300000000000004
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 351,
             "height" : 15.800000000000001,
             "rotation" : -47.509999999999998,
@@ -9045,6 +9810,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -43.659999999999997
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 431,
             "height" : 15.42,
             "rotation" : -1.27,
@@ -9064,6 +9830,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 324,
             "height" : 15.92,
             "rotation" : 84.349999999999994,
@@ -9072,6 +9839,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 5.2699999999999996
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 366,
             "height" : 15.960000000000001,
             "rotation" : -43.689999999999998,
@@ -9080,6 +9848,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -46.560000000000002
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 431,
             "height" : 16.140000000000001,
             "rotation" : 11.119999999999999,
@@ -9099,6 +9868,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 333,
             "height" : 15.699999999999999,
             "rotation" : 85.769999999999996,
@@ -9107,6 +9877,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 3.3599999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 373,
             "height" : 15.92,
             "rotation" : -42.710000000000001,
@@ -9115,6 +9886,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -47.630000000000003
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 427,
             "height" : 16.350000000000001,
             "rotation" : 17.719999999999999,
@@ -9134,6 +9906,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 343,
             "height" : 16.100000000000001,
             "rotation" : 87.799999999999997,
@@ -9142,6 +9915,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 1.4399999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 377,
             "height" : 15.869999999999999,
             "rotation" : -41.640000000000001,
@@ -9150,6 +9924,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -48.659999999999997
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 423,
             "height" : 16.690000000000001,
             "rotation" : 23.629999999999999,
@@ -9169,6 +9944,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 349,
             "height" : 16.079999999999998,
             "rotation" : 89.209999999999994,
@@ -9177,6 +9953,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -0.22
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 383,
             "height" : 15.67,
             "rotation" : -40.299999999999997,
@@ -9185,6 +9962,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -49.359999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 420,
             "height" : 16.07,
             "rotation" : 28.850000000000001,
@@ -9204,6 +9982,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 357,
             "height" : 15.300000000000001,
             "rotation" : -88.739999999999995,
@@ -9212,6 +9991,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -1.9299999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 387,
             "height" : 15.800000000000001,
             "rotation" : -39.049999999999997,
@@ -9220,6 +10000,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.07
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 416,
             "height" : 16.550000000000001,
             "rotation" : 33.829999999999998,
@@ -9239,6 +10020,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 369,
             "height" : 15.66,
             "rotation" : -86.739999999999995,
@@ -9247,6 +10029,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -4.6299999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 409,
             "height" : 15.289999999999999,
             "rotation" : 44.450000000000003,
@@ -9255,6 +10038,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 44.93
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 393,
             "height" : 15.9,
             "rotation" : -37.960000000000001,
@@ -9274,6 +10058,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 376,
             "height" : 15.960000000000001,
             "rotation" : -85.670000000000002,
@@ -9282,6 +10067,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -5.8899999999999997
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 405,
             "height" : 15.699999999999999,
             "rotation" : 48.369999999999997,
@@ -9290,6 +10076,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 41.259999999999998
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 15.779999999999999,
             "rotation" : -37.119999999999997,
@@ -9309,6 +10096,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 380,
             "height" : 16.030000000000001,
             "rotation" : -84.670000000000002,
@@ -9317,6 +10105,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -6.9800000000000004
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 394,
             "height" : 15.77,
             "rotation" : 52.899999999999999,
@@ -9325,6 +10114,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 37.729999999999997
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 397,
             "height" : 15.800000000000001,
             "rotation" : -36.869999999999997,
@@ -9344,6 +10134,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 386,
             "height" : 16.07,
             "rotation" : -84.040000000000006,
@@ -9352,6 +10143,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -7.9100000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 346,
             "height" : 15.83,
             "rotation" : 55.509999999999998,
@@ -9360,6 +10152,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.299999999999997
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 397,
             "height" : 15.789999999999999,
             "rotation" : -36.979999999999997,
@@ -9379,6 +10172,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 390,
             "height" : 16.100000000000001,
             "rotation" : -83.120000000000005,
@@ -9387,6 +10181,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -8.8000000000000007
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 311,
             "height" : 15.619999999999999,
             "rotation" : 58.259999999999998,
@@ -9395,6 +10190,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.539999999999999
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 15.82,
             "rotation" : -36.479999999999997,
@@ -9414,6 +10210,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 395,
             "height" : 16.140000000000001,
             "rotation" : -81.780000000000001,
@@ -9422,6 +10219,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.039999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 257,
             "height" : 15.33,
             "rotation" : 63.630000000000003,
@@ -9430,6 +10228,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.920000000000002
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 15.779999999999999,
             "rotation" : -37.219999999999999,
@@ -9449,6 +10248,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 396,
             "height" : 16.219999999999999,
             "rotation" : -81.379999999999995,
@@ -9457,6 +10257,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.539999999999999
           },
           {
+            "bend" : 0.01,
             "count" : 235,
             "height" : 15.449999999999999,
             "rotation" : 66.890000000000001,
@@ -9465,6 +10266,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 24.039999999999999
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 397,
             "height" : 15.800000000000001,
             "rotation" : -36.920000000000002,
@@ -9484,6 +10286,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 399,
             "height" : 16.23,
             "rotation" : -81.079999999999998,
@@ -9492,6 +10295,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.9
           },
           {
+            "bend" : 0.01,
             "count" : 226,
             "height" : 15.52,
             "rotation" : 69.950000000000003,
@@ -9500,6 +10304,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.23
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 15.81,
             "rotation" : -36.640000000000001,
@@ -9519,6 +10324,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 401,
             "height" : 16.18,
             "rotation" : -81.010000000000005,
@@ -9527,6 +10333,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.1
           },
           {
+            "bend" : 0.02,
             "count" : 245,
             "height" : 15.550000000000001,
             "rotation" : 72.150000000000006,
@@ -9535,6 +10342,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 18.510000000000002
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 15.84,
             "rotation" : -36.270000000000003,
@@ -9554,6 +10362,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.17000000000000001,
             "count" : 661,
             "height" : 17.32,
             "rotation" : 88.980000000000004,
@@ -9562,6 +10371,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -0.63
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 392,
             "height" : 15.74,
             "rotation" : -35.390000000000001,
@@ -9581,6 +10391,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14999999999999999,
             "count" : 659,
             "height" : 16.899999999999999,
             "rotation" : -88.629999999999995,
@@ -9589,6 +10400,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -2.5
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 382,
             "height" : 15.44,
             "rotation" : -33.600000000000001,
@@ -9608,6 +10420,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14000000000000001,
             "count" : 646,
             "height" : 17.010000000000002,
             "rotation" : -87.739999999999995,
@@ -9616,6 +10429,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -3.3999999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 377,
             "height" : 15.65,
             "rotation" : -32.490000000000002,
@@ -9635,6 +10449,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.13,
             "count" : 631,
             "height" : 17.300000000000001,
             "rotation" : -86.689999999999998,
@@ -9643,6 +10458,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -4.46
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 369,
             "height" : 15.58,
             "rotation" : -30.989999999999998,
@@ -9662,6 +10478,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.13,
             "count" : 616,
             "height" : 16.68,
             "rotation" : -85.930000000000007,
@@ -9670,6 +10487,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -5.5
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 363,
             "height" : 15.59,
             "rotation" : -29.239999999999998,
@@ -9689,6 +10507,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 604,
             "height" : 17.219999999999999,
             "rotation" : -84.849999999999994,
@@ -9697,6 +10516,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -6.5199999999999996
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 354,
             "height" : 15.74,
             "rotation" : -26.989999999999998,
@@ -9716,6 +10536,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 587,
             "height" : 17.030000000000001,
             "rotation" : -82.780000000000001,
@@ -9724,6 +10545,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -8.7799999999999994
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 333,
             "height" : 15.609999999999999,
             "rotation" : -22.59,
@@ -9743,6 +10565,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 585,
             "height" : 16.699999999999999,
             "rotation" : -81.870000000000005,
@@ -9751,6 +10574,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.06
           },
           {
+            "bend" : -0.02,
             "count" : 319,
             "height" : 15.390000000000001,
             "rotation" : -19.600000000000001,
@@ -9770,6 +10594,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 591,
             "height" : 16.93,
             "rotation" : -80.640000000000001,
@@ -9778,6 +10603,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.289999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 304,
             "height" : 15.56,
             "rotation" : -16.289999999999999,
@@ -9797,6 +10623,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 597,
             "height" : 17.129999999999999,
             "rotation" : -79.510000000000005,
@@ -9805,6 +10632,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -12.51
           },
           {
+            "bend" : -0.02,
             "count" : 289,
             "height" : 15.640000000000001,
             "rotation" : -12.619999999999999,
@@ -9824,6 +10652,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 609,
             "height" : 17.18,
             "rotation" : -78.049999999999997,
@@ -9832,6 +10661,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.91
           },
           {
+            "bend" : -0.02,
             "count" : 271,
             "height" : 15.57,
             "rotation" : -8.2699999999999996,
@@ -9851,6 +10681,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.13,
             "count" : 644,
             "height" : 17.260000000000002,
             "rotation" : -75.319999999999993,
@@ -9859,6 +10690,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -16.760000000000002
           },
           {
+            "bend" : -0,
             "count" : 226,
             "height" : 15.1,
             "rotation" : 2.1299999999999999,
@@ -9878,6 +10710,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14000000000000001,
             "count" : 664,
             "height" : 17.420000000000002,
             "rotation" : -73.620000000000005,
@@ -9886,6 +10719,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.289999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 244,
             "height" : 15.279999999999999,
             "rotation" : 7.79,
@@ -9905,6 +10739,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.16,
             "count" : 683,
             "height" : 17.690000000000001,
             "rotation" : -71.870000000000005,
@@ -9913,6 +10748,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.859999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 273,
             "height" : 15.67,
             "rotation" : 15.58,
@@ -9932,6 +10768,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.17999999999999999,
             "count" : 684,
             "height" : 17.899999999999999,
             "rotation" : -69.810000000000002,
@@ -9940,6 +10777,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.350000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 307,
             "height" : 15.31,
             "rotation" : 23.52,
@@ -9959,6 +10797,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 396,
             "height" : 16.219999999999999,
             "rotation" : -81.420000000000002,
@@ -9967,6 +10806,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.550000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 273,
             "height" : 15.52,
             "rotation" : -51.340000000000003,
@@ -9975,6 +10815,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -40.479999999999997
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 345,
             "height" : 15.44,
             "rotation" : 33.619999999999997,
@@ -9994,6 +10835,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 400,
             "height" : 16.16,
             "rotation" : -80.849999999999994,
@@ -10002,6 +10844,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.140000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 229,
             "height" : 15.289999999999999,
             "rotation" : -41.329999999999998,
@@ -10010,6 +10853,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -48.659999999999997
           },
           {
+            "bend" : -0.070000000000000007,
             "count" : 452,
             "height" : 15.859999999999999,
             "rotation" : 58.450000000000003,
@@ -10029,6 +10873,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 400,
             "height" : 16.149999999999999,
             "rotation" : -80.769999999999996,
@@ -10037,6 +10882,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.359999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 244,
             "height" : 15.640000000000001,
             "rotation" : -35.859999999999999,
@@ -10045,6 +10891,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -52.840000000000003
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 527,
             "height" : 16.579999999999998,
             "rotation" : 75.090000000000003,
@@ -10064,6 +10911,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 414,
             "height" : 16.309999999999999,
             "rotation" : -80.390000000000001,
@@ -10072,6 +10920,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.57
           },
           {
+            "bend" : -0.02,
             "count" : 272,
             "height" : 15.43,
             "rotation" : -28.350000000000001,
@@ -10080,6 +10929,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -56.939999999999998
           },
           {
+            "bend" : 0.13,
             "count" : 627,
             "height" : 17.719999999999999,
             "rotation" : -83.859999999999999,
@@ -10099,6 +10949,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 401,
             "height" : 16.210000000000001,
             "rotation" : -79.609999999999999,
@@ -10107,6 +10958,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.890000000000001
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 309,
             "height" : 15.32,
             "rotation" : -19.510000000000002,
@@ -10115,6 +10967,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -60.590000000000003
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 742,
             "height" : 18.809999999999999,
             "rotation" : -57.75,
@@ -10134,6 +10987,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 16.210000000000001,
             "rotation" : -79.670000000000002,
@@ -10142,6 +10996,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -12.109999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 348,
             "height" : 15.82,
             "rotation" : -9.9100000000000001,
@@ -10150,6 +11005,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -63.299999999999997
           },
           {
+            "bend" : 0.17999999999999999,
             "count" : 742,
             "height" : 19.100000000000001,
             "rotation" : -30.350000000000001,
@@ -10169,6 +11025,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 16.059999999999999,
             "rotation" : -79.189999999999998,
@@ -10177,6 +11034,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.029999999999999
           },
           {
+            "bend" : 0.089999999999999997,
             "count" : 525,
             "height" : 17.300000000000001,
             "rotation" : 20.82,
@@ -10185,6 +11043,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 58.380000000000003
           },
           {
+            "bend" : -0.070000000000000007,
             "count" : 451,
             "height" : 15.93,
             "rotation" : 14.84,
@@ -10204,6 +11063,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 392,
             "height" : 16.010000000000002,
             "rotation" : -78.209999999999994,
@@ -10212,6 +11072,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.720000000000001
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 454,
             "height" : 16.600000000000001,
             "rotation" : 41.590000000000003,
@@ -10220,6 +11081,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 46.939999999999998
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 528,
             "height" : 16.440000000000001,
             "rotation" : 31.690000000000001,
@@ -10239,6 +11101,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 387,
             "height" : 15.85,
             "rotation" : -77.540000000000006,
@@ -10247,6 +11110,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -14.640000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 392,
             "height" : 16.129999999999999,
             "rotation" : 57.210000000000001,
@@ -10255,6 +11119,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.689999999999998
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 626,
             "height" : 17.350000000000001,
             "rotation" : 52.93,
@@ -10274,6 +11139,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 383,
             "height" : 15.76,
             "rotation" : -76.319999999999993,
@@ -10282,6 +11148,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -15.640000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 347,
             "height" : 16.109999999999999,
             "rotation" : 70.780000000000001,
@@ -10290,6 +11157,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.800000000000001
           },
           {
+            "bend" : -0.16,
             "count" : 739,
             "height" : 19.399999999999999,
             "rotation" : 78.790000000000006,
@@ -10309,6 +11177,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.16,
             "count" : 678,
             "height" : 17.449999999999999,
             "rotation" : -86.290000000000006,
@@ -10317,6 +11186,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -5.21
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 742,
             "height" : 19.579999999999998,
             "rotation" : -73.700000000000003,
@@ -10336,6 +11206,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.070000000000000007,
             "count" : 478,
             "height" : 16.079999999999998,
             "rotation" : -75.760000000000005,
@@ -10344,6 +11215,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -16.399999999999999
           },
           {
+            "bend" : 0.089999999999999997,
             "count" : 528,
             "height" : 16.960000000000001,
             "rotation" : -22.469999999999999,
@@ -10363,6 +11235,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 397,
             "height" : 15.56,
             "rotation" : -71.5,
@@ -10371,6 +11244,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.989999999999998
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 455,
             "height" : 15.949999999999999,
             "rotation" : -2.2200000000000002,
@@ -10390,6 +11264,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 353,
             "height" : 15.859999999999999,
             "rotation" : -68.489999999999995,
@@ -10398,6 +11273,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -24.390000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 392,
             "height" : 16.390000000000001,
             "rotation" : 13.130000000000001,
@@ -10417,6 +11293,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 336,
             "height" : 15.82,
             "rotation" : -65.75,
@@ -10425,6 +11302,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -27.219999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 346,
             "height" : 15.75,
             "rotation" : 26.18,
@@ -10444,6 +11322,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 324,
             "height" : 15.82,
             "rotation" : -62.68,
@@ -10452,6 +11331,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -30.219999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 305,
             "height" : 15.83,
             "rotation" : 36.439999999999998,
@@ -10471,6 +11351,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 326,
             "height" : 15.91,
             "rotation" : -55.060000000000002,
@@ -10479,6 +11360,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -37.07
           },
           {
+            "bend" : 0.01,
             "count" : 237,
             "height" : 15.19,
             "rotation" : 54.170000000000002,
@@ -10498,6 +11380,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 228,
             "height" : 16.120000000000001,
             "rotation" : 59.990000000000002,
@@ -10506,6 +11389,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.52
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 334,
             "height" : 15.949999999999999,
             "rotation" : -52.509999999999998,
@@ -10525,6 +11409,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 250,
             "height" : 15.369999999999999,
             "rotation" : 64.75,
@@ -10533,6 +11418,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.039999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 352,
             "height" : 15.970000000000001,
             "rotation" : -49.670000000000002,
@@ -10552,6 +11438,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 270,
             "height" : 15.869999999999999,
             "rotation" : 69.950000000000003,
@@ -10560,6 +11447,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.170000000000002
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 392,
             "height" : 15.99,
             "rotation" : -46.060000000000002,
@@ -10579,6 +11467,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 287,
             "height" : 15.56,
             "rotation" : 73.329999999999998,
@@ -10587,6 +11476,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 16.75
           },
           {
+            "bend" : -0.059999999999999998,
             "count" : 470,
             "height" : 16.170000000000002,
             "rotation" : -41.969999999999999,
@@ -10606,6 +11496,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 318,
             "height" : 15.800000000000001,
             "rotation" : 80.599999999999994,
@@ -10614,6 +11505,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 9.2799999999999994
           },
           {
+            "bend" : -0.14999999999999999,
             "count" : 666,
             "height" : 17.780000000000001,
             "rotation" : -31.870000000000001,
@@ -10633,6 +11525,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 330,
             "height" : 15.91,
             "rotation" : 83.709999999999994,
@@ -10641,6 +11534,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 6.1399999999999997
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 377,
             "height" : 15.859999999999999,
             "rotation" : -41.609999999999999,
@@ -10649,6 +11543,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -48.600000000000001
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 349,
             "height" : 15.84,
             "rotation" : -10.26,
@@ -10668,6 +11563,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 341,
             "height" : 15.630000000000001,
             "rotation" : 86.230000000000004,
@@ -10676,6 +11572,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 3.3500000000000001
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 382,
             "height" : 15.66,
             "rotation" : -40.439999999999998,
@@ -10684,6 +11581,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -49.380000000000003
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 396,
             "height" : 16.219999999999999,
             "rotation" : 1.3999999999999999,
@@ -10703,6 +11601,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 350,
             "height" : 16.120000000000001,
             "rotation" : 88.109999999999999,
@@ -10711,6 +11610,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 0.91000000000000003
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 388,
             "height" : 15.779999999999999,
             "rotation" : -39.270000000000003,
@@ -10719,6 +11619,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.039999999999999
           },
           {
+            "bend" : -0.070000000000000007,
             "count" : 451,
             "height" : 15.93,
             "rotation" : 14.84,
@@ -10738,6 +11639,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 359,
             "height" : 16.02,
             "rotation" : -89.810000000000002,
@@ -10746,6 +11648,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -1.27
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 391,
             "height" : 15.869999999999999,
             "rotation" : -38.329999999999998,
@@ -10754,6 +11657,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.590000000000003
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 528,
             "height" : 16.440000000000001,
             "rotation" : 31.690000000000001,
@@ -10773,6 +11677,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 372,
             "height" : 15.609999999999999,
             "rotation" : -86.670000000000002,
@@ -10781,6 +11686,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -4.7599999999999998
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 15.779999999999999,
             "rotation" : -37.109999999999999,
@@ -10789,6 +11695,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.299999999999997
           },
           {
+            "bend" : -0.16,
             "count" : 739,
             "height" : 19.399999999999999,
             "rotation" : 78.790000000000006,
@@ -10808,6 +11715,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 377,
             "height" : 15.960000000000001,
             "rotation" : -85.980000000000004,
@@ -10816,6 +11724,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -6.1200000000000001
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 15.789999999999999,
             "rotation" : -37.039999999999999,
@@ -10824,6 +11733,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.539999999999999
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 742,
             "height" : 19.579999999999998,
             "rotation" : -73.700000000000003,
@@ -10843,6 +11753,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 383,
             "height" : 16.02,
             "rotation" : -84.299999999999997,
@@ -10851,6 +11762,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -7.3399999999999999
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 397,
             "height" : 15.789999999999999,
             "rotation" : -36.979999999999997,
@@ -10859,6 +11771,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.729999999999997
           },
           {
+            "bend" : 0.12,
             "count" : 628,
             "height" : 18.079999999999998,
             "rotation" : -47.240000000000002,
@@ -10878,6 +11791,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 387,
             "height" : 16.050000000000001,
             "rotation" : -83.439999999999998,
@@ -10886,6 +11800,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -8.3900000000000006
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 399,
             "height" : 15.82,
             "rotation" : -36.619999999999997,
@@ -10894,6 +11809,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.859999999999999
           },
           {
+            "bend" : 0.089999999999999997,
             "count" : 528,
             "height" : 16.960000000000001,
             "rotation" : -22.469999999999999,
@@ -10913,6 +11829,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 391,
             "height" : 16.149999999999999,
             "rotation" : -82.719999999999999,
@@ -10921,6 +11838,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -9.2899999999999991
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 399,
             "height" : 15.82,
             "rotation" : -36.590000000000003,
@@ -10929,6 +11847,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.859999999999999
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 455,
             "height" : 15.949999999999999,
             "rotation" : -2.2200000000000002,
@@ -10948,6 +11867,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 396,
             "height" : 16.219999999999999,
             "rotation" : -81.379999999999995,
@@ -10956,6 +11876,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.550000000000001
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 15.779999999999999,
             "rotation" : -37.200000000000003,
@@ -10964,6 +11885,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.490000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 346,
             "height" : 15.75,
             "rotation" : 26.18,
@@ -10983,6 +11905,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 399,
             "height" : 16.18,
             "rotation" : -81.049999999999997,
@@ -10991,6 +11914,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.91
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 305,
             "height" : 15.83,
             "rotation" : 36.439999999999998,
@@ -10999,6 +11923,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 50.170000000000002
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 397,
             "height" : 15.800000000000001,
             "rotation" : -36.920000000000002,
@@ -11018,6 +11943,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 400,
             "height" : 16.25,
             "rotation" : -80.879999999999995,
@@ -11026,6 +11952,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.130000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 271,
             "height" : 15.85,
             "rotation" : 45.07,
@@ -11034,6 +11961,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 43.670000000000002
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 15.81,
             "rotation" : -36.659999999999997,
@@ -11053,6 +11981,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 401,
             "height" : 16.170000000000002,
             "rotation" : -80.930000000000007,
@@ -11061,6 +11990,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.33
           },
           {
+            "bend" : 0.01,
             "count" : 237,
             "height" : 15.19,
             "rotation" : 54.170000000000002,
@@ -11069,6 +11999,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 37.32
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 15.720000000000001,
             "rotation" : -36.18,
@@ -11088,6 +12019,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 414,
             "height" : 16.309999999999999,
             "rotation" : -80.390000000000001,
@@ -11096,6 +12028,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.57
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 228,
             "height" : 16.120000000000001,
             "rotation" : 59.990000000000002,
@@ -11104,6 +12037,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.52
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 390,
             "height" : 15.65,
             "rotation" : -35.340000000000003,
@@ -11123,6 +12057,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 400,
             "height" : 16.210000000000001,
             "rotation" : -79.640000000000001,
@@ -11131,6 +12066,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -12.109999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 270,
             "height" : 15.869999999999999,
             "rotation" : 69.950000000000003,
@@ -11139,6 +12075,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.170000000000002
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 382,
             "height" : 15.44,
             "rotation" : -33.600000000000001,
@@ -11158,6 +12095,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 400,
             "height" : 16.030000000000001,
             "rotation" : -79.709999999999994,
@@ -11166,6 +12104,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -12.449999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 287,
             "height" : 15.56,
             "rotation" : 73.329999999999998,
@@ -11174,6 +12113,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 16.75
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 378,
             "height" : 15.68,
             "rotation" : -32.299999999999997,
@@ -11193,6 +12133,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.17000000000000001,
             "count" : 690,
             "height" : 17.329999999999998,
             "rotation" : -89.390000000000001,
@@ -11201,6 +12142,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -1.8600000000000001
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 370,
             "height" : 15.58,
             "rotation" : -31.039999999999999,
@@ -11220,6 +12162,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14999999999999999,
             "count" : 675,
             "height" : 17.600000000000001,
             "rotation" : -87.579999999999998,
@@ -11228,6 +12171,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -3.5899999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 363,
             "height" : 15.59,
             "rotation" : -29.239999999999998,
@@ -11247,6 +12191,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14000000000000001,
             "count" : 657,
             "height" : 17.52,
             "rotation" : -85.950000000000003,
@@ -11255,6 +12200,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -5.3099999999999996
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 354,
             "height" : 15.74,
             "rotation" : -26.989999999999998,
@@ -11274,6 +12220,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 629,
             "height" : 17.059999999999999,
             "rotation" : -83.010000000000005,
@@ -11282,6 +12229,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -8.5899999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 333,
             "height" : 15.609999999999999,
             "rotation" : -22.59,
@@ -11301,6 +12249,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 624,
             "height" : 16.940000000000001,
             "rotation" : -81.560000000000002,
@@ -11309,6 +12258,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.199999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 320,
             "height" : 15.43,
             "rotation" : -19.91,
@@ -11328,6 +12278,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 625,
             "height" : 17.050000000000001,
             "rotation" : -79.950000000000003,
@@ -11336,6 +12287,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.779999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 304,
             "height" : 15.56,
             "rotation" : -16.289999999999999,
@@ -11355,6 +12307,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 631,
             "height" : 17.02,
             "rotation" : -78.519999999999996,
@@ -11363,6 +12316,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.43
           },
           {
+            "bend" : -0.02,
             "count" : 289,
             "height" : 15.640000000000001,
             "rotation" : -12.619999999999999,
@@ -11382,6 +12336,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.13,
             "count" : 641,
             "height" : 17.43,
             "rotation" : -77.040000000000006,
@@ -11390,6 +12345,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -15
           },
           {
+            "bend" : -0.02,
             "count" : 271,
             "height" : 15.57,
             "rotation" : -8.2699999999999996,
@@ -11409,6 +12365,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14999999999999999,
             "count" : 674,
             "height" : 17.690000000000001,
             "rotation" : -73.579999999999998,
@@ -11417,6 +12374,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.370000000000001
           },
           {
+            "bend" : -0,
             "count" : 226,
             "height" : 15.1,
             "rotation" : 2.1299999999999999,
@@ -11436,6 +12394,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.17000000000000001,
             "count" : 688,
             "height" : 17.760000000000002,
             "rotation" : -71.560000000000002,
@@ -11444,6 +12403,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.030000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 244,
             "height" : 15.279999999999999,
             "rotation" : 7.79,
@@ -11463,6 +12423,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 16.280000000000001,
             "rotation" : -81.909999999999997,
@@ -11471,6 +12432,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -9.9600000000000009
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 289,
             "height" : 15.67,
             "rotation" : -55.189999999999998,
@@ -11479,6 +12441,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -37.490000000000002
           },
           {
+            "bend" : -0.02,
             "count" : 273,
             "height" : 15.67,
             "rotation" : 15.58,
@@ -11498,6 +12461,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 396,
             "height" : 16.219999999999999,
             "rotation" : -81.379999999999995,
@@ -11506,6 +12470,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.550000000000001
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 270,
             "height" : 15.619999999999999,
             "rotation" : -50.5,
@@ -11514,6 +12479,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.240000000000002
           },
           {
+            "bend" : -0.02,
             "count" : 307,
             "height" : 15.31,
             "rotation" : 23.52,
@@ -11533,6 +12499,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 399,
             "height" : 16.18,
             "rotation" : -81.049999999999997,
@@ -11541,6 +12508,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.91
           },
           {
+            "bend" : -0.02,
             "count" : 249,
             "height" : 15.220000000000001,
             "rotation" : -46.130000000000003,
@@ -11549,6 +12517,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -45.390000000000001
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 345,
             "height" : 15.44,
             "rotation" : 33.619999999999997,
@@ -11568,6 +12537,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 401,
             "height" : 16.170000000000002,
             "rotation" : -80.930000000000007,
@@ -11576,6 +12546,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.33
           },
           {
+            "bend" : -0.02,
             "count" : 244,
             "height" : 15.16,
             "rotation" : -33.369999999999997,
@@ -11584,6 +12555,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -53.840000000000003
           },
           {
+            "bend" : -0.070000000000000007,
             "count" : 452,
             "height" : 15.859999999999999,
             "rotation" : 58.450000000000003,
@@ -11603,6 +12575,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 414,
             "height" : 16.309999999999999,
             "rotation" : -80.390000000000001,
@@ -11611,6 +12584,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.57
           },
           {
+            "bend" : -0.02,
             "count" : 271,
             "height" : 15.779999999999999,
             "rotation" : -25.699999999999999,
@@ -11619,6 +12593,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -57.780000000000001
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 527,
             "height" : 16.579999999999998,
             "rotation" : 75.090000000000003,
@@ -11638,6 +12613,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 401,
             "height" : 16.210000000000001,
             "rotation" : -79.609999999999999,
@@ -11646,6 +12622,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.890000000000001
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 310,
             "height" : 15.279999999999999,
             "rotation" : -17.77,
@@ -11654,6 +12631,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -61.359999999999999
           },
           {
+            "bend" : 0.13,
             "count" : 627,
             "height" : 17.719999999999999,
             "rotation" : -83.859999999999999,
@@ -11673,6 +12651,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 16.210000000000001,
             "rotation" : -79.670000000000002,
@@ -11681,6 +12660,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -12.109999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 347,
             "height" : 15.869999999999999,
             "rotation" : -7.5899999999999999,
@@ -11689,6 +12669,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -63.670000000000002
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 742,
             "height" : 18.809999999999999,
             "rotation" : -57.75,
@@ -11708,6 +12689,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 398,
             "height" : 16.050000000000001,
             "rotation" : -79.379999999999995,
@@ -11716,6 +12698,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -12.52
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 395,
             "height" : 16.170000000000002,
             "rotation" : 4.04,
@@ -11724,6 +12707,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -63.950000000000003
           },
           {
+            "bend" : 0.17999999999999999,
             "count" : 742,
             "height" : 19.100000000000001,
             "rotation" : -30.350000000000001,
@@ -11743,6 +12727,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 393,
             "height" : 16.010000000000002,
             "rotation" : -78.230000000000004,
@@ -11751,6 +12736,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.76
           },
           {
+            "bend" : 0.089999999999999997,
             "count" : 525,
             "height" : 17.300000000000001,
             "rotation" : 20.82,
@@ -11759,6 +12745,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 58.380000000000003
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 525,
             "height" : 16.16,
             "rotation" : 35.310000000000002,
@@ -11778,6 +12765,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 387,
             "height" : 15.869999999999999,
             "rotation" : -77.530000000000001,
@@ -11786,6 +12774,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -14.779999999999999
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 454,
             "height" : 16.600000000000001,
             "rotation" : 41.590000000000003,
@@ -11794,6 +12783,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 46.939999999999998
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 620,
             "height" : 17.59,
             "rotation" : 57.240000000000002,
@@ -11813,6 +12803,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 383,
             "height" : 15.82,
             "rotation" : -76.209999999999994,
@@ -11821,6 +12812,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -15.869999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 392,
             "height" : 16.129999999999999,
             "rotation" : 57.210000000000001,
@@ -11829,6 +12821,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.689999999999998
           },
           {
+            "bend" : -0.17000000000000001,
             "count" : 743,
             "height" : 19.690000000000001,
             "rotation" : 84.329999999999998,
@@ -11848,6 +12841,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 377,
             "height" : 15.779999999999999,
             "rotation" : -75.579999999999998,
@@ -11856,6 +12850,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -17.199999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 347,
             "height" : 16.109999999999999,
             "rotation" : 70.780000000000001,
@@ -11864,6 +12859,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.800000000000001
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 740,
             "height" : 19.670000000000002,
             "rotation" : -67.049999999999997,
@@ -11883,6 +12879,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.17000000000000001,
             "count" : 678,
             "height" : 17.620000000000001,
             "rotation" : -85.629999999999995,
@@ -11891,6 +12888,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -6.0499999999999998
           },
           {
+            "bend" : 0.12,
             "count" : 625,
             "height" : 17.850000000000001,
             "rotation" : -39.600000000000001,
@@ -11910,6 +12908,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.080000000000000002,
             "count" : 507,
             "height" : 16.09,
             "rotation" : -74.739999999999995,
@@ -11918,6 +12917,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -17.469999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 455,
             "height" : 16.66,
             "rotation" : 7.2699999999999996,
@@ -11937,6 +12937,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.059999999999999998,
             "count" : 521,
             "height" : 16.600000000000001,
             "rotation" : -71.069999999999993,
@@ -11945,6 +12946,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.530000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 394,
             "height" : 16.539999999999999,
             "rotation" : 23.899999999999999,
@@ -11964,6 +12966,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 589,
             "height" : 19.960000000000001,
             "rotation" : -81.760000000000005,
@@ -11972,6 +12975,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.699999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 343,
             "height" : 16.370000000000001,
             "rotation" : 37.420000000000002,
@@ -11991,6 +12995,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 709,
             "height" : 25.93,
             "rotation" : 87.489999999999995,
@@ -11999,6 +13004,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22.010000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 304,
             "height" : 15.710000000000001,
             "rotation" : 48.420000000000002,
@@ -12018,6 +13024,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.040000000000000001,
             "count" : 269,
             "height" : 15.42,
             "rotation" : 57.539999999999999,
@@ -12026,6 +13033,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.609999999999999
           },
           {
+            "bend" : -0.13,
             "count" : 813,
             "height" : 28.91,
             "rotation" : 76.069999999999993,
@@ -12045,6 +13053,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 227,
             "height" : 15.26,
             "rotation" : 72.969999999999999,
@@ -12053,6 +13062,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 19.07
           },
           {
+            "bend" : -0.02,
             "count" : 270,
             "height" : 15.6,
             "rotation" : -50.270000000000003,
@@ -12061,6 +13071,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.25
           },
           {
+            "bend" : -0.01,
             "count" : 607,
             "height" : 22.829999999999998,
             "rotation" : -75.920000000000002,
@@ -12080,6 +13091,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 250,
             "height" : 15.539999999999999,
             "rotation" : 77.010000000000005,
@@ -12088,6 +13100,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 12.94
           },
           {
+            "bend" : -0.02,
             "count" : 250,
             "height" : 15.19,
             "rotation" : -45.630000000000003,
@@ -12096,6 +13109,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -45.409999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 644,
             "height" : 23.780000000000001,
             "rotation" : -77.219999999999999,
@@ -12115,6 +13129,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 271,
             "height" : 15.800000000000001,
             "rotation" : 82.420000000000002,
@@ -12123,6 +13138,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 7.4100000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 226,
             "height" : 15.33,
             "rotation" : -40.100000000000001,
@@ -12131,6 +13147,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -49.630000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 671,
             "height" : 25.190000000000001,
             "rotation" : -78.25,
@@ -12150,6 +13167,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 288,
             "height" : 15.33,
             "rotation" : 86.629999999999995,
@@ -12158,6 +13176,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 2.6499999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 244,
             "height" : 15.16,
             "rotation" : -33.229999999999997,
@@ -12166,6 +13185,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -53.850000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 691,
             "height" : 24.870000000000001,
             "rotation" : -80.010000000000005,
@@ -12185,6 +13205,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 303,
             "height" : 15.039999999999999,
             "rotation" : -89.769999999999996,
@@ -12193,6 +13214,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -1.6499999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 272,
             "height" : 15.77,
             "rotation" : -26.199999999999999,
@@ -12201,6 +13223,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -57.829999999999998
           },
           {
+            "bend" : -0,
             "count" : 702,
             "height" : 25.57,
             "rotation" : -82.680000000000007,
@@ -12220,6 +13243,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 402,
             "height" : 15.970000000000001,
             "rotation" : -83.390000000000001,
@@ -12228,6 +13252,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -3.79
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 347,
             "height" : 15.869999999999999,
             "rotation" : -7.5899999999999999,
@@ -12236,6 +13261,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -63.670000000000002
           },
           {
+            "bend" : -0,
             "count" : 699,
             "height" : 25.379999999999999,
             "rotation" : -87.409999999999997,
@@ -12255,6 +13281,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 400,
             "height" : 15.59,
             "rotation" : -83.859999999999999,
@@ -12263,6 +13290,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -4.4199999999999999
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 396,
             "height" : 16.18,
             "rotation" : 4.1600000000000001,
@@ -12271,6 +13299,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -63.939999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 686,
             "height" : 25,
             "rotation" : -89.769999999999996,
@@ -12290,6 +13319,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 422,
             "height" : 16.329999999999998,
             "rotation" : -83.519999999999996,
@@ -12298,6 +13328,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -5.71
           },
           {
+            "bend" : -0.080000000000000002,
             "count" : 454,
             "height" : 15.94,
             "rotation" : 18.190000000000001,
@@ -12306,6 +13337,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -60.890000000000001
           },
           {
+            "bend" : -0,
             "count" : 663,
             "height" : 24.399999999999999,
             "rotation" : 88.450000000000003,
@@ -12325,6 +13357,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 445,
             "height" : 16.940000000000001,
             "rotation" : -83.390000000000001,
@@ -12333,6 +13366,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -7.0300000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 644,
             "height" : 23.800000000000001,
             "rotation" : 86.819999999999993,
@@ -12341,6 +13375,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.41
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 527,
             "height" : 16.879999999999999,
             "rotation" : 35.310000000000002,
@@ -12360,6 +13395,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 471,
             "height" : 17.93,
             "rotation" : -83.400000000000006,
@@ -12368,6 +13404,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -8.5899999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 625,
             "height" : 22.489999999999998,
             "rotation" : 85.469999999999999,
@@ -12376,6 +13413,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.359999999999999
           },
           {
+            "bend" : -0.13,
             "count" : 622,
             "height" : 18,
             "rotation" : 57.259999999999998,
@@ -12395,6 +13433,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 522,
             "height" : 19.59,
             "rotation" : -83.109999999999999,
@@ -12403,6 +13442,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.81
           },
           {
+            "bend" : -0,
             "count" : 453,
             "height" : 20.739999999999998,
             "rotation" : 82.680000000000007,
@@ -12411,6 +13451,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.550000000000001
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 740,
             "height" : 19.670000000000002,
             "rotation" : -67.049999999999997,
@@ -12430,6 +13471,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 543,
             "height" : 19.91,
             "rotation" : -83.430000000000007,
@@ -12438,6 +13480,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.31
           },
           {
+            "bend" : 0.01,
             "count" : 232,
             "height" : 17.100000000000001,
             "rotation" : 63.520000000000003,
@@ -12446,6 +13489,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.91
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 309,
             "height" : 13.41,
             "rotation" : -39.719999999999999,
@@ -12465,6 +13509,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 564,
             "height" : 20.530000000000001,
             "rotation" : -83.510000000000005,
@@ -12473,6 +13518,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -14.869999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 370,
             "height" : 13.68,
             "rotation" : -28.539999999999999,
@@ -12481,6 +13527,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 45.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 145,
             "height" : 13.49,
             "rotation" : 55.979999999999997,
@@ -12500,6 +13547,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 582,
             "height" : 21.5,
             "rotation" : -84.25,
@@ -12508,6 +13556,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -16.23
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 402,
             "height" : 13.83,
             "rotation" : -22.219999999999999,
@@ -12516,6 +13565,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 43.710000000000001
           },
           {
+            "bend" : 0,
             "count" : 100,
             "height" : 11.199999999999999,
             "rotation" : 53.090000000000003,
@@ -12535,6 +13585,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 597,
             "height" : 21.690000000000001,
             "rotation" : -84.329999999999998,
@@ -12543,6 +13594,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -17.460000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 422,
             "height" : 14,
             "rotation" : -17.390000000000001,
@@ -12551,6 +13603,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 42.159999999999997
           },
           {
+            "bend" : 0,
             "count" : 100,
             "height" : 11.199999999999999,
             "rotation" : 53.090000000000003,
@@ -12570,6 +13623,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 614,
             "height" : 22,
             "rotation" : -85.269999999999996,
@@ -12578,6 +13632,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.07
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 450,
             "height" : 14.609999999999999,
             "rotation" : -10.779999999999999,
@@ -12586,6 +13641,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 39.539999999999999
           },
           {
+            "bend" : 0.01,
             "count" : 234,
             "height" : 17.149999999999999,
             "rotation" : 66.840000000000003,
@@ -12605,6 +13661,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.459999999999994,
@@ -12613,6 +13670,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 461,
             "height" : 14.69,
             "rotation" : -8.3100000000000005,
@@ -12621,6 +13679,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 38.43
           },
           {
+            "bend" : -0,
             "count" : 444,
             "height" : 20.719999999999999,
             "rotation" : 82.950000000000003,
@@ -12640,6 +13699,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -12648,6 +13708,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 467,
             "height" : 15.119999999999999,
             "rotation" : -6.4000000000000004,
@@ -12656,6 +13717,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 37.520000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 608,
             "height" : 21.940000000000001,
             "rotation" : 84.629999999999995,
@@ -12675,6 +13737,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -12683,6 +13746,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 473,
             "height" : 15.24,
             "rotation" : -5.0199999999999996,
@@ -12691,6 +13755,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 36.740000000000002
           },
           {
+            "bend" : -0.02,
             "count" : 612,
             "height" : 22.260000000000002,
             "rotation" : 84.879999999999995,
@@ -12710,6 +13775,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -12718,6 +13784,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 477,
             "height" : 15.359999999999999,
             "rotation" : -3.5299999999999998,
@@ -12726,6 +13793,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 36.109999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 22.030000000000001,
             "rotation" : 84.659999999999997,
@@ -12745,6 +13813,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -12753,6 +13822,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 483,
             "height" : 15.65,
             "rotation" : -1.8,
@@ -12761,6 +13831,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.189999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 611,
             "height" : 22.02,
             "rotation" : 84.709999999999994,
@@ -12780,6 +13851,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -12788,6 +13860,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 485,
             "height" : 15.32,
             "rotation" : -1.04,
@@ -12796,6 +13869,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.850000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 22.129999999999999,
             "rotation" : 84.650000000000006,
@@ -12815,6 +13889,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -12823,6 +13898,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 486,
             "height" : 15.93,
             "rotation" : -0.77000000000000002,
@@ -12831,6 +13907,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.659999999999997
           },
           {
+            "bend" : -0.02,
             "count" : 612,
             "height" : 22.260000000000002,
             "rotation" : 84.879999999999995,
@@ -12850,6 +13927,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -12858,6 +13936,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 487,
             "height" : 16.059999999999999,
             "rotation" : -0.40999999999999998,
@@ -12866,6 +13945,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.579999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 613,
             "height" : 22,
             "rotation" : 84.849999999999994,
@@ -12885,6 +13965,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -12893,6 +13974,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -12901,6 +13983,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -12920,6 +14003,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -12928,6 +14012,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -12936,6 +14021,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -12955,6 +14041,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 615,
             "height" : 21.91,
             "rotation" : -85.329999999999998,
@@ -12963,6 +14050,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.34
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -12971,6 +14059,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -12990,6 +14079,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 456,
             "height" : 20.780000000000001,
             "rotation" : -83.579999999999998,
@@ -12998,6 +14088,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.640000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13006,6 +14097,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.09,
             "rotation" : 84.840000000000003,
@@ -13025,6 +14117,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 232,
             "height" : 17.120000000000001,
             "rotation" : -64.280000000000001,
@@ -13033,6 +14126,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.030000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13041,6 +14135,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 453,
             "height" : 20.739999999999998,
             "rotation" : 82.680000000000007,
@@ -13060,6 +14155,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 151,
             "height" : 13.92,
             "rotation" : -61.170000000000002,
@@ -13068,6 +14164,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.09
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13076,6 +14173,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 232,
             "height" : 17.100000000000001,
             "rotation" : 63.520000000000003,
@@ -13095,6 +14193,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 106,
             "height" : 11.82,
             "rotation" : -55.640000000000001,
@@ -13103,6 +14202,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.170000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13111,6 +14211,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 146,
             "height" : 13.529999999999999,
             "rotation" : 60.710000000000001,
@@ -13130,6 +14231,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 149,
             "height" : 14.029999999999999,
             "rotation" : -59.75,
@@ -13138,6 +14240,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.109999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13146,6 +14249,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 100,
             "height" : 11.199999999999999,
             "rotation" : 53.090000000000003,
@@ -13165,6 +14269,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 233,
             "height" : 17.129999999999999,
             "rotation" : -71.129999999999995,
@@ -13173,6 +14278,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.02
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13181,6 +14287,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 143,
             "height" : 13.5,
             "rotation" : 57.719999999999999,
@@ -13200,6 +14307,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 445,
             "height" : 21.100000000000001,
             "rotation" : -82.840000000000003,
@@ -13208,6 +14316,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.620000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13216,6 +14325,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 234,
             "height" : 17.16,
             "rotation" : 67.890000000000001,
@@ -13235,6 +14345,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 611,
             "height" : 22.010000000000002,
             "rotation" : -85.359999999999999,
@@ -13243,6 +14354,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.350000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13251,6 +14363,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 443,
             "height" : 20.629999999999999,
             "rotation" : 82.359999999999999,
@@ -13270,6 +14383,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -13278,6 +14392,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13286,6 +14401,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.02,
             "count" : 608,
             "height" : 22.16,
             "rotation" : 84.909999999999997,
@@ -13305,6 +14421,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -13313,6 +14430,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13321,6 +14439,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -13439,6 +14558,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -13447,6 +14567,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13455,6 +14576,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -13474,6 +14596,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -13482,6 +14605,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13490,6 +14614,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -13509,6 +14634,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -13517,6 +14643,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13525,6 +14652,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.09,
             "rotation" : 84.840000000000003,
@@ -13544,6 +14672,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 615,
             "height" : 21.91,
             "rotation" : -85.329999999999998,
@@ -13552,6 +14681,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.34
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13560,6 +14690,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 452,
             "height" : 20.829999999999998,
             "rotation" : 83,
@@ -13579,6 +14710,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 458,
             "height" : 20.960000000000001,
             "rotation" : -82.969999999999999,
@@ -13587,6 +14719,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.600000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13595,6 +14728,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 231,
             "height" : 17.129999999999999,
             "rotation" : 64.859999999999999,
@@ -13614,6 +14748,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 147,
             "height" : 13.699999999999999,
             "rotation" : -58.700000000000003,
@@ -13622,6 +14757,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.059999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13630,6 +14766,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 105,
             "height" : 12.16,
             "rotation" : 66.969999999999999,
@@ -13649,6 +14786,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 11.630000000000001,
             "rotation" : -50.479999999999997,
@@ -13657,6 +14795,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13665,6 +14804,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 12.35,
             "rotation" : 57.789999999999999,
@@ -13684,6 +14824,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 102,
             "height" : 11.82,
             "rotation" : -55.890000000000001,
@@ -13692,6 +14833,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13700,6 +14842,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 147,
             "height" : 13.52,
             "rotation" : 59.009999999999998,
@@ -13719,6 +14862,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 145,
             "height" : 13.67,
             "rotation" : -59.840000000000003,
@@ -13727,6 +14871,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.010000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13735,6 +14880,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 232,
             "height" : 17.149999999999999,
             "rotation" : 66.579999999999998,
@@ -13754,6 +14900,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 235,
             "height" : 17.52,
             "rotation" : -68.840000000000003,
@@ -13762,6 +14909,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.920000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13770,6 +14918,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 441,
             "height" : 20.620000000000001,
             "rotation" : 82.519999999999996,
@@ -13789,6 +14938,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 611,
             "height" : 22.010000000000002,
             "rotation" : -85.359999999999999,
@@ -13797,6 +14947,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.350000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13805,6 +14956,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -13824,6 +14976,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -13832,6 +14985,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13840,6 +14994,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -13859,6 +15014,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -13867,6 +15023,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -13875,6 +15032,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -13894,6 +15052,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 616,
             "height" : 22.48,
             "rotation" : -85.5,
@@ -13902,6 +15061,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.309999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 486,
             "height" : 16.050000000000001,
             "rotation" : -0.31,
@@ -13910,6 +15070,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.549999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 22.010000000000002,
             "rotation" : 84.760000000000005,
@@ -13929,6 +15090,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 616,
             "height" : 22.600000000000001,
             "rotation" : -85.189999999999998,
@@ -13937,6 +15099,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.289999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 485,
             "height" : 16.050000000000001,
             "rotation" : -0.29999999999999999,
@@ -13945,6 +15108,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.590000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 615,
             "height" : 22.27,
             "rotation" : 84.980000000000004,
@@ -13964,6 +15128,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 615,
             "height" : 22.59,
             "rotation" : -85.239999999999995,
@@ -13972,6 +15137,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.219999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 487,
             "height" : 15.93,
             "rotation" : -0.63,
@@ -13980,6 +15146,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.670000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 615,
             "height" : 22.260000000000002,
             "rotation" : 85.120000000000005,
@@ -13999,6 +15166,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 613,
             "height" : 22.059999999999999,
             "rotation" : -85.409999999999997,
@@ -14007,6 +15175,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.149999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 487,
             "height" : 15.960000000000001,
             "rotation" : -0.41999999999999998,
@@ -14015,6 +15184,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.689999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 617,
             "height" : 22.170000000000002,
             "rotation" : 85.269999999999996,
@@ -14034,6 +15204,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 611,
             "height" : 21.68,
             "rotation" : -85.269999999999996,
@@ -14042,6 +15213,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.050000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 486,
             "height" : 15.08,
             "rotation" : -0.23000000000000001,
@@ -14050,6 +15222,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.780000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 621,
             "height" : 22.43,
             "rotation" : 85.230000000000004,
@@ -14069,6 +15242,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 21.98,
             "rotation" : -85.370000000000005,
@@ -14077,6 +15251,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.920000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 485,
             "height" : 15.06,
             "rotation" : -0.14999999999999999,
@@ -14085,6 +15260,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.840000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 621,
             "height" : 22.25,
             "rotation" : 85.370000000000005,
@@ -14104,6 +15280,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 445,
             "height" : 20.219999999999999,
             "rotation" : -83.609999999999999,
@@ -14112,6 +15289,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.75
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 481,
             "height" : 14.039999999999999,
             "rotation" : 0.089999999999999997,
@@ -14120,6 +15298,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.210000000000001
           },
           {
+            "bend" : 0,
             "count" : 238,
             "height" : 17.460000000000001,
             "rotation" : 65.739999999999995,
@@ -14139,6 +15318,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 227,
             "height" : 17.149999999999999,
             "rotation" : -67.409999999999997,
@@ -14147,6 +15327,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.859999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 482,
             "height" : 15.220000000000001,
             "rotation" : 0.56999999999999995,
@@ -14155,6 +15336,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.439999999999998
           },
           {
+            "bend" : 0,
             "count" : 157,
             "height" : 14.58,
             "rotation" : 69.730000000000004,
@@ -14174,6 +15356,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 138,
             "height" : 13.66,
             "rotation" : -65.5,
@@ -14182,6 +15365,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.559999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 478,
             "height" : 15.210000000000001,
             "rotation" : 0.71999999999999997,
@@ -14190,6 +15374,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.670000000000002
           },
           {
+            "bend" : 0,
             "count" : 112,
             "height" : 12.81,
             "rotation" : 53.420000000000002,
@@ -14209,6 +15394,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 94,
             "height" : 10.84,
             "rotation" : -68.469999999999999,
@@ -14217,6 +15403,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.260000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 476,
             "height" : 15.25,
             "rotation" : 1.04,
@@ -14225,6 +15412,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.799999999999997
           },
           {
+            "bend" : -0,
             "count" : 113,
             "height" : 12.960000000000001,
             "rotation" : -34.850000000000001,
@@ -14244,6 +15432,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 88,
             "height" : 10.84,
             "rotation" : -68.430000000000007,
@@ -14252,6 +15441,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.050000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 470,
             "height" : 15.27,
             "rotation" : 1.99,
@@ -14260,6 +15450,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.710000000000001
           },
           {
+            "bend" : -0,
             "count" : 163,
             "height" : 15.859999999999999,
             "rotation" : 40.329999999999998,
@@ -14279,6 +15470,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 180,
             "height" : 14.27,
             "rotation" : -71.989999999999995,
@@ -14287,6 +15479,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.879999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 469,
             "height" : 15.960000000000001,
             "rotation" : 3.54,
@@ -14295,6 +15488,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.109999999999999
           },
           {
+            "bend" : 0,
             "count" : 497,
             "height" : 22.23,
             "rotation" : 87.060000000000002,
@@ -14314,6 +15508,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 334,
             "height" : 16.690000000000001,
             "rotation" : -78.689999999999998,
@@ -14322,6 +15517,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -24.010000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 481,
             "height" : 16.59,
             "rotation" : 3.21,
@@ -14330,6 +15526,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 28.370000000000001
           },
           {
+            "bend" : -0,
             "count" : 670,
             "height" : 24.210000000000001,
             "rotation" : 87.810000000000002,
@@ -14349,6 +15546,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 454,
             "height" : 18.25,
             "rotation" : -80.659999999999997,
@@ -14357,6 +15555,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -25.41
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 489,
             "height" : 16.609999999999999,
             "rotation" : 3,
@@ -14365,6 +15564,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.640000000000001
           },
           {
+            "bend" : -0,
             "count" : 667,
             "height" : 23.5,
             "rotation" : 87.530000000000001,
@@ -14384,6 +15584,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 457,
             "height" : 18.050000000000001,
             "rotation" : -79.879999999999995,
@@ -14392,6 +15593,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.579999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 495,
             "height" : 16.68,
             "rotation" : 2.8500000000000001,
@@ -14400,6 +15602,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 25.359999999999999
           },
           {
+            "bend" : -0,
             "count" : 658,
             "height" : 23.969999999999999,
             "rotation" : 86.989999999999995,
@@ -14419,6 +15622,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 456,
             "height" : 18.359999999999999,
             "rotation" : -79.640000000000001,
@@ -14427,6 +15631,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -27.48
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 498,
             "height" : 16.449999999999999,
             "rotation" : 2.7000000000000002,
@@ -14435,6 +15640,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 24.460000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 653,
             "height" : 23.600000000000001,
             "rotation" : 87.260000000000005,
@@ -14454,6 +15660,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 454,
             "height" : 18.370000000000001,
             "rotation" : -79.560000000000002,
@@ -14462,6 +15669,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.629999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 504,
             "height" : 16.57,
             "rotation" : 2.6000000000000001,
@@ -14470,6 +15678,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.27
           },
           {
+            "bend" : -0,
             "count" : 646,
             "height" : 23.82,
             "rotation" : 86.709999999999994,
@@ -14489,6 +15698,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 452,
             "height" : 18.23,
             "rotation" : -79.019999999999996,
@@ -14497,6 +15707,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29
           },
           {
+            "bend" : 0.02,
             "count" : 509,
             "height" : 16.460000000000001,
             "rotation" : 2.4900000000000002,
@@ -14505,6 +15716,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.789999999999999
           },
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 23.890000000000001,
             "rotation" : 86.700000000000003,
@@ -14524,6 +15736,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 452,
             "height" : 18.190000000000001,
             "rotation" : -79.480000000000004,
@@ -14532,6 +15745,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.280000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 507,
             "height" : 16.16,
             "rotation" : 2.5699999999999998,
@@ -14540,6 +15754,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.5
           },
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 24,
             "rotation" : 86.5,
@@ -14559,6 +15774,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 450,
             "height" : 18.02,
             "rotation" : -78.950000000000003,
@@ -14567,6 +15783,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.41
           },
           {
+            "bend" : 0.02,
             "count" : 509,
             "height" : 16.66,
             "rotation" : 2.4199999999999999,
@@ -14575,6 +15792,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.350000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 641,
             "height" : 23.629999999999999,
             "rotation" : 86.519999999999996,
@@ -14594,6 +15812,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 452,
             "height" : 18.059999999999999,
             "rotation" : -78.780000000000001,
@@ -14602,6 +15821,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.550000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 509,
             "height" : 16.57,
             "rotation" : 2.6099999999999999,
@@ -14610,6 +15830,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.239999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 642,
             "height" : 23.710000000000001,
             "rotation" : 86.420000000000002,
@@ -14629,6 +15850,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 452,
             "height" : 18.25,
             "rotation" : -78.75,
@@ -14637,6 +15859,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.640000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 509,
             "height" : 16.620000000000001,
             "rotation" : 2.3599999999999999,
@@ -14645,6 +15868,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.16
           },
           {
+            "bend" : -0.01,
             "count" : 640,
             "height" : 23.670000000000002,
             "rotation" : 86.629999999999995,
@@ -14664,6 +15888,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 452,
             "height" : 18.25,
             "rotation" : -78.75,
@@ -14672,6 +15897,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.640000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 511,
             "height" : 17.440000000000001,
             "rotation" : 2.3799999999999999,
@@ -14680,6 +15906,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.170000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 640,
             "height" : 23.620000000000001,
             "rotation" : 86.569999999999993,
@@ -14699,6 +15926,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 453,
             "height" : 18.239999999999998,
             "rotation" : -78.859999999999999,
@@ -14707,6 +15935,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.550000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 510,
             "height" : 16.59,
             "rotation" : 2.4700000000000002,
@@ -14715,6 +15944,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.25
           },
           {
+            "bend" : -0.01,
             "count" : 641,
             "height" : 23.760000000000002,
             "rotation" : 86.459999999999994,
@@ -14734,6 +15964,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 455,
             "height" : 18.239999999999998,
             "rotation" : -78.810000000000002,
@@ -14742,6 +15973,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.41
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 510,
             "height" : 16.48,
             "rotation" : 2.1499999999999999,
@@ -14750,6 +15982,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.34
           },
           {
+            "bend" : -0.01,
             "count" : 639,
             "height" : 23.719999999999999,
             "rotation" : 86.329999999999998,
@@ -14769,6 +16002,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 456,
             "height" : 18.149999999999999,
             "rotation" : -79.340000000000003,
@@ -14777,6 +16011,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.25
           },
           {
+            "bend" : 0.02,
             "count" : 507,
             "height" : 16.129999999999999,
             "rotation" : 2.75,
@@ -14785,6 +16020,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.550000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 642,
             "height" : 23.620000000000001,
             "rotation" : 86.579999999999998,
@@ -14804,6 +16040,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 456,
             "height" : 18.219999999999999,
             "rotation" : -79.180000000000007,
@@ -14812,6 +16049,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.600000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 506,
             "height" : 16.57,
             "rotation" : 2.3799999999999999,
@@ -14820,6 +16058,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.350000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 643,
             "height" : 23.68,
             "rotation" : 86.870000000000005,
@@ -14839,6 +16078,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 461,
             "height" : 18.350000000000001,
             "rotation" : -79.680000000000007,
@@ -14847,6 +16087,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.190000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 507,
             "height" : 15.91,
             "rotation" : 2.6600000000000001,
@@ -14855,6 +16096,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.739999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 646,
             "height" : 23.02,
             "rotation" : 86.829999999999998,
@@ -14874,6 +16116,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 463,
             "height" : 18.690000000000001,
             "rotation" : -79.819999999999993,
@@ -14882,6 +16125,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -27.640000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 502,
             "height" : 16.699999999999999,
             "rotation" : 2.5499999999999998,
@@ -14890,6 +16134,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 24.440000000000001
           },
           {
+            "bend" : -0,
             "count" : 652,
             "height" : 23.449999999999999,
             "rotation" : 86.459999999999994,
@@ -14909,6 +16154,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 466,
             "height" : 18.829999999999998,
             "rotation" : -80.060000000000002,
@@ -14917,6 +16163,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.920000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 502,
             "height" : 16.620000000000001,
             "rotation" : 2.6099999999999999,
@@ -14925,6 +16172,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 25.170000000000002
           },
           {
+            "bend" : -0,
             "count" : 653,
             "height" : 23.609999999999999,
             "rotation" : 86.599999999999994,
@@ -14944,6 +16192,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 470,
             "height" : 18.75,
             "rotation" : -80.590000000000003,
@@ -14952,6 +16201,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.100000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 499,
             "height" : 15.94,
             "rotation" : 2.3599999999999999,
@@ -14960,6 +16210,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.09
           },
           {
+            "bend" : -0,
             "count" : 659,
             "height" : 24.18,
             "rotation" : 86.950000000000003,
@@ -14979,6 +16230,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 487,
             "height" : 18.73,
             "rotation" : -81.560000000000002,
@@ -14987,6 +16239,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -23.82
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 491,
             "height" : 16.260000000000002,
             "rotation" : 2.6200000000000001,
@@ -14995,6 +16248,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 28.739999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 665,
             "height" : 23.539999999999999,
             "rotation" : 86.689999999999998,
@@ -15014,6 +16268,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 500,
             "height" : 18.969999999999999,
             "rotation" : -82.25,
@@ -15022,6 +16277,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22.5
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 487,
             "height" : 15.26,
             "rotation" : 2.5899999999999999,
@@ -15030,6 +16286,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 30.289999999999999
           },
           {
+            "bend" : -0,
             "count" : 499,
             "height" : 22.789999999999999,
             "rotation" : 85.560000000000002,
@@ -15049,6 +16306,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 387,
             "height" : 18.620000000000001,
             "rotation" : -80.310000000000002,
@@ -15057,6 +16315,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.609999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 487,
             "height" : 15.539999999999999,
             "rotation" : 2.1299999999999999,
@@ -15065,6 +16324,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.690000000000001
           },
           {
+            "bend" : 0,
             "count" : 249,
             "height" : 18.030000000000001,
             "rotation" : 43.780000000000001,
@@ -15084,6 +16344,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 208,
             "height" : 16.23,
             "rotation" : -65.939999999999998,
@@ -15092,6 +16353,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.359999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 490,
             "height" : 15.4,
             "rotation" : 1.53,
@@ -15100,6 +16362,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.630000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 160,
             "height" : 15.220000000000001,
             "rotation" : 43.25,
@@ -15119,6 +16382,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 138,
             "height" : 13.77,
             "rotation" : -52.780000000000001,
@@ -15127,6 +16391,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.969999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 495,
             "height" : 16.109999999999999,
             "rotation" : 0.44,
@@ -15135,6 +16400,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.479999999999997
           },
           {
+            "bend" : -0,
             "count" : 106,
             "height" : 12.81,
             "rotation" : -53.280000000000001,
@@ -15154,6 +16420,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 105,
             "height" : 12.35,
             "rotation" : -32.659999999999997,
@@ -15162,6 +16429,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.629999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 507,
             "height" : 16.260000000000002,
             "rotation" : -1.9199999999999999,
@@ -15170,6 +16438,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 28.48
           },
           {
+            "bend" : -0.01,
             "count" : 130,
             "height" : 13.529999999999999,
             "rotation" : 61.229999999999997,
@@ -15189,6 +16458,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 149,
             "height" : 14.039999999999999,
             "rotation" : -33.18,
@@ -15197,6 +16467,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.390000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 507,
             "height" : 16.699999999999999,
             "rotation" : -2.3999999999999999,
@@ -15205,6 +16476,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.760000000000002
           },
           {
+            "bend" : -0,
             "count" : 194,
             "height" : 15.33,
             "rotation" : 63.100000000000001,
@@ -15224,6 +16496,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 246,
             "height" : 17.510000000000002,
             "rotation" : -47.310000000000002,
@@ -15232,6 +16505,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.66
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 506,
             "height" : 16.690000000000001,
             "rotation" : -2.3799999999999999,
@@ -15240,6 +16514,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 25.420000000000002
           },
           {
+            "bend" : -0,
             "count" : 354,
             "height" : 18.170000000000002,
             "rotation" : 76.859999999999999,
@@ -15259,6 +16534,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 469,
             "height" : 22.800000000000001,
             "rotation" : -83.159999999999997,
@@ -15267,6 +16543,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -30.170000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 503,
             "height" : 16.57,
             "rotation" : -2.5699999999999998,
@@ -15275,6 +16552,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 24.43
           },
           {
+            "bend" : -0.01,
             "count" : 475,
             "height" : 18.789999999999999,
             "rotation" : 79.819999999999993,
@@ -15294,6 +16572,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 638,
             "height" : 23.629999999999999,
             "rotation" : -86.069999999999993,
@@ -15302,6 +16581,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -30.5
           },
           {
+            "bend" : 0.02,
             "count" : 505,
             "height" : 15.94,
             "rotation" : -3.0699999999999998,
@@ -15310,6 +16590,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.59
           },
           {
+            "bend" : -0.01,
             "count" : 465,
             "height" : 18.559999999999999,
             "rotation" : 79.480000000000004,
@@ -15329,6 +16610,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 23.640000000000001,
             "rotation" : -86.780000000000001,
@@ -15337,6 +16619,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.609999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 502,
             "height" : 16.140000000000001,
             "rotation" : -3.1299999999999999,
@@ -15345,6 +16628,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.43
           },
           {
+            "bend" : -0.01,
             "count" : 451,
             "height" : 18.25,
             "rotation" : 78.810000000000002,
@@ -15364,6 +16648,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 639,
             "height" : 23.390000000000001,
             "rotation" : -87.359999999999999,
@@ -15372,6 +16657,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.009999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 501,
             "height" : 16.5,
             "rotation" : -3.0600000000000001,
@@ -15380,6 +16666,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.07
           },
           {
+            "bend" : -0.02,
             "count" : 445,
             "height" : 18.030000000000001,
             "rotation" : 79.099999999999994,
@@ -15399,6 +16686,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 641,
             "height" : 24.48,
             "rotation" : -87.379999999999995,
@@ -15407,6 +16695,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.280000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 501,
             "height" : 16.920000000000002,
             "rotation" : -3.1899999999999999,
@@ -15415,6 +16704,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.68
           },
           {
+            "bend" : -0.01,
             "count" : 440,
             "height" : 18.109999999999999,
             "rotation" : 78.400000000000006,
@@ -15434,6 +16724,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 638,
             "height" : 23.739999999999998,
             "rotation" : -87.269999999999996,
@@ -15442,6 +16733,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.530000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 500,
             "height" : 16.620000000000001,
             "rotation" : -3.3799999999999999,
@@ -15450,6 +16742,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.329999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 323,
             "height" : 16.82,
             "rotation" : 75.409999999999997,
@@ -15469,6 +16762,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 474,
             "height" : 22.440000000000001,
             "rotation" : -86.010000000000005,
@@ -15477,6 +16771,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -33.189999999999998
           },
           {
+            "bend" : 0.02,
             "count" : 501,
             "height" : 16.379999999999999,
             "rotation" : -3.2999999999999998,
@@ -15485,6 +16780,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.149999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 162,
             "height" : 13.49,
             "rotation" : 62.539999999999999,
@@ -15504,6 +16800,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 150,
             "height" : 13.6,
             "rotation" : -8.4499999999999993,
@@ -15512,6 +16809,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -34.049999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 496,
             "height" : 16.539999999999999,
             "rotation" : -3.1400000000000001,
@@ -15520,6 +16818,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.969999999999999
           },
           {
+            "bend" : 0,
             "count" : 73,
             "height" : 8.6199999999999992,
             "rotation" : 62.93,
@@ -15539,6 +16838,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 104,
             "height" : 11.77,
             "rotation" : -10.92,
@@ -15547,6 +16847,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -34.149999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 17.030000000000001,
             "rotation" : -2.9399999999999999,
@@ -15555,6 +16856,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.879999999999999
           },
           {
+            "bend" : -0,
             "count" : 72,
             "height" : 8.6300000000000008,
             "rotation" : 62.689999999999998,
@@ -15574,6 +16876,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 104,
             "height" : 11.279999999999999,
             "rotation" : -4.4199999999999999,
@@ -15582,6 +16885,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -34.189999999999998
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 16.91,
             "rotation" : -3.3399999999999999,
@@ -15590,6 +16894,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.800000000000001
           },
           {
+            "bend" : -0,
             "count" : 104,
             "height" : 10.4,
             "rotation" : 63.579999999999998,
@@ -15609,6 +16914,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 149,
             "height" : 14.529999999999999,
             "rotation" : -11.33,
@@ -15617,6 +16923,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -34.240000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 16.98,
             "rotation" : -3.1899999999999999,
@@ -15625,6 +16932,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.77
           },
           {
+            "bend" : 0,
             "count" : 162,
             "height" : 13.08,
             "rotation" : 63.5,
@@ -15644,6 +16952,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 244,
             "height" : 18.48,
             "rotation" : -21.559999999999999,
@@ -15652,6 +16961,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -34.07
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 16.98,
             "rotation" : -3.1899999999999999,
@@ -15660,6 +16970,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.77
           },
           {
+            "bend" : -0.01,
             "count" : 309,
             "height" : 16.34,
             "rotation" : 74.969999999999999,
@@ -15679,6 +16990,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 633,
             "height" : 23.559999999999999,
             "rotation" : -87.810000000000002,
@@ -15687,6 +16999,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -33.130000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 16.91,
             "rotation" : -3.3399999999999999,
@@ -15695,6 +17008,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.800000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 430,
             "height" : 17.949999999999999,
             "rotation" : 78.040000000000006,
@@ -15714,6 +17028,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 637,
             "height" : 23.510000000000002,
             "rotation" : -87.829999999999998,
@@ -15722,6 +17037,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -33.090000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 16.91,
             "rotation" : -3.3399999999999999,
@@ -15730,6 +17046,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.800000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 431,
             "height" : 17.940000000000001,
             "rotation" : 78.140000000000001,
@@ -15749,6 +17066,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 637,
             "height" : 23.539999999999999,
             "rotation" : -88.019999999999996,
@@ -15757,6 +17075,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -33.07
           },
           {
+            "bend" : 0.02,
             "count" : 498,
             "height" : 17.030000000000001,
             "rotation" : -3.1699999999999999,
@@ -15765,6 +17084,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.84
           },
           {
+            "bend" : -0.02,
             "count" : 431,
             "height" : 17.940000000000001,
             "rotation" : 78.170000000000002,
@@ -15784,6 +17104,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 637,
             "height" : 24.149999999999999,
             "rotation" : -88.140000000000001,
@@ -15792,6 +17113,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -33.07
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 17.030000000000001,
             "rotation" : -3.0800000000000001,
@@ -15800,6 +17122,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.859999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 430,
             "height" : 17.73,
             "rotation" : 78.219999999999999,
@@ -15819,6 +17142,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 637,
             "height" : 24.02,
             "rotation" : -87.599999999999994,
@@ -15827,6 +17151,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -33.020000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 496,
             "height" : 16.699999999999999,
             "rotation" : -3.1899999999999999,
@@ -15835,6 +17160,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.93
           },
           {
+            "bend" : -0.02,
             "count" : 430,
             "height" : 17.719999999999999,
             "rotation" : 78.239999999999995,
@@ -15854,6 +17180,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 638,
             "height" : 23.640000000000001,
             "rotation" : -87.549999999999997,
@@ -15862,6 +17189,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.990000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 16.809999999999999,
             "rotation" : -3.1699999999999999,
@@ -15870,6 +17198,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.920000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 431,
             "height" : 17.73,
             "rotation" : 78.189999999999998,
@@ -15889,6 +17218,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 636,
             "height" : 23.809999999999999,
             "rotation" : -87.540000000000006,
@@ -15897,6 +17227,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.990000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 497,
             "height" : 16.219999999999999,
             "rotation" : -3.23,
@@ -15905,6 +17236,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.960000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 432,
             "height" : 18.289999999999999,
             "rotation" : 78.290000000000006,
@@ -15924,6 +17256,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 639,
             "height" : 24.219999999999999,
             "rotation" : -87.079999999999998,
@@ -15932,6 +17265,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.93
           },
           {
+            "bend" : 0.02,
             "count" : 498,
             "height" : 16.629999999999999,
             "rotation" : -3.3199999999999998,
@@ -15940,6 +17274,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.010000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 433,
             "height" : 17.719999999999999,
             "rotation" : 78.280000000000001,
@@ -15959,6 +17294,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 640,
             "height" : 24.34,
             "rotation" : -87.430000000000007,
@@ -15967,6 +17303,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.869999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 498,
             "height" : 16.379999999999999,
             "rotation" : -3.5,
@@ -15975,6 +17312,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.039999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 435,
             "height" : 18.260000000000002,
             "rotation" : 78.629999999999995,
@@ -15994,6 +17332,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 639,
             "height" : 24.27,
             "rotation" : -87.640000000000001,
@@ -16002,6 +17341,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.890000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 498,
             "height" : 16.25,
             "rotation" : -3.0600000000000001,
@@ -16010,6 +17350,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.07
           },
           {
+            "bend" : -0.02,
             "count" : 434,
             "height" : 17.719999999999999,
             "rotation" : 78.269999999999996,
@@ -16029,6 +17370,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 638,
             "height" : 23.539999999999999,
             "rotation" : -87.310000000000002,
@@ -16037,6 +17379,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.75
           },
           {
+            "bend" : 0.02,
             "count" : 500,
             "height" : 16.260000000000002,
             "rotation" : -3.25,
@@ -16045,6 +17388,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.129999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 435,
             "height" : 18.120000000000001,
             "rotation" : 78.290000000000006,
@@ -16064,6 +17408,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 640,
             "height" : 23.52,
             "rotation" : -87.420000000000002,
@@ -16072,6 +17417,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.689999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 500,
             "height" : 16.32,
             "rotation" : -3.27,
@@ -16080,6 +17426,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.170000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 436,
             "height" : 17.93,
             "rotation" : 78.230000000000004,
@@ -16099,6 +17446,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 639,
             "height" : 23.530000000000001,
             "rotation" : -87.599999999999994,
@@ -16107,6 +17455,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.600000000000001
           },
           {
+            "bend" : 0.01,
             "count" : 500,
             "height" : 16.09,
             "rotation" : -3.4900000000000002,
@@ -16115,6 +17464,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.280000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 436,
             "height" : 17.920000000000002,
             "rotation" : 78.260000000000005,
@@ -16134,6 +17484,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 641,
             "height" : 23.57,
             "rotation" : -87.400000000000006,
@@ -16142,6 +17493,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.579999999999998
           },
           {
+            "bend" : 0.02,
             "count" : 499,
             "height" : 16.600000000000001,
             "rotation" : -3.2400000000000002,
@@ -16150,6 +17502,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.34
           },
           {
+            "bend" : -0.01,
             "count" : 438,
             "height" : 18.16,
             "rotation" : 78.069999999999993,
@@ -16169,6 +17522,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 637,
             "height" : 23.300000000000001,
             "rotation" : -87.730000000000004,
@@ -16177,6 +17531,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.469999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 500,
             "height" : 16.57,
             "rotation" : -3.3999999999999999,
@@ -16185,6 +17540,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.48
           },
           {
+            "bend" : -0.02,
             "count" : 439,
             "height" : 18.100000000000001,
             "rotation" : 78.439999999999998,
@@ -16204,6 +17560,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 641,
             "height" : 24.07,
             "rotation" : -87.209999999999994,
@@ -16212,6 +17569,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.270000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 502,
             "height" : 16.899999999999999,
             "rotation" : -3.1299999999999999,
@@ -16220,6 +17578,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.699999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 441,
             "height" : 18.079999999999998,
             "rotation" : 78.480000000000004,
@@ -16239,6 +17598,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 642,
             "height" : 23.629999999999999,
             "rotation" : -87.090000000000003,
@@ -16247,6 +17607,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.170000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 500,
             "height" : 17.129999999999999,
             "rotation" : -2.9300000000000002,
@@ -16255,6 +17616,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.829999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 445,
             "height" : 18.059999999999999,
             "rotation" : 78.739999999999995,
@@ -16274,6 +17636,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 640,
             "height" : 23.550000000000001,
             "rotation" : -87.480000000000004,
@@ -16282,6 +17645,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.07
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 499,
             "height" : 16.559999999999999,
             "rotation" : -2.9900000000000002,
@@ -16290,6 +17654,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.030000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 447,
             "height" : 18.239999999999998,
             "rotation" : 78.870000000000005,
@@ -16309,6 +17674,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 641,
             "height" : 23.260000000000002,
             "rotation" : -87.079999999999998,
@@ -16317,6 +17683,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.879999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 500,
             "height" : 16.5,
             "rotation" : -3.3300000000000001,
@@ -16325,6 +17692,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.170000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 448,
             "height" : 18.059999999999999,
             "rotation" : 78.769999999999996,
@@ -16344,6 +17712,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 24.379999999999999,
             "rotation" : -87.099999999999994,
@@ -16352,6 +17721,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.710000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 501,
             "height" : 16.34,
             "rotation" : -2.9199999999999999,
@@ -16360,6 +17730,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.27
           },
           {
+            "bend" : -0.01,
             "count" : 450,
             "height" : 18.039999999999999,
             "rotation" : 79.040000000000006,
@@ -16379,6 +17750,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 644,
             "height" : 23.079999999999998,
             "rotation" : -86.849999999999994,
@@ -16387,6 +17759,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.399999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 504,
             "height" : 16.559999999999999,
             "rotation" : -3.0299999999999998,
@@ -16395,6 +17768,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.670000000000002
           },
           {
+            "bend" : -0.02,
             "count" : 453,
             "height" : 18.440000000000001,
             "rotation" : 78.859999999999999,
@@ -16414,6 +17788,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 23.510000000000002,
             "rotation" : -86.870000000000005,
@@ -16422,6 +17797,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.140000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 503,
             "height" : 16.600000000000001,
             "rotation" : -3.1000000000000001,
@@ -16430,6 +17806,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.93
           },
           {
+            "bend" : -0.01,
             "count" : 458,
             "height" : 18.77,
             "rotation" : 79.239999999999995,
@@ -16449,6 +17826,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 23.129999999999999,
             "rotation" : -86.849999999999994,
@@ -16457,6 +17835,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -30.829999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 502,
             "height" : 16.41,
             "rotation" : -3.25,
@@ -16465,6 +17844,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.25
           },
           {
+            "bend" : -0.01,
             "count" : 460,
             "height" : 18.579999999999998,
             "rotation" : 79.280000000000001,
@@ -16484,6 +17864,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 23.489999999999998,
             "rotation" : -86.659999999999997,
@@ -16492,6 +17873,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -30.579999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 503,
             "height" : 15.92,
             "rotation" : -3.1200000000000001,
@@ -16500,6 +17882,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.469999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 466,
             "height" : 18.940000000000001,
             "rotation" : 79.379999999999995,
@@ -16519,6 +17902,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 644,
             "height" : 23.34,
             "rotation" : -86.280000000000001,
@@ -16527,6 +17911,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -30.260000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 503,
             "height" : 16,
             "rotation" : -2.77,
@@ -16535,6 +17920,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.859999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 470,
             "height" : 18.550000000000001,
             "rotation" : 79.519999999999996,
@@ -16554,6 +17940,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 646,
             "height" : 23.98,
             "rotation" : -86.040000000000006,
@@ -16562,6 +17949,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.370000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 504,
             "height" : 15.859999999999999,
             "rotation" : -2.7999999999999998,
@@ -16570,6 +17958,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 24.75
           },
           {
+            "bend" : -0.01,
             "count" : 482,
             "height" : 18.940000000000001,
             "rotation" : 80.25,
@@ -16589,6 +17978,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 646,
             "height" : 23.829999999999998,
             "rotation" : -85.719999999999999,
@@ -16597,6 +17987,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.850000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 506,
             "height" : 16.670000000000002,
             "rotation" : -2.7999999999999998,
@@ -16605,6 +17996,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 25.34
           },
           {
+            "bend" : -0.01,
             "count" : 487,
             "height" : 19.460000000000001,
             "rotation" : 80.159999999999997,
@@ -16624,6 +18016,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 646,
             "height" : 23.120000000000001,
             "rotation" : -85.450000000000003,
@@ -16632,6 +18025,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.149999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 507,
             "height" : 15.9,
             "rotation" : -2.3700000000000001,
@@ -16640,6 +18034,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 25.98
           },
           {
+            "bend" : -0.01,
             "count" : 497,
             "height" : 19.43,
             "rotation" : 80.370000000000005,
@@ -16659,6 +18054,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 646,
             "height" : 23.539999999999999,
             "rotation" : -85.709999999999994,
@@ -16667,6 +18063,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -27.370000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 504,
             "height" : 16.16,
             "rotation" : -2.5699999999999998,
@@ -16675,6 +18072,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.93
           },
           {
+            "bend" : -0.01,
             "count" : 509,
             "height" : 19.960000000000001,
             "rotation" : 81.099999999999994,
@@ -16694,6 +18092,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 642,
             "height" : 23.690000000000001,
             "rotation" : -85.659999999999997,
@@ -16702,6 +18101,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.460000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 505,
             "height" : 16.77,
             "rotation" : -2.1200000000000001,
@@ -16710,6 +18110,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 27.789999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 385,
             "height" : 18.84,
             "rotation" : 78.920000000000002,
@@ -16729,6 +18130,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 243,
             "height" : 18.469999999999999,
             "rotation" : -56.390000000000001,
@@ -16737,6 +18139,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -25.5
           },
           {
+            "bend" : 0.02,
             "count" : 504,
             "height" : 15.710000000000001,
             "rotation" : -1.77,
@@ -16745,6 +18148,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 29.48
           },
           {
+            "bend" : -0.01,
             "count" : 132,
             "height" : 13.529999999999999,
             "rotation" : 61.670000000000002,
@@ -16764,6 +18168,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 152,
             "height" : 14.44,
             "rotation" : -44.420000000000002,
@@ -16772,6 +18177,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -24.809999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 499,
             "height" : 15.32,
             "rotation" : -1.7,
@@ -16780,6 +18186,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 30.260000000000002
           },
           {
+            "bend" : 0,
             "count" : 96,
             "height" : 11.27,
             "rotation" : 62.920000000000002,
@@ -16799,6 +18206,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 106,
             "height" : 11.66,
             "rotation" : -46.420000000000002,
@@ -16807,6 +18215,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -24.260000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 501,
             "height" : 15.44,
             "rotation" : -1.4299999999999999,
@@ -16815,6 +18224,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 30.690000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 95,
             "height" : 11.289999999999999,
             "rotation" : 58.710000000000001,
@@ -16834,6 +18244,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 105,
             "height" : 11.81,
             "rotation" : -54.670000000000002,
@@ -16842,6 +18253,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -23.68
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 497,
             "height" : 15.16,
             "rotation" : -1.3799999999999999,
@@ -16850,6 +18262,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.280000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 137,
             "height" : 12.710000000000001,
             "rotation" : 61.780000000000001,
@@ -16869,6 +18282,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 149,
             "height" : 14.279999999999999,
             "rotation" : -48.479999999999997,
@@ -16877,6 +18291,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -23.289999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 498,
             "height" : 15.6,
             "rotation" : -1.4199999999999999,
@@ -16885,6 +18300,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.59
           },
           {
+            "bend" : -0,
             "count" : 216,
             "height" : 16.640000000000001,
             "rotation" : 65.680000000000007,
@@ -16904,6 +18320,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 456,
             "height" : 21.239999999999998,
             "rotation" : -82.709999999999994,
@@ -16912,6 +18329,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22.120000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 495,
             "height" : 15.43,
             "rotation" : -1.03,
@@ -16920,6 +18338,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.299999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 579,
             "height" : 21.949999999999999,
             "rotation" : 83.900000000000006,
@@ -16939,6 +18358,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 624,
             "height" : 22.190000000000001,
             "rotation" : -84.810000000000002,
@@ -16947,6 +18367,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.489999999999998
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 494,
             "height" : 15.31,
             "rotation" : -1.2,
@@ -16955,6 +18376,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.560000000000002
           },
           {
+            "bend" : -0.02,
             "count" : 586,
             "height" : 21.149999999999999,
             "rotation" : 83.989999999999995,
@@ -16974,6 +18396,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 631,
             "height" : 23.09,
             "rotation" : -84.790000000000006,
@@ -16982,6 +18405,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.280000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 495,
             "height" : 15.35,
             "rotation" : -1.26,
@@ -16990,6 +18414,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.710000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 589,
             "height" : 21.530000000000001,
             "rotation" : 83.890000000000001,
@@ -17009,6 +18434,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 628,
             "height" : 22.539999999999999,
             "rotation" : -84.849999999999994,
@@ -17017,6 +18443,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.050000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 495,
             "height" : 15.359999999999999,
             "rotation" : -0.91000000000000003,
@@ -17025,6 +18452,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.880000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 591,
             "height" : 21.43,
             "rotation" : 84.140000000000001,
@@ -17044,6 +18472,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 625,
             "height" : 22.109999999999999,
             "rotation" : -85.510000000000005,
@@ -17052,6 +18481,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.890000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 494,
             "height" : 15.35,
             "rotation" : -0.92000000000000004,
@@ -17060,6 +18490,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.140000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 593,
             "height" : 21.300000000000001,
             "rotation" : 84.310000000000002,
@@ -17079,6 +18510,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 626,
             "height" : 22.699999999999999,
             "rotation" : -85.040000000000006,
@@ -17087,6 +18519,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.550000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 492,
             "height" : 16.09,
             "rotation" : -0.70999999999999996,
@@ -17095,6 +18528,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.420000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 598,
             "height" : 21.57,
             "rotation" : 84.560000000000002,
@@ -17114,6 +18548,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 623,
             "height" : 22.129999999999999,
             "rotation" : -85.069999999999993,
@@ -17122,6 +18557,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.390000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 492,
             "height" : 16.18,
             "rotation" : -0.93000000000000005,
@@ -17130,6 +18566,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.579999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 602,
             "height" : 21.460000000000001,
             "rotation" : 84.810000000000002,
@@ -17149,6 +18586,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 624,
             "height" : 22.289999999999999,
             "rotation" : -85.090000000000003,
@@ -17157,6 +18595,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.309999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 15.19,
             "rotation" : -0.66000000000000003,
@@ -17165,6 +18604,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.68
           },
           {
+            "bend" : -0.01,
             "count" : 604,
             "height" : 21.800000000000001,
             "rotation" : 84.959999999999994,
@@ -17184,6 +18624,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 624,
             "height" : 22.260000000000002,
             "rotation" : -85.219999999999999,
@@ -17192,6 +18633,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.219999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 490,
             "height" : 15.24,
             "rotation" : -0.81999999999999995,
@@ -17200,6 +18642,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.729999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 603,
             "height" : 21.98,
             "rotation" : 84.359999999999999,
@@ -17219,6 +18662,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 622,
             "height" : 22.300000000000001,
             "rotation" : -85.400000000000006,
@@ -17227,6 +18671,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.07
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 490,
             "height" : 15.199999999999999,
             "rotation" : -0.60999999999999999,
@@ -17235,6 +18680,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.789999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 604,
             "height" : 21.890000000000001,
             "rotation" : 84.359999999999999,
@@ -17254,6 +18700,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 621,
             "height" : 22.640000000000001,
             "rotation" : -84.799999999999997,
@@ -17262,6 +18709,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.960000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 491,
             "height" : 15.300000000000001,
             "rotation" : -0.73999999999999999,
@@ -17270,6 +18718,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.969999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 606,
             "height" : 22.309999999999999,
             "rotation" : 84.670000000000002,
@@ -17289,6 +18738,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 619,
             "height" : 23.010000000000002,
             "rotation" : -85.219999999999999,
@@ -17297,6 +18747,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.780000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 15.25,
             "rotation" : -0.63,
@@ -17305,6 +18756,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.030000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 606,
             "height" : 21.859999999999999,
             "rotation" : 84.569999999999993,
@@ -17324,6 +18776,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 620,
             "height" : 21.989999999999998,
             "rotation" : -85.359999999999999,
@@ -17332,6 +18785,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.789999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 488,
             "height" : 15.199999999999999,
             "rotation" : -0.53000000000000003,
@@ -17340,6 +18794,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.130000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 609,
             "height" : 22.68,
             "rotation" : 85.170000000000002,
@@ -17359,6 +18814,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 620,
             "height" : 22.219999999999999,
             "rotation" : -85.379999999999995,
@@ -17367,6 +18823,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.710000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 15.210000000000001,
             "rotation" : -0.5,
@@ -17375,6 +18832,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.240000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 606,
             "height" : 22.030000000000001,
             "rotation" : 84.670000000000002,
@@ -17394,6 +18852,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 620,
             "height" : 22.280000000000001,
             "rotation" : -85.150000000000006,
@@ -17402,6 +18861,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.66
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 15.17,
             "rotation" : -0.48999999999999999,
@@ -17410,6 +18870,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.259999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 607,
             "height" : 22.109999999999999,
             "rotation" : 84.730000000000004,
@@ -17429,6 +18890,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 620,
             "height" : 22.030000000000001,
             "rotation" : -85.140000000000001,
@@ -17437,6 +18899,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.579999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 489,
             "height" : 15.140000000000001,
             "rotation" : -0.31,
@@ -17445,6 +18908,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.369999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.07,
             "rotation" : 84.920000000000002,
@@ -17464,6 +18928,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 619,
             "height" : 22.010000000000002,
             "rotation" : -85.260000000000005,
@@ -17472,6 +18937,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.559999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 488,
             "height" : 15.119999999999999,
             "rotation" : -0.27000000000000002,
@@ -17480,6 +18946,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.399999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.32,
             "rotation" : 84.620000000000005,
@@ -17499,6 +18966,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 617,
             "height" : 22.27,
             "rotation" : -85.519999999999996,
@@ -17507,6 +18975,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.48
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 489,
             "height" : 15.25,
             "rotation" : -0.60999999999999999,
@@ -17515,6 +18984,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.390000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 611,
             "height" : 22.09,
             "rotation" : 84.840000000000003,
@@ -17534,6 +19004,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 618,
             "height" : 22.059999999999999,
             "rotation" : -85.400000000000006,
@@ -17542,6 +19013,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.420000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 489,
             "height" : 15.18,
             "rotation" : -0.44,
@@ -17550,6 +19022,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.399999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 611,
             "height" : 22.100000000000001,
             "rotation" : 84.790000000000006,
@@ -17569,6 +19042,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 617,
             "height" : 22.260000000000002,
             "rotation" : -85.230000000000004,
@@ -17577,6 +19051,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.41
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 488,
             "height" : 16.050000000000001,
             "rotation" : -0.27000000000000002,
@@ -17585,6 +19060,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.439999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 611,
             "height" : 22.02,
             "rotation" : 84.719999999999999,
@@ -17604,6 +19080,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 617,
             "height" : 22.079999999999998,
             "rotation" : -85.290000000000006,
@@ -17612,6 +19089,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.390000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 488,
             "height" : 16.039999999999999,
             "rotation" : -0.29999999999999999,
@@ -17620,6 +19098,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.469999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.899999999999999,
             "rotation" : 84.870000000000005,
@@ -17639,6 +19118,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 617,
             "height" : 22.010000000000002,
             "rotation" : -85.349999999999994,
@@ -17647,6 +19127,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.350000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 487,
             "height" : 16.030000000000001,
             "rotation" : -0.26000000000000001,
@@ -17655,6 +19136,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.490000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.989999999999998,
             "rotation" : 84.879999999999995,
@@ -17674,6 +19156,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 21.890000000000001,
             "rotation" : -85.469999999999999,
@@ -17682,6 +19165,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.359999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 488,
             "height" : 16.050000000000001,
             "rotation" : -0.45000000000000001,
@@ -17690,6 +19174,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.490000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.989999999999998,
             "rotation" : 84.900000000000006,
@@ -17709,6 +19194,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 617,
             "height" : 22.010000000000002,
             "rotation" : -85.359999999999999,
@@ -17717,6 +19203,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.350000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 487,
             "height" : 16.079999999999998,
             "rotation" : -0.46999999999999997,
@@ -17725,6 +19212,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.530000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 612,
             "height" : 22.25,
             "rotation" : 84.930000000000007,
@@ -17744,6 +19232,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -17752,6 +19241,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 487,
             "height" : 16.079999999999998,
             "rotation" : -0.46000000000000002,
@@ -17760,6 +19250,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.530000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.07,
             "rotation" : 84.909999999999997,
@@ -17779,6 +19270,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 458,
             "height" : 20.960000000000001,
             "rotation" : -82.969999999999999,
@@ -17787,6 +19279,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.600000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -17795,6 +19288,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 231,
             "height" : 17.129999999999999,
             "rotation" : 64.859999999999999,
@@ -17814,6 +19308,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 235,
             "height" : 17.550000000000001,
             "rotation" : -65.049999999999997,
@@ -17822,6 +19317,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.989999999999998
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -17830,6 +19326,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 150,
             "height" : 13.699999999999999,
             "rotation" : 58.82,
@@ -17849,6 +19346,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 147,
             "height" : 13.699999999999999,
             "rotation" : -58.700000000000003,
@@ -17857,6 +19355,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.059999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -17865,6 +19364,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 105,
             "height" : 12.16,
             "rotation" : 66.969999999999999,
@@ -17884,6 +19384,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 11.630000000000001,
             "rotation" : -50.479999999999997,
@@ -17892,6 +19393,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -17900,6 +19402,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 12.35,
             "rotation" : 57.789999999999999,
@@ -17919,6 +19422,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 102,
             "height" : 11.82,
             "rotation" : -55.890000000000001,
@@ -17927,6 +19431,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -17935,6 +19440,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 147,
             "height" : 13.52,
             "rotation" : 59.009999999999998,
@@ -17954,6 +19460,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 235,
             "height" : 17.52,
             "rotation" : -68.840000000000003,
@@ -17962,6 +19469,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.920000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -17970,6 +19478,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 441,
             "height" : 20.620000000000001,
             "rotation" : 82.519999999999996,
@@ -17989,6 +19498,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 446,
             "height" : 20.82,
             "rotation" : -83.099999999999994,
@@ -17997,6 +19507,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.620000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -18005,6 +19516,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 607,
             "height" : 22,
             "rotation" : 84.849999999999994,
@@ -18024,6 +19536,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 611,
             "height" : 22.010000000000002,
             "rotation" : -85.359999999999999,
@@ -18032,6 +19545,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.350000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -18040,6 +19554,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -18059,6 +19574,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -18067,6 +19583,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -18075,6 +19592,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -18094,6 +19612,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -18102,6 +19621,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -18110,6 +19630,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -18129,6 +19650,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 618,
             "height" : 22.43,
             "rotation" : -85.200000000000003,
@@ -18137,6 +19659,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.379999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 16.050000000000001,
             "rotation" : -0.28000000000000003,
@@ -18145,6 +19668,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.439999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 611,
             "height" : 22,
             "rotation" : 84.799999999999997,
@@ -18164,6 +19688,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 617,
             "height" : 22.27,
             "rotation" : -84.930000000000007,
@@ -18172,6 +19697,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.530000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 15.09,
             "rotation" : -0.22,
@@ -18180,6 +19706,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.380000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 613,
             "height" : 22.390000000000001,
             "rotation" : 85.069999999999993,
@@ -18199,6 +19726,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 615,
             "height" : 22.27,
             "rotation" : -85.049999999999997,
@@ -18207,6 +19735,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.620000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 15.07,
             "rotation" : -0.16,
@@ -18215,6 +19744,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.340000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 22.41,
             "rotation" : 85,
@@ -18234,6 +19764,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 614,
             "height" : 22.100000000000001,
             "rotation" : -84.799999999999997,
@@ -18242,6 +19773,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.75
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 487,
             "height" : 15.02,
             "rotation" : 0.040000000000000001,
@@ -18250,6 +19782,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.270000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 613,
             "height" : 21.93,
             "rotation" : 85.329999999999998,
@@ -18269,6 +19802,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 613,
             "height" : 22.649999999999999,
             "rotation" : -84.730000000000004,
@@ -18277,6 +19811,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.960000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 15,
             "rotation" : 0,
@@ -18285,6 +19820,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.079999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 614,
             "height" : 22.34,
             "rotation" : 85.299999999999997,
@@ -18304,6 +19840,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 609,
             "height" : 22.329999999999998,
             "rotation" : -84.129999999999995,
@@ -18312,6 +19849,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.539999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 490,
             "height" : 15.109999999999999,
             "rotation" : 0.28999999999999998,
@@ -18320,6 +19858,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.710000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 22.059999999999999,
             "rotation" : 85.400000000000006,
@@ -18339,6 +19878,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 607,
             "height" : 22.149999999999999,
             "rotation" : -83.969999999999999,
@@ -18347,6 +19887,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.98
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 494,
             "height" : 16.18,
             "rotation" : 0.71999999999999997,
@@ -18355,6 +19896,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.439999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.059999999999999,
             "rotation" : 85.409999999999997,
@@ -18374,6 +19916,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 602,
             "height" : 21.870000000000001,
             "rotation" : -83.680000000000007,
@@ -18382,6 +19925,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.52
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 495,
             "height" : 15.49,
             "rotation" : 1.3500000000000001,
@@ -18390,6 +19934,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.18
           },
           {
+            "bend" : -0.01,
             "count" : 608,
             "height" : 22.050000000000001,
             "rotation" : 85.019999999999996,
@@ -18409,6 +19954,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 593,
             "height" : 21.559999999999999,
             "rotation" : -83.560000000000002,
@@ -18417,6 +19963,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 496,
             "height" : 15.869999999999999,
             "rotation" : 1.1799999999999999,
@@ -18425,6 +19972,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.770000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 600,
             "height" : 21.73,
             "rotation" : 84.790000000000006,
@@ -18444,6 +19992,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 584,
             "height" : 21.670000000000002,
             "rotation" : -83.379999999999995,
@@ -18452,6 +20001,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22.760000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 497,
             "height" : 15.99,
             "rotation" : 2.1400000000000001,
@@ -18460,6 +20010,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.350000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 595,
             "height" : 22.09,
             "rotation" : 84.650000000000006,
@@ -18479,6 +20030,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 557,
             "height" : 22.010000000000002,
             "rotation" : -83.469999999999999,
@@ -18487,6 +20039,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -24.609999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 503,
             "height" : 16.030000000000001,
             "rotation" : 3.3599999999999999,
@@ -18495,6 +20048,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.100000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 571,
             "height" : 21.609999999999999,
             "rotation" : 82.780000000000001,
@@ -18514,6 +20068,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 540,
             "height" : 21,
             "rotation" : -83.540000000000006,
@@ -18522,6 +20077,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -25.82
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 506,
             "height" : 15.82,
             "rotation" : 4.0700000000000003,
@@ -18530,6 +20086,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 30.300000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 557,
             "height" : 21.199999999999999,
             "rotation" : 81.379999999999995,
@@ -18549,6 +20106,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 517,
             "height" : 21.539999999999999,
             "rotation" : -83.620000000000005,
@@ -18557,6 +20115,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -27.289999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 510,
             "height" : 16.07,
             "rotation" : 4.9800000000000004,
@@ -18565,6 +20124,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 29.27
           },
           {
+            "bend" : -0.01,
             "count" : 533,
             "height" : 21.199999999999999,
             "rotation" : 78.640000000000001,
@@ -18584,6 +20144,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 488,
             "height" : 20.210000000000001,
             "rotation" : -84.280000000000001,
@@ -18592,6 +20153,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.239999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 513,
             "height" : 16.25,
             "rotation" : 6.29,
@@ -18600,6 +20162,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 27.969999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 500,
             "height" : 20.710000000000001,
             "rotation" : 75.140000000000001,
@@ -18619,6 +20182,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 449,
             "height" : 20.289999999999999,
             "rotation" : -86.140000000000001,
@@ -18627,6 +20191,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.649999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 517,
             "height" : 16.57,
             "rotation" : 7.7199999999999998,
@@ -18635,6 +20200,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.219999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 449,
             "height" : 19.620000000000001,
             "rotation" : 68.829999999999998,
@@ -18654,6 +20220,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.059999999999999998,
             "count" : 327,
             "height" : 20.719999999999999,
             "rotation" : 59.270000000000003,
@@ -18662,6 +20229,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -40.369999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 518,
             "height" : 16.609999999999999,
             "rotation" : 12.68,
@@ -18670,6 +20238,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.190000000000001
           },
           {
+            "bend" : -0.11,
             "count" : 313,
             "height" : 16.300000000000001,
             "rotation" : 25.5,
@@ -18689,6 +20258,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 238,
             "height" : 16.609999999999999,
             "rotation" : 9.3200000000000003,
@@ -18697,6 +20267,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -45.840000000000003
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 518,
             "height" : 16.780000000000001,
             "rotation" : 14.859999999999999,
@@ -18705,6 +20276,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 16.48
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 300,
             "height" : 14.74,
             "rotation" : 21.82,
@@ -18724,6 +20296,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 213,
             "height" : 15.039999999999999,
             "rotation" : 4.5899999999999999,
@@ -18732,6 +20305,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -48.520000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 513,
             "height" : 16.760000000000002,
             "rotation" : 16.079999999999998,
@@ -18740,6 +20314,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 13.960000000000001
           },
           {
+            "bend" : -0.14999999999999999,
             "count" : 293,
             "height" : 14.9,
             "rotation" : 18.809999999999999,
@@ -18759,6 +20334,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.059999999999999998,
             "count" : 202,
             "height" : 13.970000000000001,
             "rotation" : 3.8500000000000001,
@@ -18767,6 +20343,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.020000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 511,
             "height" : 16.690000000000001,
             "rotation" : 16.050000000000001,
@@ -18775,6 +20352,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 12.56
           },
           {
+            "bend" : -0.17000000000000001,
             "count" : 284,
             "height" : 14.77,
             "rotation" : 16.870000000000001,
@@ -18794,6 +20372,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.070000000000000007,
             "count" : 200,
             "height" : 13.1,
             "rotation" : 3.2999999999999998,
@@ -18802,6 +20381,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.799999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 513,
             "height" : 16.890000000000001,
             "rotation" : 15.74,
@@ -18810,6 +20390,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.710000000000001
           },
           {
+            "bend" : -0.17000000000000001,
             "count" : 278,
             "height" : 14.210000000000001,
             "rotation" : 15.619999999999999,
@@ -18829,6 +20410,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.10000000000000001,
             "count" : 196,
             "height" : 12.07,
             "rotation" : 1.3400000000000001,
@@ -18837,6 +20419,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.009999999999998
           },
           {
+            "bend" : 0.02,
             "count" : 515,
             "height" : 16.899999999999999,
             "rotation" : 14.48,
@@ -18845,6 +20428,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.31
           },
           {
+            "bend" : -0.20000000000000001,
             "count" : 269,
             "height" : 13.92,
             "rotation" : 13.460000000000001,
@@ -18864,6 +20448,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.10000000000000001,
             "count" : 193,
             "height" : 12.16,
             "rotation" : -1.0600000000000001,
@@ -18872,6 +20457,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.810000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 523,
             "height" : 16.789999999999999,
             "rotation" : 13.18,
@@ -18880,6 +20466,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.48
           },
           {
+            "bend" : -0.19,
             "count" : 266,
             "height" : 13.6,
             "rotation" : 12.619999999999999,
@@ -18899,6 +20486,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 190,
             "height" : 12.42,
             "rotation" : -3.5899999999999999,
@@ -18907,6 +20495,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.369999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 536,
             "height" : 17.140000000000001,
             "rotation" : 10.529999999999999,
@@ -18915,6 +20504,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.710000000000001
           },
           {
+            "bend" : -0.20000000000000001,
             "count" : 257,
             "height" : 13.57,
             "rotation" : 11.43,
@@ -18934,6 +20524,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 202,
             "height" : 12.779999999999999,
             "rotation" : -7.1299999999999999,
@@ -18942,6 +20533,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -49.240000000000002
           },
           {
+            "bend" : 0.01,
             "count" : 554,
             "height" : 17.68,
             "rotation" : 4.9699999999999998,
@@ -18950,6 +20542,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.949999999999999
           },
           {
+            "bend" : -0.14999999999999999,
             "count" : 240,
             "height" : 13.91,
             "rotation" : 7.8700000000000001,
@@ -18969,6 +20562,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.16,
             "count" : 240,
             "height" : 13.9,
             "rotation" : -10.99,
@@ -18977,6 +20571,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -45.450000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 544,
             "height" : 17.149999999999999,
             "rotation" : -7.3099999999999996,
@@ -18985,6 +20580,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.41
           },
           {
+            "bend" : -0.14999999999999999,
             "count" : 203,
             "height" : 11.880000000000001,
             "rotation" : 3.0899999999999999,
@@ -19004,6 +20600,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.19,
             "count" : 267,
             "height" : 13.99,
             "rotation" : -15.34,
@@ -19012,6 +20609,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -42.289999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 503,
             "height" : 16.84,
             "rotation" : -16.239999999999998,
@@ -19020,6 +20618,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 10.32
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 191,
             "height" : 12,
             "rotation" : -1.6599999999999999,
@@ -19039,6 +20638,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.19,
             "count" : 271,
             "height" : 13.65,
             "rotation" : -16.050000000000001,
@@ -19047,6 +20647,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.689999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 492,
             "height" : 16.109999999999999,
             "rotation" : -17.550000000000001,
@@ -19055,6 +20656,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 10.09
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 195,
             "height" : 11.98,
             "rotation" : -3.73,
@@ -19074,6 +20676,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.20000000000000001,
             "count" : 273,
             "height" : 13.880000000000001,
             "rotation" : -16.219999999999999,
@@ -19082,6 +20685,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.299999999999997
           },
           {
+            "bend" : 0.01,
             "count" : 487,
             "height" : 16.52,
             "rotation" : -18.23,
@@ -19090,6 +20694,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 9.9600000000000009
           },
           {
+            "bend" : -0.13,
             "count" : 193,
             "height" : 12.109999999999999,
             "rotation" : -3.96,
@@ -19109,6 +20714,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.20000000000000001,
             "count" : 273,
             "height" : 13.57,
             "rotation" : -16.989999999999998,
@@ -19117,6 +20723,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.18
           },
           {
+            "bend" : 0.02,
             "count" : 493,
             "height" : 16.489999999999998,
             "rotation" : -18.379999999999999,
@@ -19125,6 +20732,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 9.9000000000000004
           },
           {
+            "bend" : -0.12,
             "count" : 194,
             "height" : 12.359999999999999,
             "rotation" : -4.3499999999999996,
@@ -19144,6 +20752,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.17999999999999999,
             "count" : 269,
             "height" : 13.710000000000001,
             "rotation" : -16.32,
@@ -19152,6 +20761,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.619999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 501,
             "height" : 16.399999999999999,
             "rotation" : -17.48,
@@ -19160,6 +20770,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 10.119999999999999
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 190,
             "height" : 12.029999999999999,
             "rotation" : -2.6800000000000002,
@@ -19179,6 +20790,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 215,
             "height" : 14.029999999999999,
             "rotation" : -5.9299999999999997,
@@ -19187,6 +20799,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -47.93
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 550,
             "height" : 17.109999999999999,
             "rotation" : -0.23999999999999999,
@@ -19195,6 +20808,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.9
           },
           {
+            "bend" : -0.13,
             "count" : 221,
             "height" : 14.67,
             "rotation" : 4.25,
@@ -19214,6 +20828,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 189,
             "height" : 12.17,
             "rotation" : -1.4199999999999999,
@@ -19222,6 +20837,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.530000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 522,
             "height" : 17,
             "rotation" : 13.949999999999999,
@@ -19230,6 +20846,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.48
           },
           {
+            "bend" : -0.17000000000000001,
             "count" : 263,
             "height" : 14.56,
             "rotation" : 12.49,
@@ -19249,6 +20866,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 194,
             "height" : 12.58,
             "rotation" : 3.3100000000000001,
@@ -19257,6 +20875,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -52.329999999999998
           },
           {
+            "bend" : 0.02,
             "count" : 502,
             "height" : 17.02,
             "rotation" : 17.98,
@@ -19265,6 +20884,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.01
           },
           {
+            "bend" : -0.17999999999999999,
             "count" : 272,
             "height" : 13.98,
             "rotation" : 15.23,
@@ -19284,6 +20904,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 198,
             "height" : 12.77,
             "rotation" : 3.9300000000000002,
@@ -19292,6 +20913,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -52.479999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 489,
             "height" : 16.140000000000001,
             "rotation" : 19.609999999999999,
@@ -19300,6 +20922,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 10.82
           },
           {
+            "bend" : -0.19,
             "count" : 275,
             "height" : 13.85,
             "rotation" : 15.51,
@@ -19319,6 +20942,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 200,
             "height" : 12.640000000000001,
             "rotation" : 4.6299999999999999,
@@ -19327,6 +20951,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -52.380000000000003
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 486,
             "height" : 16.379999999999999,
             "rotation" : 19.280000000000001,
@@ -19335,6 +20960,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 10.91
           },
           {
+            "bend" : -0.19,
             "count" : 276,
             "height" : 14.029999999999999,
             "rotation" : 14.73,
@@ -19354,6 +20980,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.10000000000000001,
             "count" : 196,
             "height" : 12.630000000000001,
             "rotation" : 3.3100000000000001,
@@ -19362,6 +20989,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.18
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 491,
             "height" : 16.48,
             "rotation" : 18.059999999999999,
@@ -19370,6 +20998,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.99
           },
           {
+            "bend" : -0.19,
             "count" : 278,
             "height" : 14.23,
             "rotation" : 14.75,
@@ -19389,6 +21018,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 195,
             "height" : 12.09,
             "rotation" : 1.3999999999999999,
@@ -19397,6 +21027,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.170000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 496,
             "height" : 17.059999999999999,
             "rotation" : 16.949999999999999,
@@ -19405,6 +21036,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 12.91
           },
           {
+            "bend" : -0.17999999999999999,
             "count" : 278,
             "height" : 14.07,
             "rotation" : 14.34,
@@ -19424,6 +21056,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 193,
             "height" : 12.029999999999999,
             "rotation" : 0.56000000000000005,
@@ -19432,6 +21065,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -48.850000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 500,
             "height" : 16.199999999999999,
             "rotation" : 15.49,
@@ -19440,6 +21074,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 14.359999999999999
           },
           {
+            "bend" : -0.17999999999999999,
             "count" : 282,
             "height" : 14.41,
             "rotation" : 13.720000000000001,
@@ -19459,6 +21094,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 194,
             "height" : 12.31,
             "rotation" : -1.8,
@@ -19467,6 +21103,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -46.659999999999997
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 509,
             "height" : 16.77,
             "rotation" : 13.92,
@@ -19475,6 +21112,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 16.629999999999999
           },
           {
+            "bend" : -0.17999999999999999,
             "count" : 286,
             "height" : 14.07,
             "rotation" : 13.470000000000001,
@@ -19494,6 +21132,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 214,
             "height" : 14.27,
             "rotation" : -2.29,
@@ -19502,6 +21141,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -42.93
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 511,
             "height" : 16.620000000000001,
             "rotation" : 10.960000000000001,
@@ -19510,6 +21150,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.609999999999999
           },
           {
+            "bend" : -0.17000000000000001,
             "count" : 290,
             "height" : 14.57,
             "rotation" : 12.44,
@@ -19529,6 +21170,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 255,
             "height" : 15.140000000000001,
             "rotation" : -1.3799999999999999,
@@ -19537,6 +21179,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -35.07
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 512,
             "height" : 16.690000000000001,
             "rotation" : 4.75,
@@ -19545,6 +21188,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 28
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 300,
             "height" : 15.33,
             "rotation" : 11.51,
@@ -19564,6 +21208,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 268,
             "height" : 15.16,
             "rotation" : -1.1499999999999999,
@@ -19572,6 +21217,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.939999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 506,
             "height" : 15.75,
             "rotation" : 3.73,
@@ -19580,6 +21226,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 29.75
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 307,
             "height" : 15.699999999999999,
             "rotation" : 12.24,
@@ -19599,6 +21246,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 279,
             "height" : 15.01,
             "rotation" : 0.14000000000000001,
@@ -19607,6 +21255,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.25
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 504,
             "height" : 15.609999999999999,
             "rotation" : 2.75,
@@ -19615,6 +21264,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 30.940000000000001
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 311,
             "height" : 15.75,
             "rotation" : 13.58,
@@ -19634,6 +21284,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 293,
             "height" : 16.02,
             "rotation" : 1.29,
@@ -19642,6 +21293,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.920000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 500,
             "height" : 15.550000000000001,
             "rotation" : 1.79,
@@ -19650,6 +21302,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.789999999999999
           },
           {
+            "bend" : -0.12,
             "count" : 321,
             "height" : 16.309999999999999,
             "rotation" : 15.529999999999999,
@@ -19669,6 +21322,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.089999999999999997,
             "count" : 305,
             "height" : 16.210000000000001,
             "rotation" : 3.46,
@@ -19677,6 +21331,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.760000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 496,
             "height" : 16,
             "rotation" : 1.3400000000000001,
@@ -19685,6 +21340,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.469999999999999
           },
           {
+            "bend" : -0.11,
             "count" : 332,
             "height" : 16.670000000000002,
             "rotation" : 17.219999999999999,
@@ -19704,6 +21360,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.070000000000000007,
             "count" : 341,
             "height" : 18.879999999999999,
             "rotation" : 10.43,
@@ -19712,6 +21369,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.77
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 494,
             "height" : 15.140000000000001,
             "rotation" : 0.33000000000000002,
@@ -19720,6 +21378,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.369999999999997
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 369,
             "height" : 18.030000000000001,
             "rotation" : 26.73,
@@ -19739,6 +21398,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.070000000000000007,
             "count" : 364,
             "height" : 19.949999999999999,
             "rotation" : 15.85,
@@ -19747,6 +21407,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -25.780000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 491,
             "height" : 16,
             "rotation" : 0.070000000000000007,
@@ -19755,6 +21416,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.729999999999997
           },
           {
+            "bend" : -0.080000000000000002,
             "count" : 398,
             "height" : 18.710000000000001,
             "rotation" : 33.189999999999998,
@@ -19774,6 +21436,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 396,
             "height" : 21.59,
             "rotation" : 25.539999999999999,
@@ -19782,6 +21445,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -24.75
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 492,
             "height" : 15.02,
             "rotation" : -0.059999999999999998,
@@ -19790,6 +21454,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.880000000000003
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 440,
             "height" : 19.350000000000001,
             "rotation" : 41.479999999999997,
@@ -19809,6 +21474,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 438,
             "height" : 21.539999999999999,
             "rotation" : 39.369999999999997,
@@ -19817,6 +21483,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -23.629999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 15.07,
             "rotation" : -0.16,
@@ -19825,6 +21492,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.130000000000003
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 488,
             "height" : 21.149999999999999,
             "rotation" : 51.549999999999997,
@@ -19844,6 +21512,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 488,
             "height" : 23.59,
             "rotation" : 58.219999999999999,
@@ -19852,6 +21521,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22.489999999999998
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 15.02,
             "rotation" : -0.070000000000000007,
@@ -19860,6 +21530,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.280000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 529,
             "height" : 21.620000000000001,
             "rotation" : 63.950000000000003,
@@ -19879,6 +21550,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 572,
             "height" : 22.829999999999998,
             "rotation" : 86.310000000000002,
@@ -19887,6 +21559,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.23
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 16.07,
             "rotation" : -0.40999999999999998,
@@ -19895,6 +21568,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.43
           },
           {
+            "bend" : -0.01,
             "count" : 600,
             "height" : 21.789999999999999,
             "rotation" : 82.540000000000006,
@@ -19914,6 +21588,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 605,
             "height" : 22.489999999999998,
             "rotation" : -87.060000000000002,
@@ -19922,6 +21597,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.550000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 489,
             "height" : 16.050000000000001,
             "rotation" : -0.42999999999999999,
@@ -19930,6 +21606,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.479999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 21.989999999999998,
             "rotation" : 84.859999999999999,
@@ -19949,6 +21626,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 614,
             "height" : 21.890000000000001,
             "rotation" : -85.459999999999994,
@@ -19957,6 +21635,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.329999999999998
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -19965,6 +21644,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 452,
             "height" : 20.829999999999998,
             "rotation" : 83,
@@ -19984,6 +21664,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 458,
             "height" : 20.960000000000001,
             "rotation" : -82.969999999999999,
@@ -19992,6 +21673,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.600000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20000,6 +21682,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 231,
             "height" : 17.129999999999999,
             "rotation" : 64.859999999999999,
@@ -20019,6 +21702,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 235,
             "height" : 17.550000000000001,
             "rotation" : -65.049999999999997,
@@ -20027,6 +21711,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.989999999999998
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20035,6 +21720,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 150,
             "height" : 13.699999999999999,
             "rotation" : 58.82,
@@ -20054,6 +21740,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 11.630000000000001,
             "rotation" : -50.479999999999997,
@@ -20062,6 +21749,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20070,6 +21758,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 12.35,
             "rotation" : 57.789999999999999,
@@ -20089,6 +21778,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 102,
             "height" : 11.82,
             "rotation" : -55.890000000000001,
@@ -20097,6 +21787,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20105,6 +21796,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 147,
             "height" : 13.52,
             "rotation" : 59.009999999999998,
@@ -20124,6 +21816,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 145,
             "height" : 13.67,
             "rotation" : -59.840000000000003,
@@ -20132,6 +21825,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.010000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20140,6 +21834,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 232,
             "height" : 17.149999999999999,
             "rotation" : 66.579999999999998,
@@ -20159,6 +21854,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 235,
             "height" : 17.52,
             "rotation" : -68.840000000000003,
@@ -20167,6 +21863,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.920000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20175,6 +21872,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 441,
             "height" : 20.620000000000001,
             "rotation" : 82.519999999999996,
@@ -20194,6 +21892,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 446,
             "height" : 20.82,
             "rotation" : -83.099999999999994,
@@ -20202,6 +21901,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.620000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20210,6 +21910,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 607,
             "height" : 22,
             "rotation" : 84.849999999999994,
@@ -20229,6 +21930,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -20237,6 +21939,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20245,6 +21948,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -20264,6 +21968,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -20272,6 +21977,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20280,6 +21986,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -20299,6 +22006,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 615,
             "height" : 21.91,
             "rotation" : -85.329999999999998,
@@ -20307,6 +22015,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.34
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20315,6 +22024,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 452,
             "height" : 20.829999999999998,
             "rotation" : 83,
@@ -20334,6 +22044,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 458,
             "height" : 20.960000000000001,
             "rotation" : -82.969999999999999,
@@ -20342,6 +22053,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.600000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20350,6 +22062,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 231,
             "height" : 17.129999999999999,
             "rotation" : 64.859999999999999,
@@ -20369,6 +22082,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 235,
             "height" : 17.550000000000001,
             "rotation" : -65.049999999999997,
@@ -20377,6 +22091,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.989999999999998
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20385,6 +22100,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 150,
             "height" : 13.699999999999999,
             "rotation" : 58.82,
@@ -20404,6 +22120,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 147,
             "height" : 13.699999999999999,
             "rotation" : -58.700000000000003,
@@ -20412,6 +22129,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.059999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20420,6 +22138,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 105,
             "height" : 12.16,
             "rotation" : 66.969999999999999,
@@ -20439,6 +22158,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 11.630000000000001,
             "rotation" : -50.479999999999997,
@@ -20447,6 +22167,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20455,6 +22176,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 12.35,
             "rotation" : 57.789999999999999,
@@ -20474,6 +22196,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 145,
             "height" : 13.67,
             "rotation" : -59.840000000000003,
@@ -20482,6 +22205,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.010000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20490,6 +22214,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 232,
             "height" : 17.149999999999999,
             "rotation" : 66.579999999999998,
@@ -20509,6 +22234,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 235,
             "height" : 17.52,
             "rotation" : -68.840000000000003,
@@ -20517,6 +22243,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.920000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20525,6 +22252,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 441,
             "height" : 20.620000000000001,
             "rotation" : 82.519999999999996,
@@ -20544,6 +22272,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 446,
             "height" : 20.82,
             "rotation" : -83.099999999999994,
@@ -20552,6 +22281,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.620000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20560,6 +22290,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 607,
             "height" : 22,
             "rotation" : 84.849999999999994,
@@ -20579,6 +22310,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 611,
             "height" : 22.010000000000002,
             "rotation" : -85.359999999999999,
@@ -20587,6 +22319,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.350000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20595,6 +22328,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -20614,6 +22348,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -20622,6 +22357,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20630,6 +22366,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -20649,6 +22386,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -20657,6 +22395,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20665,6 +22404,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -20684,6 +22424,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 617,
             "height" : 22.260000000000002,
             "rotation" : -85.290000000000006,
@@ -20692,6 +22433,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.390000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20700,6 +22442,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -20719,6 +22462,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 614,
             "height" : 21.789999999999999,
             "rotation" : -84.319999999999993,
@@ -20727,6 +22471,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.940000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20735,6 +22480,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -20754,6 +22500,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 613,
             "height" : 22.75,
             "rotation" : -83.719999999999999,
@@ -20762,6 +22509,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.370000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20770,6 +22518,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -20789,6 +22538,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.32,
             "rotation" : -82.980000000000004,
@@ -20797,6 +22547,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.059999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20805,6 +22556,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 22.09,
             "rotation" : 84.840000000000003,
@@ -20824,6 +22576,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 605,
             "height" : 21.969999999999999,
             "rotation" : -81.439999999999998,
@@ -20832,6 +22585,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.84
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20840,6 +22594,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.969999999999999,
             "rotation" : 84.980000000000004,
@@ -20859,6 +22614,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 599,
             "height" : 21.75,
             "rotation" : -79.75,
@@ -20867,6 +22623,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22.879999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20875,6 +22632,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 615,
             "height" : 22.09,
             "rotation" : 85.260000000000005,
@@ -20894,6 +22652,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 584,
             "height" : 21.609999999999999,
             "rotation" : -74.390000000000001,
@@ -20902,6 +22661,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -25.77
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20910,6 +22670,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 628,
             "height" : 23.09,
             "rotation" : 85.239999999999995,
@@ -20929,6 +22690,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 572,
             "height" : 20.809999999999999,
             "rotation" : -70.510000000000005,
@@ -20937,6 +22699,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -27.649999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20945,6 +22708,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 636,
             "height" : 23.129999999999999,
             "rotation" : 85.760000000000005,
@@ -20964,6 +22728,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 561,
             "height" : 20.510000000000002,
             "rotation" : -65.040000000000006,
@@ -20972,6 +22737,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.98
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -20980,6 +22746,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 647,
             "height" : 23.059999999999999,
             "rotation" : 86.5,
@@ -20999,6 +22766,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 545,
             "height" : 19.530000000000001,
             "rotation" : -56.700000000000003,
@@ -21007,6 +22775,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.649999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -21015,6 +22784,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 660,
             "height" : 23.579999999999998,
             "rotation" : 87.109999999999999,
@@ -21034,6 +22804,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 521,
             "height" : 19.530000000000001,
             "rotation" : -48.810000000000002,
@@ -21042,6 +22813,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -35.979999999999997
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -21050,6 +22822,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 674,
             "height" : 24.219999999999999,
             "rotation" : 87.670000000000002,
@@ -21069,6 +22842,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 15.779999999999999,
             "rotation" : -37.229999999999997,
@@ -21077,6 +22851,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.460000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -21085,6 +22860,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 705,
             "height" : 25.109999999999999,
             "rotation" : -89.450000000000003,
@@ -21104,6 +22880,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 397,
             "height" : 15.789999999999999,
             "rotation" : -37,
@@ -21112,6 +22889,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.520000000000003
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -21120,6 +22898,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 711,
             "height" : 26.059999999999999,
             "rotation" : -87.769999999999996,
@@ -21139,6 +22918,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 397,
             "height" : 15.800000000000001,
             "rotation" : -36.920000000000002,
@@ -21147,6 +22927,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.640000000000001
           },
           {
+            "bend" : -0,
             "count" : 710,
             "height" : 26.829999999999998,
             "rotation" : -85.340000000000003,
@@ -21155,6 +22936,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -17.09
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -21174,6 +22956,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 394,
             "height" : 15.83,
             "rotation" : -36.340000000000003,
@@ -21182,6 +22965,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.899999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 683,
             "height" : 26.66,
             "rotation" : -82.629999999999995,
@@ -21190,6 +22974,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -16.199999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -21209,6 +22994,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 395,
             "height" : 15.859999999999999,
             "rotation" : -35.939999999999998,
@@ -21217,6 +23003,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -52.219999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 599,
             "height" : 25.890000000000001,
             "rotation" : -79.010000000000005,
@@ -21225,6 +23012,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -14.68
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -21244,6 +23032,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 382,
             "height" : 15.890000000000001,
             "rotation" : -79.040000000000006,
@@ -21252,6 +23041,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.300000000000001
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 389,
             "height" : 15.67,
             "rotation" : -34.630000000000003,
@@ -21260,6 +23050,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -53.100000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -21279,6 +23070,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.13,
             "count" : 620,
             "height" : 17.27,
             "rotation" : -42.159999999999997,
@@ -21287,6 +23079,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -47.710000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -21306,6 +23099,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 382,
             "height" : 15.83,
             "rotation" : -32.159999999999997,
@@ -21314,6 +23108,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -54.630000000000003
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -21333,6 +23128,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14000000000000001,
             "count" : 606,
             "height" : 17.420000000000002,
             "rotation" : -21.460000000000001,
@@ -21341,6 +23137,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -58.549999999999997
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -21360,6 +23157,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 363,
             "height" : 15.59,
             "rotation" : -29.260000000000002,
@@ -21368,6 +23166,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -56.340000000000003
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -21376,6 +23175,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 290,
             "height" : 15.43,
             "rotation" : 8.1799999999999997,
@@ -21395,6 +23195,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 344,
             "height" : 15.59,
             "rotation" : -24.66,
@@ -21403,6 +23204,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -58.460000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -21411,6 +23213,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 338,
             "height" : 15.470000000000001,
             "rotation" : 39.789999999999999,
@@ -21430,6 +23233,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 332,
             "height" : 15.57,
             "rotation" : -22.329999999999998,
@@ -21438,6 +23242,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -59.619999999999997
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.02,
             "rotation" : -0.17000000000000001,
@@ -21446,6 +23251,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.469999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 359,
             "height" : 15.550000000000001,
             "rotation" : 54.07,
@@ -21465,6 +23271,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 319,
             "height" : 15.390000000000001,
             "rotation" : -19.600000000000001,
@@ -21473,6 +23280,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -60.789999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 489,
             "height" : 15.119999999999999,
             "rotation" : 0.28999999999999998,
@@ -21481,6 +23289,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.390000000000001
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 376,
             "height" : 15.539999999999999,
             "rotation" : 67.409999999999997,
@@ -21500,6 +23309,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 304,
             "height" : 15.56,
             "rotation" : -16.289999999999999,
@@ -21508,6 +23318,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -61.880000000000003
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 490,
             "height" : 15.529999999999999,
             "rotation" : 1.46,
@@ -21516,6 +23327,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.25
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 386,
             "height" : 15.68,
             "rotation" : 79.780000000000001,
@@ -21535,6 +23347,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 289,
             "height" : 15.640000000000001,
             "rotation" : -12.619999999999999,
@@ -21543,6 +23356,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -62.869999999999997
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 491,
             "height" : 15.949999999999999,
             "rotation" : 2.9100000000000001,
@@ -21551,6 +23365,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.009999999999998
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 399,
             "height" : 15.43,
             "rotation" : -88.329999999999998,
@@ -21570,6 +23385,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 494,
             "height" : 16.079999999999998,
             "rotation" : 7.7300000000000004,
@@ -21578,6 +23394,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.049999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 250,
             "height" : 15.17,
             "rotation" : -3.9300000000000002,
@@ -21586,6 +23403,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -64.290000000000006
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 415,
             "height" : 15.84,
             "rotation" : -66.760000000000005,
@@ -21605,6 +23423,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.040000000000000001,
             "count" : 493,
             "height" : 15.9,
             "rotation" : 11.210000000000001,
@@ -21613,6 +23432,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.310000000000002
           },
           {
+            "bend" : -0,
             "count" : 226,
             "height" : 15.1,
             "rotation" : 2.1299999999999999,
@@ -21621,6 +23441,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -64.409999999999997
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 419,
             "height" : 15.720000000000001,
             "rotation" : -56.420000000000002,
@@ -21640,6 +23461,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 494,
             "height" : 15.869999999999999,
             "rotation" : 15.470000000000001,
@@ -21648,6 +23470,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.149999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 244,
             "height" : 15.279999999999999,
             "rotation" : 7.79,
@@ -21656,6 +23479,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -63.740000000000002
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 426,
             "height" : 15.76,
             "rotation" : -47.060000000000002,
@@ -21675,6 +23499,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 492,
             "height" : 15.34,
             "rotation" : 20.890000000000001,
@@ -21683,6 +23508,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 29.52
           },
           {
+            "bend" : -0.02,
             "count" : 273,
             "height" : 15.67,
             "rotation" : 15.58,
@@ -21691,6 +23517,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -62.140000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 427,
             "height" : 15.890000000000001,
             "rotation" : -38.049999999999997,
@@ -21710,6 +23537,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 485,
             "height" : 15.529999999999999,
             "rotation" : 27.379999999999999,
@@ -21718,6 +23546,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 27.059999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 307,
             "height" : 15.31,
             "rotation" : 23.52,
@@ -21726,6 +23555,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -58.979999999999997
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 431,
             "height" : 15.890000000000001,
             "rotation" : -29.66,
@@ -21745,6 +23575,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.040000000000000001,
             "count" : 462,
             "height" : 15.35,
             "rotation" : 45.960000000000001,
@@ -21753,6 +23584,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 18.489999999999998
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 431,
             "height" : 16.02,
             "rotation" : -13.73,
@@ -21761,6 +23593,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 60.93
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 396,
             "height" : 15.210000000000001,
             "rotation" : 44.780000000000001,
@@ -21780,6 +23613,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.050000000000000003,
             "count" : 429,
             "height" : 14.85,
             "rotation" : 59.579999999999998,
@@ -21788,6 +23622,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 10.779999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 434,
             "height" : 16.260000000000002,
             "rotation" : -6.1699999999999999,
@@ -21796,6 +23631,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 62.369999999999997
           },
           {
+            "bend" : -0.070000000000000007,
             "count" : 452,
             "height" : 15.859999999999999,
             "rotation" : 58.450000000000003,
@@ -21815,6 +23651,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.059999999999999998,
             "count" : 379,
             "height" : 15.27,
             "rotation" : 77.189999999999998,
@@ -21823,6 +23660,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -1.23
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 432,
             "height" : 15.109999999999999,
             "rotation" : 0.33000000000000002,
@@ -21831,6 +23669,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 62.810000000000002
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 527,
             "height" : 16.579999999999998,
             "rotation" : 75.090000000000003,
@@ -21850,6 +23689,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 380,
             "height" : 15.800000000000001,
             "rotation" : -63.840000000000003,
@@ -21858,6 +23698,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.969999999999999
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 431,
             "height" : 16.140000000000001,
             "rotation" : 7.0999999999999996,
@@ -21866,6 +23707,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 62.259999999999998
           },
           {
+            "bend" : 0.13,
             "count" : 627,
             "height" : 17.719999999999999,
             "rotation" : -83.859999999999999,
@@ -21885,6 +23727,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 284,
             "height" : 15.210000000000001,
             "rotation" : -38.850000000000001,
@@ -21893,6 +23736,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.420000000000002
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 428,
             "height" : 16,
             "rotation" : 13.18,
@@ -21901,6 +23745,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 61.030000000000001
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 742,
             "height" : 18.809999999999999,
             "rotation" : -57.75,
@@ -21920,6 +23765,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.27000000000000002,
             "count" : 985,
             "height" : 23.010000000000002,
             "rotation" : 7.4699999999999998,
@@ -21928,6 +23774,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 59.789999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 255,
             "height" : 15.140000000000001,
             "rotation" : 2.9399999999999999,
@@ -21947,6 +23794,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.13,
             "count" : 634,
             "height" : 17.649999999999999,
             "rotation" : 23.960000000000001,
@@ -21955,6 +23803,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 56.68
           },
           {
+            "bend" : -0.02,
             "count" : 290,
             "height" : 14.970000000000001,
             "rotation" : 19.359999999999999,
@@ -21974,6 +23823,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.089999999999999997,
             "count" : 522,
             "height" : 17.010000000000002,
             "rotation" : 39.799999999999997,
@@ -21982,6 +23832,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 48.229999999999997
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 315,
             "height" : 15.19,
             "rotation" : 35.93,
@@ -22001,6 +23852,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.14000000000000001,
             "count" : 666,
             "height" : 17.52,
             "rotation" : 48.93,
@@ -22009,6 +23861,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 40.439999999999998
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 341,
             "height" : 15.6,
             "rotation" : 50.259999999999998,
@@ -22028,6 +23881,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.17999999999999999,
             "count" : 734,
             "height" : 18.780000000000001,
             "rotation" : 57.399999999999999,
@@ -22036,6 +23890,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 357,
             "height" : 15.44,
             "rotation" : 64.5,
@@ -22055,6 +23910,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 270,
             "height" : 15.15,
             "rotation" : 88.739999999999995,
@@ -22063,6 +23919,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -0.33000000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 346,
             "height" : 15.65,
             "rotation" : 53.490000000000002,
@@ -22071,6 +23928,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 37.380000000000003
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 389,
             "height" : 15.27,
             "rotation" : 88.890000000000001,
@@ -22090,6 +23948,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 242,
             "height" : 15.52,
             "rotation" : -82.689999999999998,
@@ -22098,6 +23957,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -8.5500000000000007
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 311,
             "height" : 15.44,
             "rotation" : 56.469999999999999,
@@ -22106,6 +23966,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.619999999999997
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 400,
             "height" : 15.85,
             "rotation" : -79.609999999999999,
@@ -22125,6 +23986,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 228,
             "height" : 15.359999999999999,
             "rotation" : -76.620000000000005,
@@ -22133,6 +23995,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -15.59
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 281,
             "height" : 15.41,
             "rotation" : 59.109999999999999,
@@ -22141,6 +24004,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.719999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 406,
             "height" : 15.74,
             "rotation" : -69.560000000000002,
@@ -22160,6 +24024,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 252,
             "height" : 15.57,
             "rotation" : -70.909999999999997,
@@ -22168,6 +24033,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.48
           },
           {
+            "bend" : 0.02,
             "count" : 256,
             "height" : 15.279999999999999,
             "rotation" : 61.32,
@@ -22176,6 +24042,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 28.710000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 415,
             "height" : 16.100000000000001,
             "rotation" : -59.07,
@@ -22195,6 +24062,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 272,
             "height" : 15.58,
             "rotation" : -66.709999999999994,
@@ -22203,6 +24071,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.5
           },
           {
+            "bend" : 0.02,
             "count" : 235,
             "height" : 15.32,
             "rotation" : 65.200000000000003,
@@ -22211,6 +24080,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 25.780000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 421,
             "height" : 15.83,
             "rotation" : -49.590000000000003,
@@ -22230,6 +24100,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 245,
             "height" : 15.539999999999999,
             "rotation" : 71.060000000000002,
@@ -22238,6 +24109,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 19.940000000000001
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 305,
             "height" : 15.6,
             "rotation" : -58.649999999999999,
@@ -22246,6 +24118,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -34.240000000000002
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 428,
             "height" : 15.84,
             "rotation" : -31.949999999999999,
@@ -22265,6 +24138,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 262,
             "height" : 15.699999999999999,
             "rotation" : 74.040000000000006,
@@ -22273,6 +24147,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 17.239999999999998
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 319,
             "height" : 15.48,
             "rotation" : -55.399999999999999,
@@ -22281,6 +24156,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -37.189999999999998
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 430,
             "height" : 15.890000000000001,
             "rotation" : -23.59,
@@ -22300,6 +24176,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 276,
             "height" : 15.56,
             "rotation" : 75.870000000000005,
@@ -22308,6 +24185,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 14.619999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 330,
             "height" : 15.56,
             "rotation" : -52.229999999999997,
@@ -22316,6 +24194,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -39.759999999999998
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 432,
             "height" : 15.85,
             "rotation" : -15.84,
@@ -22335,6 +24214,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 288,
             "height" : 15.94,
             "rotation" : 78.049999999999997,
@@ -22343,6 +24223,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 12.07
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 341,
             "height" : 15.74,
             "rotation" : -49.700000000000003,
@@ -22351,6 +24232,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.890000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 434,
             "height" : 16.16,
             "rotation" : -8.3300000000000001,
@@ -22370,6 +24252,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 303,
             "height" : 15.81,
             "rotation" : 80.370000000000005,
@@ -22378,6 +24261,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 9.7300000000000004
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 351,
             "height" : 15.800000000000001,
             "rotation" : -47.509999999999998,
@@ -22386,6 +24270,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -43.659999999999997
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 431,
             "height" : 15.42,
             "rotation" : -1.27,
@@ -22405,6 +24290,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 324,
             "height" : 15.92,
             "rotation" : 84.349999999999994,
@@ -22413,6 +24299,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 5.2699999999999996
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 366,
             "height" : 15.960000000000001,
             "rotation" : -43.689999999999998,
@@ -22421,6 +24308,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -46.560000000000002
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 431,
             "height" : 16.140000000000001,
             "rotation" : 11.119999999999999,
@@ -22440,6 +24328,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 333,
             "height" : 15.699999999999999,
             "rotation" : 85.769999999999996,
@@ -22448,6 +24337,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 3.3599999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 373,
             "height" : 15.92,
             "rotation" : -42.710000000000001,
@@ -22456,6 +24346,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -47.630000000000003
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 427,
             "height" : 16.350000000000001,
             "rotation" : 17.719999999999999,
@@ -22475,6 +24366,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 343,
             "height" : 16.100000000000001,
             "rotation" : 87.799999999999997,
@@ -22483,6 +24375,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 1.4399999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 377,
             "height" : 15.869999999999999,
             "rotation" : -41.640000000000001,
@@ -22491,6 +24384,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -48.659999999999997
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 423,
             "height" : 16.690000000000001,
             "rotation" : 23.629999999999999,
@@ -22510,6 +24404,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 349,
             "height" : 16.079999999999998,
             "rotation" : 89.209999999999994,
@@ -22518,6 +24413,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -0.22
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 383,
             "height" : 15.67,
             "rotation" : -40.299999999999997,
@@ -22526,6 +24422,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -49.359999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 420,
             "height" : 16.07,
             "rotation" : 28.850000000000001,
@@ -22545,6 +24442,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 357,
             "height" : 15.300000000000001,
             "rotation" : -88.739999999999995,
@@ -22553,6 +24451,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -1.9299999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 387,
             "height" : 15.800000000000001,
             "rotation" : -39.049999999999997,
@@ -22561,6 +24460,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.07
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 416,
             "height" : 16.550000000000001,
             "rotation" : 33.829999999999998,
@@ -22580,6 +24480,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 369,
             "height" : 15.66,
             "rotation" : -86.739999999999995,
@@ -22588,6 +24489,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -4.6299999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 409,
             "height" : 15.289999999999999,
             "rotation" : 44.450000000000003,
@@ -22596,6 +24498,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 44.93
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 393,
             "height" : 15.9,
             "rotation" : -37.960000000000001,
@@ -22615,6 +24518,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 376,
             "height" : 15.960000000000001,
             "rotation" : -85.670000000000002,
@@ -22623,6 +24527,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -5.8899999999999997
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 405,
             "height" : 15.699999999999999,
             "rotation" : 48.369999999999997,
@@ -22631,6 +24536,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 41.259999999999998
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 15.779999999999999,
             "rotation" : -37.119999999999997,
@@ -22650,6 +24556,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 380,
             "height" : 16.030000000000001,
             "rotation" : -84.670000000000002,
@@ -22658,6 +24565,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -6.9800000000000004
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 394,
             "height" : 15.77,
             "rotation" : 52.899999999999999,
@@ -22666,6 +24574,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 37.729999999999997
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 397,
             "height" : 15.800000000000001,
             "rotation" : -36.869999999999997,
@@ -22685,6 +24594,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 386,
             "height" : 16.07,
             "rotation" : -84.040000000000006,
@@ -22693,6 +24603,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -7.9100000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 346,
             "height" : 15.83,
             "rotation" : 55.509999999999998,
@@ -22701,6 +24612,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.299999999999997
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 397,
             "height" : 15.789999999999999,
             "rotation" : -36.979999999999997,
@@ -22720,6 +24632,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 390,
             "height" : 16.100000000000001,
             "rotation" : -83.120000000000005,
@@ -22728,6 +24641,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -8.8000000000000007
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 311,
             "height" : 15.619999999999999,
             "rotation" : 58.259999999999998,
@@ -22736,6 +24650,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.539999999999999
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 15.82,
             "rotation" : -36.479999999999997,
@@ -22755,6 +24670,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 395,
             "height" : 16.140000000000001,
             "rotation" : -81.780000000000001,
@@ -22763,6 +24679,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.039999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 257,
             "height" : 15.33,
             "rotation" : 63.630000000000003,
@@ -22771,6 +24688,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.920000000000002
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 15.779999999999999,
             "rotation" : -37.219999999999999,
@@ -22790,6 +24708,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 396,
             "height" : 16.219999999999999,
             "rotation" : -81.379999999999995,
@@ -22798,6 +24717,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.539999999999999
           },
           {
+            "bend" : 0.01,
             "count" : 235,
             "height" : 15.449999999999999,
             "rotation" : 66.890000000000001,
@@ -22806,6 +24726,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 24.039999999999999
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 397,
             "height" : 15.800000000000001,
             "rotation" : -36.920000000000002,
@@ -22825,6 +24746,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 399,
             "height" : 16.23,
             "rotation" : -81.079999999999998,
@@ -22833,6 +24755,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.9
           },
           {
+            "bend" : 0.01,
             "count" : 226,
             "height" : 15.52,
             "rotation" : 69.950000000000003,
@@ -22841,6 +24764,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.23
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 15.81,
             "rotation" : -36.640000000000001,
@@ -22860,6 +24784,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 401,
             "height" : 16.18,
             "rotation" : -81.010000000000005,
@@ -22868,6 +24793,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.1
           },
           {
+            "bend" : 0.02,
             "count" : 245,
             "height" : 15.550000000000001,
             "rotation" : 72.150000000000006,
@@ -22876,6 +24802,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 18.510000000000002
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 15.84,
             "rotation" : -36.270000000000003,
@@ -22895,6 +24822,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.17000000000000001,
             "count" : 661,
             "height" : 17.32,
             "rotation" : 88.980000000000004,
@@ -22903,6 +24831,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -0.63
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 392,
             "height" : 15.74,
             "rotation" : -35.390000000000001,
@@ -22922,6 +24851,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14999999999999999,
             "count" : 659,
             "height" : 16.899999999999999,
             "rotation" : -88.629999999999995,
@@ -22930,6 +24860,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -2.5
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 382,
             "height" : 15.44,
             "rotation" : -33.600000000000001,
@@ -22949,6 +24880,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14000000000000001,
             "count" : 646,
             "height" : 17.010000000000002,
             "rotation" : -87.739999999999995,
@@ -22957,6 +24889,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -3.3999999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 377,
             "height" : 15.65,
             "rotation" : -32.490000000000002,
@@ -22976,6 +24909,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.13,
             "count" : 631,
             "height" : 17.300000000000001,
             "rotation" : -86.689999999999998,
@@ -22984,6 +24918,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -4.46
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 369,
             "height" : 15.58,
             "rotation" : -30.989999999999998,
@@ -23003,6 +24938,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.13,
             "count" : 616,
             "height" : 16.68,
             "rotation" : -85.930000000000007,
@@ -23011,6 +24947,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -5.5
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 363,
             "height" : 15.59,
             "rotation" : -29.239999999999998,
@@ -23030,6 +24967,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 604,
             "height" : 17.219999999999999,
             "rotation" : -84.849999999999994,
@@ -23038,6 +24976,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -6.5199999999999996
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 354,
             "height" : 15.74,
             "rotation" : -26.989999999999998,
@@ -23057,6 +24996,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 587,
             "height" : 17.030000000000001,
             "rotation" : -82.780000000000001,
@@ -23065,6 +25005,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -8.7799999999999994
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 333,
             "height" : 15.609999999999999,
             "rotation" : -22.59,
@@ -23084,6 +25025,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 585,
             "height" : 16.699999999999999,
             "rotation" : -81.870000000000005,
@@ -23092,6 +25034,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.06
           },
           {
+            "bend" : -0.02,
             "count" : 319,
             "height" : 15.390000000000001,
             "rotation" : -19.600000000000001,
@@ -23111,6 +25054,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 591,
             "height" : 16.93,
             "rotation" : -80.640000000000001,
@@ -23119,6 +25063,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.289999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 304,
             "height" : 15.56,
             "rotation" : -16.289999999999999,
@@ -23138,6 +25083,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 597,
             "height" : 17.129999999999999,
             "rotation" : -79.510000000000005,
@@ -23146,6 +25092,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -12.51
           },
           {
+            "bend" : -0.02,
             "count" : 289,
             "height" : 15.640000000000001,
             "rotation" : -12.619999999999999,
@@ -23165,6 +25112,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 609,
             "height" : 17.18,
             "rotation" : -78.049999999999997,
@@ -23173,6 +25121,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.91
           },
           {
+            "bend" : -0.02,
             "count" : 271,
             "height" : 15.57,
             "rotation" : -8.2699999999999996,
@@ -23192,6 +25141,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.13,
             "count" : 644,
             "height" : 17.260000000000002,
             "rotation" : -75.319999999999993,
@@ -23200,6 +25150,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -16.760000000000002
           },
           {
+            "bend" : -0,
             "count" : 226,
             "height" : 15.1,
             "rotation" : 2.1299999999999999,
@@ -23219,6 +25170,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14000000000000001,
             "count" : 664,
             "height" : 17.420000000000002,
             "rotation" : -73.620000000000005,
@@ -23227,6 +25179,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.289999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 244,
             "height" : 15.279999999999999,
             "rotation" : 7.79,
@@ -23246,6 +25199,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.16,
             "count" : 683,
             "height" : 17.690000000000001,
             "rotation" : -71.870000000000005,
@@ -23254,6 +25208,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.859999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 273,
             "height" : 15.67,
             "rotation" : 15.58,
@@ -23273,6 +25228,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.17999999999999999,
             "count" : 684,
             "height" : 17.899999999999999,
             "rotation" : -69.810000000000002,
@@ -23281,6 +25237,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.350000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 307,
             "height" : 15.31,
             "rotation" : 23.52,
@@ -23300,6 +25257,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 396,
             "height" : 16.219999999999999,
             "rotation" : -81.420000000000002,
@@ -23308,6 +25266,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.550000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 273,
             "height" : 15.52,
             "rotation" : -51.340000000000003,
@@ -23316,6 +25275,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -40.479999999999997
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 345,
             "height" : 15.44,
             "rotation" : 33.619999999999997,
@@ -23335,6 +25295,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 400,
             "height" : 16.16,
             "rotation" : -80.849999999999994,
@@ -23343,6 +25304,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.140000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 229,
             "height" : 15.289999999999999,
             "rotation" : -41.329999999999998,
@@ -23351,6 +25313,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -48.659999999999997
           },
           {
+            "bend" : -0.070000000000000007,
             "count" : 452,
             "height" : 15.859999999999999,
             "rotation" : 58.450000000000003,
@@ -23370,6 +25333,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 400,
             "height" : 16.149999999999999,
             "rotation" : -80.769999999999996,
@@ -23378,6 +25342,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.359999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 244,
             "height" : 15.640000000000001,
             "rotation" : -35.859999999999999,
@@ -23386,6 +25351,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -52.840000000000003
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 527,
             "height" : 16.579999999999998,
             "rotation" : 75.090000000000003,
@@ -23405,6 +25371,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 414,
             "height" : 16.309999999999999,
             "rotation" : -80.390000000000001,
@@ -23413,6 +25380,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.57
           },
           {
+            "bend" : -0.02,
             "count" : 272,
             "height" : 15.43,
             "rotation" : -28.350000000000001,
@@ -23421,6 +25389,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -56.939999999999998
           },
           {
+            "bend" : 0.13,
             "count" : 627,
             "height" : 17.719999999999999,
             "rotation" : -83.859999999999999,
@@ -23440,6 +25409,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 401,
             "height" : 16.210000000000001,
             "rotation" : -79.609999999999999,
@@ -23448,6 +25418,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.890000000000001
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 309,
             "height" : 15.32,
             "rotation" : -19.510000000000002,
@@ -23456,6 +25427,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -60.590000000000003
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 742,
             "height" : 18.809999999999999,
             "rotation" : -57.75,
@@ -23475,6 +25447,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 16.210000000000001,
             "rotation" : -79.670000000000002,
@@ -23483,6 +25456,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -12.109999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 348,
             "height" : 15.82,
             "rotation" : -9.9100000000000001,
@@ -23491,6 +25465,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -63.299999999999997
           },
           {
+            "bend" : 0.17999999999999999,
             "count" : 742,
             "height" : 19.100000000000001,
             "rotation" : -30.350000000000001,
@@ -23510,6 +25485,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 16.059999999999999,
             "rotation" : -79.189999999999998,
@@ -23518,6 +25494,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.029999999999999
           },
           {
+            "bend" : 0.089999999999999997,
             "count" : 525,
             "height" : 17.300000000000001,
             "rotation" : 20.82,
@@ -23526,6 +25503,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 58.380000000000003
           },
           {
+            "bend" : -0.070000000000000007,
             "count" : 451,
             "height" : 15.93,
             "rotation" : 14.84,
@@ -23545,6 +25523,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 392,
             "height" : 16.010000000000002,
             "rotation" : -78.209999999999994,
@@ -23553,6 +25532,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.720000000000001
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 454,
             "height" : 16.600000000000001,
             "rotation" : 41.590000000000003,
@@ -23561,6 +25541,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 46.939999999999998
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 528,
             "height" : 16.440000000000001,
             "rotation" : 31.690000000000001,
@@ -23580,6 +25561,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 387,
             "height" : 15.85,
             "rotation" : -77.540000000000006,
@@ -23588,6 +25570,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -14.640000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 392,
             "height" : 16.129999999999999,
             "rotation" : 57.210000000000001,
@@ -23596,6 +25579,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.689999999999998
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 626,
             "height" : 17.350000000000001,
             "rotation" : 52.93,
@@ -23615,6 +25599,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 383,
             "height" : 15.76,
             "rotation" : -76.319999999999993,
@@ -23623,6 +25608,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -15.640000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 347,
             "height" : 16.109999999999999,
             "rotation" : 70.780000000000001,
@@ -23631,6 +25617,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.800000000000001
           },
           {
+            "bend" : -0.16,
             "count" : 739,
             "height" : 19.399999999999999,
             "rotation" : 78.790000000000006,
@@ -23650,6 +25637,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.16,
             "count" : 678,
             "height" : 17.449999999999999,
             "rotation" : -86.290000000000006,
@@ -23658,6 +25646,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -5.21
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 742,
             "height" : 19.579999999999998,
             "rotation" : -73.700000000000003,
@@ -23677,6 +25666,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.070000000000000007,
             "count" : 478,
             "height" : 16.079999999999998,
             "rotation" : -75.760000000000005,
@@ -23685,6 +25675,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -16.399999999999999
           },
           {
+            "bend" : 0.089999999999999997,
             "count" : 528,
             "height" : 16.960000000000001,
             "rotation" : -22.469999999999999,
@@ -23704,6 +25695,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 397,
             "height" : 15.56,
             "rotation" : -71.5,
@@ -23712,6 +25704,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.989999999999998
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 455,
             "height" : 15.949999999999999,
             "rotation" : -2.2200000000000002,
@@ -23731,6 +25724,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 353,
             "height" : 15.859999999999999,
             "rotation" : -68.489999999999995,
@@ -23739,6 +25733,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -24.390000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 392,
             "height" : 16.390000000000001,
             "rotation" : 13.130000000000001,
@@ -23758,6 +25753,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 336,
             "height" : 15.82,
             "rotation" : -65.75,
@@ -23766,6 +25762,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -27.219999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 346,
             "height" : 15.75,
             "rotation" : 26.18,
@@ -23785,6 +25782,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 324,
             "height" : 15.82,
             "rotation" : -62.68,
@@ -23793,6 +25791,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -30.219999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 305,
             "height" : 15.83,
             "rotation" : 36.439999999999998,
@@ -23812,6 +25811,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 326,
             "height" : 15.91,
             "rotation" : -55.060000000000002,
@@ -23820,6 +25820,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -37.07
           },
           {
+            "bend" : 0.01,
             "count" : 237,
             "height" : 15.19,
             "rotation" : 54.170000000000002,
@@ -23839,6 +25840,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 228,
             "height" : 16.120000000000001,
             "rotation" : 59.990000000000002,
@@ -23847,6 +25849,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.52
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 334,
             "height" : 15.949999999999999,
             "rotation" : -52.509999999999998,
@@ -23866,6 +25869,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 250,
             "height" : 15.369999999999999,
             "rotation" : 64.75,
@@ -23874,6 +25878,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.039999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 352,
             "height" : 15.970000000000001,
             "rotation" : -49.670000000000002,
@@ -23893,6 +25898,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 270,
             "height" : 15.869999999999999,
             "rotation" : 69.950000000000003,
@@ -23901,6 +25907,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.170000000000002
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 392,
             "height" : 15.99,
             "rotation" : -46.060000000000002,
@@ -23920,6 +25927,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 287,
             "height" : 15.56,
             "rotation" : 73.329999999999998,
@@ -23928,6 +25936,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 16.75
           },
           {
+            "bend" : -0.059999999999999998,
             "count" : 470,
             "height" : 16.170000000000002,
             "rotation" : -41.969999999999999,
@@ -23947,6 +25956,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 318,
             "height" : 15.800000000000001,
             "rotation" : 80.599999999999994,
@@ -23955,6 +25965,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 9.2799999999999994
           },
           {
+            "bend" : -0.14999999999999999,
             "count" : 666,
             "height" : 17.780000000000001,
             "rotation" : -31.870000000000001,
@@ -23974,6 +25985,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 330,
             "height" : 15.91,
             "rotation" : 83.709999999999994,
@@ -23982,6 +25994,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 6.1399999999999997
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 377,
             "height" : 15.859999999999999,
             "rotation" : -41.609999999999999,
@@ -23990,6 +26003,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -48.600000000000001
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 349,
             "height" : 15.84,
             "rotation" : -10.26,
@@ -24009,6 +26023,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 341,
             "height" : 15.630000000000001,
             "rotation" : 86.230000000000004,
@@ -24017,6 +26032,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 3.3500000000000001
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 382,
             "height" : 15.66,
             "rotation" : -40.439999999999998,
@@ -24025,6 +26041,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -49.380000000000003
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 396,
             "height" : 16.219999999999999,
             "rotation" : 1.3999999999999999,
@@ -24044,6 +26061,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 350,
             "height" : 16.120000000000001,
             "rotation" : 88.109999999999999,
@@ -24052,6 +26070,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 0.91000000000000003
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 388,
             "height" : 15.779999999999999,
             "rotation" : -39.270000000000003,
@@ -24060,6 +26079,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.039999999999999
           },
           {
+            "bend" : -0.070000000000000007,
             "count" : 451,
             "height" : 15.93,
             "rotation" : 14.84,
@@ -24079,6 +26099,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 359,
             "height" : 16.02,
             "rotation" : -89.810000000000002,
@@ -24087,6 +26108,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -1.27
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 391,
             "height" : 15.869999999999999,
             "rotation" : -38.329999999999998,
@@ -24095,6 +26117,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.590000000000003
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 528,
             "height" : 16.440000000000001,
             "rotation" : 31.690000000000001,
@@ -24114,6 +26137,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 372,
             "height" : 15.609999999999999,
             "rotation" : -86.670000000000002,
@@ -24122,6 +26146,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -4.7599999999999998
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 15.779999999999999,
             "rotation" : -37.109999999999999,
@@ -24130,6 +26155,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.299999999999997
           },
           {
+            "bend" : -0.16,
             "count" : 739,
             "height" : 19.399999999999999,
             "rotation" : 78.790000000000006,
@@ -24149,6 +26175,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 377,
             "height" : 15.960000000000001,
             "rotation" : -85.980000000000004,
@@ -24157,6 +26184,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -6.1200000000000001
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 15.789999999999999,
             "rotation" : -37.039999999999999,
@@ -24165,6 +26193,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.539999999999999
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 742,
             "height" : 19.579999999999998,
             "rotation" : -73.700000000000003,
@@ -24184,6 +26213,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 383,
             "height" : 16.02,
             "rotation" : -84.299999999999997,
@@ -24192,6 +26222,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -7.3399999999999999
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 397,
             "height" : 15.789999999999999,
             "rotation" : -36.979999999999997,
@@ -24200,6 +26231,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.729999999999997
           },
           {
+            "bend" : 0.12,
             "count" : 628,
             "height" : 18.079999999999998,
             "rotation" : -47.240000000000002,
@@ -24219,6 +26251,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 387,
             "height" : 16.050000000000001,
             "rotation" : -83.439999999999998,
@@ -24227,6 +26260,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -8.3900000000000006
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 399,
             "height" : 15.82,
             "rotation" : -36.619999999999997,
@@ -24235,6 +26269,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.859999999999999
           },
           {
+            "bend" : 0.089999999999999997,
             "count" : 528,
             "height" : 16.960000000000001,
             "rotation" : -22.469999999999999,
@@ -24254,6 +26289,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 391,
             "height" : 16.149999999999999,
             "rotation" : -82.719999999999999,
@@ -24262,6 +26298,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -9.2899999999999991
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 399,
             "height" : 15.82,
             "rotation" : -36.590000000000003,
@@ -24270,6 +26307,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.859999999999999
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 455,
             "height" : 15.949999999999999,
             "rotation" : -2.2200000000000002,
@@ -24289,6 +26327,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 396,
             "height" : 16.219999999999999,
             "rotation" : -81.379999999999995,
@@ -24297,6 +26336,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.550000000000001
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 15.779999999999999,
             "rotation" : -37.200000000000003,
@@ -24305,6 +26345,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.490000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 346,
             "height" : 15.75,
             "rotation" : 26.18,
@@ -24324,6 +26365,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 399,
             "height" : 16.18,
             "rotation" : -81.049999999999997,
@@ -24332,6 +26374,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.91
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 305,
             "height" : 15.83,
             "rotation" : 36.439999999999998,
@@ -24340,6 +26383,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 50.170000000000002
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 397,
             "height" : 15.800000000000001,
             "rotation" : -36.920000000000002,
@@ -24359,6 +26403,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 400,
             "height" : 16.25,
             "rotation" : -80.879999999999995,
@@ -24367,6 +26412,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.130000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 271,
             "height" : 15.85,
             "rotation" : 45.07,
@@ -24375,6 +26421,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 43.670000000000002
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 15.81,
             "rotation" : -36.659999999999997,
@@ -24394,6 +26441,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 401,
             "height" : 16.170000000000002,
             "rotation" : -80.930000000000007,
@@ -24402,6 +26450,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.33
           },
           {
+            "bend" : 0.01,
             "count" : 237,
             "height" : 15.19,
             "rotation" : 54.170000000000002,
@@ -24410,6 +26459,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 37.32
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 15.720000000000001,
             "rotation" : -36.18,
@@ -24429,6 +26479,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 414,
             "height" : 16.309999999999999,
             "rotation" : -80.390000000000001,
@@ -24437,6 +26488,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.57
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 228,
             "height" : 16.120000000000001,
             "rotation" : 59.990000000000002,
@@ -24445,6 +26497,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.52
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 390,
             "height" : 15.65,
             "rotation" : -35.340000000000003,
@@ -24464,6 +26517,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 400,
             "height" : 16.210000000000001,
             "rotation" : -79.640000000000001,
@@ -24472,6 +26526,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -12.109999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 270,
             "height" : 15.869999999999999,
             "rotation" : 69.950000000000003,
@@ -24480,6 +26535,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.170000000000002
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 382,
             "height" : 15.44,
             "rotation" : -33.600000000000001,
@@ -24499,6 +26555,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 400,
             "height" : 16.030000000000001,
             "rotation" : -79.709999999999994,
@@ -24507,6 +26564,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -12.449999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 287,
             "height" : 15.56,
             "rotation" : 73.329999999999998,
@@ -24515,6 +26573,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 16.75
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 378,
             "height" : 15.68,
             "rotation" : -32.299999999999997,
@@ -24534,6 +26593,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.17000000000000001,
             "count" : 690,
             "height" : 17.329999999999998,
             "rotation" : -89.390000000000001,
@@ -24542,6 +26602,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -1.8600000000000001
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 370,
             "height" : 15.58,
             "rotation" : -31.039999999999999,
@@ -24561,6 +26622,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14999999999999999,
             "count" : 675,
             "height" : 17.600000000000001,
             "rotation" : -87.579999999999998,
@@ -24569,6 +26631,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -3.5899999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 363,
             "height" : 15.59,
             "rotation" : -29.239999999999998,
@@ -24588,6 +26651,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14000000000000001,
             "count" : 657,
             "height" : 17.52,
             "rotation" : -85.950000000000003,
@@ -24596,6 +26660,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -5.3099999999999996
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 354,
             "height" : 15.74,
             "rotation" : -26.989999999999998,
@@ -24615,6 +26680,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 629,
             "height" : 17.059999999999999,
             "rotation" : -83.010000000000005,
@@ -24623,6 +26689,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -8.5899999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 333,
             "height" : 15.609999999999999,
             "rotation" : -22.59,
@@ -24642,6 +26709,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 624,
             "height" : 16.940000000000001,
             "rotation" : -81.560000000000002,
@@ -24650,6 +26718,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.199999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 320,
             "height" : 15.43,
             "rotation" : -19.91,
@@ -24669,6 +26738,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 625,
             "height" : 17.050000000000001,
             "rotation" : -79.950000000000003,
@@ -24677,6 +26747,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.779999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 304,
             "height" : 15.56,
             "rotation" : -16.289999999999999,
@@ -24696,6 +26767,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 631,
             "height" : 17.02,
             "rotation" : -78.519999999999996,
@@ -24704,6 +26776,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.43
           },
           {
+            "bend" : -0.02,
             "count" : 289,
             "height" : 15.640000000000001,
             "rotation" : -12.619999999999999,
@@ -24723,6 +26796,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.13,
             "count" : 641,
             "height" : 17.43,
             "rotation" : -77.040000000000006,
@@ -24731,6 +26805,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -15
           },
           {
+            "bend" : -0.02,
             "count" : 271,
             "height" : 15.57,
             "rotation" : -8.2699999999999996,
@@ -24750,6 +26825,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14999999999999999,
             "count" : 674,
             "height" : 17.690000000000001,
             "rotation" : -73.579999999999998,
@@ -24758,6 +26834,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.370000000000001
           },
           {
+            "bend" : -0,
             "count" : 226,
             "height" : 15.1,
             "rotation" : 2.1299999999999999,
@@ -24777,6 +26854,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.17000000000000001,
             "count" : 688,
             "height" : 17.760000000000002,
             "rotation" : -71.560000000000002,
@@ -24785,6 +26863,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.030000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 244,
             "height" : 15.279999999999999,
             "rotation" : 7.79,
@@ -24804,6 +26883,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 16.280000000000001,
             "rotation" : -81.909999999999997,
@@ -24812,6 +26892,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -9.9600000000000009
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 289,
             "height" : 15.67,
             "rotation" : -55.189999999999998,
@@ -24820,6 +26901,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -37.490000000000002
           },
           {
+            "bend" : -0.02,
             "count" : 273,
             "height" : 15.67,
             "rotation" : 15.58,
@@ -24839,6 +26921,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 396,
             "height" : 16.219999999999999,
             "rotation" : -81.379999999999995,
@@ -24847,6 +26930,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.550000000000001
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 270,
             "height" : 15.619999999999999,
             "rotation" : -50.5,
@@ -24855,6 +26939,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.240000000000002
           },
           {
+            "bend" : -0.02,
             "count" : 307,
             "height" : 15.31,
             "rotation" : 23.52,
@@ -24874,6 +26959,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 399,
             "height" : 16.18,
             "rotation" : -81.049999999999997,
@@ -24882,6 +26968,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.91
           },
           {
+            "bend" : -0.02,
             "count" : 249,
             "height" : 15.220000000000001,
             "rotation" : -46.130000000000003,
@@ -24890,6 +26977,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -45.390000000000001
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 345,
             "height" : 15.44,
             "rotation" : 33.619999999999997,
@@ -24909,6 +26997,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 401,
             "height" : 16.170000000000002,
             "rotation" : -80.930000000000007,
@@ -24917,6 +27006,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.33
           },
           {
+            "bend" : -0.02,
             "count" : 244,
             "height" : 15.16,
             "rotation" : -33.369999999999997,
@@ -24925,6 +27015,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -53.840000000000003
           },
           {
+            "bend" : -0.070000000000000007,
             "count" : 452,
             "height" : 15.859999999999999,
             "rotation" : 58.450000000000003,
@@ -24944,6 +27035,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 414,
             "height" : 16.309999999999999,
             "rotation" : -80.390000000000001,
@@ -24952,6 +27044,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.57
           },
           {
+            "bend" : -0.02,
             "count" : 271,
             "height" : 15.779999999999999,
             "rotation" : -25.699999999999999,
@@ -24960,6 +27053,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -57.780000000000001
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 527,
             "height" : 16.579999999999998,
             "rotation" : 75.090000000000003,
@@ -24979,6 +27073,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 401,
             "height" : 16.210000000000001,
             "rotation" : -79.609999999999999,
@@ -24987,6 +27082,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.890000000000001
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 310,
             "height" : 15.279999999999999,
             "rotation" : -17.77,
@@ -24995,6 +27091,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -61.359999999999999
           },
           {
+            "bend" : 0.13,
             "count" : 627,
             "height" : 17.719999999999999,
             "rotation" : -83.859999999999999,
@@ -25014,6 +27111,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 16.210000000000001,
             "rotation" : -79.670000000000002,
@@ -25022,6 +27120,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -12.109999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 347,
             "height" : 15.869999999999999,
             "rotation" : -7.5899999999999999,
@@ -25030,6 +27129,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -63.670000000000002
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 742,
             "height" : 18.809999999999999,
             "rotation" : -57.75,
@@ -25049,6 +27149,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 398,
             "height" : 16.050000000000001,
             "rotation" : -79.379999999999995,
@@ -25057,6 +27158,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -12.52
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 395,
             "height" : 16.170000000000002,
             "rotation" : 4.04,
@@ -25065,6 +27167,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -63.950000000000003
           },
           {
+            "bend" : 0.17999999999999999,
             "count" : 742,
             "height" : 19.100000000000001,
             "rotation" : -30.350000000000001,
@@ -25084,6 +27187,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 393,
             "height" : 16.010000000000002,
             "rotation" : -78.230000000000004,
@@ -25092,6 +27196,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.76
           },
           {
+            "bend" : 0.089999999999999997,
             "count" : 525,
             "height" : 17.300000000000001,
             "rotation" : 20.82,
@@ -25100,6 +27205,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 58.380000000000003
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 525,
             "height" : 16.16,
             "rotation" : 35.310000000000002,
@@ -25119,6 +27225,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 387,
             "height" : 15.869999999999999,
             "rotation" : -77.530000000000001,
@@ -25127,6 +27234,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -14.779999999999999
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 454,
             "height" : 16.600000000000001,
             "rotation" : 41.590000000000003,
@@ -25135,6 +27243,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 46.939999999999998
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 620,
             "height" : 17.59,
             "rotation" : 57.240000000000002,
@@ -25154,6 +27263,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 383,
             "height" : 15.82,
             "rotation" : -76.209999999999994,
@@ -25162,6 +27272,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -15.869999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 392,
             "height" : 16.129999999999999,
             "rotation" : 57.210000000000001,
@@ -25170,6 +27281,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.689999999999998
           },
           {
+            "bend" : -0.17000000000000001,
             "count" : 743,
             "height" : 19.690000000000001,
             "rotation" : 84.329999999999998,
@@ -25189,6 +27301,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 377,
             "height" : 15.779999999999999,
             "rotation" : -75.579999999999998,
@@ -25197,6 +27310,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -17.199999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 347,
             "height" : 16.109999999999999,
             "rotation" : 70.780000000000001,
@@ -25205,6 +27319,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.800000000000001
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 740,
             "height" : 19.670000000000002,
             "rotation" : -67.049999999999997,
@@ -25224,6 +27339,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.17000000000000001,
             "count" : 678,
             "height" : 17.620000000000001,
             "rotation" : -85.629999999999995,
@@ -25232,6 +27348,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -6.0499999999999998
           },
           {
+            "bend" : 0.12,
             "count" : 625,
             "height" : 17.850000000000001,
             "rotation" : -39.600000000000001,
@@ -25251,6 +27368,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.080000000000000002,
             "count" : 507,
             "height" : 16.09,
             "rotation" : -74.739999999999995,
@@ -25259,6 +27377,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -17.469999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 455,
             "height" : 16.66,
             "rotation" : 7.2699999999999996,
@@ -25278,6 +27397,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.059999999999999998,
             "count" : 521,
             "height" : 16.600000000000001,
             "rotation" : -71.069999999999993,
@@ -25286,6 +27406,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.530000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 394,
             "height" : 16.539999999999999,
             "rotation" : 23.899999999999999,
@@ -25305,6 +27426,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 589,
             "height" : 19.960000000000001,
             "rotation" : -81.760000000000005,
@@ -25313,6 +27435,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.699999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 343,
             "height" : 16.370000000000001,
             "rotation" : 37.420000000000002,
@@ -25332,6 +27455,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 709,
             "height" : 25.93,
             "rotation" : 87.489999999999995,
@@ -25340,6 +27464,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22.010000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 304,
             "height" : 15.710000000000001,
             "rotation" : 48.420000000000002,
@@ -25359,6 +27484,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.040000000000000001,
             "count" : 269,
             "height" : 15.42,
             "rotation" : 57.539999999999999,
@@ -25367,6 +27493,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.609999999999999
           },
           {
+            "bend" : -0.13,
             "count" : 813,
             "height" : 28.91,
             "rotation" : 76.069999999999993,
@@ -25386,6 +27513,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 227,
             "height" : 15.26,
             "rotation" : 72.969999999999999,
@@ -25394,6 +27522,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 19.07
           },
           {
+            "bend" : -0.02,
             "count" : 270,
             "height" : 15.6,
             "rotation" : -50.270000000000003,
@@ -25402,6 +27531,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.25
           },
           {
+            "bend" : -0.01,
             "count" : 607,
             "height" : 22.829999999999998,
             "rotation" : -75.920000000000002,
@@ -25421,6 +27551,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 250,
             "height" : 15.539999999999999,
             "rotation" : 77.010000000000005,
@@ -25429,6 +27560,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 12.94
           },
           {
+            "bend" : -0.02,
             "count" : 250,
             "height" : 15.19,
             "rotation" : -45.630000000000003,
@@ -25437,6 +27569,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -45.409999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 644,
             "height" : 23.780000000000001,
             "rotation" : -77.219999999999999,
@@ -25456,6 +27589,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 271,
             "height" : 15.800000000000001,
             "rotation" : 82.420000000000002,
@@ -25464,6 +27598,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 7.4100000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 226,
             "height" : 15.33,
             "rotation" : -40.100000000000001,
@@ -25472,6 +27607,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -49.630000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 671,
             "height" : 25.190000000000001,
             "rotation" : -78.25,
@@ -25491,6 +27627,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 288,
             "height" : 15.33,
             "rotation" : 86.629999999999995,
@@ -25499,6 +27636,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 2.6499999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 244,
             "height" : 15.16,
             "rotation" : -33.229999999999997,
@@ -25507,6 +27645,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -53.850000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 691,
             "height" : 24.870000000000001,
             "rotation" : -80.010000000000005,
@@ -25526,6 +27665,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 303,
             "height" : 15.039999999999999,
             "rotation" : -89.769999999999996,
@@ -25534,6 +27674,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -1.6499999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 272,
             "height" : 15.77,
             "rotation" : -26.199999999999999,
@@ -25542,6 +27683,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -57.829999999999998
           },
           {
+            "bend" : -0,
             "count" : 702,
             "height" : 25.57,
             "rotation" : -82.680000000000007,
@@ -25561,6 +27703,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 402,
             "height" : 15.970000000000001,
             "rotation" : -83.390000000000001,
@@ -25569,6 +27712,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -3.79
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 347,
             "height" : 15.869999999999999,
             "rotation" : -7.5899999999999999,
@@ -25577,6 +27721,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -63.670000000000002
           },
           {
+            "bend" : -0,
             "count" : 699,
             "height" : 25.379999999999999,
             "rotation" : -87.409999999999997,
@@ -25596,6 +27741,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 400,
             "height" : 15.59,
             "rotation" : -83.859999999999999,
@@ -25604,6 +27750,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -4.4199999999999999
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 396,
             "height" : 16.18,
             "rotation" : 4.1600000000000001,
@@ -25612,6 +27759,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -63.939999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 686,
             "height" : 25,
             "rotation" : -89.769999999999996,
@@ -25631,6 +27779,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 422,
             "height" : 16.329999999999998,
             "rotation" : -83.519999999999996,
@@ -25639,6 +27788,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -5.71
           },
           {
+            "bend" : -0.080000000000000002,
             "count" : 454,
             "height" : 15.94,
             "rotation" : 18.190000000000001,
@@ -25647,6 +27797,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -60.890000000000001
           },
           {
+            "bend" : -0,
             "count" : 663,
             "height" : 24.399999999999999,
             "rotation" : 88.450000000000003,
@@ -25666,6 +27817,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 445,
             "height" : 16.940000000000001,
             "rotation" : -83.390000000000001,
@@ -25674,6 +27826,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -7.0300000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 644,
             "height" : 23.800000000000001,
             "rotation" : 86.819999999999993,
@@ -25682,6 +27835,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.41
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 527,
             "height" : 16.879999999999999,
             "rotation" : 35.310000000000002,
@@ -25701,6 +27855,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 471,
             "height" : 17.93,
             "rotation" : -83.400000000000006,
@@ -25709,6 +27864,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -8.5899999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 625,
             "height" : 22.489999999999998,
             "rotation" : 85.469999999999999,
@@ -25717,6 +27873,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.359999999999999
           },
           {
+            "bend" : -0.13,
             "count" : 622,
             "height" : 18,
             "rotation" : 57.259999999999998,
@@ -25736,6 +27893,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 522,
             "height" : 19.59,
             "rotation" : -83.109999999999999,
@@ -25744,6 +27902,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.81
           },
           {
+            "bend" : -0,
             "count" : 453,
             "height" : 20.739999999999998,
             "rotation" : 82.680000000000007,
@@ -25752,6 +27911,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.550000000000001
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 740,
             "height" : 19.670000000000002,
             "rotation" : -67.049999999999997,
@@ -25771,6 +27931,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 543,
             "height" : 19.91,
             "rotation" : -83.430000000000007,
@@ -25779,6 +27940,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.31
           },
           {
+            "bend" : 0.01,
             "count" : 232,
             "height" : 17.100000000000001,
             "rotation" : 63.520000000000003,
@@ -25787,6 +27949,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.91
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 309,
             "height" : 13.41,
             "rotation" : -39.719999999999999,
@@ -25806,6 +27969,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 564,
             "height" : 20.530000000000001,
             "rotation" : -83.510000000000005,
@@ -25814,6 +27978,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -14.869999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 370,
             "height" : 13.68,
             "rotation" : -28.539999999999999,
@@ -25822,6 +27987,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 45.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 145,
             "height" : 13.49,
             "rotation" : 55.979999999999997,
@@ -25841,6 +28007,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 582,
             "height" : 21.5,
             "rotation" : -84.25,
@@ -25849,6 +28016,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -16.23
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 402,
             "height" : 13.83,
             "rotation" : -22.219999999999999,
@@ -25857,6 +28025,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 43.710000000000001
           },
           {
+            "bend" : 0,
             "count" : 100,
             "height" : 11.199999999999999,
             "rotation" : 53.090000000000003,
@@ -25876,6 +28045,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 597,
             "height" : 21.690000000000001,
             "rotation" : -84.329999999999998,
@@ -25884,6 +28054,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -17.460000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 422,
             "height" : 14,
             "rotation" : -17.390000000000001,
@@ -25892,6 +28063,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 42.159999999999997
           },
           {
+            "bend" : 0,
             "count" : 100,
             "height" : 11.199999999999999,
             "rotation" : 53.090000000000003,
@@ -25911,6 +28083,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 614,
             "height" : 22,
             "rotation" : -85.269999999999996,
@@ -25919,6 +28092,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.07
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 450,
             "height" : 14.609999999999999,
             "rotation" : -10.779999999999999,
@@ -25927,6 +28101,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 39.539999999999999
           },
           {
+            "bend" : 0.01,
             "count" : 234,
             "height" : 17.149999999999999,
             "rotation" : 66.840000000000003,
@@ -25946,6 +28121,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.459999999999994,
@@ -25954,6 +28130,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 461,
             "height" : 14.69,
             "rotation" : -8.3100000000000005,
@@ -25962,6 +28139,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 38.43
           },
           {
+            "bend" : -0,
             "count" : 444,
             "height" : 20.719999999999999,
             "rotation" : 82.950000000000003,
@@ -25981,6 +28159,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -25989,6 +28168,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 467,
             "height" : 15.119999999999999,
             "rotation" : -6.4000000000000004,
@@ -25997,6 +28177,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 37.520000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 608,
             "height" : 21.940000000000001,
             "rotation" : 84.629999999999995,
@@ -26016,6 +28197,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -26024,6 +28206,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 473,
             "height" : 15.24,
             "rotation" : -5.0199999999999996,
@@ -26032,6 +28215,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 36.740000000000002
           },
           {
+            "bend" : -0.02,
             "count" : 612,
             "height" : 22.260000000000002,
             "rotation" : 84.879999999999995,
@@ -26051,6 +28235,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -26059,6 +28244,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 477,
             "height" : 15.359999999999999,
             "rotation" : -3.5299999999999998,
@@ -26067,6 +28253,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 36.109999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 22.030000000000001,
             "rotation" : 84.659999999999997,
@@ -26086,6 +28273,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -26094,6 +28282,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 483,
             "height" : 15.65,
             "rotation" : -1.8,
@@ -26102,6 +28291,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.189999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 611,
             "height" : 22.02,
             "rotation" : 84.709999999999994,
@@ -26121,6 +28311,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -26129,6 +28320,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 485,
             "height" : 15.32,
             "rotation" : -1.04,
@@ -26137,6 +28329,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.850000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 22.129999999999999,
             "rotation" : 84.650000000000006,
@@ -26156,6 +28349,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -26164,6 +28358,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 486,
             "height" : 15.93,
             "rotation" : -0.77000000000000002,
@@ -26172,6 +28367,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.659999999999997
           },
           {
+            "bend" : -0.02,
             "count" : 612,
             "height" : 22.260000000000002,
             "rotation" : 84.879999999999995,
@@ -26191,6 +28387,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -26199,6 +28396,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 487,
             "height" : 16.059999999999999,
             "rotation" : -0.40999999999999998,
@@ -26207,6 +28405,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.579999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 613,
             "height" : 22,
             "rotation" : 84.849999999999994,
@@ -26226,6 +28425,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -26234,6 +28434,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26242,6 +28443,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -26261,6 +28463,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -26269,6 +28472,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26277,6 +28481,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -26296,6 +28501,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 615,
             "height" : 21.91,
             "rotation" : -85.329999999999998,
@@ -26304,6 +28510,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.34
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26312,6 +28519,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -26331,6 +28539,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 456,
             "height" : 20.780000000000001,
             "rotation" : -83.579999999999998,
@@ -26339,6 +28548,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.640000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26347,6 +28557,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.09,
             "rotation" : 84.840000000000003,
@@ -26366,6 +28577,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 232,
             "height" : 17.120000000000001,
             "rotation" : -64.280000000000001,
@@ -26374,6 +28586,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.030000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26382,6 +28595,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 453,
             "height" : 20.739999999999998,
             "rotation" : 82.680000000000007,
@@ -26401,6 +28615,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 151,
             "height" : 13.92,
             "rotation" : -61.170000000000002,
@@ -26409,6 +28624,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.09
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26417,6 +28633,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 232,
             "height" : 17.100000000000001,
             "rotation" : 63.520000000000003,
@@ -26436,6 +28653,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 106,
             "height" : 11.82,
             "rotation" : -55.640000000000001,
@@ -26444,6 +28662,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.170000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26452,6 +28671,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 146,
             "height" : 13.529999999999999,
             "rotation" : 60.710000000000001,
@@ -26471,6 +28691,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 149,
             "height" : 14.029999999999999,
             "rotation" : -59.75,
@@ -26479,6 +28700,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.109999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26487,6 +28709,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 100,
             "height" : 11.199999999999999,
             "rotation" : 53.090000000000003,
@@ -26506,6 +28729,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 233,
             "height" : 17.129999999999999,
             "rotation" : -71.129999999999995,
@@ -26514,6 +28738,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.02
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26522,6 +28747,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 143,
             "height" : 13.5,
             "rotation" : 57.719999999999999,
@@ -26541,6 +28767,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 445,
             "height" : 21.100000000000001,
             "rotation" : -82.840000000000003,
@@ -26549,6 +28776,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.620000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26557,6 +28785,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 234,
             "height" : 17.16,
             "rotation" : 67.890000000000001,
@@ -26576,6 +28805,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 611,
             "height" : 22.010000000000002,
             "rotation" : -85.359999999999999,
@@ -26584,6 +28814,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.350000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26592,6 +28823,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 443,
             "height" : 20.629999999999999,
             "rotation" : 82.359999999999999,
@@ -26611,6 +28843,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -26619,6 +28852,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26627,6 +28861,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.02,
             "count" : 608,
             "height" : 22.16,
             "rotation" : 84.909999999999997,
@@ -26646,6 +28881,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -26654,6 +28890,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26662,6 +28899,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -26780,6 +29018,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -26788,6 +29027,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26796,6 +29036,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -26815,6 +29056,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -26823,6 +29065,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26831,6 +29074,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -26850,6 +29094,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -26858,6 +29103,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26866,6 +29112,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.09,
             "rotation" : 84.840000000000003,
@@ -26885,6 +29132,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 615,
             "height" : 21.91,
             "rotation" : -85.329999999999998,
@@ -26893,6 +29141,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.34
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26901,6 +29150,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 452,
             "height" : 20.829999999999998,
             "rotation" : 83,
@@ -26920,6 +29170,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 458,
             "height" : 20.960000000000001,
             "rotation" : -82.969999999999999,
@@ -26928,6 +29179,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.600000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26936,6 +29188,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 231,
             "height" : 17.129999999999999,
             "rotation" : 64.859999999999999,
@@ -26955,6 +29208,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 147,
             "height" : 13.699999999999999,
             "rotation" : -58.700000000000003,
@@ -26963,6 +29217,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.059999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -26971,6 +29226,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 105,
             "height" : 12.16,
             "rotation" : 66.969999999999999,
@@ -26990,6 +29246,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 11.630000000000001,
             "rotation" : -50.479999999999997,
@@ -26998,6 +29255,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -27006,6 +29264,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 12.35,
             "rotation" : 57.789999999999999,
@@ -27025,6 +29284,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 102,
             "height" : 11.82,
             "rotation" : -55.890000000000001,
@@ -27033,6 +29293,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -27041,6 +29302,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 147,
             "height" : 13.52,
             "rotation" : 59.009999999999998,
@@ -27060,6 +29322,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 145,
             "height" : 13.67,
             "rotation" : -59.840000000000003,
@@ -27068,6 +29331,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.010000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -27076,6 +29340,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 232,
             "height" : 17.149999999999999,
             "rotation" : 66.579999999999998,
@@ -27095,6 +29360,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 235,
             "height" : 17.52,
             "rotation" : -68.840000000000003,
@@ -27103,6 +29369,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.920000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -27111,6 +29378,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 441,
             "height" : 20.620000000000001,
             "rotation" : 82.519999999999996,
@@ -27130,6 +29398,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 611,
             "height" : 22.010000000000002,
             "rotation" : -85.359999999999999,
@@ -27138,6 +29407,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.350000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -27146,6 +29416,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -27165,6 +29436,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -27173,6 +29445,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -27181,6 +29454,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -27200,6 +29474,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -27208,6 +29483,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -27216,6 +29492,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -27235,6 +29512,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 616,
             "height" : 22.48,
             "rotation" : -85.5,
@@ -27243,6 +29521,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.309999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 486,
             "height" : 16.050000000000001,
             "rotation" : -0.31,
@@ -27251,6 +29530,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.549999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 22.010000000000002,
             "rotation" : 84.760000000000005,
@@ -27270,6 +29550,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 616,
             "height" : 22.600000000000001,
             "rotation" : -85.189999999999998,
@@ -27278,6 +29559,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.289999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 485,
             "height" : 16.050000000000001,
             "rotation" : -0.29999999999999999,
@@ -27286,6 +29568,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.590000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 615,
             "height" : 22.27,
             "rotation" : 84.980000000000004,
@@ -27305,6 +29588,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 615,
             "height" : 22.59,
             "rotation" : -85.239999999999995,
@@ -27313,6 +29597,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.219999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 487,
             "height" : 15.93,
             "rotation" : -0.63,
@@ -27321,6 +29606,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.670000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 615,
             "height" : 22.260000000000002,
             "rotation" : 85.120000000000005,
@@ -27340,6 +29626,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 613,
             "height" : 22.059999999999999,
             "rotation" : -85.409999999999997,
@@ -27348,6 +29635,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.149999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 487,
             "height" : 15.960000000000001,
             "rotation" : -0.41999999999999998,
@@ -27356,6 +29644,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.689999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 617,
             "height" : 22.170000000000002,
             "rotation" : 85.269999999999996,
@@ -27375,6 +29664,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 611,
             "height" : 21.68,
             "rotation" : -85.269999999999996,
@@ -27383,6 +29673,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.050000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 486,
             "height" : 15.08,
             "rotation" : -0.23000000000000001,
@@ -27391,6 +29682,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.780000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 621,
             "height" : 22.43,
             "rotation" : 85.230000000000004,
@@ -27410,6 +29702,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 21.98,
             "rotation" : -85.370000000000005,
@@ -27418,6 +29711,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.920000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 485,
             "height" : 15.06,
             "rotation" : -0.14999999999999999,
@@ -27426,6 +29720,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.840000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 621,
             "height" : 22.25,
             "rotation" : 85.370000000000005,
@@ -27445,6 +29740,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 445,
             "height" : 20.219999999999999,
             "rotation" : -83.609999999999999,
@@ -27453,6 +29749,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.75
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 481,
             "height" : 14.039999999999999,
             "rotation" : 0.089999999999999997,
@@ -27461,6 +29758,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.210000000000001
           },
           {
+            "bend" : 0,
             "count" : 238,
             "height" : 17.460000000000001,
             "rotation" : 65.739999999999995,
@@ -27480,6 +29778,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 227,
             "height" : 17.149999999999999,
             "rotation" : -67.409999999999997,
@@ -27488,6 +29787,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.859999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 482,
             "height" : 15.220000000000001,
             "rotation" : 0.56999999999999995,
@@ -27496,6 +29796,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.439999999999998
           },
           {
+            "bend" : 0,
             "count" : 157,
             "height" : 14.58,
             "rotation" : 69.730000000000004,
@@ -27515,6 +29816,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 138,
             "height" : 13.66,
             "rotation" : -65.5,
@@ -27523,6 +29825,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.559999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 478,
             "height" : 15.210000000000001,
             "rotation" : 0.71999999999999997,
@@ -27531,6 +29834,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.670000000000002
           },
           {
+            "bend" : 0,
             "count" : 112,
             "height" : 12.81,
             "rotation" : 53.420000000000002,
@@ -27550,6 +29854,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 94,
             "height" : 10.84,
             "rotation" : -68.469999999999999,
@@ -27558,6 +29863,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.260000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 476,
             "height" : 15.25,
             "rotation" : 1.04,
@@ -27566,6 +29872,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.799999999999997
           },
           {
+            "bend" : -0,
             "count" : 113,
             "height" : 12.960000000000001,
             "rotation" : -34.850000000000001,
@@ -27585,6 +29892,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 88,
             "height" : 10.84,
             "rotation" : -68.430000000000007,
@@ -27593,6 +29901,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.050000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 470,
             "height" : 15.27,
             "rotation" : 1.99,
@@ -27601,6 +29910,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.710000000000001
           },
           {
+            "bend" : -0,
             "count" : 163,
             "height" : 15.859999999999999,
             "rotation" : 40.329999999999998,
@@ -27620,6 +29930,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 180,
             "height" : 14.27,
             "rotation" : -71.989999999999995,
@@ -27628,6 +29939,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.879999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 469,
             "height" : 15.960000000000001,
             "rotation" : 3.54,
@@ -27636,6 +29948,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.109999999999999
           },
           {
+            "bend" : 0,
             "count" : 497,
             "height" : 22.23,
             "rotation" : 87.060000000000002,
@@ -27655,6 +29968,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 334,
             "height" : 16.690000000000001,
             "rotation" : -78.689999999999998,
@@ -27663,6 +29977,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -24.010000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 481,
             "height" : 16.59,
             "rotation" : 3.21,
@@ -27671,6 +29986,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 28.370000000000001
           },
           {
+            "bend" : -0,
             "count" : 670,
             "height" : 24.210000000000001,
             "rotation" : 87.810000000000002,
@@ -27690,6 +30006,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 454,
             "height" : 18.25,
             "rotation" : -80.659999999999997,
@@ -27698,6 +30015,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -25.41
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 489,
             "height" : 16.609999999999999,
             "rotation" : 3,
@@ -27706,6 +30024,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.640000000000001
           },
           {
+            "bend" : -0,
             "count" : 667,
             "height" : 23.5,
             "rotation" : 87.530000000000001,
@@ -27725,6 +30044,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 457,
             "height" : 18.050000000000001,
             "rotation" : -79.879999999999995,
@@ -27733,6 +30053,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.579999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 495,
             "height" : 16.68,
             "rotation" : 2.8500000000000001,
@@ -27741,6 +30062,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 25.359999999999999
           },
           {
+            "bend" : -0,
             "count" : 658,
             "height" : 23.969999999999999,
             "rotation" : 86.989999999999995,
@@ -27760,6 +30082,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 456,
             "height" : 18.359999999999999,
             "rotation" : -79.640000000000001,
@@ -27768,6 +30091,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -27.48
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 498,
             "height" : 16.449999999999999,
             "rotation" : 2.7000000000000002,
@@ -27776,6 +30100,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 24.460000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 653,
             "height" : 23.600000000000001,
             "rotation" : 87.260000000000005,
@@ -27795,6 +30120,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 454,
             "height" : 18.370000000000001,
             "rotation" : -79.560000000000002,
@@ -27803,6 +30129,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.629999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 504,
             "height" : 16.57,
             "rotation" : 2.6000000000000001,
@@ -27811,6 +30138,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.27
           },
           {
+            "bend" : -0,
             "count" : 646,
             "height" : 23.82,
             "rotation" : 86.709999999999994,
@@ -27830,6 +30158,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 452,
             "height" : 18.23,
             "rotation" : -79.019999999999996,
@@ -27838,6 +30167,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29
           },
           {
+            "bend" : 0.02,
             "count" : 509,
             "height" : 16.460000000000001,
             "rotation" : 2.4900000000000002,
@@ -27846,6 +30176,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.789999999999999
           },
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 23.890000000000001,
             "rotation" : 86.700000000000003,
@@ -27865,6 +30196,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 452,
             "height" : 18.190000000000001,
             "rotation" : -79.480000000000004,
@@ -27873,6 +30205,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.280000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 507,
             "height" : 16.16,
             "rotation" : 2.5699999999999998,
@@ -27881,6 +30214,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.5
           },
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 24,
             "rotation" : 86.5,
@@ -27900,6 +30234,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 450,
             "height" : 18.02,
             "rotation" : -78.950000000000003,
@@ -27908,6 +30243,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.41
           },
           {
+            "bend" : 0.02,
             "count" : 509,
             "height" : 16.66,
             "rotation" : 2.4199999999999999,
@@ -27916,6 +30252,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.350000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 641,
             "height" : 23.629999999999999,
             "rotation" : 86.519999999999996,
@@ -27935,6 +30272,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 452,
             "height" : 18.059999999999999,
             "rotation" : -78.780000000000001,
@@ -27943,6 +30281,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.550000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 509,
             "height" : 16.57,
             "rotation" : 2.6099999999999999,
@@ -27951,6 +30290,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.239999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 642,
             "height" : 23.710000000000001,
             "rotation" : 86.420000000000002,
@@ -27970,6 +30310,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 452,
             "height" : 18.25,
             "rotation" : -78.75,
@@ -27978,6 +30319,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.640000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 509,
             "height" : 16.620000000000001,
             "rotation" : 2.3599999999999999,
@@ -27986,6 +30328,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.16
           },
           {
+            "bend" : -0.01,
             "count" : 640,
             "height" : 23.670000000000002,
             "rotation" : 86.629999999999995,
@@ -28005,6 +30348,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 452,
             "height" : 18.25,
             "rotation" : -78.75,
@@ -28013,6 +30357,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.640000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 511,
             "height" : 17.440000000000001,
             "rotation" : 2.3799999999999999,
@@ -28021,6 +30366,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.170000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 640,
             "height" : 23.620000000000001,
             "rotation" : 86.569999999999993,
@@ -28040,6 +30386,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 453,
             "height" : 18.239999999999998,
             "rotation" : -78.859999999999999,
@@ -28048,6 +30395,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.550000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 510,
             "height" : 16.59,
             "rotation" : 2.4700000000000002,
@@ -28056,6 +30404,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.25
           },
           {
+            "bend" : -0.01,
             "count" : 641,
             "height" : 23.760000000000002,
             "rotation" : 86.459999999999994,
@@ -28075,6 +30424,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 455,
             "height" : 18.239999999999998,
             "rotation" : -78.810000000000002,
@@ -28083,6 +30433,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.41
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 510,
             "height" : 16.48,
             "rotation" : 2.1499999999999999,
@@ -28091,6 +30442,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.34
           },
           {
+            "bend" : -0.01,
             "count" : 639,
             "height" : 23.719999999999999,
             "rotation" : 86.329999999999998,
@@ -28110,6 +30462,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 456,
             "height" : 18.149999999999999,
             "rotation" : -79.340000000000003,
@@ -28118,6 +30471,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.25
           },
           {
+            "bend" : 0.02,
             "count" : 507,
             "height" : 16.129999999999999,
             "rotation" : 2.75,
@@ -28126,6 +30480,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.550000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 642,
             "height" : 23.620000000000001,
             "rotation" : 86.579999999999998,
@@ -28145,6 +30500,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 456,
             "height" : 18.219999999999999,
             "rotation" : -79.180000000000007,
@@ -28153,6 +30509,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.600000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 506,
             "height" : 16.57,
             "rotation" : 2.3799999999999999,
@@ -28161,6 +30518,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.350000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 643,
             "height" : 23.68,
             "rotation" : 86.870000000000005,
@@ -28180,6 +30538,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 461,
             "height" : 18.350000000000001,
             "rotation" : -79.680000000000007,
@@ -28188,6 +30547,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.190000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 507,
             "height" : 15.91,
             "rotation" : 2.6600000000000001,
@@ -28196,6 +30556,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.739999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 646,
             "height" : 23.02,
             "rotation" : 86.829999999999998,
@@ -28215,6 +30576,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 463,
             "height" : 18.690000000000001,
             "rotation" : -79.819999999999993,
@@ -28223,6 +30585,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -27.640000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 502,
             "height" : 16.699999999999999,
             "rotation" : 2.5499999999999998,
@@ -28231,6 +30594,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 24.440000000000001
           },
           {
+            "bend" : -0,
             "count" : 652,
             "height" : 23.449999999999999,
             "rotation" : 86.459999999999994,
@@ -28250,6 +30614,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 466,
             "height" : 18.829999999999998,
             "rotation" : -80.060000000000002,
@@ -28258,6 +30623,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.920000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 502,
             "height" : 16.620000000000001,
             "rotation" : 2.6099999999999999,
@@ -28266,6 +30632,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 25.170000000000002
           },
           {
+            "bend" : -0,
             "count" : 653,
             "height" : 23.609999999999999,
             "rotation" : 86.599999999999994,
@@ -28285,6 +30652,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 470,
             "height" : 18.75,
             "rotation" : -80.590000000000003,
@@ -28293,6 +30661,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.100000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 499,
             "height" : 15.94,
             "rotation" : 2.3599999999999999,
@@ -28301,6 +30670,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.09
           },
           {
+            "bend" : -0,
             "count" : 659,
             "height" : 24.18,
             "rotation" : 86.950000000000003,
@@ -28320,6 +30690,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 487,
             "height" : 18.73,
             "rotation" : -81.560000000000002,
@@ -28328,6 +30699,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -23.82
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 491,
             "height" : 16.260000000000002,
             "rotation" : 2.6200000000000001,
@@ -28336,6 +30708,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 28.739999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 665,
             "height" : 23.539999999999999,
             "rotation" : 86.689999999999998,
@@ -28355,6 +30728,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 500,
             "height" : 18.969999999999999,
             "rotation" : -82.25,
@@ -28363,6 +30737,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22.5
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 487,
             "height" : 15.26,
             "rotation" : 2.5899999999999999,
@@ -28371,6 +30746,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 30.289999999999999
           },
           {
+            "bend" : -0,
             "count" : 499,
             "height" : 22.789999999999999,
             "rotation" : 85.560000000000002,
@@ -28390,6 +30766,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 387,
             "height" : 18.620000000000001,
             "rotation" : -80.310000000000002,
@@ -28398,6 +30775,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.609999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 487,
             "height" : 15.539999999999999,
             "rotation" : 2.1299999999999999,
@@ -28406,6 +30784,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.690000000000001
           },
           {
+            "bend" : 0,
             "count" : 249,
             "height" : 18.030000000000001,
             "rotation" : 43.780000000000001,
@@ -28425,6 +30804,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 208,
             "height" : 16.23,
             "rotation" : -65.939999999999998,
@@ -28433,6 +30813,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.359999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 490,
             "height" : 15.4,
             "rotation" : 1.53,
@@ -28441,6 +30822,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.630000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 160,
             "height" : 15.220000000000001,
             "rotation" : 43.25,
@@ -28460,6 +30842,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 138,
             "height" : 13.77,
             "rotation" : -52.780000000000001,
@@ -28468,6 +30851,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.969999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 495,
             "height" : 16.109999999999999,
             "rotation" : 0.44,
@@ -28476,6 +30860,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.479999999999997
           },
           {
+            "bend" : -0,
             "count" : 106,
             "height" : 12.81,
             "rotation" : -53.280000000000001,
@@ -28495,6 +30880,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 105,
             "height" : 12.35,
             "rotation" : -32.659999999999997,
@@ -28503,6 +30889,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.629999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 507,
             "height" : 16.260000000000002,
             "rotation" : -1.9199999999999999,
@@ -28511,6 +30898,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 28.48
           },
           {
+            "bend" : -0.01,
             "count" : 130,
             "height" : 13.529999999999999,
             "rotation" : 61.229999999999997,
@@ -28530,6 +30918,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 149,
             "height" : 14.039999999999999,
             "rotation" : -33.18,
@@ -28538,6 +30927,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.390000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 507,
             "height" : 16.699999999999999,
             "rotation" : -2.3999999999999999,
@@ -28546,6 +30936,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.760000000000002
           },
           {
+            "bend" : -0,
             "count" : 194,
             "height" : 15.33,
             "rotation" : 63.100000000000001,
@@ -28565,6 +30956,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 246,
             "height" : 17.510000000000002,
             "rotation" : -47.310000000000002,
@@ -28573,6 +30965,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.66
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 506,
             "height" : 16.690000000000001,
             "rotation" : -2.3799999999999999,
@@ -28581,6 +30974,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 25.420000000000002
           },
           {
+            "bend" : -0,
             "count" : 354,
             "height" : 18.170000000000002,
             "rotation" : 76.859999999999999,
@@ -28600,6 +30994,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 469,
             "height" : 22.800000000000001,
             "rotation" : -83.159999999999997,
@@ -28608,6 +31003,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -30.170000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 503,
             "height" : 16.57,
             "rotation" : -2.5699999999999998,
@@ -28616,6 +31012,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 24.43
           },
           {
+            "bend" : -0.01,
             "count" : 475,
             "height" : 18.789999999999999,
             "rotation" : 79.819999999999993,
@@ -28635,6 +31032,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 638,
             "height" : 23.629999999999999,
             "rotation" : -86.069999999999993,
@@ -28643,6 +31041,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -30.5
           },
           {
+            "bend" : 0.02,
             "count" : 505,
             "height" : 15.94,
             "rotation" : -3.0699999999999998,
@@ -28651,6 +31050,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.59
           },
           {
+            "bend" : -0.01,
             "count" : 465,
             "height" : 18.559999999999999,
             "rotation" : 79.480000000000004,
@@ -28670,6 +31070,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 23.640000000000001,
             "rotation" : -86.780000000000001,
@@ -28678,6 +31079,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.609999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 502,
             "height" : 16.140000000000001,
             "rotation" : -3.1299999999999999,
@@ -28686,6 +31088,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.43
           },
           {
+            "bend" : -0.01,
             "count" : 451,
             "height" : 18.25,
             "rotation" : 78.810000000000002,
@@ -28705,6 +31108,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 639,
             "height" : 23.390000000000001,
             "rotation" : -87.359999999999999,
@@ -28713,6 +31117,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.009999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 501,
             "height" : 16.5,
             "rotation" : -3.0600000000000001,
@@ -28721,6 +31126,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.07
           },
           {
+            "bend" : -0.02,
             "count" : 445,
             "height" : 18.030000000000001,
             "rotation" : 79.099999999999994,
@@ -28740,6 +31146,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 641,
             "height" : 24.48,
             "rotation" : -87.379999999999995,
@@ -28748,6 +31155,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.280000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 501,
             "height" : 16.920000000000002,
             "rotation" : -3.1899999999999999,
@@ -28756,6 +31164,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.68
           },
           {
+            "bend" : -0.01,
             "count" : 440,
             "height" : 18.109999999999999,
             "rotation" : 78.400000000000006,
@@ -28775,6 +31184,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 638,
             "height" : 23.739999999999998,
             "rotation" : -87.269999999999996,
@@ -28783,6 +31193,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.530000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 500,
             "height" : 16.620000000000001,
             "rotation" : -3.3799999999999999,
@@ -28791,6 +31202,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.329999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 323,
             "height" : 16.82,
             "rotation" : 75.409999999999997,
@@ -28810,6 +31222,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 474,
             "height" : 22.440000000000001,
             "rotation" : -86.010000000000005,
@@ -28818,6 +31231,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -33.189999999999998
           },
           {
+            "bend" : 0.02,
             "count" : 501,
             "height" : 16.379999999999999,
             "rotation" : -3.2999999999999998,
@@ -28826,6 +31240,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.149999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 162,
             "height" : 13.49,
             "rotation" : 62.539999999999999,
@@ -28845,6 +31260,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 150,
             "height" : 13.6,
             "rotation" : -8.4499999999999993,
@@ -28853,6 +31269,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -34.049999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 496,
             "height" : 16.539999999999999,
             "rotation" : -3.1400000000000001,
@@ -28861,6 +31278,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.969999999999999
           },
           {
+            "bend" : 0,
             "count" : 73,
             "height" : 8.6199999999999992,
             "rotation" : 62.93,
@@ -28880,6 +31298,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 104,
             "height" : 11.77,
             "rotation" : -10.92,
@@ -28888,6 +31307,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -34.149999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 17.030000000000001,
             "rotation" : -2.9399999999999999,
@@ -28896,6 +31316,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.879999999999999
           },
           {
+            "bend" : -0,
             "count" : 72,
             "height" : 8.6300000000000008,
             "rotation" : 62.689999999999998,
@@ -28915,6 +31336,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 104,
             "height" : 11.279999999999999,
             "rotation" : -4.4199999999999999,
@@ -28923,6 +31345,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -34.189999999999998
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 16.91,
             "rotation" : -3.3399999999999999,
@@ -28931,6 +31354,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.800000000000001
           },
           {
+            "bend" : -0,
             "count" : 104,
             "height" : 10.4,
             "rotation" : 63.579999999999998,
@@ -28950,6 +31374,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 149,
             "height" : 14.529999999999999,
             "rotation" : -11.33,
@@ -28958,6 +31383,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -34.240000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 16.98,
             "rotation" : -3.1899999999999999,
@@ -28966,6 +31392,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.77
           },
           {
+            "bend" : 0,
             "count" : 162,
             "height" : 13.08,
             "rotation" : 63.5,
@@ -28985,6 +31412,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 244,
             "height" : 18.48,
             "rotation" : -21.559999999999999,
@@ -28993,6 +31421,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -34.07
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 16.98,
             "rotation" : -3.1899999999999999,
@@ -29001,6 +31430,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.77
           },
           {
+            "bend" : -0.01,
             "count" : 309,
             "height" : 16.34,
             "rotation" : 74.969999999999999,
@@ -29020,6 +31450,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 633,
             "height" : 23.559999999999999,
             "rotation" : -87.810000000000002,
@@ -29028,6 +31459,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -33.130000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 16.91,
             "rotation" : -3.3399999999999999,
@@ -29036,6 +31468,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.800000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 430,
             "height" : 17.949999999999999,
             "rotation" : 78.040000000000006,
@@ -29055,6 +31488,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 637,
             "height" : 23.510000000000002,
             "rotation" : -87.829999999999998,
@@ -29063,6 +31497,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -33.090000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 16.91,
             "rotation" : -3.3399999999999999,
@@ -29071,6 +31506,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.800000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 431,
             "height" : 17.940000000000001,
             "rotation" : 78.140000000000001,
@@ -29090,6 +31526,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 637,
             "height" : 23.539999999999999,
             "rotation" : -88.019999999999996,
@@ -29098,6 +31535,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -33.07
           },
           {
+            "bend" : 0.02,
             "count" : 498,
             "height" : 17.030000000000001,
             "rotation" : -3.1699999999999999,
@@ -29106,6 +31544,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.84
           },
           {
+            "bend" : -0.02,
             "count" : 431,
             "height" : 17.940000000000001,
             "rotation" : 78.170000000000002,
@@ -29125,6 +31564,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 637,
             "height" : 24.149999999999999,
             "rotation" : -88.140000000000001,
@@ -29133,6 +31573,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -33.07
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 17.030000000000001,
             "rotation" : -3.0800000000000001,
@@ -29141,6 +31582,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.859999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 430,
             "height" : 17.73,
             "rotation" : 78.219999999999999,
@@ -29160,6 +31602,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 637,
             "height" : 24.02,
             "rotation" : -87.599999999999994,
@@ -29168,6 +31611,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -33.020000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 496,
             "height" : 16.699999999999999,
             "rotation" : -3.1899999999999999,
@@ -29176,6 +31620,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.93
           },
           {
+            "bend" : -0.02,
             "count" : 430,
             "height" : 17.719999999999999,
             "rotation" : 78.239999999999995,
@@ -29195,6 +31640,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 638,
             "height" : 23.640000000000001,
             "rotation" : -87.549999999999997,
@@ -29203,6 +31649,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.990000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 497,
             "height" : 16.809999999999999,
             "rotation" : -3.1699999999999999,
@@ -29211,6 +31658,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.920000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 431,
             "height" : 17.73,
             "rotation" : 78.189999999999998,
@@ -29230,6 +31678,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 636,
             "height" : 23.809999999999999,
             "rotation" : -87.540000000000006,
@@ -29238,6 +31687,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.990000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 497,
             "height" : 16.219999999999999,
             "rotation" : -3.23,
@@ -29246,6 +31696,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.960000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 432,
             "height" : 18.289999999999999,
             "rotation" : 78.290000000000006,
@@ -29265,6 +31716,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 639,
             "height" : 24.219999999999999,
             "rotation" : -87.079999999999998,
@@ -29273,6 +31725,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.93
           },
           {
+            "bend" : 0.02,
             "count" : 498,
             "height" : 16.629999999999999,
             "rotation" : -3.3199999999999998,
@@ -29281,6 +31734,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.010000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 433,
             "height" : 17.719999999999999,
             "rotation" : 78.280000000000001,
@@ -29300,6 +31754,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 640,
             "height" : 24.34,
             "rotation" : -87.430000000000007,
@@ -29308,6 +31763,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.869999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 498,
             "height" : 16.379999999999999,
             "rotation" : -3.5,
@@ -29316,6 +31772,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.039999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 435,
             "height" : 18.260000000000002,
             "rotation" : 78.629999999999995,
@@ -29335,6 +31792,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 639,
             "height" : 24.27,
             "rotation" : -87.640000000000001,
@@ -29343,6 +31801,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.890000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 498,
             "height" : 16.25,
             "rotation" : -3.0600000000000001,
@@ -29351,6 +31810,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.07
           },
           {
+            "bend" : -0.02,
             "count" : 434,
             "height" : 17.719999999999999,
             "rotation" : 78.269999999999996,
@@ -29370,6 +31830,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 638,
             "height" : 23.539999999999999,
             "rotation" : -87.310000000000002,
@@ -29378,6 +31839,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.75
           },
           {
+            "bend" : 0.02,
             "count" : 500,
             "height" : 16.260000000000002,
             "rotation" : -3.25,
@@ -29386,6 +31848,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.129999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 435,
             "height" : 18.120000000000001,
             "rotation" : 78.290000000000006,
@@ -29405,6 +31868,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 640,
             "height" : 23.52,
             "rotation" : -87.420000000000002,
@@ -29413,6 +31877,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.689999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 500,
             "height" : 16.32,
             "rotation" : -3.27,
@@ -29421,6 +31886,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.170000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 436,
             "height" : 17.93,
             "rotation" : 78.230000000000004,
@@ -29440,6 +31906,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 639,
             "height" : 23.530000000000001,
             "rotation" : -87.599999999999994,
@@ -29448,6 +31915,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.600000000000001
           },
           {
+            "bend" : 0.01,
             "count" : 500,
             "height" : 16.09,
             "rotation" : -3.4900000000000002,
@@ -29456,6 +31924,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.280000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 436,
             "height" : 17.920000000000002,
             "rotation" : 78.260000000000005,
@@ -29475,6 +31944,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 641,
             "height" : 23.57,
             "rotation" : -87.400000000000006,
@@ -29483,6 +31953,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.579999999999998
           },
           {
+            "bend" : 0.02,
             "count" : 499,
             "height" : 16.600000000000001,
             "rotation" : -3.2400000000000002,
@@ -29491,6 +31962,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.34
           },
           {
+            "bend" : -0.01,
             "count" : 438,
             "height" : 18.16,
             "rotation" : 78.069999999999993,
@@ -29510,6 +31982,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 637,
             "height" : 23.300000000000001,
             "rotation" : -87.730000000000004,
@@ -29518,6 +31991,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.469999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 500,
             "height" : 16.57,
             "rotation" : -3.3999999999999999,
@@ -29526,6 +32000,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.48
           },
           {
+            "bend" : -0.02,
             "count" : 439,
             "height" : 18.100000000000001,
             "rotation" : 78.439999999999998,
@@ -29545,6 +32020,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 641,
             "height" : 24.07,
             "rotation" : -87.209999999999994,
@@ -29553,6 +32029,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.270000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 502,
             "height" : 16.899999999999999,
             "rotation" : -3.1299999999999999,
@@ -29561,6 +32038,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.699999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 441,
             "height" : 18.079999999999998,
             "rotation" : 78.480000000000004,
@@ -29580,6 +32058,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 642,
             "height" : 23.629999999999999,
             "rotation" : -87.090000000000003,
@@ -29588,6 +32067,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.170000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 500,
             "height" : 17.129999999999999,
             "rotation" : -2.9300000000000002,
@@ -29596,6 +32076,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.829999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 445,
             "height" : 18.059999999999999,
             "rotation" : 78.739999999999995,
@@ -29615,6 +32096,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 640,
             "height" : 23.550000000000001,
             "rotation" : -87.480000000000004,
@@ -29623,6 +32105,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.07
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 499,
             "height" : 16.559999999999999,
             "rotation" : -2.9900000000000002,
@@ -29631,6 +32114,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.030000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 447,
             "height" : 18.239999999999998,
             "rotation" : 78.870000000000005,
@@ -29650,6 +32134,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 641,
             "height" : 23.260000000000002,
             "rotation" : -87.079999999999998,
@@ -29658,6 +32143,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.879999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 500,
             "height" : 16.5,
             "rotation" : -3.3300000000000001,
@@ -29666,6 +32152,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.170000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 448,
             "height" : 18.059999999999999,
             "rotation" : 78.769999999999996,
@@ -29685,6 +32172,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 24.379999999999999,
             "rotation" : -87.099999999999994,
@@ -29693,6 +32181,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.710000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 501,
             "height" : 16.34,
             "rotation" : -2.9199999999999999,
@@ -29701,6 +32190,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.27
           },
           {
+            "bend" : -0.01,
             "count" : 450,
             "height" : 18.039999999999999,
             "rotation" : 79.040000000000006,
@@ -29720,6 +32210,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 644,
             "height" : 23.079999999999998,
             "rotation" : -86.849999999999994,
@@ -29728,6 +32219,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.399999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 504,
             "height" : 16.559999999999999,
             "rotation" : -3.0299999999999998,
@@ -29736,6 +32228,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.670000000000002
           },
           {
+            "bend" : -0.02,
             "count" : 453,
             "height" : 18.440000000000001,
             "rotation" : 78.859999999999999,
@@ -29755,6 +32248,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 23.510000000000002,
             "rotation" : -86.870000000000005,
@@ -29763,6 +32257,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.140000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 503,
             "height" : 16.600000000000001,
             "rotation" : -3.1000000000000001,
@@ -29771,6 +32266,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 22.93
           },
           {
+            "bend" : -0.01,
             "count" : 458,
             "height" : 18.77,
             "rotation" : 79.239999999999995,
@@ -29790,6 +32286,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 23.129999999999999,
             "rotation" : -86.849999999999994,
@@ -29798,6 +32295,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -30.829999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 502,
             "height" : 16.41,
             "rotation" : -3.25,
@@ -29806,6 +32304,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.25
           },
           {
+            "bend" : -0.01,
             "count" : 460,
             "height" : 18.579999999999998,
             "rotation" : 79.280000000000001,
@@ -29825,6 +32324,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 643,
             "height" : 23.489999999999998,
             "rotation" : -86.659999999999997,
@@ -29833,6 +32333,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -30.579999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 503,
             "height" : 15.92,
             "rotation" : -3.1200000000000001,
@@ -29841,6 +32342,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.469999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 466,
             "height" : 18.940000000000001,
             "rotation" : 79.379999999999995,
@@ -29860,6 +32362,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 644,
             "height" : 23.34,
             "rotation" : -86.280000000000001,
@@ -29868,6 +32371,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -30.260000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 503,
             "height" : 16,
             "rotation" : -2.77,
@@ -29876,6 +32380,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 23.859999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 470,
             "height" : 18.550000000000001,
             "rotation" : 79.519999999999996,
@@ -29895,6 +32400,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 646,
             "height" : 23.98,
             "rotation" : -86.040000000000006,
@@ -29903,6 +32409,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.370000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 504,
             "height" : 15.859999999999999,
             "rotation" : -2.7999999999999998,
@@ -29911,6 +32418,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 24.75
           },
           {
+            "bend" : -0.01,
             "count" : 482,
             "height" : 18.940000000000001,
             "rotation" : 80.25,
@@ -29930,6 +32438,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 646,
             "height" : 23.829999999999998,
             "rotation" : -85.719999999999999,
@@ -29938,6 +32447,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.850000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 506,
             "height" : 16.670000000000002,
             "rotation" : -2.7999999999999998,
@@ -29946,6 +32456,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 25.34
           },
           {
+            "bend" : -0.01,
             "count" : 487,
             "height" : 19.460000000000001,
             "rotation" : 80.159999999999997,
@@ -29965,6 +32476,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 646,
             "height" : 23.120000000000001,
             "rotation" : -85.450000000000003,
@@ -29973,6 +32485,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.149999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 507,
             "height" : 15.9,
             "rotation" : -2.3700000000000001,
@@ -29981,6 +32494,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 25.98
           },
           {
+            "bend" : -0.01,
             "count" : 497,
             "height" : 19.43,
             "rotation" : 80.370000000000005,
@@ -30000,6 +32514,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 646,
             "height" : 23.539999999999999,
             "rotation" : -85.709999999999994,
@@ -30008,6 +32523,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -27.370000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 504,
             "height" : 16.16,
             "rotation" : -2.5699999999999998,
@@ -30016,6 +32532,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.93
           },
           {
+            "bend" : -0.01,
             "count" : 509,
             "height" : 19.960000000000001,
             "rotation" : 81.099999999999994,
@@ -30035,6 +32552,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 642,
             "height" : 23.690000000000001,
             "rotation" : -85.659999999999997,
@@ -30043,6 +32561,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.460000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 505,
             "height" : 16.77,
             "rotation" : -2.1200000000000001,
@@ -30051,6 +32570,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 27.789999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 385,
             "height" : 18.84,
             "rotation" : 78.920000000000002,
@@ -30070,6 +32590,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 243,
             "height" : 18.469999999999999,
             "rotation" : -56.390000000000001,
@@ -30078,6 +32599,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -25.5
           },
           {
+            "bend" : 0.02,
             "count" : 504,
             "height" : 15.710000000000001,
             "rotation" : -1.77,
@@ -30086,6 +32608,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 29.48
           },
           {
+            "bend" : -0.01,
             "count" : 132,
             "height" : 13.529999999999999,
             "rotation" : 61.670000000000002,
@@ -30105,6 +32628,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 152,
             "height" : 14.44,
             "rotation" : -44.420000000000002,
@@ -30113,6 +32637,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -24.809999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 499,
             "height" : 15.32,
             "rotation" : -1.7,
@@ -30121,6 +32646,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 30.260000000000002
           },
           {
+            "bend" : 0,
             "count" : 96,
             "height" : 11.27,
             "rotation" : 62.920000000000002,
@@ -30140,6 +32666,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 106,
             "height" : 11.66,
             "rotation" : -46.420000000000002,
@@ -30148,6 +32675,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -24.260000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 501,
             "height" : 15.44,
             "rotation" : -1.4299999999999999,
@@ -30156,6 +32684,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 30.690000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 95,
             "height" : 11.289999999999999,
             "rotation" : 58.710000000000001,
@@ -30175,6 +32704,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 105,
             "height" : 11.81,
             "rotation" : -54.670000000000002,
@@ -30183,6 +32713,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -23.68
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 497,
             "height" : 15.16,
             "rotation" : -1.3799999999999999,
@@ -30191,6 +32722,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.280000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 137,
             "height" : 12.710000000000001,
             "rotation" : 61.780000000000001,
@@ -30210,6 +32742,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 149,
             "height" : 14.279999999999999,
             "rotation" : -48.479999999999997,
@@ -30218,6 +32751,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -23.289999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 498,
             "height" : 15.6,
             "rotation" : -1.4199999999999999,
@@ -30226,6 +32760,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.59
           },
           {
+            "bend" : -0,
             "count" : 216,
             "height" : 16.640000000000001,
             "rotation" : 65.680000000000007,
@@ -30245,6 +32780,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 456,
             "height" : 21.239999999999998,
             "rotation" : -82.709999999999994,
@@ -30253,6 +32789,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22.120000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 495,
             "height" : 15.43,
             "rotation" : -1.03,
@@ -30261,6 +32798,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.299999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 579,
             "height" : 21.949999999999999,
             "rotation" : 83.900000000000006,
@@ -30280,6 +32818,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 624,
             "height" : 22.190000000000001,
             "rotation" : -84.810000000000002,
@@ -30288,6 +32827,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.489999999999998
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 494,
             "height" : 15.31,
             "rotation" : -1.2,
@@ -30296,6 +32836,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.560000000000002
           },
           {
+            "bend" : -0.02,
             "count" : 586,
             "height" : 21.149999999999999,
             "rotation" : 83.989999999999995,
@@ -30315,6 +32856,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 631,
             "height" : 23.09,
             "rotation" : -84.790000000000006,
@@ -30323,6 +32865,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.280000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 495,
             "height" : 15.35,
             "rotation" : -1.26,
@@ -30331,6 +32874,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.710000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 589,
             "height" : 21.530000000000001,
             "rotation" : 83.890000000000001,
@@ -30350,6 +32894,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 628,
             "height" : 22.539999999999999,
             "rotation" : -84.849999999999994,
@@ -30358,6 +32903,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.050000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 495,
             "height" : 15.359999999999999,
             "rotation" : -0.91000000000000003,
@@ -30366,6 +32912,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.880000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 591,
             "height" : 21.43,
             "rotation" : 84.140000000000001,
@@ -30385,6 +32932,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 625,
             "height" : 22.109999999999999,
             "rotation" : -85.510000000000005,
@@ -30393,6 +32941,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.890000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 494,
             "height" : 15.35,
             "rotation" : -0.92000000000000004,
@@ -30401,6 +32950,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.140000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 593,
             "height" : 21.300000000000001,
             "rotation" : 84.310000000000002,
@@ -30420,6 +32970,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 626,
             "height" : 22.699999999999999,
             "rotation" : -85.040000000000006,
@@ -30428,6 +32979,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.550000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 492,
             "height" : 16.09,
             "rotation" : -0.70999999999999996,
@@ -30436,6 +32988,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.420000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 598,
             "height" : 21.57,
             "rotation" : 84.560000000000002,
@@ -30455,6 +33008,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 623,
             "height" : 22.129999999999999,
             "rotation" : -85.069999999999993,
@@ -30463,6 +33017,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.390000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 492,
             "height" : 16.18,
             "rotation" : -0.93000000000000005,
@@ -30471,6 +33026,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.579999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 602,
             "height" : 21.460000000000001,
             "rotation" : 84.810000000000002,
@@ -30490,6 +33046,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 624,
             "height" : 22.289999999999999,
             "rotation" : -85.090000000000003,
@@ -30498,6 +33055,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.309999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 15.19,
             "rotation" : -0.66000000000000003,
@@ -30506,6 +33064,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.68
           },
           {
+            "bend" : -0.01,
             "count" : 604,
             "height" : 21.800000000000001,
             "rotation" : 84.959999999999994,
@@ -30525,6 +33084,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 624,
             "height" : 22.260000000000002,
             "rotation" : -85.219999999999999,
@@ -30533,6 +33093,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.219999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 490,
             "height" : 15.24,
             "rotation" : -0.81999999999999995,
@@ -30541,6 +33102,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.729999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 603,
             "height" : 21.98,
             "rotation" : 84.359999999999999,
@@ -30560,6 +33122,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 622,
             "height" : 22.300000000000001,
             "rotation" : -85.400000000000006,
@@ -30568,6 +33131,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.07
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 490,
             "height" : 15.199999999999999,
             "rotation" : -0.60999999999999999,
@@ -30576,6 +33140,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.789999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 604,
             "height" : 21.890000000000001,
             "rotation" : 84.359999999999999,
@@ -30595,6 +33160,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 621,
             "height" : 22.640000000000001,
             "rotation" : -84.799999999999997,
@@ -30603,6 +33169,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.960000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 491,
             "height" : 15.300000000000001,
             "rotation" : -0.73999999999999999,
@@ -30611,6 +33178,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.969999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 606,
             "height" : 22.309999999999999,
             "rotation" : 84.670000000000002,
@@ -30630,6 +33198,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 619,
             "height" : 23.010000000000002,
             "rotation" : -85.219999999999999,
@@ -30638,6 +33207,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.780000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 15.25,
             "rotation" : -0.63,
@@ -30646,6 +33216,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.030000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 606,
             "height" : 21.859999999999999,
             "rotation" : 84.569999999999993,
@@ -30665,6 +33236,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 620,
             "height" : 21.989999999999998,
             "rotation" : -85.359999999999999,
@@ -30673,6 +33245,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.789999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 488,
             "height" : 15.199999999999999,
             "rotation" : -0.53000000000000003,
@@ -30681,6 +33254,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.130000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 609,
             "height" : 22.68,
             "rotation" : 85.170000000000002,
@@ -30700,6 +33274,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 620,
             "height" : 22.219999999999999,
             "rotation" : -85.379999999999995,
@@ -30708,6 +33283,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.710000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 15.210000000000001,
             "rotation" : -0.5,
@@ -30716,6 +33292,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.240000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 606,
             "height" : 22.030000000000001,
             "rotation" : 84.670000000000002,
@@ -30735,6 +33312,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 620,
             "height" : 22.280000000000001,
             "rotation" : -85.150000000000006,
@@ -30743,6 +33321,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.66
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 15.17,
             "rotation" : -0.48999999999999999,
@@ -30751,6 +33330,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.259999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 607,
             "height" : 22.109999999999999,
             "rotation" : 84.730000000000004,
@@ -30770,6 +33350,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 620,
             "height" : 22.030000000000001,
             "rotation" : -85.140000000000001,
@@ -30778,6 +33359,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.579999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 489,
             "height" : 15.140000000000001,
             "rotation" : -0.31,
@@ -30786,6 +33368,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.369999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.07,
             "rotation" : 84.920000000000002,
@@ -30805,6 +33388,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 619,
             "height" : 22.010000000000002,
             "rotation" : -85.260000000000005,
@@ -30813,6 +33397,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.559999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 488,
             "height" : 15.119999999999999,
             "rotation" : -0.27000000000000002,
@@ -30821,6 +33406,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.399999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.32,
             "rotation" : 84.620000000000005,
@@ -30840,6 +33426,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 617,
             "height" : 22.27,
             "rotation" : -85.519999999999996,
@@ -30848,6 +33435,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.48
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 489,
             "height" : 15.25,
             "rotation" : -0.60999999999999999,
@@ -30856,6 +33444,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.390000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 611,
             "height" : 22.09,
             "rotation" : 84.840000000000003,
@@ -30875,6 +33464,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 618,
             "height" : 22.059999999999999,
             "rotation" : -85.400000000000006,
@@ -30883,6 +33473,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.420000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 489,
             "height" : 15.18,
             "rotation" : -0.44,
@@ -30891,6 +33482,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.399999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 611,
             "height" : 22.100000000000001,
             "rotation" : 84.790000000000006,
@@ -30910,6 +33502,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 617,
             "height" : 22.260000000000002,
             "rotation" : -85.230000000000004,
@@ -30918,6 +33511,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.41
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 488,
             "height" : 16.050000000000001,
             "rotation" : -0.27000000000000002,
@@ -30926,6 +33520,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.439999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 611,
             "height" : 22.02,
             "rotation" : 84.719999999999999,
@@ -30945,6 +33540,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 617,
             "height" : 22.079999999999998,
             "rotation" : -85.290000000000006,
@@ -30953,6 +33549,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.390000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 488,
             "height" : 16.039999999999999,
             "rotation" : -0.29999999999999999,
@@ -30961,6 +33558,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.469999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.899999999999999,
             "rotation" : 84.870000000000005,
@@ -30980,6 +33578,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 617,
             "height" : 22.010000000000002,
             "rotation" : -85.349999999999994,
@@ -30988,6 +33587,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.350000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 487,
             "height" : 16.030000000000001,
             "rotation" : -0.26000000000000001,
@@ -30996,6 +33596,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.490000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.989999999999998,
             "rotation" : 84.879999999999995,
@@ -31015,6 +33616,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 21.890000000000001,
             "rotation" : -85.469999999999999,
@@ -31023,6 +33625,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.359999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 488,
             "height" : 16.050000000000001,
             "rotation" : -0.45000000000000001,
@@ -31031,6 +33634,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.490000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.989999999999998,
             "rotation" : 84.900000000000006,
@@ -31050,6 +33654,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 617,
             "height" : 22.010000000000002,
             "rotation" : -85.359999999999999,
@@ -31058,6 +33663,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.350000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 487,
             "height" : 16.079999999999998,
             "rotation" : -0.46999999999999997,
@@ -31066,6 +33672,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.530000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 612,
             "height" : 22.25,
             "rotation" : 84.930000000000007,
@@ -31085,6 +33692,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -31093,6 +33701,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 487,
             "height" : 16.079999999999998,
             "rotation" : -0.46000000000000002,
@@ -31101,6 +33710,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.530000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.07,
             "rotation" : 84.909999999999997,
@@ -31120,6 +33730,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 458,
             "height" : 20.960000000000001,
             "rotation" : -82.969999999999999,
@@ -31128,6 +33739,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.600000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -31136,6 +33748,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 231,
             "height" : 17.129999999999999,
             "rotation" : 64.859999999999999,
@@ -31155,6 +33768,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 235,
             "height" : 17.550000000000001,
             "rotation" : -65.049999999999997,
@@ -31163,6 +33777,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.989999999999998
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -31171,6 +33786,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 150,
             "height" : 13.699999999999999,
             "rotation" : 58.82,
@@ -31190,6 +33806,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 147,
             "height" : 13.699999999999999,
             "rotation" : -58.700000000000003,
@@ -31198,6 +33815,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.059999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -31206,6 +33824,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 105,
             "height" : 12.16,
             "rotation" : 66.969999999999999,
@@ -31225,6 +33844,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 11.630000000000001,
             "rotation" : -50.479999999999997,
@@ -31233,6 +33853,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -31241,6 +33862,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 12.35,
             "rotation" : 57.789999999999999,
@@ -31260,6 +33882,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 102,
             "height" : 11.82,
             "rotation" : -55.890000000000001,
@@ -31268,6 +33891,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -31276,6 +33900,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 147,
             "height" : 13.52,
             "rotation" : 59.009999999999998,
@@ -31295,6 +33920,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 235,
             "height" : 17.52,
             "rotation" : -68.840000000000003,
@@ -31303,6 +33929,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.920000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -31311,6 +33938,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 441,
             "height" : 20.620000000000001,
             "rotation" : 82.519999999999996,
@@ -31330,6 +33958,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 446,
             "height" : 20.82,
             "rotation" : -83.099999999999994,
@@ -31338,6 +33967,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.620000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -31346,6 +33976,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 607,
             "height" : 22,
             "rotation" : 84.849999999999994,
@@ -31365,6 +33996,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 611,
             "height" : 22.010000000000002,
             "rotation" : -85.359999999999999,
@@ -31373,6 +34005,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.350000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -31381,6 +34014,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -31400,6 +34034,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -31408,6 +34043,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -31416,6 +34052,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -31435,6 +34072,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -31443,6 +34081,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -31451,6 +34090,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -31470,6 +34110,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 618,
             "height" : 22.43,
             "rotation" : -85.200000000000003,
@@ -31478,6 +34119,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.379999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 16.050000000000001,
             "rotation" : -0.28000000000000003,
@@ -31486,6 +34128,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.439999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 611,
             "height" : 22,
             "rotation" : 84.799999999999997,
@@ -31505,6 +34148,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 617,
             "height" : 22.27,
             "rotation" : -84.930000000000007,
@@ -31513,6 +34157,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.530000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 15.09,
             "rotation" : -0.22,
@@ -31521,6 +34166,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.380000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 613,
             "height" : 22.390000000000001,
             "rotation" : 85.069999999999993,
@@ -31540,6 +34186,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 615,
             "height" : 22.27,
             "rotation" : -85.049999999999997,
@@ -31548,6 +34195,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.620000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 15.07,
             "rotation" : -0.16,
@@ -31556,6 +34204,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.340000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 22.41,
             "rotation" : 85,
@@ -31575,6 +34224,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 614,
             "height" : 22.100000000000001,
             "rotation" : -84.799999999999997,
@@ -31583,6 +34233,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.75
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 487,
             "height" : 15.02,
             "rotation" : 0.040000000000000001,
@@ -31591,6 +34242,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.270000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 613,
             "height" : 21.93,
             "rotation" : 85.329999999999998,
@@ -31610,6 +34262,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 613,
             "height" : 22.649999999999999,
             "rotation" : -84.730000000000004,
@@ -31618,6 +34271,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.960000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 15,
             "rotation" : 0,
@@ -31626,6 +34280,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.079999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 614,
             "height" : 22.34,
             "rotation" : 85.299999999999997,
@@ -31645,6 +34300,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 609,
             "height" : 22.329999999999998,
             "rotation" : -84.129999999999995,
@@ -31653,6 +34309,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.539999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 490,
             "height" : 15.109999999999999,
             "rotation" : 0.28999999999999998,
@@ -31661,6 +34318,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.710000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 22.059999999999999,
             "rotation" : 85.400000000000006,
@@ -31680,6 +34338,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 607,
             "height" : 22.149999999999999,
             "rotation" : -83.969999999999999,
@@ -31688,6 +34347,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.98
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 494,
             "height" : 16.18,
             "rotation" : 0.71999999999999997,
@@ -31696,6 +34356,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.439999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.059999999999999,
             "rotation" : 85.409999999999997,
@@ -31715,6 +34376,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 602,
             "height" : 21.870000000000001,
             "rotation" : -83.680000000000007,
@@ -31723,6 +34385,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.52
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 495,
             "height" : 15.49,
             "rotation" : 1.3500000000000001,
@@ -31731,6 +34394,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.18
           },
           {
+            "bend" : -0.01,
             "count" : 608,
             "height" : 22.050000000000001,
             "rotation" : 85.019999999999996,
@@ -31750,6 +34414,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 593,
             "height" : 21.559999999999999,
             "rotation" : -83.560000000000002,
@@ -31758,6 +34423,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 496,
             "height" : 15.869999999999999,
             "rotation" : 1.1799999999999999,
@@ -31766,6 +34432,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.770000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 600,
             "height" : 21.73,
             "rotation" : 84.790000000000006,
@@ -31785,6 +34452,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 584,
             "height" : 21.670000000000002,
             "rotation" : -83.379999999999995,
@@ -31793,6 +34461,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22.760000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 497,
             "height" : 15.99,
             "rotation" : 2.1400000000000001,
@@ -31801,6 +34470,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.350000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 595,
             "height" : 22.09,
             "rotation" : 84.650000000000006,
@@ -31820,6 +34490,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 557,
             "height" : 22.010000000000002,
             "rotation" : -83.469999999999999,
@@ -31828,6 +34499,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -24.609999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 503,
             "height" : 16.030000000000001,
             "rotation" : 3.3599999999999999,
@@ -31836,6 +34508,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.100000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 571,
             "height" : 21.609999999999999,
             "rotation" : 82.780000000000001,
@@ -31855,6 +34528,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 540,
             "height" : 21,
             "rotation" : -83.540000000000006,
@@ -31863,6 +34537,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -25.82
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 506,
             "height" : 15.82,
             "rotation" : 4.0700000000000003,
@@ -31871,6 +34546,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 30.300000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 557,
             "height" : 21.199999999999999,
             "rotation" : 81.379999999999995,
@@ -31890,6 +34566,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 517,
             "height" : 21.539999999999999,
             "rotation" : -83.620000000000005,
@@ -31898,6 +34575,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -27.289999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 510,
             "height" : 16.07,
             "rotation" : 4.9800000000000004,
@@ -31906,6 +34584,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 29.27
           },
           {
+            "bend" : -0.01,
             "count" : 533,
             "height" : 21.199999999999999,
             "rotation" : 78.640000000000001,
@@ -31925,6 +34604,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 488,
             "height" : 20.210000000000001,
             "rotation" : -84.280000000000001,
@@ -31933,6 +34613,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.239999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 513,
             "height" : 16.25,
             "rotation" : 6.29,
@@ -31941,6 +34622,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 27.969999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 500,
             "height" : 20.710000000000001,
             "rotation" : 75.140000000000001,
@@ -31960,6 +34642,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 449,
             "height" : 20.289999999999999,
             "rotation" : -86.140000000000001,
@@ -31968,6 +34651,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.649999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 517,
             "height" : 16.57,
             "rotation" : 7.7199999999999998,
@@ -31976,6 +34660,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.219999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 449,
             "height" : 19.620000000000001,
             "rotation" : 68.829999999999998,
@@ -31995,6 +34680,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.059999999999999998,
             "count" : 327,
             "height" : 20.719999999999999,
             "rotation" : 59.270000000000003,
@@ -32003,6 +34689,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -40.369999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 518,
             "height" : 16.609999999999999,
             "rotation" : 12.68,
@@ -32011,6 +34698,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.190000000000001
           },
           {
+            "bend" : -0.11,
             "count" : 313,
             "height" : 16.300000000000001,
             "rotation" : 25.5,
@@ -32030,6 +34718,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 238,
             "height" : 16.609999999999999,
             "rotation" : 9.3200000000000003,
@@ -32038,6 +34727,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -45.840000000000003
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 518,
             "height" : 16.780000000000001,
             "rotation" : 14.859999999999999,
@@ -32046,6 +34736,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 16.48
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 300,
             "height" : 14.74,
             "rotation" : 21.82,
@@ -32065,6 +34756,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 213,
             "height" : 15.039999999999999,
             "rotation" : 4.5899999999999999,
@@ -32073,6 +34765,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -48.520000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 513,
             "height" : 16.760000000000002,
             "rotation" : 16.079999999999998,
@@ -32081,6 +34774,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 13.960000000000001
           },
           {
+            "bend" : -0.14999999999999999,
             "count" : 293,
             "height" : 14.9,
             "rotation" : 18.809999999999999,
@@ -32100,6 +34794,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.059999999999999998,
             "count" : 202,
             "height" : 13.970000000000001,
             "rotation" : 3.8500000000000001,
@@ -32108,6 +34803,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.020000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 511,
             "height" : 16.690000000000001,
             "rotation" : 16.050000000000001,
@@ -32116,6 +34812,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 12.56
           },
           {
+            "bend" : -0.17000000000000001,
             "count" : 284,
             "height" : 14.77,
             "rotation" : 16.870000000000001,
@@ -32135,6 +34832,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.070000000000000007,
             "count" : 200,
             "height" : 13.1,
             "rotation" : 3.2999999999999998,
@@ -32143,6 +34841,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.799999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 513,
             "height" : 16.890000000000001,
             "rotation" : 15.74,
@@ -32151,6 +34850,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.710000000000001
           },
           {
+            "bend" : -0.17000000000000001,
             "count" : 278,
             "height" : 14.210000000000001,
             "rotation" : 15.619999999999999,
@@ -32170,6 +34870,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.10000000000000001,
             "count" : 196,
             "height" : 12.07,
             "rotation" : 1.3400000000000001,
@@ -32178,6 +34879,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.009999999999998
           },
           {
+            "bend" : 0.02,
             "count" : 515,
             "height" : 16.899999999999999,
             "rotation" : 14.48,
@@ -32186,6 +34888,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.31
           },
           {
+            "bend" : -0.20000000000000001,
             "count" : 269,
             "height" : 13.92,
             "rotation" : 13.460000000000001,
@@ -32205,6 +34908,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.10000000000000001,
             "count" : 193,
             "height" : 12.16,
             "rotation" : -1.0600000000000001,
@@ -32213,6 +34917,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.810000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 523,
             "height" : 16.789999999999999,
             "rotation" : 13.18,
@@ -32221,6 +34926,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.48
           },
           {
+            "bend" : -0.19,
             "count" : 266,
             "height" : 13.6,
             "rotation" : 12.619999999999999,
@@ -32240,6 +34946,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 190,
             "height" : 12.42,
             "rotation" : -3.5899999999999999,
@@ -32248,6 +34955,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.369999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 536,
             "height" : 17.140000000000001,
             "rotation" : 10.529999999999999,
@@ -32256,6 +34964,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.710000000000001
           },
           {
+            "bend" : -0.20000000000000001,
             "count" : 257,
             "height" : 13.57,
             "rotation" : 11.43,
@@ -32275,6 +34984,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 202,
             "height" : 12.779999999999999,
             "rotation" : -7.1299999999999999,
@@ -32283,6 +34993,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -49.240000000000002
           },
           {
+            "bend" : 0.01,
             "count" : 554,
             "height" : 17.68,
             "rotation" : 4.9699999999999998,
@@ -32291,6 +35002,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.949999999999999
           },
           {
+            "bend" : -0.14999999999999999,
             "count" : 240,
             "height" : 13.91,
             "rotation" : 7.8700000000000001,
@@ -32310,6 +35022,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.16,
             "count" : 240,
             "height" : 13.9,
             "rotation" : -10.99,
@@ -32318,6 +35031,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -45.450000000000003
           },
           {
+            "bend" : 0.02,
             "count" : 544,
             "height" : 17.149999999999999,
             "rotation" : -7.3099999999999996,
@@ -32326,6 +35040,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.41
           },
           {
+            "bend" : -0.14999999999999999,
             "count" : 203,
             "height" : 11.880000000000001,
             "rotation" : 3.0899999999999999,
@@ -32345,6 +35060,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.19,
             "count" : 267,
             "height" : 13.99,
             "rotation" : -15.34,
@@ -32353,6 +35069,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -42.289999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 503,
             "height" : 16.84,
             "rotation" : -16.239999999999998,
@@ -32361,6 +35078,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 10.32
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 191,
             "height" : 12,
             "rotation" : -1.6599999999999999,
@@ -32380,6 +35098,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.19,
             "count" : 271,
             "height" : 13.65,
             "rotation" : -16.050000000000001,
@@ -32388,6 +35107,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.689999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 492,
             "height" : 16.109999999999999,
             "rotation" : -17.550000000000001,
@@ -32396,6 +35116,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 10.09
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 195,
             "height" : 11.98,
             "rotation" : -3.73,
@@ -32415,6 +35136,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.20000000000000001,
             "count" : 273,
             "height" : 13.880000000000001,
             "rotation" : -16.219999999999999,
@@ -32423,6 +35145,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.299999999999997
           },
           {
+            "bend" : 0.01,
             "count" : 487,
             "height" : 16.52,
             "rotation" : -18.23,
@@ -32431,6 +35154,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 9.9600000000000009
           },
           {
+            "bend" : -0.13,
             "count" : 193,
             "height" : 12.109999999999999,
             "rotation" : -3.96,
@@ -32450,6 +35174,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.20000000000000001,
             "count" : 273,
             "height" : 13.57,
             "rotation" : -16.989999999999998,
@@ -32458,6 +35183,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.18
           },
           {
+            "bend" : 0.02,
             "count" : 493,
             "height" : 16.489999999999998,
             "rotation" : -18.379999999999999,
@@ -32466,6 +35192,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 9.9000000000000004
           },
           {
+            "bend" : -0.12,
             "count" : 194,
             "height" : 12.359999999999999,
             "rotation" : -4.3499999999999996,
@@ -32485,6 +35212,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.17999999999999999,
             "count" : 269,
             "height" : 13.710000000000001,
             "rotation" : -16.32,
@@ -32493,6 +35221,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.619999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 501,
             "height" : 16.399999999999999,
             "rotation" : -17.48,
@@ -32501,6 +35230,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 10.119999999999999
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 190,
             "height" : 12.029999999999999,
             "rotation" : -2.6800000000000002,
@@ -32520,6 +35250,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 215,
             "height" : 14.029999999999999,
             "rotation" : -5.9299999999999997,
@@ -32528,6 +35259,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -47.93
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 550,
             "height" : 17.109999999999999,
             "rotation" : -0.23999999999999999,
@@ -32536,6 +35268,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.9
           },
           {
+            "bend" : -0.13,
             "count" : 221,
             "height" : 14.67,
             "rotation" : 4.25,
@@ -32555,6 +35288,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 189,
             "height" : 12.17,
             "rotation" : -1.4199999999999999,
@@ -32563,6 +35297,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.530000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 522,
             "height" : 17,
             "rotation" : 13.949999999999999,
@@ -32571,6 +35306,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.48
           },
           {
+            "bend" : -0.17000000000000001,
             "count" : 263,
             "height" : 14.56,
             "rotation" : 12.49,
@@ -32590,6 +35326,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 194,
             "height" : 12.58,
             "rotation" : 3.3100000000000001,
@@ -32598,6 +35335,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -52.329999999999998
           },
           {
+            "bend" : 0.02,
             "count" : 502,
             "height" : 17.02,
             "rotation" : 17.98,
@@ -32606,6 +35344,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.01
           },
           {
+            "bend" : -0.17999999999999999,
             "count" : 272,
             "height" : 13.98,
             "rotation" : 15.23,
@@ -32625,6 +35364,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 198,
             "height" : 12.77,
             "rotation" : 3.9300000000000002,
@@ -32633,6 +35373,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -52.479999999999997
           },
           {
+            "bend" : 0.02,
             "count" : 489,
             "height" : 16.140000000000001,
             "rotation" : 19.609999999999999,
@@ -32641,6 +35382,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 10.82
           },
           {
+            "bend" : -0.19,
             "count" : 275,
             "height" : 13.85,
             "rotation" : 15.51,
@@ -32660,6 +35402,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 200,
             "height" : 12.640000000000001,
             "rotation" : 4.6299999999999999,
@@ -32668,6 +35411,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -52.380000000000003
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 486,
             "height" : 16.379999999999999,
             "rotation" : 19.280000000000001,
@@ -32676,6 +35420,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 10.91
           },
           {
+            "bend" : -0.19,
             "count" : 276,
             "height" : 14.029999999999999,
             "rotation" : 14.73,
@@ -32695,6 +35440,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.10000000000000001,
             "count" : 196,
             "height" : 12.630000000000001,
             "rotation" : 3.3100000000000001,
@@ -32703,6 +35449,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.18
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 491,
             "height" : 16.48,
             "rotation" : 18.059999999999999,
@@ -32711,6 +35458,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 11.99
           },
           {
+            "bend" : -0.19,
             "count" : 278,
             "height" : 14.23,
             "rotation" : 14.75,
@@ -32730,6 +35478,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 195,
             "height" : 12.09,
             "rotation" : 1.3999999999999999,
@@ -32738,6 +35487,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.170000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 496,
             "height" : 17.059999999999999,
             "rotation" : 16.949999999999999,
@@ -32746,6 +35496,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 12.91
           },
           {
+            "bend" : -0.17999999999999999,
             "count" : 278,
             "height" : 14.07,
             "rotation" : 14.34,
@@ -32765,6 +35516,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 193,
             "height" : 12.029999999999999,
             "rotation" : 0.56000000000000005,
@@ -32773,6 +35525,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -48.850000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 500,
             "height" : 16.199999999999999,
             "rotation" : 15.49,
@@ -32781,6 +35534,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 14.359999999999999
           },
           {
+            "bend" : -0.17999999999999999,
             "count" : 282,
             "height" : 14.41,
             "rotation" : 13.720000000000001,
@@ -32800,6 +35554,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 194,
             "height" : 12.31,
             "rotation" : -1.8,
@@ -32808,6 +35563,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -46.659999999999997
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 509,
             "height" : 16.77,
             "rotation" : 13.92,
@@ -32816,6 +35572,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 16.629999999999999
           },
           {
+            "bend" : -0.17999999999999999,
             "count" : 286,
             "height" : 14.07,
             "rotation" : 13.470000000000001,
@@ -32835,6 +35592,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 214,
             "height" : 14.27,
             "rotation" : -2.29,
@@ -32843,6 +35601,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -42.93
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 511,
             "height" : 16.620000000000001,
             "rotation" : 10.960000000000001,
@@ -32851,6 +35610,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.609999999999999
           },
           {
+            "bend" : -0.17000000000000001,
             "count" : 290,
             "height" : 14.57,
             "rotation" : 12.44,
@@ -32870,6 +35630,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 255,
             "height" : 15.140000000000001,
             "rotation" : -1.3799999999999999,
@@ -32878,6 +35639,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -35.07
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 512,
             "height" : 16.690000000000001,
             "rotation" : 4.75,
@@ -32886,6 +35648,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 28
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 300,
             "height" : 15.33,
             "rotation" : 11.51,
@@ -32905,6 +35668,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 268,
             "height" : 15.16,
             "rotation" : -1.1499999999999999,
@@ -32913,6 +35677,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.939999999999998
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 506,
             "height" : 15.75,
             "rotation" : 3.73,
@@ -32921,6 +35686,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 29.75
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 307,
             "height" : 15.699999999999999,
             "rotation" : 12.24,
@@ -32940,6 +35706,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 279,
             "height" : 15.01,
             "rotation" : 0.14000000000000001,
@@ -32948,6 +35715,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -31.25
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 504,
             "height" : 15.609999999999999,
             "rotation" : 2.75,
@@ -32956,6 +35724,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 30.940000000000001
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 311,
             "height" : 15.75,
             "rotation" : 13.58,
@@ -32975,6 +35744,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 293,
             "height" : 16.02,
             "rotation" : 1.29,
@@ -32983,6 +35753,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.920000000000002
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 500,
             "height" : 15.550000000000001,
             "rotation" : 1.79,
@@ -32991,6 +35762,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.789999999999999
           },
           {
+            "bend" : -0.12,
             "count" : 321,
             "height" : 16.309999999999999,
             "rotation" : 15.529999999999999,
@@ -33010,6 +35782,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.089999999999999997,
             "count" : 305,
             "height" : 16.210000000000001,
             "rotation" : 3.46,
@@ -33018,6 +35791,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.760000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 496,
             "height" : 16,
             "rotation" : 1.3400000000000001,
@@ -33026,6 +35800,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.469999999999999
           },
           {
+            "bend" : -0.11,
             "count" : 332,
             "height" : 16.670000000000002,
             "rotation" : 17.219999999999999,
@@ -33045,6 +35820,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.070000000000000007,
             "count" : 341,
             "height" : 18.879999999999999,
             "rotation" : 10.43,
@@ -33053,6 +35829,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.77
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 494,
             "height" : 15.140000000000001,
             "rotation" : 0.33000000000000002,
@@ -33061,6 +35838,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.369999999999997
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 369,
             "height" : 18.030000000000001,
             "rotation" : 26.73,
@@ -33080,6 +35858,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.070000000000000007,
             "count" : 364,
             "height" : 19.949999999999999,
             "rotation" : 15.85,
@@ -33088,6 +35867,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -25.780000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 491,
             "height" : 16,
             "rotation" : 0.070000000000000007,
@@ -33096,6 +35876,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.729999999999997
           },
           {
+            "bend" : -0.080000000000000002,
             "count" : 398,
             "height" : 18.710000000000001,
             "rotation" : 33.189999999999998,
@@ -33115,6 +35896,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 396,
             "height" : 21.59,
             "rotation" : 25.539999999999999,
@@ -33123,6 +35905,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -24.75
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 492,
             "height" : 15.02,
             "rotation" : -0.059999999999999998,
@@ -33131,6 +35914,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.880000000000003
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 440,
             "height" : 19.350000000000001,
             "rotation" : 41.479999999999997,
@@ -33150,6 +35934,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 438,
             "height" : 21.539999999999999,
             "rotation" : 39.369999999999997,
@@ -33158,6 +35943,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -23.629999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 15.07,
             "rotation" : -0.16,
@@ -33166,6 +35952,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.130000000000003
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 488,
             "height" : 21.149999999999999,
             "rotation" : 51.549999999999997,
@@ -33185,6 +35972,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 488,
             "height" : 23.59,
             "rotation" : 58.219999999999999,
@@ -33193,6 +35981,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22.489999999999998
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 15.02,
             "rotation" : -0.070000000000000007,
@@ -33201,6 +35990,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.280000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 529,
             "height" : 21.620000000000001,
             "rotation" : 63.950000000000003,
@@ -33220,6 +36010,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 572,
             "height" : 22.829999999999998,
             "rotation" : 86.310000000000002,
@@ -33228,6 +36019,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.23
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 489,
             "height" : 16.07,
             "rotation" : -0.40999999999999998,
@@ -33236,6 +36028,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.43
           },
           {
+            "bend" : -0.01,
             "count" : 600,
             "height" : 21.789999999999999,
             "rotation" : 82.540000000000006,
@@ -33255,6 +36048,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 605,
             "height" : 22.489999999999998,
             "rotation" : -87.060000000000002,
@@ -33263,6 +36057,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.550000000000001
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 489,
             "height" : 16.050000000000001,
             "rotation" : -0.42999999999999999,
@@ -33271,6 +36066,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.479999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 21.989999999999998,
             "rotation" : 84.859999999999999,
@@ -33290,6 +36086,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 614,
             "height" : 21.890000000000001,
             "rotation" : -85.459999999999994,
@@ -33298,6 +36095,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.329999999999998
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33306,6 +36104,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 452,
             "height" : 20.829999999999998,
             "rotation" : 83,
@@ -33325,6 +36124,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 458,
             "height" : 20.960000000000001,
             "rotation" : -82.969999999999999,
@@ -33333,6 +36133,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.600000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33341,6 +36142,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 231,
             "height" : 17.129999999999999,
             "rotation" : 64.859999999999999,
@@ -33360,6 +36162,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 235,
             "height" : 17.550000000000001,
             "rotation" : -65.049999999999997,
@@ -33368,6 +36171,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.989999999999998
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33376,6 +36180,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 150,
             "height" : 13.699999999999999,
             "rotation" : 58.82,
@@ -33395,6 +36200,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 11.630000000000001,
             "rotation" : -50.479999999999997,
@@ -33403,6 +36209,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33411,6 +36218,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 12.35,
             "rotation" : 57.789999999999999,
@@ -33430,6 +36238,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 102,
             "height" : 11.82,
             "rotation" : -55.890000000000001,
@@ -33438,6 +36247,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33446,6 +36256,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 147,
             "height" : 13.52,
             "rotation" : 59.009999999999998,
@@ -33465,6 +36276,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 145,
             "height" : 13.67,
             "rotation" : -59.840000000000003,
@@ -33473,6 +36285,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.010000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33481,6 +36294,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 232,
             "height" : 17.149999999999999,
             "rotation" : 66.579999999999998,
@@ -33500,6 +36314,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 235,
             "height" : 17.52,
             "rotation" : -68.840000000000003,
@@ -33508,6 +36323,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.920000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33516,6 +36332,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 441,
             "height" : 20.620000000000001,
             "rotation" : 82.519999999999996,
@@ -33535,6 +36352,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 446,
             "height" : 20.82,
             "rotation" : -83.099999999999994,
@@ -33543,6 +36361,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.620000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33551,6 +36370,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 607,
             "height" : 22,
             "rotation" : 84.849999999999994,
@@ -33570,6 +36390,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -33578,6 +36399,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33586,6 +36408,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -33605,6 +36428,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -33613,6 +36437,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33621,6 +36446,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -33640,6 +36466,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 615,
             "height" : 21.91,
             "rotation" : -85.329999999999998,
@@ -33648,6 +36475,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.34
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33656,6 +36484,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 452,
             "height" : 20.829999999999998,
             "rotation" : 83,
@@ -33675,6 +36504,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 458,
             "height" : 20.960000000000001,
             "rotation" : -82.969999999999999,
@@ -33683,6 +36513,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.600000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33691,6 +36522,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 231,
             "height" : 17.129999999999999,
             "rotation" : 64.859999999999999,
@@ -33710,6 +36542,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 235,
             "height" : 17.550000000000001,
             "rotation" : -65.049999999999997,
@@ -33718,6 +36551,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.989999999999998
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33726,6 +36560,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 150,
             "height" : 13.699999999999999,
             "rotation" : 58.82,
@@ -33745,6 +36580,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0,
             "count" : 147,
             "height" : 13.699999999999999,
             "rotation" : -58.700000000000003,
@@ -33753,6 +36589,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.059999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33761,6 +36598,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 105,
             "height" : 12.16,
             "rotation" : 66.969999999999999,
@@ -33780,6 +36618,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 11.630000000000001,
             "rotation" : -50.479999999999997,
@@ -33788,6 +36627,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.190000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33796,6 +36636,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 103,
             "height" : 12.35,
             "rotation" : 57.789999999999999,
@@ -33815,6 +36656,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 145,
             "height" : 13.67,
             "rotation" : -59.840000000000003,
@@ -33823,6 +36665,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.010000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33831,6 +36674,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 232,
             "height" : 17.149999999999999,
             "rotation" : 66.579999999999998,
@@ -33850,6 +36694,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 235,
             "height" : 17.52,
             "rotation" : -68.840000000000003,
@@ -33858,6 +36703,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.920000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33866,6 +36712,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 441,
             "height" : 20.620000000000001,
             "rotation" : 82.519999999999996,
@@ -33885,6 +36732,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 446,
             "height" : 20.82,
             "rotation" : -83.099999999999994,
@@ -33893,6 +36741,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.620000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33901,6 +36750,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 607,
             "height" : 22,
             "rotation" : 84.849999999999994,
@@ -33920,6 +36770,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 611,
             "height" : 22.010000000000002,
             "rotation" : -85.359999999999999,
@@ -33928,6 +36779,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.350000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33936,6 +36788,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -33955,6 +36808,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -33963,6 +36817,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -33971,6 +36826,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -33990,6 +36846,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -33998,6 +36855,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34006,6 +36864,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -34025,6 +36884,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 617,
             "height" : 22.260000000000002,
             "rotation" : -85.290000000000006,
@@ -34033,6 +36893,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.390000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34041,6 +36902,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -34060,6 +36922,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 614,
             "height" : 21.789999999999999,
             "rotation" : -84.319999999999993,
@@ -34068,6 +36931,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.940000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34076,6 +36940,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -34095,6 +36960,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 613,
             "height" : 22.75,
             "rotation" : -83.719999999999999,
@@ -34103,6 +36969,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.370000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34111,6 +36978,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -34130,6 +36998,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.32,
             "rotation" : -82.980000000000004,
@@ -34138,6 +37007,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.059999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34146,6 +37016,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 22.09,
             "rotation" : 84.840000000000003,
@@ -34165,6 +37036,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 605,
             "height" : 21.969999999999999,
             "rotation" : -81.439999999999998,
@@ -34173,6 +37045,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.84
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34181,6 +37054,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.969999999999999,
             "rotation" : 84.980000000000004,
@@ -34200,6 +37074,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 599,
             "height" : 21.75,
             "rotation" : -79.75,
@@ -34208,6 +37083,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22.879999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34216,6 +37092,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 615,
             "height" : 22.09,
             "rotation" : 85.260000000000005,
@@ -34235,6 +37112,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 584,
             "height" : 21.609999999999999,
             "rotation" : -74.390000000000001,
@@ -34243,6 +37121,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -25.77
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34251,6 +37130,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 628,
             "height" : 23.09,
             "rotation" : 85.239999999999995,
@@ -34270,6 +37150,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 572,
             "height" : 20.809999999999999,
             "rotation" : -70.510000000000005,
@@ -34278,6 +37159,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -27.649999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34286,6 +37168,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 636,
             "height" : 23.129999999999999,
             "rotation" : 85.760000000000005,
@@ -34305,6 +37188,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 561,
             "height" : 20.510000000000002,
             "rotation" : -65.040000000000006,
@@ -34313,6 +37197,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -29.98
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34321,6 +37206,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 647,
             "height" : 23.059999999999999,
             "rotation" : 86.5,
@@ -34340,6 +37226,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 545,
             "height" : 19.530000000000001,
             "rotation" : -56.700000000000003,
@@ -34348,6 +37235,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -32.649999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34356,6 +37244,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 660,
             "height" : 23.579999999999998,
             "rotation" : 87.109999999999999,
@@ -34375,6 +37264,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 521,
             "height" : 19.530000000000001,
             "rotation" : -48.810000000000002,
@@ -34383,6 +37273,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -35.979999999999997
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34391,6 +37282,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 674,
             "height" : 24.219999999999999,
             "rotation" : 87.670000000000002,
@@ -34410,6 +37302,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 15.779999999999999,
             "rotation" : -37.229999999999997,
@@ -34418,6 +37311,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.460000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34426,6 +37320,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 705,
             "height" : 25.109999999999999,
             "rotation" : -89.450000000000003,
@@ -34445,6 +37340,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 397,
             "height" : 15.789999999999999,
             "rotation" : -37,
@@ -34453,6 +37349,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.520000000000003
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34461,6 +37358,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 711,
             "height" : 26.059999999999999,
             "rotation" : -87.769999999999996,
@@ -34480,6 +37378,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 397,
             "height" : 15.800000000000001,
             "rotation" : -36.920000000000002,
@@ -34488,6 +37387,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.640000000000001
           },
           {
+            "bend" : -0,
             "count" : 710,
             "height" : 26.829999999999998,
             "rotation" : -85.340000000000003,
@@ -34496,6 +37396,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -17.09
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34515,6 +37416,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 394,
             "height" : 15.83,
             "rotation" : -36.340000000000003,
@@ -34523,6 +37425,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.899999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 683,
             "height" : 26.66,
             "rotation" : -82.629999999999995,
@@ -34531,6 +37434,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -16.199999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34550,6 +37454,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 395,
             "height" : 15.859999999999999,
             "rotation" : -35.939999999999998,
@@ -34558,6 +37463,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -52.219999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 599,
             "height" : 25.890000000000001,
             "rotation" : -79.010000000000005,
@@ -34566,6 +37472,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -14.68
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34585,6 +37492,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 382,
             "height" : 15.890000000000001,
             "rotation" : -79.040000000000006,
@@ -34593,6 +37501,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.300000000000001
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 389,
             "height" : 15.67,
             "rotation" : -34.630000000000003,
@@ -34601,6 +37510,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -53.100000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34620,6 +37530,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.13,
             "count" : 620,
             "height" : 17.27,
             "rotation" : -42.159999999999997,
@@ -34628,6 +37539,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -47.710000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34647,6 +37559,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 382,
             "height" : 15.83,
             "rotation" : -32.159999999999997,
@@ -34655,6 +37568,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -54.630000000000003
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34674,6 +37588,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14000000000000001,
             "count" : 606,
             "height" : 17.420000000000002,
             "rotation" : -21.460000000000001,
@@ -34682,6 +37597,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -58.549999999999997
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34701,6 +37617,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 363,
             "height" : 15.59,
             "rotation" : -29.260000000000002,
@@ -34709,6 +37626,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -56.340000000000003
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34717,6 +37635,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 290,
             "height" : 15.43,
             "rotation" : 8.1799999999999997,
@@ -34736,6 +37655,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 344,
             "height" : 15.59,
             "rotation" : -24.66,
@@ -34744,6 +37664,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -58.460000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -34752,6 +37673,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 338,
             "height" : 15.470000000000001,
             "rotation" : 39.789999999999999,
@@ -34771,6 +37693,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 332,
             "height" : 15.57,
             "rotation" : -22.329999999999998,
@@ -34779,6 +37702,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -59.619999999999997
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.02,
             "rotation" : -0.17000000000000001,
@@ -34787,6 +37711,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.469999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 359,
             "height" : 15.550000000000001,
             "rotation" : 54.07,
@@ -34806,6 +37731,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 319,
             "height" : 15.390000000000001,
             "rotation" : -19.600000000000001,
@@ -34814,6 +37740,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -60.789999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 489,
             "height" : 15.119999999999999,
             "rotation" : 0.28999999999999998,
@@ -34822,6 +37749,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.390000000000001
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 376,
             "height" : 15.539999999999999,
             "rotation" : 67.409999999999997,
@@ -34841,6 +37769,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 304,
             "height" : 15.56,
             "rotation" : -16.289999999999999,
@@ -34849,6 +37778,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -61.880000000000003
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 490,
             "height" : 15.529999999999999,
             "rotation" : 1.46,
@@ -34857,6 +37787,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.25
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 386,
             "height" : 15.68,
             "rotation" : 79.780000000000001,
@@ -34876,6 +37807,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 289,
             "height" : 15.640000000000001,
             "rotation" : -12.619999999999999,
@@ -34884,6 +37816,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -62.869999999999997
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 491,
             "height" : 15.949999999999999,
             "rotation" : 2.9100000000000001,
@@ -34892,6 +37825,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.009999999999998
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 399,
             "height" : 15.43,
             "rotation" : -88.329999999999998,
@@ -34911,6 +37845,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 494,
             "height" : 16.079999999999998,
             "rotation" : 7.7300000000000004,
@@ -34919,6 +37854,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.049999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 250,
             "height" : 15.17,
             "rotation" : -3.9300000000000002,
@@ -34927,6 +37863,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -64.290000000000006
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 415,
             "height" : 15.84,
             "rotation" : -66.760000000000005,
@@ -34946,6 +37883,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.040000000000000001,
             "count" : 493,
             "height" : 15.9,
             "rotation" : 11.210000000000001,
@@ -34954,6 +37892,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.310000000000002
           },
           {
+            "bend" : -0,
             "count" : 226,
             "height" : 15.1,
             "rotation" : 2.1299999999999999,
@@ -34962,6 +37901,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -64.409999999999997
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 419,
             "height" : 15.720000000000001,
             "rotation" : -56.420000000000002,
@@ -34981,6 +37921,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 494,
             "height" : 15.869999999999999,
             "rotation" : 15.470000000000001,
@@ -34989,6 +37930,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.149999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 244,
             "height" : 15.279999999999999,
             "rotation" : 7.79,
@@ -34997,6 +37939,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -63.740000000000002
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 426,
             "height" : 15.76,
             "rotation" : -47.060000000000002,
@@ -35016,6 +37959,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 492,
             "height" : 15.34,
             "rotation" : 20.890000000000001,
@@ -35024,6 +37968,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 29.52
           },
           {
+            "bend" : -0.02,
             "count" : 273,
             "height" : 15.67,
             "rotation" : 15.58,
@@ -35032,6 +37977,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -62.140000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 427,
             "height" : 15.890000000000001,
             "rotation" : -38.049999999999997,
@@ -35051,6 +37997,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 485,
             "height" : 15.529999999999999,
             "rotation" : 27.379999999999999,
@@ -35059,6 +38006,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 27.059999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 307,
             "height" : 15.31,
             "rotation" : 23.52,
@@ -35067,6 +38015,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -58.979999999999997
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 431,
             "height" : 15.890000000000001,
             "rotation" : -29.66,
@@ -35086,6 +38035,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.040000000000000001,
             "count" : 462,
             "height" : 15.35,
             "rotation" : 45.960000000000001,
@@ -35094,6 +38044,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 18.489999999999998
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 431,
             "height" : 16.02,
             "rotation" : -13.73,
@@ -35102,6 +38053,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 60.93
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 396,
             "height" : 15.210000000000001,
             "rotation" : 44.780000000000001,
@@ -35121,6 +38073,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.050000000000000003,
             "count" : 429,
             "height" : 14.85,
             "rotation" : 59.579999999999998,
@@ -35129,6 +38082,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 10.779999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 434,
             "height" : 16.260000000000002,
             "rotation" : -6.1699999999999999,
@@ -35137,6 +38091,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 62.369999999999997
           },
           {
+            "bend" : -0.070000000000000007,
             "count" : 452,
             "height" : 15.859999999999999,
             "rotation" : 58.450000000000003,
@@ -35156,6 +38111,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.059999999999999998,
             "count" : 379,
             "height" : 15.27,
             "rotation" : 77.189999999999998,
@@ -35164,6 +38120,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -1.23
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 432,
             "height" : 15.109999999999999,
             "rotation" : 0.33000000000000002,
@@ -35172,6 +38129,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 62.810000000000002
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 527,
             "height" : 16.579999999999998,
             "rotation" : 75.090000000000003,
@@ -35191,6 +38149,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 380,
             "height" : 15.800000000000001,
             "rotation" : -63.840000000000003,
@@ -35199,6 +38158,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -28.969999999999999
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 431,
             "height" : 16.140000000000001,
             "rotation" : 7.0999999999999996,
@@ -35207,6 +38167,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 62.259999999999998
           },
           {
+            "bend" : 0.13,
             "count" : 627,
             "height" : 17.719999999999999,
             "rotation" : -83.859999999999999,
@@ -35226,6 +38187,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 284,
             "height" : 15.210000000000001,
             "rotation" : -38.850000000000001,
@@ -35234,6 +38196,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.420000000000002
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 428,
             "height" : 16,
             "rotation" : 13.18,
@@ -35242,6 +38205,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 61.030000000000001
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 742,
             "height" : 18.809999999999999,
             "rotation" : -57.75,
@@ -35261,6 +38225,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.27000000000000002,
             "count" : 985,
             "height" : 23.010000000000002,
             "rotation" : 7.4699999999999998,
@@ -35269,6 +38234,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 59.789999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 255,
             "height" : 15.140000000000001,
             "rotation" : 2.9399999999999999,
@@ -35288,6 +38254,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.13,
             "count" : 634,
             "height" : 17.649999999999999,
             "rotation" : 23.960000000000001,
@@ -35296,6 +38263,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 56.68
           },
           {
+            "bend" : -0.02,
             "count" : 290,
             "height" : 14.970000000000001,
             "rotation" : 19.359999999999999,
@@ -35315,6 +38283,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.089999999999999997,
             "count" : 522,
             "height" : 17.010000000000002,
             "rotation" : 39.799999999999997,
@@ -35323,6 +38292,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 48.229999999999997
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 315,
             "height" : 15.19,
             "rotation" : 35.93,
@@ -35342,6 +38312,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.14000000000000001,
             "count" : 666,
             "height" : 17.52,
             "rotation" : 48.93,
@@ -35350,6 +38321,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 40.439999999999998
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 341,
             "height" : 15.6,
             "rotation" : 50.259999999999998,
@@ -35369,6 +38341,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.17999999999999999,
             "count" : 734,
             "height" : 18.780000000000001,
             "rotation" : 57.399999999999999,
@@ -35377,6 +38350,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 357,
             "height" : 15.44,
             "rotation" : 64.5,
@@ -35396,6 +38370,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 270,
             "height" : 15.15,
             "rotation" : 88.739999999999995,
@@ -35404,6 +38379,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -0.33000000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 346,
             "height" : 15.65,
             "rotation" : 53.490000000000002,
@@ -35412,6 +38388,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 37.380000000000003
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 389,
             "height" : 15.27,
             "rotation" : 88.890000000000001,
@@ -35431,6 +38408,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 242,
             "height" : 15.52,
             "rotation" : -82.689999999999998,
@@ -35439,6 +38417,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -8.5500000000000007
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 311,
             "height" : 15.44,
             "rotation" : 56.469999999999999,
@@ -35447,6 +38426,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.619999999999997
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 400,
             "height" : 15.85,
             "rotation" : -79.609999999999999,
@@ -35466,6 +38446,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 228,
             "height" : 15.359999999999999,
             "rotation" : -76.620000000000005,
@@ -35474,6 +38455,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -15.59
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 281,
             "height" : 15.41,
             "rotation" : 59.109999999999999,
@@ -35482,6 +38464,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.719999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 406,
             "height" : 15.74,
             "rotation" : -69.560000000000002,
@@ -35501,6 +38484,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 252,
             "height" : 15.57,
             "rotation" : -70.909999999999997,
@@ -35509,6 +38493,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.48
           },
           {
+            "bend" : 0.02,
             "count" : 256,
             "height" : 15.279999999999999,
             "rotation" : 61.32,
@@ -35517,6 +38502,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 28.710000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 415,
             "height" : 16.100000000000001,
             "rotation" : -59.07,
@@ -35536,6 +38522,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 272,
             "height" : 15.58,
             "rotation" : -66.709999999999994,
@@ -35544,6 +38531,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -26.5
           },
           {
+            "bend" : 0.02,
             "count" : 235,
             "height" : 15.32,
             "rotation" : 65.200000000000003,
@@ -35552,6 +38540,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 25.780000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 421,
             "height" : 15.83,
             "rotation" : -49.590000000000003,
@@ -35571,6 +38560,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 245,
             "height" : 15.539999999999999,
             "rotation" : 71.060000000000002,
@@ -35579,6 +38569,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 19.940000000000001
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 305,
             "height" : 15.6,
             "rotation" : -58.649999999999999,
@@ -35587,6 +38578,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -34.240000000000002
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 428,
             "height" : 15.84,
             "rotation" : -31.949999999999999,
@@ -35606,6 +38598,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 262,
             "height" : 15.699999999999999,
             "rotation" : 74.040000000000006,
@@ -35614,6 +38607,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 17.239999999999998
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 319,
             "height" : 15.48,
             "rotation" : -55.399999999999999,
@@ -35622,6 +38616,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -37.189999999999998
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 430,
             "height" : 15.890000000000001,
             "rotation" : -23.59,
@@ -35641,6 +38636,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 276,
             "height" : 15.56,
             "rotation" : 75.870000000000005,
@@ -35649,6 +38645,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 14.619999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 330,
             "height" : 15.56,
             "rotation" : -52.229999999999997,
@@ -35657,6 +38654,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -39.759999999999998
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 432,
             "height" : 15.85,
             "rotation" : -15.84,
@@ -35676,6 +38674,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 288,
             "height" : 15.94,
             "rotation" : 78.049999999999997,
@@ -35684,6 +38683,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 12.07
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 341,
             "height" : 15.74,
             "rotation" : -49.700000000000003,
@@ -35692,6 +38692,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.890000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 434,
             "height" : 16.16,
             "rotation" : -8.3300000000000001,
@@ -35711,6 +38712,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 303,
             "height" : 15.81,
             "rotation" : 80.370000000000005,
@@ -35719,6 +38721,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 9.7300000000000004
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 351,
             "height" : 15.800000000000001,
             "rotation" : -47.509999999999998,
@@ -35727,6 +38730,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -43.659999999999997
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 431,
             "height" : 15.42,
             "rotation" : -1.27,
@@ -35746,6 +38750,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 324,
             "height" : 15.92,
             "rotation" : 84.349999999999994,
@@ -35754,6 +38759,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 5.2699999999999996
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 366,
             "height" : 15.960000000000001,
             "rotation" : -43.689999999999998,
@@ -35762,6 +38768,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -46.560000000000002
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 431,
             "height" : 16.140000000000001,
             "rotation" : 11.119999999999999,
@@ -35781,6 +38788,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 333,
             "height" : 15.699999999999999,
             "rotation" : 85.769999999999996,
@@ -35789,6 +38797,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 3.3599999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 373,
             "height" : 15.92,
             "rotation" : -42.710000000000001,
@@ -35797,6 +38806,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -47.630000000000003
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 427,
             "height" : 16.350000000000001,
             "rotation" : 17.719999999999999,
@@ -35816,6 +38826,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 343,
             "height" : 16.100000000000001,
             "rotation" : 87.799999999999997,
@@ -35824,6 +38835,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 1.4399999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 377,
             "height" : 15.869999999999999,
             "rotation" : -41.640000000000001,
@@ -35832,6 +38844,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -48.659999999999997
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 423,
             "height" : 16.690000000000001,
             "rotation" : 23.629999999999999,
@@ -35851,6 +38864,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 349,
             "height" : 16.079999999999998,
             "rotation" : 89.209999999999994,
@@ -35859,6 +38873,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -0.22
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 383,
             "height" : 15.67,
             "rotation" : -40.299999999999997,
@@ -35867,6 +38882,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -49.359999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 420,
             "height" : 16.07,
             "rotation" : 28.850000000000001,
@@ -35886,6 +38902,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 357,
             "height" : 15.300000000000001,
             "rotation" : -88.739999999999995,
@@ -35894,6 +38911,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -1.9299999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 387,
             "height" : 15.800000000000001,
             "rotation" : -39.049999999999997,
@@ -35902,6 +38920,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.07
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 416,
             "height" : 16.550000000000001,
             "rotation" : 33.829999999999998,
@@ -35921,6 +38940,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 369,
             "height" : 15.66,
             "rotation" : -86.739999999999995,
@@ -35929,6 +38949,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -4.6299999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 409,
             "height" : 15.289999999999999,
             "rotation" : 44.450000000000003,
@@ -35937,6 +38958,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 44.93
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 393,
             "height" : 15.9,
             "rotation" : -37.960000000000001,
@@ -35956,6 +38978,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 376,
             "height" : 15.960000000000001,
             "rotation" : -85.670000000000002,
@@ -35964,6 +38987,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -5.8899999999999997
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 405,
             "height" : 15.699999999999999,
             "rotation" : 48.369999999999997,
@@ -35972,6 +38996,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 41.259999999999998
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 15.779999999999999,
             "rotation" : -37.119999999999997,
@@ -35991,6 +39016,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 380,
             "height" : 16.030000000000001,
             "rotation" : -84.670000000000002,
@@ -35999,6 +39025,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -6.9800000000000004
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 394,
             "height" : 15.77,
             "rotation" : 52.899999999999999,
@@ -36007,6 +39034,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 37.729999999999997
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 397,
             "height" : 15.800000000000001,
             "rotation" : -36.869999999999997,
@@ -36026,6 +39054,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 386,
             "height" : 16.07,
             "rotation" : -84.040000000000006,
@@ -36034,6 +39063,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -7.9100000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 346,
             "height" : 15.83,
             "rotation" : 55.509999999999998,
@@ -36042,6 +39072,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.299999999999997
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 397,
             "height" : 15.789999999999999,
             "rotation" : -36.979999999999997,
@@ -36061,6 +39092,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 390,
             "height" : 16.100000000000001,
             "rotation" : -83.120000000000005,
@@ -36069,6 +39101,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -8.8000000000000007
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 311,
             "height" : 15.619999999999999,
             "rotation" : 58.259999999999998,
@@ -36077,6 +39110,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 32.539999999999999
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 15.82,
             "rotation" : -36.479999999999997,
@@ -36096,6 +39130,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 395,
             "height" : 16.140000000000001,
             "rotation" : -81.780000000000001,
@@ -36104,6 +39139,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.039999999999999
           },
           {
+            "bend" : 0.02,
             "count" : 257,
             "height" : 15.33,
             "rotation" : 63.630000000000003,
@@ -36112,6 +39148,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.920000000000002
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 15.779999999999999,
             "rotation" : -37.219999999999999,
@@ -36131,6 +39168,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 396,
             "height" : 16.219999999999999,
             "rotation" : -81.379999999999995,
@@ -36139,6 +39177,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.539999999999999
           },
           {
+            "bend" : 0.01,
             "count" : 235,
             "height" : 15.449999999999999,
             "rotation" : 66.890000000000001,
@@ -36147,6 +39186,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 24.039999999999999
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 397,
             "height" : 15.800000000000001,
             "rotation" : -36.920000000000002,
@@ -36166,6 +39206,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 399,
             "height" : 16.23,
             "rotation" : -81.079999999999998,
@@ -36174,6 +39215,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.9
           },
           {
+            "bend" : 0.01,
             "count" : 226,
             "height" : 15.52,
             "rotation" : 69.950000000000003,
@@ -36182,6 +39224,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.23
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 15.81,
             "rotation" : -36.640000000000001,
@@ -36201,6 +39244,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 401,
             "height" : 16.18,
             "rotation" : -81.010000000000005,
@@ -36209,6 +39253,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.1
           },
           {
+            "bend" : 0.02,
             "count" : 245,
             "height" : 15.550000000000001,
             "rotation" : 72.150000000000006,
@@ -36217,6 +39262,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 18.510000000000002
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 15.84,
             "rotation" : -36.270000000000003,
@@ -36236,6 +39282,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.17000000000000001,
             "count" : 661,
             "height" : 17.32,
             "rotation" : 88.980000000000004,
@@ -36244,6 +39291,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -0.63
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 392,
             "height" : 15.74,
             "rotation" : -35.390000000000001,
@@ -36263,6 +39311,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14999999999999999,
             "count" : 659,
             "height" : 16.899999999999999,
             "rotation" : -88.629999999999995,
@@ -36271,6 +39320,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -2.5
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 382,
             "height" : 15.44,
             "rotation" : -33.600000000000001,
@@ -36290,6 +39340,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14000000000000001,
             "count" : 646,
             "height" : 17.010000000000002,
             "rotation" : -87.739999999999995,
@@ -36298,6 +39349,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -3.3999999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 377,
             "height" : 15.65,
             "rotation" : -32.490000000000002,
@@ -36317,6 +39369,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.13,
             "count" : 631,
             "height" : 17.300000000000001,
             "rotation" : -86.689999999999998,
@@ -36325,6 +39378,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -4.46
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 369,
             "height" : 15.58,
             "rotation" : -30.989999999999998,
@@ -36344,6 +39398,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.13,
             "count" : 616,
             "height" : 16.68,
             "rotation" : -85.930000000000007,
@@ -36352,6 +39407,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -5.5
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 363,
             "height" : 15.59,
             "rotation" : -29.239999999999998,
@@ -36371,6 +39427,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 604,
             "height" : 17.219999999999999,
             "rotation" : -84.849999999999994,
@@ -36379,6 +39436,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -6.5199999999999996
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 354,
             "height" : 15.74,
             "rotation" : -26.989999999999998,
@@ -36398,6 +39456,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 587,
             "height" : 17.030000000000001,
             "rotation" : -82.780000000000001,
@@ -36406,6 +39465,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -8.7799999999999994
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 333,
             "height" : 15.609999999999999,
             "rotation" : -22.59,
@@ -36425,6 +39485,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 585,
             "height" : 16.699999999999999,
             "rotation" : -81.870000000000005,
@@ -36433,6 +39494,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.06
           },
           {
+            "bend" : -0.02,
             "count" : 319,
             "height" : 15.390000000000001,
             "rotation" : -19.600000000000001,
@@ -36452,6 +39514,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 591,
             "height" : 16.93,
             "rotation" : -80.640000000000001,
@@ -36460,6 +39523,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.289999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 304,
             "height" : 15.56,
             "rotation" : -16.289999999999999,
@@ -36479,6 +39543,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 597,
             "height" : 17.129999999999999,
             "rotation" : -79.510000000000005,
@@ -36487,6 +39552,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -12.51
           },
           {
+            "bend" : -0.02,
             "count" : 289,
             "height" : 15.640000000000001,
             "rotation" : -12.619999999999999,
@@ -36506,6 +39572,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.11,
             "count" : 609,
             "height" : 17.18,
             "rotation" : -78.049999999999997,
@@ -36514,6 +39581,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.91
           },
           {
+            "bend" : -0.02,
             "count" : 271,
             "height" : 15.57,
             "rotation" : -8.2699999999999996,
@@ -36533,6 +39601,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.13,
             "count" : 644,
             "height" : 17.260000000000002,
             "rotation" : -75.319999999999993,
@@ -36541,6 +39610,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -16.760000000000002
           },
           {
+            "bend" : -0,
             "count" : 226,
             "height" : 15.1,
             "rotation" : 2.1299999999999999,
@@ -36560,6 +39630,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14000000000000001,
             "count" : 664,
             "height" : 17.420000000000002,
             "rotation" : -73.620000000000005,
@@ -36568,6 +39639,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.289999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 244,
             "height" : 15.279999999999999,
             "rotation" : 7.79,
@@ -36587,6 +39659,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.16,
             "count" : 683,
             "height" : 17.690000000000001,
             "rotation" : -71.870000000000005,
@@ -36595,6 +39668,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.859999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 273,
             "height" : 15.67,
             "rotation" : 15.58,
@@ -36614,6 +39688,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.17999999999999999,
             "count" : 684,
             "height" : 17.899999999999999,
             "rotation" : -69.810000000000002,
@@ -36622,6 +39697,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -21.350000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 307,
             "height" : 15.31,
             "rotation" : 23.52,
@@ -36641,6 +39717,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 396,
             "height" : 16.219999999999999,
             "rotation" : -81.420000000000002,
@@ -36649,6 +39726,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.550000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 273,
             "height" : 15.52,
             "rotation" : -51.340000000000003,
@@ -36657,6 +39735,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -40.479999999999997
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 345,
             "height" : 15.44,
             "rotation" : 33.619999999999997,
@@ -36676,6 +39755,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 400,
             "height" : 16.16,
             "rotation" : -80.849999999999994,
@@ -36684,6 +39764,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.140000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 229,
             "height" : 15.289999999999999,
             "rotation" : -41.329999999999998,
@@ -36692,6 +39773,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -48.659999999999997
           },
           {
+            "bend" : -0.070000000000000007,
             "count" : 452,
             "height" : 15.859999999999999,
             "rotation" : 58.450000000000003,
@@ -36711,6 +39793,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 400,
             "height" : 16.149999999999999,
             "rotation" : -80.769999999999996,
@@ -36719,6 +39802,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.359999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 244,
             "height" : 15.640000000000001,
             "rotation" : -35.859999999999999,
@@ -36727,6 +39811,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -52.840000000000003
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 527,
             "height" : 16.579999999999998,
             "rotation" : 75.090000000000003,
@@ -36746,6 +39831,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 414,
             "height" : 16.309999999999999,
             "rotation" : -80.390000000000001,
@@ -36754,6 +39840,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.57
           },
           {
+            "bend" : -0.02,
             "count" : 272,
             "height" : 15.43,
             "rotation" : -28.350000000000001,
@@ -36762,6 +39849,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -56.939999999999998
           },
           {
+            "bend" : 0.13,
             "count" : 627,
             "height" : 17.719999999999999,
             "rotation" : -83.859999999999999,
@@ -36781,6 +39869,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 401,
             "height" : 16.210000000000001,
             "rotation" : -79.609999999999999,
@@ -36789,6 +39878,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.890000000000001
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 309,
             "height" : 15.32,
             "rotation" : -19.510000000000002,
@@ -36797,6 +39887,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -60.590000000000003
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 742,
             "height" : 18.809999999999999,
             "rotation" : -57.75,
@@ -36816,6 +39907,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 16.210000000000001,
             "rotation" : -79.670000000000002,
@@ -36824,6 +39916,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -12.109999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 348,
             "height" : 15.82,
             "rotation" : -9.9100000000000001,
@@ -36832,6 +39925,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -63.299999999999997
           },
           {
+            "bend" : 0.17999999999999999,
             "count" : 742,
             "height" : 19.100000000000001,
             "rotation" : -30.350000000000001,
@@ -36851,6 +39945,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 16.059999999999999,
             "rotation" : -79.189999999999998,
@@ -36859,6 +39954,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.029999999999999
           },
           {
+            "bend" : 0.089999999999999997,
             "count" : 525,
             "height" : 17.300000000000001,
             "rotation" : 20.82,
@@ -36867,6 +39963,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 58.380000000000003
           },
           {
+            "bend" : -0.070000000000000007,
             "count" : 451,
             "height" : 15.93,
             "rotation" : 14.84,
@@ -36886,6 +39983,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 392,
             "height" : 16.010000000000002,
             "rotation" : -78.209999999999994,
@@ -36894,6 +39992,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.720000000000001
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 454,
             "height" : 16.600000000000001,
             "rotation" : 41.590000000000003,
@@ -36902,6 +40001,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 46.939999999999998
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 528,
             "height" : 16.440000000000001,
             "rotation" : 31.690000000000001,
@@ -36921,6 +40021,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 387,
             "height" : 15.85,
             "rotation" : -77.540000000000006,
@@ -36929,6 +40030,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -14.640000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 392,
             "height" : 16.129999999999999,
             "rotation" : 57.210000000000001,
@@ -36937,6 +40039,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.689999999999998
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 626,
             "height" : 17.350000000000001,
             "rotation" : 52.93,
@@ -36956,6 +40059,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 383,
             "height" : 15.76,
             "rotation" : -76.319999999999993,
@@ -36964,6 +40068,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -15.640000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 347,
             "height" : 16.109999999999999,
             "rotation" : 70.780000000000001,
@@ -36972,6 +40077,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.800000000000001
           },
           {
+            "bend" : -0.16,
             "count" : 739,
             "height" : 19.399999999999999,
             "rotation" : 78.790000000000006,
@@ -36991,6 +40097,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.16,
             "count" : 678,
             "height" : 17.449999999999999,
             "rotation" : -86.290000000000006,
@@ -36999,6 +40106,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -5.21
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 742,
             "height" : 19.579999999999998,
             "rotation" : -73.700000000000003,
@@ -37018,6 +40126,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.070000000000000007,
             "count" : 478,
             "height" : 16.079999999999998,
             "rotation" : -75.760000000000005,
@@ -37026,6 +40135,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -16.399999999999999
           },
           {
+            "bend" : 0.089999999999999997,
             "count" : 528,
             "height" : 16.960000000000001,
             "rotation" : -22.469999999999999,
@@ -37045,6 +40155,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 397,
             "height" : 15.56,
             "rotation" : -71.5,
@@ -37053,6 +40164,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.989999999999998
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 455,
             "height" : 15.949999999999999,
             "rotation" : -2.2200000000000002,
@@ -37072,6 +40184,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 353,
             "height" : 15.859999999999999,
             "rotation" : -68.489999999999995,
@@ -37080,6 +40193,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -24.390000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 392,
             "height" : 16.390000000000001,
             "rotation" : 13.130000000000001,
@@ -37099,6 +40213,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 336,
             "height" : 15.82,
             "rotation" : -65.75,
@@ -37107,6 +40222,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -27.219999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 346,
             "height" : 15.75,
             "rotation" : 26.18,
@@ -37126,6 +40242,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 324,
             "height" : 15.82,
             "rotation" : -62.68,
@@ -37134,6 +40251,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -30.219999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 305,
             "height" : 15.83,
             "rotation" : 36.439999999999998,
@@ -37153,6 +40271,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 326,
             "height" : 15.91,
             "rotation" : -55.060000000000002,
@@ -37161,6 +40280,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -37.07
           },
           {
+            "bend" : 0.01,
             "count" : 237,
             "height" : 15.19,
             "rotation" : 54.170000000000002,
@@ -37180,6 +40300,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 228,
             "height" : 16.120000000000001,
             "rotation" : 59.990000000000002,
@@ -37188,6 +40309,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.52
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 334,
             "height" : 15.949999999999999,
             "rotation" : -52.509999999999998,
@@ -37207,6 +40329,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 250,
             "height" : 15.369999999999999,
             "rotation" : 64.75,
@@ -37215,6 +40338,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 26.039999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 352,
             "height" : 15.970000000000001,
             "rotation" : -49.670000000000002,
@@ -37234,6 +40358,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 270,
             "height" : 15.869999999999999,
             "rotation" : 69.950000000000003,
@@ -37242,6 +40367,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.170000000000002
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 392,
             "height" : 15.99,
             "rotation" : -46.060000000000002,
@@ -37261,6 +40387,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 287,
             "height" : 15.56,
             "rotation" : 73.329999999999998,
@@ -37269,6 +40396,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 16.75
           },
           {
+            "bend" : -0.059999999999999998,
             "count" : 470,
             "height" : 16.170000000000002,
             "rotation" : -41.969999999999999,
@@ -37288,6 +40416,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 318,
             "height" : 15.800000000000001,
             "rotation" : 80.599999999999994,
@@ -37296,6 +40425,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 9.2799999999999994
           },
           {
+            "bend" : -0.14999999999999999,
             "count" : 666,
             "height" : 17.780000000000001,
             "rotation" : -31.870000000000001,
@@ -37315,6 +40445,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 330,
             "height" : 15.91,
             "rotation" : 83.709999999999994,
@@ -37323,6 +40454,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 6.1399999999999997
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 377,
             "height" : 15.859999999999999,
             "rotation" : -41.609999999999999,
@@ -37331,6 +40463,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -48.600000000000001
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 349,
             "height" : 15.84,
             "rotation" : -10.26,
@@ -37350,6 +40483,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 341,
             "height" : 15.630000000000001,
             "rotation" : 86.230000000000004,
@@ -37358,6 +40492,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 3.3500000000000001
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 382,
             "height" : 15.66,
             "rotation" : -40.439999999999998,
@@ -37366,6 +40501,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -49.380000000000003
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 396,
             "height" : 16.219999999999999,
             "rotation" : 1.3999999999999999,
@@ -37385,6 +40521,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 350,
             "height" : 16.120000000000001,
             "rotation" : 88.109999999999999,
@@ -37393,6 +40530,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 0.91000000000000003
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 388,
             "height" : 15.779999999999999,
             "rotation" : -39.270000000000003,
@@ -37401,6 +40539,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.039999999999999
           },
           {
+            "bend" : -0.070000000000000007,
             "count" : 451,
             "height" : 15.93,
             "rotation" : 14.84,
@@ -37420,6 +40559,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 359,
             "height" : 16.02,
             "rotation" : -89.810000000000002,
@@ -37428,6 +40568,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -1.27
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 391,
             "height" : 15.869999999999999,
             "rotation" : -38.329999999999998,
@@ -37436,6 +40577,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -50.590000000000003
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 528,
             "height" : 16.440000000000001,
             "rotation" : 31.690000000000001,
@@ -37455,6 +40597,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 372,
             "height" : 15.609999999999999,
             "rotation" : -86.670000000000002,
@@ -37463,6 +40606,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -4.7599999999999998
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 15.779999999999999,
             "rotation" : -37.109999999999999,
@@ -37471,6 +40615,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.299999999999997
           },
           {
+            "bend" : -0.16,
             "count" : 739,
             "height" : 19.399999999999999,
             "rotation" : 78.790000000000006,
@@ -37490,6 +40635,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 377,
             "height" : 15.960000000000001,
             "rotation" : -85.980000000000004,
@@ -37498,6 +40644,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -6.1200000000000001
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 15.789999999999999,
             "rotation" : -37.039999999999999,
@@ -37506,6 +40653,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.539999999999999
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 742,
             "height" : 19.579999999999998,
             "rotation" : -73.700000000000003,
@@ -37525,6 +40673,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 383,
             "height" : 16.02,
             "rotation" : -84.299999999999997,
@@ -37533,6 +40682,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -7.3399999999999999
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 397,
             "height" : 15.789999999999999,
             "rotation" : -36.979999999999997,
@@ -37541,6 +40691,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.729999999999997
           },
           {
+            "bend" : 0.12,
             "count" : 628,
             "height" : 18.079999999999998,
             "rotation" : -47.240000000000002,
@@ -37560,6 +40711,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 387,
             "height" : 16.050000000000001,
             "rotation" : -83.439999999999998,
@@ -37568,6 +40720,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -8.3900000000000006
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 399,
             "height" : 15.82,
             "rotation" : -36.619999999999997,
@@ -37576,6 +40729,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.859999999999999
           },
           {
+            "bend" : 0.089999999999999997,
             "count" : 528,
             "height" : 16.960000000000001,
             "rotation" : -22.469999999999999,
@@ -37595,6 +40749,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 391,
             "height" : 16.149999999999999,
             "rotation" : -82.719999999999999,
@@ -37603,6 +40758,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -9.2899999999999991
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 399,
             "height" : 15.82,
             "rotation" : -36.590000000000003,
@@ -37611,6 +40767,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.859999999999999
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 455,
             "height" : 15.949999999999999,
             "rotation" : -2.2200000000000002,
@@ -37630,6 +40787,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 396,
             "height" : 16.219999999999999,
             "rotation" : -81.379999999999995,
@@ -37638,6 +40796,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.550000000000001
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 15.779999999999999,
             "rotation" : -37.200000000000003,
@@ -37646,6 +40805,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -51.490000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 346,
             "height" : 15.75,
             "rotation" : 26.18,
@@ -37665,6 +40825,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 399,
             "height" : 16.18,
             "rotation" : -81.049999999999997,
@@ -37673,6 +40834,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.91
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 305,
             "height" : 15.83,
             "rotation" : 36.439999999999998,
@@ -37681,6 +40843,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 50.170000000000002
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 397,
             "height" : 15.800000000000001,
             "rotation" : -36.920000000000002,
@@ -37700,6 +40863,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 400,
             "height" : 16.25,
             "rotation" : -80.879999999999995,
@@ -37708,6 +40872,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.130000000000001
           },
           {
+            "bend" : 0.02,
             "count" : 271,
             "height" : 15.85,
             "rotation" : 45.07,
@@ -37716,6 +40881,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 43.670000000000002
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 15.81,
             "rotation" : -36.659999999999997,
@@ -37735,6 +40901,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 401,
             "height" : 16.170000000000002,
             "rotation" : -80.930000000000007,
@@ -37743,6 +40910,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.33
           },
           {
+            "bend" : 0.01,
             "count" : 237,
             "height" : 15.19,
             "rotation" : 54.170000000000002,
@@ -37751,6 +40919,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 37.32
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 15.720000000000001,
             "rotation" : -36.18,
@@ -37770,6 +40939,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 414,
             "height" : 16.309999999999999,
             "rotation" : -80.390000000000001,
@@ -37778,6 +40948,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.57
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 228,
             "height" : 16.120000000000001,
             "rotation" : 59.990000000000002,
@@ -37786,6 +40957,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 31.52
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 390,
             "height" : 15.65,
             "rotation" : -35.340000000000003,
@@ -37805,6 +40977,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 400,
             "height" : 16.210000000000001,
             "rotation" : -79.640000000000001,
@@ -37813,6 +40986,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -12.109999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 270,
             "height" : 15.869999999999999,
             "rotation" : 69.950000000000003,
@@ -37821,6 +40995,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 21.170000000000002
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 382,
             "height" : 15.44,
             "rotation" : -33.600000000000001,
@@ -37840,6 +41015,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 400,
             "height" : 16.030000000000001,
             "rotation" : -79.709999999999994,
@@ -37848,6 +41024,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -12.449999999999999
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 287,
             "height" : 15.56,
             "rotation" : 73.329999999999998,
@@ -37856,6 +41033,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 16.75
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 378,
             "height" : 15.68,
             "rotation" : -32.299999999999997,
@@ -37875,6 +41053,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.17000000000000001,
             "count" : 690,
             "height" : 17.329999999999998,
             "rotation" : -89.390000000000001,
@@ -37883,6 +41062,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -1.8600000000000001
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 370,
             "height" : 15.58,
             "rotation" : -31.039999999999999,
@@ -37902,6 +41082,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14999999999999999,
             "count" : 675,
             "height" : 17.600000000000001,
             "rotation" : -87.579999999999998,
@@ -37910,6 +41091,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -3.5899999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 363,
             "height" : 15.59,
             "rotation" : -29.239999999999998,
@@ -37929,6 +41111,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14000000000000001,
             "count" : 657,
             "height" : 17.52,
             "rotation" : -85.950000000000003,
@@ -37937,6 +41120,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -5.3099999999999996
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 354,
             "height" : 15.74,
             "rotation" : -26.989999999999998,
@@ -37956,6 +41140,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 629,
             "height" : 17.059999999999999,
             "rotation" : -83.010000000000005,
@@ -37964,6 +41149,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -8.5899999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 333,
             "height" : 15.609999999999999,
             "rotation" : -22.59,
@@ -37983,6 +41169,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 624,
             "height" : 16.940000000000001,
             "rotation" : -81.560000000000002,
@@ -37991,6 +41178,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.199999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 320,
             "height" : 15.43,
             "rotation" : -19.91,
@@ -38010,6 +41198,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 625,
             "height" : 17.050000000000001,
             "rotation" : -79.950000000000003,
@@ -38018,6 +41207,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.779999999999999
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 304,
             "height" : 15.56,
             "rotation" : -16.289999999999999,
@@ -38037,6 +41227,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.12,
             "count" : 631,
             "height" : 17.02,
             "rotation" : -78.519999999999996,
@@ -38045,6 +41236,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.43
           },
           {
+            "bend" : -0.02,
             "count" : 289,
             "height" : 15.640000000000001,
             "rotation" : -12.619999999999999,
@@ -38064,6 +41256,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.13,
             "count" : 641,
             "height" : 17.43,
             "rotation" : -77.040000000000006,
@@ -38072,6 +41265,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -15
           },
           {
+            "bend" : -0.02,
             "count" : 271,
             "height" : 15.57,
             "rotation" : -8.2699999999999996,
@@ -38091,6 +41285,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.14999999999999999,
             "count" : 674,
             "height" : 17.690000000000001,
             "rotation" : -73.579999999999998,
@@ -38099,6 +41294,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -18.370000000000001
           },
           {
+            "bend" : -0,
             "count" : 226,
             "height" : 15.1,
             "rotation" : 2.1299999999999999,
@@ -38118,6 +41314,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.17000000000000001,
             "count" : 688,
             "height" : 17.760000000000002,
             "rotation" : -71.560000000000002,
@@ -38126,6 +41323,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.030000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 244,
             "height" : 15.279999999999999,
             "rotation" : 7.79,
@@ -38145,6 +41343,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 395,
             "height" : 16.280000000000001,
             "rotation" : -81.909999999999997,
@@ -38153,6 +41352,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -9.9600000000000009
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 289,
             "height" : 15.67,
             "rotation" : -55.189999999999998,
@@ -38161,6 +41361,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -37.490000000000002
           },
           {
+            "bend" : -0.02,
             "count" : 273,
             "height" : 15.67,
             "rotation" : 15.58,
@@ -38180,6 +41381,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 396,
             "height" : 16.219999999999999,
             "rotation" : -81.379999999999995,
@@ -38188,6 +41390,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.550000000000001
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 270,
             "height" : 15.619999999999999,
             "rotation" : -50.5,
@@ -38196,6 +41399,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.240000000000002
           },
           {
+            "bend" : -0.02,
             "count" : 307,
             "height" : 15.31,
             "rotation" : 23.52,
@@ -38215,6 +41419,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 399,
             "height" : 16.18,
             "rotation" : -81.049999999999997,
@@ -38223,6 +41428,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -10.91
           },
           {
+            "bend" : -0.02,
             "count" : 249,
             "height" : 15.220000000000001,
             "rotation" : -46.130000000000003,
@@ -38231,6 +41437,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -45.390000000000001
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 345,
             "height" : 15.44,
             "rotation" : 33.619999999999997,
@@ -38250,6 +41457,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 401,
             "height" : 16.170000000000002,
             "rotation" : -80.930000000000007,
@@ -38258,6 +41466,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.33
           },
           {
+            "bend" : -0.02,
             "count" : 244,
             "height" : 15.16,
             "rotation" : -33.369999999999997,
@@ -38266,6 +41475,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -53.840000000000003
           },
           {
+            "bend" : -0.070000000000000007,
             "count" : 452,
             "height" : 15.859999999999999,
             "rotation" : 58.450000000000003,
@@ -38285,6 +41495,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 414,
             "height" : 16.309999999999999,
             "rotation" : -80.390000000000001,
@@ -38293,6 +41504,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.57
           },
           {
+            "bend" : -0.02,
             "count" : 271,
             "height" : 15.779999999999999,
             "rotation" : -25.699999999999999,
@@ -38301,6 +41513,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -57.780000000000001
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 527,
             "height" : 16.579999999999998,
             "rotation" : 75.090000000000003,
@@ -38320,6 +41533,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 401,
             "height" : 16.210000000000001,
             "rotation" : -79.609999999999999,
@@ -38328,6 +41542,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.890000000000001
           },
           {
+            "bend" : -0.029999999999999999,
             "count" : 310,
             "height" : 15.279999999999999,
             "rotation" : -17.77,
@@ -38336,6 +41551,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -61.359999999999999
           },
           {
+            "bend" : 0.13,
             "count" : 627,
             "height" : 17.719999999999999,
             "rotation" : -83.859999999999999,
@@ -38355,6 +41571,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.050000000000000003,
             "count" : 398,
             "height" : 16.210000000000001,
             "rotation" : -79.670000000000002,
@@ -38363,6 +41580,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -12.109999999999999
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 347,
             "height" : 15.869999999999999,
             "rotation" : -7.5899999999999999,
@@ -38371,6 +41589,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -63.670000000000002
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 742,
             "height" : 18.809999999999999,
             "rotation" : -57.75,
@@ -38390,6 +41609,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 398,
             "height" : 16.050000000000001,
             "rotation" : -79.379999999999995,
@@ -38398,6 +41618,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -12.52
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 395,
             "height" : 16.170000000000002,
             "rotation" : 4.04,
@@ -38406,6 +41627,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -63.950000000000003
           },
           {
+            "bend" : 0.17999999999999999,
             "count" : 742,
             "height" : 19.100000000000001,
             "rotation" : -30.350000000000001,
@@ -38425,6 +41647,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 393,
             "height" : 16.010000000000002,
             "rotation" : -78.230000000000004,
@@ -38433,6 +41656,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.76
           },
           {
+            "bend" : 0.089999999999999997,
             "count" : 525,
             "height" : 17.300000000000001,
             "rotation" : 20.82,
@@ -38441,6 +41665,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 58.380000000000003
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 525,
             "height" : 16.16,
             "rotation" : 35.310000000000002,
@@ -38460,6 +41685,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 387,
             "height" : 15.869999999999999,
             "rotation" : -77.530000000000001,
@@ -38468,6 +41694,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -14.779999999999999
           },
           {
+            "bend" : 0.059999999999999998,
             "count" : 454,
             "height" : 16.600000000000001,
             "rotation" : 41.590000000000003,
@@ -38476,6 +41703,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 46.939999999999998
           },
           {
+            "bend" : -0.14000000000000001,
             "count" : 620,
             "height" : 17.59,
             "rotation" : 57.240000000000002,
@@ -38495,6 +41723,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 383,
             "height" : 15.82,
             "rotation" : -76.209999999999994,
@@ -38503,6 +41732,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -15.869999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 392,
             "height" : 16.129999999999999,
             "rotation" : 57.210000000000001,
@@ -38511,6 +41741,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.689999999999998
           },
           {
+            "bend" : -0.17000000000000001,
             "count" : 743,
             "height" : 19.690000000000001,
             "rotation" : 84.329999999999998,
@@ -38530,6 +41761,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.040000000000000001,
             "count" : 377,
             "height" : 15.779999999999999,
             "rotation" : -75.579999999999998,
@@ -38538,6 +41770,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -17.199999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 347,
             "height" : 16.109999999999999,
             "rotation" : 70.780000000000001,
@@ -38546,6 +41779,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 20.800000000000001
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 740,
             "height" : 19.670000000000002,
             "rotation" : -67.049999999999997,
@@ -38565,6 +41799,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.17000000000000001,
             "count" : 678,
             "height" : 17.620000000000001,
             "rotation" : -85.629999999999995,
@@ -38573,6 +41808,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -6.0499999999999998
           },
           {
+            "bend" : 0.12,
             "count" : 625,
             "height" : 17.850000000000001,
             "rotation" : -39.600000000000001,
@@ -38592,6 +41828,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.080000000000000002,
             "count" : 507,
             "height" : 16.09,
             "rotation" : -74.739999999999995,
@@ -38600,6 +41837,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -17.469999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 455,
             "height" : 16.66,
             "rotation" : 7.2699999999999996,
@@ -38619,6 +41857,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.059999999999999998,
             "count" : 521,
             "height" : 16.600000000000001,
             "rotation" : -71.069999999999993,
@@ -38627,6 +41866,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.530000000000001
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 394,
             "height" : 16.539999999999999,
             "rotation" : 23.899999999999999,
@@ -38646,6 +41886,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 589,
             "height" : 19.960000000000001,
             "rotation" : -81.760000000000005,
@@ -38654,6 +41895,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.699999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 343,
             "height" : 16.370000000000001,
             "rotation" : 37.420000000000002,
@@ -38673,6 +41915,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 709,
             "height" : 25.93,
             "rotation" : 87.489999999999995,
@@ -38681,6 +41924,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -22.010000000000002
           },
           {
+            "bend" : 0.02,
             "count" : 304,
             "height" : 15.710000000000001,
             "rotation" : 48.420000000000002,
@@ -38700,6 +41944,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.040000000000000001,
             "count" : 269,
             "height" : 15.42,
             "rotation" : 57.539999999999999,
@@ -38708,6 +41953,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 33.609999999999999
           },
           {
+            "bend" : -0.13,
             "count" : 813,
             "height" : 28.91,
             "rotation" : 76.069999999999993,
@@ -38727,6 +41973,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 227,
             "height" : 15.26,
             "rotation" : 72.969999999999999,
@@ -38735,6 +41982,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 19.07
           },
           {
+            "bend" : -0.02,
             "count" : 270,
             "height" : 15.6,
             "rotation" : -50.270000000000003,
@@ -38743,6 +41991,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -41.25
           },
           {
+            "bend" : -0.01,
             "count" : 607,
             "height" : 22.829999999999998,
             "rotation" : -75.920000000000002,
@@ -38762,6 +42011,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 250,
             "height" : 15.539999999999999,
             "rotation" : 77.010000000000005,
@@ -38770,6 +42020,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 12.94
           },
           {
+            "bend" : -0.02,
             "count" : 250,
             "height" : 15.19,
             "rotation" : -45.630000000000003,
@@ -38778,6 +42029,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -45.409999999999997
           },
           {
+            "bend" : -0.01,
             "count" : 644,
             "height" : 23.780000000000001,
             "rotation" : -77.219999999999999,
@@ -38797,6 +42049,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.029999999999999999,
             "count" : 271,
             "height" : 15.800000000000001,
             "rotation" : 82.420000000000002,
@@ -38805,6 +42058,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 7.4100000000000001
           },
           {
+            "bend" : -0.02,
             "count" : 226,
             "height" : 15.33,
             "rotation" : -40.100000000000001,
@@ -38813,6 +42067,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -49.630000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 671,
             "height" : 25.190000000000001,
             "rotation" : -78.25,
@@ -38832,6 +42087,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.02,
             "count" : 288,
             "height" : 15.33,
             "rotation" : 86.629999999999995,
@@ -38840,6 +42096,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 2.6499999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 244,
             "height" : 15.16,
             "rotation" : -33.229999999999997,
@@ -38848,6 +42105,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -53.850000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 691,
             "height" : 24.870000000000001,
             "rotation" : -80.010000000000005,
@@ -38867,6 +42125,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 303,
             "height" : 15.039999999999999,
             "rotation" : -89.769999999999996,
@@ -38875,6 +42134,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -1.6499999999999999
           },
           {
+            "bend" : -0.02,
             "count" : 272,
             "height" : 15.77,
             "rotation" : -26.199999999999999,
@@ -38883,6 +42143,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -57.829999999999998
           },
           {
+            "bend" : -0,
             "count" : 702,
             "height" : 25.57,
             "rotation" : -82.680000000000007,
@@ -38902,6 +42163,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 402,
             "height" : 15.970000000000001,
             "rotation" : -83.390000000000001,
@@ -38910,6 +42172,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -3.79
           },
           {
+            "bend" : -0.040000000000000001,
             "count" : 347,
             "height" : 15.869999999999999,
             "rotation" : -7.5899999999999999,
@@ -38918,6 +42181,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -63.670000000000002
           },
           {
+            "bend" : -0,
             "count" : 699,
             "height" : 25.379999999999999,
             "rotation" : -87.409999999999997,
@@ -38937,6 +42201,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 400,
             "height" : 15.59,
             "rotation" : -83.859999999999999,
@@ -38945,6 +42210,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -4.4199999999999999
           },
           {
+            "bend" : -0.050000000000000003,
             "count" : 396,
             "height" : 16.18,
             "rotation" : 4.1600000000000001,
@@ -38953,6 +42219,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -63.939999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 686,
             "height" : 25,
             "rotation" : -89.769999999999996,
@@ -38972,6 +42239,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.029999999999999999,
             "count" : 422,
             "height" : 16.329999999999998,
             "rotation" : -83.519999999999996,
@@ -38980,6 +42248,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -5.71
           },
           {
+            "bend" : -0.080000000000000002,
             "count" : 454,
             "height" : 15.94,
             "rotation" : 18.190000000000001,
@@ -38988,6 +42257,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -60.890000000000001
           },
           {
+            "bend" : -0,
             "count" : 663,
             "height" : 24.399999999999999,
             "rotation" : 88.450000000000003,
@@ -39007,6 +42277,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 445,
             "height" : 16.940000000000001,
             "rotation" : -83.390000000000001,
@@ -39015,6 +42286,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -7.0300000000000002
           },
           {
+            "bend" : -0.01,
             "count" : 644,
             "height" : 23.800000000000001,
             "rotation" : 86.819999999999993,
@@ -39023,6 +42295,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.41
           },
           {
+            "bend" : -0.089999999999999997,
             "count" : 527,
             "height" : 16.879999999999999,
             "rotation" : 35.310000000000002,
@@ -39042,6 +42315,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 471,
             "height" : 17.93,
             "rotation" : -83.400000000000006,
@@ -39050,6 +42324,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -8.5899999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 625,
             "height" : 22.489999999999998,
             "rotation" : 85.469999999999999,
@@ -39058,6 +42333,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.359999999999999
           },
           {
+            "bend" : -0.13,
             "count" : 622,
             "height" : 18,
             "rotation" : 57.259999999999998,
@@ -39077,6 +42353,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 522,
             "height" : 19.59,
             "rotation" : -83.109999999999999,
@@ -39085,6 +42362,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -11.81
           },
           {
+            "bend" : -0,
             "count" : 453,
             "height" : 20.739999999999998,
             "rotation" : 82.680000000000007,
@@ -39093,6 +42371,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.550000000000001
           },
           {
+            "bend" : 0.17000000000000001,
             "count" : 740,
             "height" : 19.670000000000002,
             "rotation" : -67.049999999999997,
@@ -39112,6 +42391,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 543,
             "height" : 19.91,
             "rotation" : -83.430000000000007,
@@ -39120,6 +42400,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -13.31
           },
           {
+            "bend" : 0.01,
             "count" : 232,
             "height" : 17.100000000000001,
             "rotation" : 63.520000000000003,
@@ -39128,6 +42409,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.91
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 309,
             "height" : 13.41,
             "rotation" : -39.719999999999999,
@@ -39147,6 +42429,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.02,
             "count" : 564,
             "height" : 20.530000000000001,
             "rotation" : -83.510000000000005,
@@ -39155,6 +42438,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -14.869999999999999
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 370,
             "height" : 13.68,
             "rotation" : -28.539999999999999,
@@ -39163,6 +42447,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 45.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 145,
             "height" : 13.49,
             "rotation" : 55.979999999999997,
@@ -39182,6 +42467,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 582,
             "height" : 21.5,
             "rotation" : -84.25,
@@ -39190,6 +42476,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -16.23
           },
           {
+            "bend" : 0.050000000000000003,
             "count" : 402,
             "height" : 13.83,
             "rotation" : -22.219999999999999,
@@ -39198,6 +42485,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 43.710000000000001
           },
           {
+            "bend" : 0,
             "count" : 100,
             "height" : 11.199999999999999,
             "rotation" : 53.090000000000003,
@@ -39217,6 +42505,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 597,
             "height" : 21.690000000000001,
             "rotation" : -84.329999999999998,
@@ -39225,6 +42514,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -17.460000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 422,
             "height" : 14,
             "rotation" : -17.390000000000001,
@@ -39233,6 +42523,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 42.159999999999997
           },
           {
+            "bend" : 0,
             "count" : 100,
             "height" : 11.199999999999999,
             "rotation" : 53.090000000000003,
@@ -39252,6 +42543,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 614,
             "height" : 22,
             "rotation" : -85.269999999999996,
@@ -39260,6 +42552,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.07
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 450,
             "height" : 14.609999999999999,
             "rotation" : -10.779999999999999,
@@ -39268,6 +42561,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 39.539999999999999
           },
           {
+            "bend" : 0.01,
             "count" : 234,
             "height" : 17.149999999999999,
             "rotation" : 66.840000000000003,
@@ -39287,6 +42581,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.459999999999994,
@@ -39295,6 +42590,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 461,
             "height" : 14.69,
             "rotation" : -8.3100000000000005,
@@ -39303,6 +42599,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 38.43
           },
           {
+            "bend" : -0,
             "count" : 444,
             "height" : 20.719999999999999,
             "rotation" : 82.950000000000003,
@@ -39322,6 +42619,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -39330,6 +42628,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 467,
             "height" : 15.119999999999999,
             "rotation" : -6.4000000000000004,
@@ -39338,6 +42637,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 37.520000000000003
           },
           {
+            "bend" : -0.01,
             "count" : 608,
             "height" : 21.940000000000001,
             "rotation" : 84.629999999999995,
@@ -39357,6 +42657,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -39365,6 +42666,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 473,
             "height" : 15.24,
             "rotation" : -5.0199999999999996,
@@ -39373,6 +42675,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 36.740000000000002
           },
           {
+            "bend" : -0.02,
             "count" : 612,
             "height" : 22.260000000000002,
             "rotation" : 84.879999999999995,
@@ -39392,6 +42695,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -39400,6 +42704,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 477,
             "height" : 15.359999999999999,
             "rotation" : -3.5299999999999998,
@@ -39408,6 +42713,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 36.109999999999999
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 22.030000000000001,
             "rotation" : 84.659999999999997,
@@ -39427,6 +42733,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -39435,6 +42742,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 483,
             "height" : 15.65,
             "rotation" : -1.8,
@@ -39443,6 +42751,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 35.189999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 611,
             "height" : 22.02,
             "rotation" : 84.709999999999994,
@@ -39462,6 +42771,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -39470,6 +42780,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.029999999999999999,
             "count" : 485,
             "height" : 15.32,
             "rotation" : -1.04,
@@ -39478,6 +42789,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.850000000000001
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 22.129999999999999,
             "rotation" : 84.650000000000006,
@@ -39497,6 +42809,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -39505,6 +42818,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 486,
             "height" : 15.93,
             "rotation" : -0.77000000000000002,
@@ -39513,6 +42827,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.659999999999997
           },
           {
+            "bend" : -0.02,
             "count" : 612,
             "height" : 22.260000000000002,
             "rotation" : 84.879999999999995,
@@ -39532,6 +42847,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -39540,6 +42856,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 487,
             "height" : 16.059999999999999,
             "rotation" : -0.40999999999999998,
@@ -39548,6 +42865,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.579999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 613,
             "height" : 22,
             "rotation" : 84.849999999999994,
@@ -39567,6 +42885,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -39575,6 +42894,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -39583,6 +42903,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -39602,6 +42923,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -39610,6 +42932,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -39618,6 +42941,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -39637,6 +42961,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 615,
             "height" : 21.91,
             "rotation" : -85.329999999999998,
@@ -39645,6 +42970,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.34
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -39653,6 +42979,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
@@ -39672,6 +42999,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 456,
             "height" : 20.780000000000001,
             "rotation" : -83.579999999999998,
@@ -39680,6 +43008,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.640000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -39688,6 +43017,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 610,
             "height" : 22.09,
             "rotation" : 84.840000000000003,
@@ -39707,6 +43037,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 232,
             "height" : 17.120000000000001,
             "rotation" : -64.280000000000001,
@@ -39715,6 +43046,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.030000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -39723,6 +43055,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 453,
             "height" : 20.739999999999998,
             "rotation" : 82.680000000000007,
@@ -39742,6 +43075,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 151,
             "height" : 13.92,
             "rotation" : -61.170000000000002,
@@ -39750,6 +43084,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.09
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -39758,6 +43093,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 232,
             "height" : 17.100000000000001,
             "rotation" : 63.520000000000003,
@@ -39777,6 +43113,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : 0.01,
             "count" : 106,
             "height" : 11.82,
             "rotation" : -55.640000000000001,
@@ -39785,6 +43122,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.170000000000002
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -39793,6 +43131,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0.01,
             "count" : 146,
             "height" : 13.529999999999999,
             "rotation" : 60.710000000000001,
@@ -39812,6 +43151,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 149,
             "height" : 14.029999999999999,
             "rotation" : -59.75,
@@ -39820,6 +43160,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.109999999999999
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -39828,6 +43169,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : 0,
             "count" : 100,
             "height" : 11.199999999999999,
             "rotation" : 53.090000000000003,
@@ -39847,6 +43189,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 233,
             "height" : 17.129999999999999,
             "rotation" : -71.129999999999995,
@@ -39855,6 +43198,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -20.02
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -39863,6 +43207,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 143,
             "height" : 13.5,
             "rotation" : 57.719999999999999,
@@ -39882,6 +43227,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0.01,
             "count" : 445,
             "height" : 21.100000000000001,
             "rotation" : -82.840000000000003,
@@ -39890,6 +43236,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.620000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -39898,6 +43245,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0,
             "count" : 234,
             "height" : 17.16,
             "rotation" : 67.890000000000001,
@@ -39917,6 +43265,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 611,
             "height" : 22.010000000000002,
             "rotation" : -85.359999999999999,
@@ -39925,6 +43274,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.350000000000001
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -39933,6 +43283,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 443,
             "height" : 20.629999999999999,
             "rotation" : 82.359999999999999,
@@ -39952,6 +43303,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -39960,6 +43312,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -39968,6 +43321,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.02,
             "count" : 608,
             "height" : 22.16,
             "rotation" : 84.909999999999997,
@@ -39987,6 +43341,7 @@ export const MEASURED_GIF_TIMELINES = {
       {
         "blobs" : [
           {
+            "bend" : -0,
             "count" : 616,
             "height" : 22.010000000000002,
             "rotation" : -85.450000000000003,
@@ -39995,6 +43350,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : -19.32
           },
           {
+            "bend" : 0.040000000000000001,
             "count" : 488,
             "height" : 16.09,
             "rotation" : -0.51000000000000001,
@@ -40003,6 +43359,7 @@ export const MEASURED_GIF_TIMELINES = {
             "y" : 34.509999999999998
           },
           {
+            "bend" : -0.01,
             "count" : 612,
             "height" : 21.98,
             "rotation" : 84.939999999999998,
