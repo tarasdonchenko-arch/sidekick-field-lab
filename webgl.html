@@ -642,7 +642,11 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
   <!-- Face Compositing -->
   <div class="p-section">
     <div class="p-label">Face Compositing</div>
-    <div class="p-row"><label>Face Scale</label><input type="range" data-skey="faceScale" min="0.2" max="2.0" step="0.01"><span class="p-val"></span></div>
+    <div class="p-row"><label>Renderer</label><select data-gkey="faceRenderer">
+      <option value="shader" selected>Shader</option>
+      <option value="video">WebM</option>
+    </select></div>
+    <div class="p-row"><label>Face Scale</label><input type="range" data-skey="faceScale" min="0.2" max="2.5" step="0.01"><span class="p-val"></span></div>
     <div class="p-row"><label>Face Opacity</label><input type="range" data-skey="faceOpacity" min="0" max="1" step="0.01"><span class="p-val"></span></div>
     <div class="p-row"><label>Offset Y</label><input type="range" data-skey="faceOffsetY" min="-0.2" max="0.2" step="0.005"><span class="p-val"></span></div>
     <div class="p-row"><label>Blend</label><select data-skey="faceBlendMode">
@@ -658,6 +662,12 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
       <option value="gif-blue" selected>blue shader</option>
       <option value="gif-black">black shader</option>
       <option value="gif-white">white shader</option>
+    </select></div>
+    <div class="p-row"><label>Video</label><select data-gkey="faceVideo">
+      <option value="face-black.webm" selected>face-black</option>
+      <option value="face-idle.webm">face-idle</option>
+      <option value="face-thinking.webm">face-thinking</option>
+      <option value="face-active.webm">face-active</option>
     </select></div>
     <div class="p-row"><label>Radius</label><input type="range" data-skey="faceRoundness" min="0.35" max="1.4" step="0.01"><span class="p-val"></span></div>
     <div class="p-row"><label>Softness</label><input type="range" data-skey="faceSoftness" min="0.2" max="3" step="0.01"><span class="p-val"></span></div>
@@ -775,8 +785,10 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
 
 <!-- Orb shader -- clean blobs + face, no dark artifacts -->
 <script id="fs-orb" type="x-shader/x-fragment">
+  #extension GL_OES_standard_derivatives : enable
   precision mediump float;
   varying vec2 vUV;
+  uniform sampler2D uVideo;
   uniform sampler2D uParticles;
   uniform float uTime;
 
@@ -791,9 +803,12 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
 
   // Face compositing
   uniform float uFaceScale, uFaceOpacity, uFaceOffsetY;
+  uniform vec2 uFaceOffset;
+  uniform float uFaceRotation;
   uniform vec3 uFaceColor;
   uniform float uFaceColorMix;
   uniform int uBlendMode;
+  uniform int uFaceRenderer;
   uniform vec4 uFaceMeta;
   uniform vec4 uFaceLeft;
   uniform vec4 uFaceRight;
@@ -802,6 +817,7 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
   uniform vec4 uFaceRaw1;
   uniform vec4 uFaceRaw2;
   uniform vec4 uFaceRawRot;
+  uniform vec4 uFaceBends;
 
   // Mask & atmosphere
   uniform float uMaskEdge, uMaskSoft, uInnerGlow, uNoiseAmt;
@@ -836,38 +852,62 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
   }
 
   float shapeAlpha(float d, float softness) {
-    return 1.0 - smoothstep(-softness, softness, d);
+    float aa = max(fwidth(d), softness);
+    return 1.0 - smoothstep(-aa, aa, d);
   }
 
-  float measuredBlobDistance(vec2 p, vec2 center, vec2 size, float rotation, float roundness) {
+  vec2 bendLocal(vec2 p, vec2 halfSize, float bend) {
+    float amount = clamp(bend, -2.0, 2.0);
+    if (abs(amount) < 0.0001) return p;
+
+    if (halfSize.y >= halfSize.x) {
+      float n = clamp(p.y / max(halfSize.y, 0.001), -1.0, 1.0);
+      p.x -= amount * halfSize.x * 0.72 * n * n;
+    } else {
+      float n = clamp(p.x / max(halfSize.x, 0.001), -1.0, 1.0);
+      p.y -= amount * halfSize.y * 0.72 * n * n;
+    }
+
+    return p;
+  }
+
+  float measuredBlobDistance(vec2 p, vec2 center, vec2 size, float rotation, float roundness, float bend) {
     vec2 halfSize = max(size * 0.5, vec2(0.7));
     float radius = min(halfSize.x, halfSize.y) * roundness;
-    return sdRoundBox(rotate2(p - center, -rotation), halfSize, radius);
+    vec2 local = bendLocal(rotate2(p - center, -rotation), halfSize, bend);
+    return sdRoundBox(local, halfSize, radius);
   }
 
   float shaderFaceAlpha(vec2 faceUV) {
-    vec2 p = (faceUV - 0.5) * 180.0;
+    vec2 p = (faceUV - 0.5) * 500.0;
+    p -= uFaceOffset;
+    p = rotate2(p, -uFaceRotation) / max(uFaceScale, 0.0001);
 
     float roundness = max(uFaceMeta.x, 0.05);
-    float softness = max(uFaceMeta.y, 0.35);
+    float softness = max(uFaceMeta.y, 0.001);
     float rawMode = uFaceMeta.z;
     float rawCount = uFaceMeta.w;
+    float leftEyeBend = uFaceBends.x;
+    float rightEyeBend = uFaceBends.y;
+    float mouthBend = uFaceBends.z;
+    float loaderBend = uFaceBends.w;
 
     float dLeft = 9999.0;
     float dRight = 9999.0;
     float dMouth = 9999.0;
 
     if (rawMode > 0.5) {
-      if (rawCount > 0.5) dLeft = measuredBlobDistance(p, uFaceRaw0.xy, uFaceRaw0.zw, uFaceRawRot.x, roundness);
-      if (rawCount > 1.5) dMouth = measuredBlobDistance(p, uFaceRaw1.xy, uFaceRaw1.zw, uFaceRawRot.y, roundness);
-      if (rawCount > 2.5) dRight = measuredBlobDistance(p, uFaceRaw2.xy, uFaceRaw2.zw, uFaceRawRot.z, roundness);
+      if (rawCount > 0.5) dLeft = measuredBlobDistance(p, uFaceRaw0.xy, uFaceRaw0.zw, uFaceRawRot.x, roundness, loaderBend);
+      if (rawCount > 1.5) dMouth = measuredBlobDistance(p, uFaceRaw1.xy, uFaceRaw1.zw, uFaceRawRot.y, roundness, loaderBend);
+      if (rawCount > 2.5) dRight = measuredBlobDistance(p, uFaceRaw2.xy, uFaceRaw2.zw, uFaceRawRot.z, roundness, loaderBend);
     } else {
-      dLeft = measuredBlobDistance(p, uFaceLeft.xy, uFaceLeft.zw, uFaceRawRot.x, roundness);
-      dRight = measuredBlobDistance(p, uFaceRight.xy, uFaceRight.zw, uFaceRawRot.z, roundness);
-      dMouth = measuredBlobDistance(p, uFaceMouth.xy, uFaceMouth.zw, uFaceRawRot.y, roundness);
+      dLeft = measuredBlobDistance(p, uFaceLeft.xy, uFaceLeft.zw, uFaceRawRot.x, roundness, leftEyeBend);
+      dRight = measuredBlobDistance(p, uFaceRight.xy, uFaceRight.zw, uFaceRawRot.z, roundness, rightEyeBend);
+      dMouth = measuredBlobDistance(p, uFaceMouth.xy, uFaceMouth.zw, uFaceRawRot.y, roundness, mouthBend);
     }
 
-    return max(max(shapeAlpha(dLeft, softness), shapeAlpha(dRight, softness)), shapeAlpha(dMouth, softness));
+    float faceBounds = 1.0 - smoothstep(118.0, 124.0, length(p));
+    return max(max(shapeAlpha(dLeft, softness), shapeAlpha(dRight, softness)), shapeAlpha(dMouth, softness)) * faceBounds;
   }
 
   // --- 3D orbit ---
@@ -983,14 +1023,26 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
     float particleA = max(max(particles.r, particles.g), particles.b);
     orbColor = blendParticles(uParticleBlend, orbColor, particles, orbAlpha);
 
-    // --- Shader face ---
+    // --- Face ---
     vec2 faceCenter = vec2(0.5, 0.5 + uFaceOffsetY);
-    vec2 faceUV = (uv - faceCenter) / uFaceScale + 0.5;
+    vec2 faceUV = uv - faceCenter + 0.5;
     float faceA = 0.0;
+    vec3 faceRgb = vec3(0.0);
+    vec3 faceTinted = vec3(0.0);
     if (faceUV.x >= 0.0 && faceUV.x <= 1.0 && faceUV.y >= 0.0 && faceUV.y <= 1.0) {
-      faceA = shaderFaceAlpha(faceUV) * uFaceOpacity;
+      if (uFaceRenderer == 0) {
+        vec4 face = texture2D(uVideo, faceUV);
+        float faceLuma = dot(face.rgb, vec3(0.299, 0.587, 0.114));
+        float tintStrength = 1.0 - smoothstep(0.0, 0.5, faceLuma);
+        faceRgb = face.rgb;
+        faceTinted = mix(face.rgb, uFaceColor * (1.0 - faceLuma * 0.5), uFaceColorMix * tintStrength);
+        faceA = face.a * uFaceOpacity;
+      } else {
+        faceA = shaderFaceAlpha(faceUV) * uFaceOpacity;
+        faceTinted = mix(vec3(0.0), uFaceColor, uFaceColorMix);
+        faceRgb = faceTinted;
+      }
     }
-    vec3 faceTinted = mix(vec3(0.0), uFaceColor, uFaceColorMix);
 
     // --- Compositing ---
     vec3 color = orbColor;
@@ -998,13 +1050,13 @@ body[data-theme="dark"] .p-empty{color:rgba(235,238,246,0.28)}
     if (uBlendMode == 0) {
       color = mix(color, faceTinted, faceA);
     } else if (uBlendMode == 1) {
-      color = mix(color, blendScreen(color, faceTinted), faceA);
+      color = mix(color, blendScreen(color, faceRgb), faceA);
     } else if (uBlendMode == 2) {
-      color = mix(color, blendOverlay(color, faceTinted), faceA);
+      color = mix(color, blendOverlay(color, faceRgb), faceA);
     } else if (uBlendMode == 3) {
-      color = mix(color, blendMultiply(color, faceTinted), faceA);
+      color = mix(color, blendMultiply(color, faceRgb), faceA);
     } else {
-      color = mix(color, blendSoftLight(color, faceTinted), faceA);
+      color = mix(color, blendSoftLight(color, faceRgb), faceA);
     }
 
     // --- Inner glow ---
@@ -1231,6 +1283,9 @@ import { MEASURED_GIF_TIMELINES } from './source-timelines.js?v=shader-face-fiel
 // STATE CONFIG -- per-state animation parameters
 // ============================================================
 
+const FIXED_FACE_SCALE = 1.25;
+const FIXED_FACE_RATE = 1.0;
+
 const LIGHT_STATE_PRESETS = {
   idle: {
     orbSpeed: 1.1, orbRadius: 0.22, faceRate: 1.0, lerpSpeed: 5,
@@ -1241,7 +1296,7 @@ const LIGHT_STATE_PRESETS = {
     maskEdge: 0.29, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
     particleStyle: 0, particleCount: 890, particleTint: '#f2f7ff', particleOpacity: 0.83, particleGlow: 0.16, particleBlend: 0,
     particleScale: 1.8, particlePointSize: 4.25, particleSpread: 2.1, particleSpeed: 0.45, particleDrift: 3.55,
-    faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
+    faceScale: 1.25, faceOpacity: 0.94, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
     faceTimeline: 'gif-blue', faceRoundness: 1.0, faceSoftness: 0.75, faceLoaderScale: 1.0,
     tiltAx: 2.00, tiltAy: 0.67,
     tiltBx: 2.40, tiltBy: 0.40,
@@ -1256,7 +1311,7 @@ const LIGHT_STATE_PRESETS = {
     maskEdge: 0.29, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
     particleStyle: 0, particleCount: 1120, particleTint: '#f2f7ff', particleOpacity: 0.43, particleGlow: 1.0, particleBlend: 0,
     particleScale: 2.40, particlePointSize: 5.0, particleSpread: 1.65, particleSpeed: 1.0, particleDrift: 1.0,
-    faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
+    faceScale: 1.25, faceOpacity: 0.95, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
     faceTimeline: 'gif-blue', faceRoundness: 1.0, faceSoftness: 0.75, faceLoaderScale: 1.0,
     tiltAx: 2.00, tiltAy: 0.67,
     tiltBx: 2.40, tiltBy: 0.40,
@@ -1271,7 +1326,7 @@ const LIGHT_STATE_PRESETS = {
     maskEdge: 0.29, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
     particleStyle: 0, particleCount: 1120, particleTint: '#f2f7ff', particleOpacity: 0.43, particleGlow: 1.0, particleBlend: 0,
     particleScale: 2.40, particlePointSize: 5.0, particleSpread: 1.65, particleSpeed: 1.0, particleDrift: 1.0,
-    faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
+    faceScale: 1.25, faceOpacity: 0.95, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
     faceTimeline: 'gif-blue', faceRoundness: 1.0, faceSoftness: 0.75, faceLoaderScale: 1.0,
     tiltAx: 2.00, tiltAy: 0.67,
     tiltBx: 2.40, tiltBy: 0.40,
@@ -1286,7 +1341,7 @@ const LIGHT_STATE_PRESETS = {
     maskEdge: 0.31, maskSoft: 0.20, innerGlow: 1.0, noiseAmt: 0.0,
     particleStyle: 0, particleCount: 1210, particleTint: '#f2f7ff', particleOpacity: 1.0, particleGlow: 1.0, particleBlend: 0,
     particleScale: 3.95, particlePointSize: 4.80, particleSpread: 1.65, particleSpeed: 1.60, particleDrift: 3.40,
-    faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
+    faceScale: 1.25, faceOpacity: 0.95, faceOffsetY: 0.0, faceBlendMode: 0, faceColor: '#3a2a5a', faceColorMix: 1.0,
     faceTimeline: 'gif-blue', faceRoundness: 1.0, faceSoftness: 0.75, faceLoaderScale: 1.0,
     tiltAx: 2.00, tiltAy: 0.67,
     tiltBx: 2.40, tiltBy: 0.40,
@@ -1311,7 +1366,7 @@ Object.assign(THEME_PRESETS.dark.idle, {
   maskEdge: 0.33, maskSoft: 0.20, innerGlow: 0.82, noiseAmt: 0.0,
   particleStyle: 0, particleCount: 890, particleTint: '#dfe8ff', particleOpacity: 0.21, particleGlow: 0.34, particleBlend: 0,
   particleScale: 1.8, particlePointSize: 4.25, particleSpread: 2.1, particleSpeed: 0.45, particleDrift: 3.55,
-  faceScale: 0.92, faceOpacity: 0.80, faceOffsetY: 0.0,
+  faceScale: 1.25, faceOpacity: 0.88, faceOffsetY: 0.0,
   faceBlendMode: 0, faceColor: '#000000', faceColorMix: 0.72,
   faceTimeline: 'gif-black', faceRoundness: 1.0, faceSoftness: 0.75, faceLoaderScale: 1.0,
 });
@@ -1322,7 +1377,7 @@ Object.assign(THEME_PRESETS.dark.focused, {
   blobSize: 0.26, blobSoft: 0.24, blobOpacity: 1.0,
   maskEdge: 0.29, maskSoft: 0.20, innerGlow: 0.88, noiseAmt: 0.0,
   particleTint: '#dfe8ff', particleOpacity: 0.52, particleGlow: 1.15,
-  faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0,
+  faceScale: 1.25, faceOpacity: 0.95, faceOffsetY: 0.0,
   faceBlendMode: 0, faceColor: '#111217', faceColorMix: 0.78,
   faceTimeline: 'gif-black', faceRoundness: 1.0, faceSoftness: 0.75, faceLoaderScale: 1.0,
 });
@@ -1334,10 +1389,21 @@ Object.assign(THEME_PRESETS.dark.thinking, {
   blobSize: 0.23, blobSoft: 0.24, blobOpacity: 0.76,
   maskEdge: 0.31, maskSoft: 0.20, innerGlow: 0.95, noiseAmt: 0.0,
   particleTint: '#e5edff', particleOpacity: 0.88, particleGlow: 1.2,
-  faceScale: 0.92, faceOpacity: 0.90, faceOffsetY: 0.0,
+  faceScale: 1.25, faceOpacity: 0.95, faceOffsetY: 0.0,
   faceBlendMode: 0, faceColor: '#111217', faceColorMix: 0.82,
   faceTimeline: 'gif-black', faceRoundness: 1.0, faceSoftness: 0.75, faceLoaderScale: 1.0,
 });
+
+function enforceFaceScaleRatePresets() {
+  ['light','dark'].forEach(theme => {
+    ['idle','focused','typing','thinking'].forEach(state => {
+      THEME_PRESETS[theme][state].faceScale = FIXED_FACE_SCALE;
+      THEME_PRESETS[theme][state].faceRate = FIXED_FACE_RATE;
+    });
+  });
+}
+
+enforceFaceScaleRatePresets();
 
 let currentTheme = 'light';
 let SP = THEME_PRESETS[currentTheme];
@@ -1353,6 +1419,8 @@ const THEME_GLOBALS = {
 
 const G = {
   thinkDuration: 5,
+  faceRenderer: 'shader',
+  faceVideo: 'face-black.webm',
 };
 
 function getGlobalValue(key) {
@@ -1389,6 +1457,7 @@ const streakColors = ['#6e6bff', '#5f5cff', '#a27aff'];
 
 // Live interpolated values (lerped toward current state)
 const LERP_KEYS = ['orbSpeed','orbRadius',
+  'faceRate',
   'orbSize','fieldOrbScale',
   'blobSize','blobSoft','blobOpacity','blobHueHold','overlapBoost','fieldFill',
   'maskEdge','maskSoft','innerGlow','noiseAmt',
@@ -1408,6 +1477,7 @@ live.particleStyle = SP.idle.particleStyle;
 live.particleBlend = SP.idle.particleBlend;
 
 function hexToRgb(h) {
+  if (!/^#[0-9a-fA-F]{6}$/.test(h || '')) return [0, 0, 0];
   const v = parseInt(h.slice(1), 16);
   return [(v >> 16) & 255, (v >> 8) & 255, v & 255];
 }
@@ -1504,6 +1574,8 @@ const gl = glCanvas.getContext('webgl', {
 
 if (!gl) {
   console.error('WebGL not supported');
+} else {
+  gl.getExtension('OES_standard_derivatives');
 }
 
 function compileShader(type, src) {
@@ -1603,30 +1675,192 @@ function particleDrift(phase) {
   };
 }
 
+// Video face path, kept for exact legacy comparison with the shader renderer.
+const video = document.createElement('video');
+video.src = getGlobalValue('faceVideo');
+video.loop = true;
+video.muted = true;
+video.playsInline = true;
+video.crossOrigin = 'anonymous';
+const initialVideoPlay = video.play();
+if (initialVideoPlay && typeof initialVideoPlay.catch === 'function') initialVideoPlay.catch(() => {});
+
+const videoTex = gl ? gl.createTexture() : null;
+if (gl) {
+  gl.bindTexture(gl.TEXTURE_2D, videoTex);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+  gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, new Uint8Array([0,0,0,0]));
+}
+
+let videoReady = false;
+video.addEventListener('playing', () => { videoReady = true; });
+
+function playFaceVideo() {
+  const request = video.play();
+  if (request && typeof request.catch === 'function') request.catch(() => {});
+}
+
 const RAW_LOADER_START = 5.42;
 const RAW_LOADER_END = 8.56;
+const FACE_PLAYBACK_PRESETS = {
+  focused: { play: 'segment', segmentStartSeconds: 0.4, segmentEndSeconds: 3.5, phaseSeconds: 0, speed: 1 },
+  typing: { play: 'segment', segmentStartSeconds: 0.4, segmentEndSeconds: 3.5, phaseSeconds: 0, speed: 1 },
+  thinking: { play: 'segment', segmentStartSeconds: 5.6, segmentEndSeconds: 10.0, phaseSeconds: 0, speed: 1 },
+};
+const VIDEO_SEGMENTS = {
+  idle: [0, 3.5],
+  focused: [0.4, 3.5],
+  typing: [0.4, 3.5],
+  thinking: [5.6, 10],
+};
+const IDLE_BLINK = { blinkStart: 0, blinkEnd: 0.35, pauseMin: 2.0, pauseMax: 3.5 };
+let faceStateStartMs = performance.now();
+let idleBlinkTimer = null;
+let idleBlinkStartMs = null;
 const NEUTRAL_FACE_FRAME = {
+  faceX: 0, faceY: 0, faceScale: 0, faceRotation: 0,
   leftX: -31.34, leftY: -19.32, leftWidth: 22.01, leftHeight: 35.45, leftRotation: 4.55,
   rightX: 31.81, rightY: -19.26, rightWidth: 21.98, rightHeight: 35.49, rightRotation: -5.06,
   mouthX: 1.36, mouthY: 34.51, mouthWidth: 39.04, mouthHeight: 16.09, mouthRotation: -0.51,
+  mouthCurve: 0, measuredMode: 1,
   rawBlobs: [], rawBlobCount: 0, rawLoaderMode: false,
 };
+const FACE_FRAME_NUMERIC_KEYS = [
+  'faceX','faceY','faceScale','faceRotation',
+  'leftX','leftY','leftWidth','leftHeight','leftRotation',
+  'rightX','rightY','rightWidth','rightHeight','rightRotation',
+  'mouthX','mouthY','mouthWidth','mouthHeight','mouthRotation','mouthCurve',
+];
 
 function normalizeFaceFrame(frame = {}) {
   const blobs = frame.blobs || frame.rawBlobs || [];
-  if (blobs.length < 3) return { ...NEUTRAL_FACE_FRAME, ...frame, rawBlobs: blobs.slice(0, 3), rawBlobCount: blobs.length };
+  if (blobs.length < 3) {
+    return {
+      ...NEUTRAL_FACE_FRAME,
+      ...frame,
+      measuredMode: frame.measuredMode ?? 0,
+      rawBlobs: blobs.slice(0, 3),
+      rawBlobCount: Math.min(blobs.length, 3),
+    };
+  }
   const left = blobs[0], mouth = blobs[1], right = blobs[2];
   return {
     ...NEUTRAL_FACE_FRAME,
     t: frame.t,
     frame: frame.frame,
+    measuredMode: 1,
     rawBlobs: blobs.slice(0, 3),
     rawBlobCount: Math.min(blobs.length, 3),
     rawLoaderMode: frame.t >= RAW_LOADER_START && frame.t <= RAW_LOADER_END,
+    faceX: finiteNumber(frame.faceX, 0),
+    faceY: finiteNumber(frame.faceY, 0),
+    faceScale: finiteNumber(frame.faceScale, 0),
+    faceRotation: finiteNumber(frame.faceRotation, 0),
     leftX: left.x, leftY: left.y, leftWidth: left.width, leftHeight: left.height, leftRotation: left.rotation,
     rightX: right.x, rightY: right.y, rightWidth: right.width, rightHeight: right.height, rightRotation: right.rotation,
-    mouthX: mouth.x, mouthY: mouth.y, mouthWidth: mouth.width, mouthHeight: mouth.height, mouthRotation: mouth.rotation,
+    mouthX: mouth.x, mouthY: mouth.y, mouthWidth: mouth.width, mouthHeight: mouth.height,
+    mouthCurve: finiteNumber(frame.mouthCurve, 0),
+    mouthRotation: mouth.rotation,
   };
+}
+
+function measuredFrameStats(frame = {}) {
+  const blobs = frame.blobs || frame.rawBlobs || [];
+  if (blobs.length !== 3) return { valid: false };
+
+  const minX = Math.min(...blobs.map(blob => blob.x - blob.width * 0.5));
+  const maxX = Math.max(...blobs.map(blob => blob.x + blob.width * 0.5));
+  const minY = Math.min(...blobs.map(blob => blob.y - blob.height * 0.5));
+  const maxY = Math.max(...blobs.map(blob => blob.y + blob.height * 0.5));
+  const maxWidth = Math.max(...blobs.map(blob => blob.width));
+  const maxHeight = Math.max(...blobs.map(blob => blob.height));
+  const totalArea = blobs.reduce((sum, blob) => sum + blob.width * blob.height, 0);
+
+  return {
+    valid:
+      (maxX - minX) <= 170 &&
+      (maxY - minY) <= 140 &&
+      maxWidth <= 78 &&
+      maxHeight <= 52 &&
+      totalArea <= 2800 &&
+      minX >= -125 &&
+      maxX <= 125 &&
+      minY >= -115 &&
+      maxY <= 125,
+  };
+}
+
+function lerp(a, b, f) {
+  return a + (b - a) * f;
+}
+
+function smootherstep(f) {
+  const t = clamp(f, 0, 1);
+  return t * t * t * (t * (t * 6 - 15) + 10);
+}
+
+function lerpAngle(a, b, f) {
+  let delta = b - a;
+  while (delta > 90) delta -= 180;
+  while (delta < -90) delta += 180;
+  return a + delta * f;
+}
+
+function interpolateFaceFrames(previous, next, sourceFrame) {
+  const a = normalizeFaceFrame(previous);
+  const b = normalizeFaceFrame(next);
+  const span = Math.max(0.001, finiteNumber(b.t, sourceFrame.t) - finiteNumber(a.t, sourceFrame.t));
+  const mix = smootherstep((finiteNumber(sourceFrame.t, a.t) - finiteNumber(a.t, 0)) / span);
+  const blended = {
+    ...a,
+    t: sourceFrame.t,
+    frame: sourceFrame.frame,
+    measuredMode: 1,
+    rawLoaderMode: sourceFrame.t >= RAW_LOADER_START && sourceFrame.t <= RAW_LOADER_END,
+    rawBlobs: [],
+    rawBlobCount: 0,
+  };
+
+  FACE_FRAME_NUMERIC_KEYS.forEach(key => {
+    blended[key] = key.toLowerCase().includes('rotation')
+      ? lerpAngle(finiteNumber(a[key], NEUTRAL_FACE_FRAME[key]), finiteNumber(b[key], NEUTRAL_FACE_FRAME[key]), mix)
+      : lerp(finiteNumber(a[key], NEUTRAL_FACE_FRAME[key]), finiteNumber(b[key], NEUTRAL_FACE_FRAME[key]), mix);
+  });
+
+  return blended;
+}
+
+function sanitizeTimelineFrames(frames = []) {
+  return frames.map((frame, index) => {
+    const inLoader = frame.t >= RAW_LOADER_START && frame.t <= RAW_LOADER_END;
+    if (inLoader && (frame.blobs || frame.rawBlobs || []).length) {
+      return { ...normalizeFaceFrame(frame), rawLoaderMode: true, measuredMode: 1 };
+    }
+    if (measuredFrameStats(frame).valid) return normalizeFaceFrame(frame);
+
+    let previousValid = null;
+    for (let cursor = index - 1; cursor >= 0; cursor -= 1) {
+      if (measuredFrameStats(frames[cursor]).valid) {
+        previousValid = frames[cursor];
+        break;
+      }
+    }
+
+    let nextValid = null;
+    for (let cursor = index + 1; cursor < frames.length; cursor += 1) {
+      if (measuredFrameStats(frames[cursor]).valid) {
+        nextValid = frames[cursor];
+        break;
+      }
+    }
+
+    return previousValid && nextValid
+      ? interpolateFaceFrames(previousValid, nextValid, frame)
+      : normalizeFaceFrame(previousValid || nextValid || frame);
+  }).sort((a, b) => a.t - b.t);
 }
 
 const FACE_TIMELINES = Object.fromEntries(
@@ -1634,7 +1868,7 @@ const FACE_TIMELINES = Object.fromEntries(
     key,
     {
       duration: Math.max(0.001, timeline.duration || 10),
-      frames: (timeline.frames || []).map(normalizeFaceFrame).sort((a, b) => a.t - b.t),
+      frames: sanitizeTimelineFrames(timeline.frames || []),
     },
   ]),
 );
@@ -1653,14 +1887,104 @@ function sampleFaceTimeline(mode, time) {
   return frames[Math.max(0, high)] || frames[0];
 }
 
-function faceTimeForState(tsSeconds) {
-  if (currentState === 'thinking') {
-    return RAW_LOADER_START + positiveModulo(tsSeconds * live.faceRate, RAW_LOADER_END - RAW_LOADER_START);
-  }
-  return positiveModulo(tsSeconds * live.faceRate, FACE_TIMELINES[live.faceTimeline]?.duration || 10);
+function faceElapsedSeconds(nowMs = performance.now()) {
+  return Math.max(0, (nowMs - faceStateStartMs) / 1000);
 }
 
-function setFaceStateStart() {}
+function scheduleIdleBlink() {
+  clearTimeout(idleBlinkTimer);
+  const pause = IDLE_BLINK.pauseMin + Math.random() * (IDLE_BLINK.pauseMax - IDLE_BLINK.pauseMin);
+  idleBlinkTimer = setTimeout(() => {
+    if (currentState === 'idle') {
+      startIdleBlink();
+    }
+  }, pause * 1000);
+}
+
+function startIdleBlink(nowMs = performance.now()) {
+  clearTimeout(idleBlinkTimer);
+  idleBlinkStartMs = nowMs;
+  video.currentTime = IDLE_BLINK.blinkStart;
+  video.playbackRate = Math.max(0.1, live.faceRate || SP.idle.faceRate || 1);
+  playFaceVideo();
+}
+
+function finishIdleBlink() {
+  if (idleBlinkStartMs === null) return;
+  idleBlinkStartMs = null;
+  video.pause();
+  video.currentTime = IDLE_BLINK.blinkStart;
+  scheduleIdleBlink();
+}
+
+function syncVideoFaceSource() {
+  const src = getGlobalValue('faceVideo');
+  if (video.getAttribute('src') !== src) {
+    videoReady = false;
+    video.src = src;
+  }
+}
+
+function updateVideoState() {
+  syncVideoFaceSource();
+  clearTimeout(idleBlinkTimer);
+  idleBlinkStartMs = null;
+  const seg = VIDEO_SEGMENTS[currentState] || VIDEO_SEGMENTS.idle;
+  video.playbackRate = Math.max(0.1, SP[currentState].faceRate || 1);
+  if (currentState === 'idle') {
+    startIdleBlink();
+    return;
+  }
+  video.currentTime = seg[0];
+  playFaceVideo();
+}
+
+function enforceVideoSegment() {
+  const seg = VIDEO_SEGMENTS[currentState] || VIDEO_SEGMENTS.idle;
+  if (currentState === 'idle') {
+    if (video.currentTime >= IDLE_BLINK.blinkEnd) {
+      finishIdleBlink();
+    }
+    return;
+  }
+  if (video.paused) playFaceVideo();
+  video.playbackRate = Math.max(0.1, live.faceRate || 1);
+  if (video.currentTime >= seg[1] || video.currentTime < seg[0]) {
+    video.currentTime = seg[0];
+  }
+}
+
+function faceTimeForState(nowMs) {
+  const elapsed = faceElapsedSeconds(nowMs);
+  const timelineDuration = FACE_TIMELINES[live.faceTimeline]?.duration || 10;
+  if (currentState === 'idle') {
+    if (idleBlinkStartMs === null) return IDLE_BLINK.blinkStart;
+    const blinkElapsed = Math.max(0, (nowMs - idleBlinkStartMs) / 1000) * Math.max(0, live.faceRate || 1);
+    const blinkDuration = IDLE_BLINK.blinkEnd - IDLE_BLINK.blinkStart;
+    if (blinkElapsed >= blinkDuration) {
+      finishIdleBlink();
+      return IDLE_BLINK.blinkStart;
+    }
+    return IDLE_BLINK.blinkStart + blinkElapsed;
+  }
+
+  const preset = FACE_PLAYBACK_PRESETS[currentState] || FACE_PLAYBACK_PRESETS.idle;
+  const speed = Math.max(0, live.faceRate * finiteNumber(preset.speed, 1));
+  const phase = finiteNumber(preset.phaseSeconds, 0);
+
+  if (preset.play === 'segment') {
+    const start = finiteNumber(preset.segmentStartSeconds, 0);
+    const end = Math.max(start + 0.001, finiteNumber(preset.segmentEndSeconds, timelineDuration));
+    return positiveModulo(start + positiveModulo(elapsed * speed + phase, end - start), timelineDuration);
+  }
+
+  return positiveModulo(elapsed * speed + phase, timelineDuration);
+}
+
+function setFaceStateStart() {
+  faceStateStartMs = performance.now();
+  updateVideoState();
+}
 
 let lastGLSize = 0;
 function resizeGLCanvas(sz) {
@@ -1685,6 +2009,7 @@ function setState(newState) {
   currentState = newState;
 
   clearTimeout(thinkTimer);
+  clearTimeout(idleBlinkTimer);
   clearInterval(thinkDotsInterval);
   if (_tcInterval) { clearTimeout(_tcInterval); _tcInterval = null; }
   _stopGlowSpots();
@@ -1944,8 +2269,13 @@ function frame(ts) {
   const spd = target.lerpSpeed;
   const f = Math.min(spd * dt, 1);
 
-  LERP_KEYS.forEach(k => { live[k] += (target[k] - live[k]) * f; });
-  COLOR_KEYS.forEach(k => { live[k] = lerpColor(live[k], target[k], f); });
+  LERP_KEYS.forEach(k => {
+    const next = Number.isFinite(target[k]) ? target[k] : live[k];
+    live[k] += (next - live[k]) * f;
+  });
+  COLOR_KEYS.forEach(k => {
+    live[k] = lerpColor(live[k], target[k] || live[k] || SP.idle[k], f);
+  });
   live.faceBlendMode = target.faceBlendMode;
   live.faceTimeline = target.faceTimeline;
   live.blobMixMode = target.blobMixMode;
@@ -1969,13 +2299,17 @@ function frame(ts) {
 
   // ---- WebGL Render ----
   if (gl && prog) {
-    const time = ts / 1000;
-    const faceFrame = sampleFaceTimeline(live.faceTimeline, faceTimeForState(time));
+    const faceFrame = sampleFaceTimeline(live.faceTimeline, faceTimeForState(ts));
     const faceRaw = (index) => faceFrame.rawBlobs?.[index] || {};
     const faceRawSize = (blob, fallbackWidth, fallbackHeight) => [
       clamp(finiteNumber(blob.width, fallbackWidth) * live.faceLoaderScale, 0.5, 120),
       clamp(finiteNumber(blob.height, fallbackHeight) * live.faceLoaderScale, 0.5, 80),
     ];
+    enforceVideoSegment();
+    if (videoReady && video.readyState >= video.HAVE_CURRENT_DATA) {
+      gl.bindTexture(gl.TEXTURE_2D, videoTex);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, video);
+    }
     const hasParticles = particleGlowProg && particleProg && particleTex && (live.particleCount > 0 || live.particleGlow > 0);
     if (hasParticles) {
       const tint = hexToGL(live.particleTint);
@@ -2041,6 +2375,10 @@ function frame(ts) {
     gl.enableVertexAttribArray(aPos);
     gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
 
+    gl.activeTexture(gl.TEXTURE0);
+    gl.bindTexture(gl.TEXTURE_2D, videoTex);
+    gl.uniform1i(u('uVideo'), 0);
+
     gl.activeTexture(gl.TEXTURE1);
     gl.bindTexture(gl.TEXTURE_2D, particleTex);
     gl.uniform1i(u('uParticles'), 1);
@@ -2070,7 +2408,10 @@ function frame(ts) {
     gl.uniform1f(u('uFaceScale'), live.faceScale);
     gl.uniform1f(u('uFaceOpacity'), live.faceOpacity);
     gl.uniform1f(u('uFaceOffsetY'), live.faceOffsetY);
+    gl.uniform2f(u('uFaceOffset'), finiteNumber(faceFrame.faceX, 0), finiteNumber(faceFrame.faceY, 0));
+    gl.uniform1f(u('uFaceRotation'), finiteNumber(faceFrame.faceRotation, 0) * Math.PI / 180);
     gl.uniform1i(u('uBlendMode'), live.faceBlendMode);
+    gl.uniform1i(u('uFaceRenderer'), getGlobalValue('faceRenderer') === 'video' ? 0 : 1);
     const fc = hexToRgb(live.faceColor);
     gl.uniform3f(u('uFaceColor'), fc[0]/255, fc[1]/255, fc[2]/255);
     gl.uniform1f(u('uFaceColorMix'), live.faceColorMix);
@@ -2088,6 +2429,7 @@ function frame(ts) {
       finiteNumber(faceRaw(2).rotation, faceFrame.rightRotation) * Math.PI / 180,
       0,
     );
+    gl.uniform4f(u('uFaceBends'), 0, 0, 0, 0);
 
     gl.uniform1f(u('uMaskEdge'), live.maskEdge);
     gl.uniform1f(u('uMaskSoft'), live.maskSoft);
@@ -2212,6 +2554,7 @@ function refreshThemeMode() {
   SP = THEME_PRESETS[currentTheme];
   document.body.dataset.theme = currentTheme;
   document.body.style.background = getGlobalValue('bgColor');
+  syncVideoFaceSource();
   document.querySelectorAll('.theme-tab').forEach(tab => {
     tab.classList.toggle('active', tab.dataset.theme === currentTheme);
   });
@@ -2338,7 +2681,11 @@ document.querySelectorAll('input[type=color][data-gkey]').forEach(el => {
 });
 
 document.querySelectorAll('select[data-gkey]').forEach(el => {
-  el.addEventListener('change', () => { setGlobalValue(el.dataset.gkey, el.value); });
+  el.addEventListener('change', () => {
+    setGlobalValue(el.dataset.gkey, el.value);
+    if (el.dataset.gkey === 'faceVideo') syncVideoFaceSource();
+    if (el.dataset.gkey === 'faceVideo' || el.dataset.gkey === 'faceRenderer') updateFaceState();
+  });
 });
 
 // ============================================================
@@ -2426,6 +2773,8 @@ function applyFullConfig(cfg) {
     if (cfg.SP.light || cfg.SP.dark) applyThemePresetBank(cfg.SP);
     else applyStatePresetBank(THEME_PRESETS[currentTheme], cfg.SP);
   }
+  enforceFaceScaleRatePresets();
+  SP = THEME_PRESETS[currentTheme];
   refreshThemeMode();
   syncGlobalControls();
   syncStateControls();
